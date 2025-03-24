@@ -20,13 +20,13 @@ const isMirrorUrl = () => {
 const resourceUrl = {
   github: {
     sketch:
-      'https://github.com/ElementUI/Resources/raw/master/Element_Plus_Design_System_2022_1.0_Beta.zip',
+      'https://github.com/ElementUI/Resources/raw/master/Xianniu_Plus_Design_System_2022_1.0_Beta.zip',
     axure:
       'https://github.com/ElementUI/Resources/raw/master/Element_Components_v2.1.0.rplib',
   },
   gitee: {
     sketch:
-      'https://gitee.com/element-plus/resources/raw/master/Element_Plus_Design_System_2022_1.0_Beta.zip',
+      'https://gitee.com/element-plus/resources/raw/master/Xianniu_Plus_Design_System_2022_1.0_Beta.zip',
     axure:
       'https://gitee.com/element-plus/resources/raw/master/Element_Components_v2.1.0.rplib',
   },

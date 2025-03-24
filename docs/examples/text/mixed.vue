@@ -4,7 +4,7 @@
       <el-icon>
         <XianniuPlus />
       </el-icon>
-      Element-Plus
+      Xianniu-Plus
     </el-text>
     <el-row>
       <el-text>Rate</el-text>

@@ -773,7 +773,7 @@ describe('DatePicker', () => {
     it('with literal string', async () => {
       const day = dayjs()
       const format = 'YYYY-MM-DD'
-      const valueFormat = '[Element-Plus] DD/MM YYYY'
+      const valueFormat = '[Xianniu-Plus] DD/MM YYYY'
       const value = day.format(valueFormat)
       const wrapper = _mount(
         `
@@ -793,7 +793,7 @@ describe('DatePicker', () => {
         {
           methods: {
             changeValue() {
-              this.value = '[Element-Plus] 31/05 2021'
+              this.value = '[Xianniu-Plus] 31/05 2021'
             },
           },
         }
@@ -809,7 +809,7 @@ describe('DatePicker', () => {
       await nextTick()
       expect(vm.value).toBe(
         dayjs(
-          `[Element-Plus] 01/${`0${day.month() + 1}`.slice(-2)} ${day.year()}`,
+          `[Xianniu-Plus] 01/${`0${day.month() + 1}`.slice(-2)} ${day.year()}`,
           valueFormat
         ).format(valueFormat)
       )
@@ -1092,7 +1092,7 @@ describe('MonthPicker', () => {
   })
 
   it('value-format', async () => {
-    const valueFormat = '[Element-Plus] YYYY.MM'
+    const valueFormat = '[Xianniu-Plus] YYYY.MM'
     const wrapper = _mount(
       `
       <el-date-picker
@@ -1166,7 +1166,7 @@ describe('YearPicker', () => {
   })
 
   it('value-format', async () => {
-    const valueFormat = '[Element-Plus] YYYY'
+    const valueFormat = '[Xianniu-Plus] YYYY'
     const wrapper = _mount(
       `
       <el-date-picker
