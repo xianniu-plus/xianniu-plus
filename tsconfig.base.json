@@ -16,7 +16,7 @@
     "rootDir": ".",
     "types": [],
     "paths": {
-      "@element-plus/*": [
+      "@xianniu-plus/*": [
         "packages/components/*",
         "packages/utils/*",
         "packages/hooks/*",
@@ -24,7 +24,7 @@
         "packages/constants/*",
         "packages/locale/*"
       ],
-      "element-plus": ["packages/element-plus"]
+      "xianniu-plus": ["packages/xianniu-plus"]
     },
     "preserveSymlinks": true
   }
