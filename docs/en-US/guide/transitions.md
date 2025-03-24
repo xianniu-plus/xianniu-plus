@@ -38,9 +38,9 @@ transitions/collapse
 
 ```ts [mian.ts]
 // collapse
-import { ElCollapseTransition } from 'element-plus'
+import { ElCollapseTransition } from 'xianniu-plus'
 // fade/zoom
-import 'element-plus/lib/theme-chalk/base.css'
+import 'xianniu-plus/lib/theme-chalk/base.css'
 import App from './App.vue'
 
 const app = createApp(App)

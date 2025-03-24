@@ -25,7 +25,7 @@ dialog/basic-usage
 
 ## Customized Content
 
-The content of Dialog can be anything, even a table or a form. This example shows how to use Element Plus Table and Form with Dialog.
+The content of Dialog can be anything, even a table or a form. This example shows how to use Xianniu Plus Table and Form with Dialog.
 
 :::demo
 
@@ -218,12 +218,12 @@ dialog/events
 
 #### Using dialog in SFC, the scope style does not take effect.
 
-Typical issue: [#10515](https://github.com/element-plus/element-plus/issues/10515)
+Typical issue: [#10515](https://github.com/xianniu-plus/xianniu-plus/issues/10515)
 
 PS: Since the dialog is rendered using `Teleport`, the style of the root node is recommended to be written globally.
 
 #### When the dialog is displayed and hidden, there is a situation where the page elements are displaced back and forth.
 
-Typical issue: [#10481](https://github.com/element-plus/element-plus/issues/10481)
+Typical issue: [#10481](https://github.com/xianniu-plus/xianniu-plus/issues/10481)
 
 PS: It is recommended to place the scroll area inside a vue mounted node, e.g. `<div id="app" />`, and use the `overflow: hidden` style for the body.

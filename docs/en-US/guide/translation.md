@@ -7,7 +7,7 @@ lang: en-US
 
 ## Documentation
 
-In this chapter, we will discuss how to help translating the documentation of Element Plus.
+In this chapter, we will discuss how to help translating the documentation of Xianniu Plus.
 
 ### Background
 
@@ -25,7 +25,7 @@ We took [Crowdin](https://crowdin.com) as our first step to make the documentati
 ### How do I translate the documentation?
 
 1. Create an account on [Crowdin](https://crowdin.com), it is recommended that you use your GitHub account to authorize Crowdin.
-2. Go to [Element Plus](https://crowdin.com/project/element-plus) project.
+2. Go to [Xianniu Plus](https://crowdin.com/project/xianniu-plus) project.
 3. Choose the language you want to contribute to.
 4. Find the file you want to translate.
 5. Do the translation.
@@ -35,5 +35,5 @@ After you submit your work, it would be online once the translation is approved 
 
 ### How can I become a proofreader?
 
-You can [raise an issue](https://crowdin.com/project/element-plus/discussions) on Crowdin to us for
+You can [raise an issue](https://crowdin.com/project/xianniu-plus/discussions) on Crowdin to us for
 becoming a proofreader of the language you wish to be.

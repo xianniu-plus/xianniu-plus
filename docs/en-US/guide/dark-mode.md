@@ -5,7 +5,7 @@ lang: en-US
 
 # Dark Mode ^(2.2.0)
 
-After a long time, Element Plus supports dark mode!
+After a long time, Xianniu Plus supports dark mode!
 
 We extracted and unified all necessary variables to make it possible to implement based on CSS Vars.
 
@@ -28,10 +28,10 @@ Then, you can quickly enable it with just one line of code to import CSS in your
 
 ```ts [main.ts]
 // if you just want to import css
-import 'element-plus/theme-chalk/dark/css-vars.css'
+import 'xianniu-plus/theme-chalk/dark/css-vars.css'
 ```
 
-> If you want an example, you can refer to [element-plus-vite-starter](https://github.com/element-plus/element-plus-vite-starter).
+> If you want an example, you can refer to [xianniu-plus-vite-starter](https://github.com/xianniu-plus/xianniu-plus-vite-starter).
 
 ## Custom variables
 
@@ -48,10 +48,10 @@ html.dark {
 }
 ```
 
-Import it after styles of Element Plus:
+Import it after styles of Xianniu Plus:
 
 ```ts [main.ts]
-import 'element-plus/theme-chalk/dark/css-vars.css'
+import 'xianniu-plus/theme-chalk/dark/css-vars.css'
 import './styles/dark/css-vars.css'
 ```
 
@@ -63,7 +63,7 @@ If you use scss, you can also import scss file to compile.
 
 ```scss [styles/element/index.scss]
 /*just override what you need*/
-@forward 'element-plus/theme-chalk/src/dark/var.scss' with (
+@forward 'xianniu-plus/theme-chalk/src/dark/var.scss' with (
   $bg-color: (
     'page': #0a0a0a,
     '': #626aef,
@@ -76,5 +76,5 @@ If you use scss, you can also import scss file to compile.
 import './styles/element/index.scss'
 
 // or just want to import scss?
-// import 'element-plus/theme-chalk/src/dark/css-vars.scss'
+// import 'xianniu-plus/theme-chalk/src/dark/css-vars.scss'
 ```

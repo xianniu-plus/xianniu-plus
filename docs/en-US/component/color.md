@@ -5,7 +5,7 @@ lang: en-US
 
 # Color
 
-Element Plus uses a specific set of palettes to specify colors to provide a consistent look and feel for the products you build.
+Xianniu Plus uses a specific set of palettes to specify colors to provide a consistent look and feel for the products you build.
 
 <style lang="scss">
 .demo-color-box {
@@ -55,7 +55,7 @@ Element Plus uses a specific set of palettes to specify colors to provide a cons
 
 ## Main Color
 
-The main color of Element Plus is bright and friendly blue.
+The main color of Xianniu Plus is bright and friendly blue.
 
 <!-- Do not touch -->
 <ClientOnly>

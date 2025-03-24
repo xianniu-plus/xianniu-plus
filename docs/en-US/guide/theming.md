@@ -5,7 +5,7 @@ lang: en-US
 
 # Custom theme
 
-Element Plus uses BEM-styled CSS so that you can override styles easily. But if
+Xianniu Plus uses BEM-styled CSS so that you can override styles easily. But if
 you need to replace styles at a large scale, e.g. change the theme color from
 blue to orange or green, maybe overriding them one by one is not a good idea.
 
@@ -15,13 +15,13 @@ We provide four ways to change the style variables.
 
 These are examples about custom theme.
 
-- Full import: [element-plus-vite-starter](https://github.com/element-plus/element-plus-vite-starter)
-- On demand: [unplugin-element-plus/examples/vite](https://github.com/element-plus/unplugin-element-plus)
+- Full import: [xianniu-plus-vite-starter](https://github.com/xianniu-plus/xianniu-plus-vite-starter)
+- On demand: [unplugin-xianniu-plus/examples/vite](https://github.com/xianniu-plus/unplugin-xianniu-plus)
 
 ### By SCSS variables
 
 `theme-chalk` is written in SCSS.
-You can find SCSS variables in [`packages/theme-chalk/src/common/var.scss`](https://github.com/element-plus/element-plus/blob/dev/packages/theme-chalk/src/common/var.scss).
+You can find SCSS variables in [`packages/theme-chalk/src/common/var.scss`](https://github.com/xianniu-plus/xianniu-plus/blob/dev/packages/theme-chalk/src/common/var.scss).
 
 :::warning
 
@@ -33,7 +33,7 @@ For example, We use `$colors` as a map to preserve different types of colors.
 
 `$notification` is a map where all variables of the `notification` component at.
 
-In the future, we will write documentation for variables that can be customized for each component. You can also directly checkout the source [var.scss](https://github.com/element-plus/element-plus/blob/dev/packages/theme-chalk/src/common/var.scss).
+In the future, we will write documentation for variables that can be customized for each component. You can also directly checkout the source [var.scss](https://github.com/xianniu-plus/xianniu-plus/blob/dev/packages/theme-chalk/src/common/var.scss).
 
 :::
 
@@ -68,7 +68,7 @@ $colors: map.deep-merge(
 
 ### How to override it?
 
-If your project also uses SCSS, you can directly change Element Plus style variables. Create a new style file, e.g. `styles/element/index.scss`:
+If your project also uses SCSS, you can directly change Xianniu Plus style variables. Create a new style file, e.g. `styles/element/index.scss`:
 
 :::warning
 
@@ -82,7 +82,7 @@ Because the sass team said they will remove `@import` eventually.
 
 ```scss [styles/element/index.scss]
 /* just override what you need */
-@forward 'element-plus/theme-chalk/src/common/var.scss' with (
+@forward 'xianniu-plus/theme-chalk/src/common/var.scss' with (
   $colors: (
     'primary': (
       'base': green,
@@ -92,34 +92,34 @@ Because the sass team said they will remove `@import` eventually.
 
 // If you just import on demand, you can ignore the following content.
 // if you want to import all styles:
-// @use "element-plus/theme-chalk/src/index.scss" as *;
+// @use "xianniu-plus/theme-chalk/src/index.scss" as *;
 ```
 
 Then in the entry file of your project, import this style file instead of Element's built CSS:
 
 :::tip
 
-Import `element/index.scss` before scss of element-plus to avoid the problem of sass mixed variables, because we need generate light-x by your custom variables.
+Import `element/index.scss` before scss of xianniu-plus to avoid the problem of sass mixed variables, because we need generate light-x by your custom variables.
 
 :::
 
-Create a `element/index.scss` to combine your variables and variables of element-plus. (If you import them in ts, they will not be combined.)
+Create a `element/index.scss` to combine your variables and variables of xianniu-plus. (If you import them in ts, they will not be combined.)
 
 :::tip
 
 In addition, you should distinguish your scss from the element variable scss.
-If they are mixed together, each hot update of `element-plus` needs to compile a large number of scss files, resulting in slow speed.
+If they are mixed together, each hot update of `xianniu-plus` needs to compile a large number of scss files, resulting in slow speed.
 
 :::
 
 ```ts [main.ts]
 import { createApp } from 'vue'
 import './styles/element/index.scss'
-import ElementPlus from 'element-plus'
+import XianniuPlus from 'xianniu-plus'
 import App from './App.vue'
 
 const app = createApp(App)
-app.use(ElementPlus)
+app.use(XianniuPlus)
 ```
 
 If you are using vite, and you want to custom theme when importing on demand.
@@ -132,10 +132,10 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 // You can also use unplugin-vue-components
 // import Components from 'unplugin-vue-components/vite'
-// import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+// import { XianniuPlusResolver } from 'unplugin-vue-components/resolvers'
 
-// or use unplugin-element-plus
-import ElementPlus from 'unplugin-element-plus/vite'
+// or use unplugin-xianniu-plus
+import XianniuPlus from 'unplugin-xianniu-plus/vite'
 
 export default defineConfig({
   resolve: {
@@ -155,15 +155,15 @@ export default defineConfig({
     // use unplugin-vue-components
     // Components({
     //   resolvers: [
-    //     ElementPlusResolver({
+    //     XianniuPlusResolver({
     //       importStyle: "sass",
     //       // directives: true,
     //       // version: "2.1.5",
     //     }),
     //   ],
     // }),
-    // or use unplugin-element-plus
-    ElementPlus({
+    // or use unplugin-xianniu-plus
+    XianniuPlus({
       useSource: true,
     }),
   ],
@@ -173,9 +173,9 @@ export default defineConfig({
 If you are using webpack, and you want to custom theme when importing on demand.
 
 ```js [webpack.config.js]
-// use unplugin-element-plus
+// use unplugin-xianniu-plus
 
-import ElementPlus from 'unplugin-element-plus/webpack'
+import XianniuPlus from 'unplugin-xianniu-plus/webpack'
 
 export default defineConfig({
   css: {
@@ -186,7 +186,7 @@ export default defineConfig({
     },
   },
   plugins: [
-    ElementPlus({
+    XianniuPlus({
       useSource: true,
     }),
   ],

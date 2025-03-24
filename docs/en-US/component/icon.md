@@ -5,13 +5,13 @@ lang: en-US
 
 # Icon
 
-Element Plus provides a set of common icons.
+Xianniu Plus provides a set of common icons.
 
 ## Icon Usage
 
 - If you want to **use directly** like the example, you need to [globally register](https://v3.vuejs.org/guide/component-registration.html#global-registration) the components before using it.
 
-- If you want to see all available SVG icons please check [@element-plus/icons-vue@1.x](https://unpkg.com/browse/@element-plus/icons-vue@1/dist/es/)[@element-plus/icons-vue@latest](https://unpkg.com/browse/@element-plus/icons-vue@latest/dist/types/components/) and the source [element-plus-icons](https://github.com/element-plus/element-plus-icons) out or [Icon Collection](#icon-collection)
+- If you want to see all available SVG icons please check [@xianniu-plus/icons-vue@1.x](https://unpkg.com/browse/@xianniu-plus/icons-vue@1/dist/es/)[@xianniu-plus/icons-vue@latest](https://unpkg.com/browse/@xianniu-plus/icons-vue@latest/dist/types/components/) and the source [xianniu-plus-icons](https://github.com/xianniu-plus/xianniu-plus-icons) out or [Icon Collection](#icon-collection)
 
 ## Installation
 
@@ -22,31 +22,31 @@ Choose a package manager you like.
 ::: code-group
 
 ```shell [npm]
-$ npm install @element-plus/icons-vue
+$ npm install @xianniu-plus/icons-vue
 ```
 
 ```shell [yarn]
-$ yarn add @element-plus/icons-vue
+$ yarn add @xianniu-plus/icons-vue
 ```
 
 ```shell [pnpm]
-$ pnpm install @element-plus/icons-vue
+$ pnpm install @xianniu-plus/icons-vue
 ```
 
 :::
 
 ### Register All Icons
 
-You need import all icons from `@element-plus/icons-vue` and register them globally.
+You need import all icons from `@xianniu-plus/icons-vue` and register them globally.
 
 ```ts
 // main.ts
 
 // if you're using CDN, please remove this line.
-import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+import * as XianniuPlusIconsVue from '@xianniu-plus/icons-vue'
 
 const app = createApp(App)
-for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+for (const [key, component] of Object.entries(XianniuPlusIconsVue)) {
   app.component(key, component)
 }
 ```
@@ -55,7 +55,7 @@ You can also refer to [this template](https://codepen.io/sxzz/pen/xxpvdrg).
 
 ### Import in Browser
 
-Import Element Plus Icons through browser HTML tags directly, and use global variable `ElementPlusIconsVue`.
+Import Xianniu Plus Icons through browser HTML tags directly, and use global variable `XianniuPlusIconsVue`.
 
 According to different CDN providers, there are different introduction methods.
 Here we use [unpkg](https://unpkg.com) and [jsDelivr](https://jsdelivr.com) as example.
@@ -64,19 +64,19 @@ You can also use other CDN providers.
 #### unpkg
 
 ```html
-<script src="//unpkg.com/@element-plus/icons-vue"></script>
+<script src="//unpkg.com/@xianniu-plus/icons-vue"></script>
 ```
 
 #### jsDelivr
 
 ```html
-<script src="//cdn.jsdelivr.net/npm/@element-plus/icons-vue"></script>
+<script src="//cdn.jsdelivr.net/npm/@xianniu-plus/icons-vue"></script>
 ```
 
 :::tip
 
-We recommend using CDN to import Element Plus users to lock the version
-on the link address, so as not to be affected by incompatible updates when Element Plus
+We recommend using CDN to import Xianniu Plus users to lock the version
+on the link address, so as not to be affected by incompatible updates when Xianniu Plus
 is upgraded in the future. Please check [unpkg.com](https://unpkg.com) for
 the method to lock the version.
 
@@ -86,7 +86,7 @@ the method to lock the version.
 
 Use [unplugin-icons](https://github.com/antfu/unplugin-icons) and [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import)
 to automatically import any icon collections from iconify.
-You can refer to [this template](https://github.com/sxzz/element-plus-best-practices/blob/db2dfc983ccda5570033a0ac608a1bd9d9a7f658/vite.config.ts#L21-L58).
+You can refer to [this template](https://github.com/sxzz/xianniu-plus-best-practices/blob/db2dfc983ccda5570033a0ac608a1bd9d9a7f658/vite.config.ts#L21-L58).
 
 ## Simple Usage
 
@@ -111,7 +111,7 @@ so you need to use an alias in order to render the icon, if you register `Menu` 
 ```
 
 <vp-script setup>
-import { Edit, Share, Delete, Search, Loading } from '@element-plus/icons-vue'
+import { Edit, Share, Delete, Search, Loading } from '@xianniu-plus/icons-vue'
 </vp-script>
 
 <ElRow>

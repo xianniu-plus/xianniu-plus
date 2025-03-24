@@ -7,7 +7,7 @@
   >
     <template #default="{ node }">
       <span class="prefix" :class="{ 'is-leaf': node.isLeaf }"
-        >[ElementPlus]</span
+        >[XianniuPlus]</span
       >
       <span>{{ node.label }}</span>
     </template>
@@ -59,10 +59,10 @@ const data = createData(4, 30, 40)
 
 <style scoped>
 .prefix {
-  color: var(--el-color-primary);
+  color: var(--xn-color-primary);
   margin-right: 10px;
 }
 .prefix.is-leaf {
-  color: var(--el-color-success);
+  color: var(--xn-color-success);
 }
 </style>

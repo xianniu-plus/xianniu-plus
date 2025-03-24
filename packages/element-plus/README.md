@@ -1,11 +1,11 @@
-# `element-plus`
+# `xianniu-plus`
 
 > TODO: description
 
 ## Usage
 
 ```
-const elementPlus = require('element-plus');
+const elementPlus = require('xianniu-plus');
 
 // TODO: DEMONSTRATE API
 ```

@@ -442,7 +442,7 @@ interface TreeNode {
 
 #### Why column is not rendered when use DOM templates?
 
-Typical issue: [#5046](https://github.com/element-plus/element-plus/issues/5046) [#5862](https://github.com/element-plus/element-plus/issues/5862) [#6919](https://github.com/element-plus/element-plus/issues/6919)
+Typical issue: [#5046](https://github.com/xianniu-plus/xianniu-plus/issues/5046) [#5862](https://github.com/xianniu-plus/xianniu-plus/issues/5862) [#6919](https://github.com/xianniu-plus/xianniu-plus/issues/6919)
 
 This is because the HTML spec only allows a few specific elements to omit closing tags, the most common being `<input>` and `<img>`. For all other elements, if you omit the closing tag, the native HTML parser will think you never terminated the opening tag
 

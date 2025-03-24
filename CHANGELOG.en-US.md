@@ -398,7 +398,7 @@ _2024-09-06_
 
 #### Refactors
 
-- Import shared utilities from @element-plus/utils (#18048 by @makedopamine)
+- Import shared utilities from @xianniu-plus/utils (#18048 by @makedopamine)
 
 ### 2.8.1
 
@@ -930,7 +930,7 @@ _2024-01-10_
 - Components tour component (#14952 by @Fuphoenixes)
 - Components [tree] export TreeInstance (#15293 by @btea)
 - Components [form] FormContext adds the getField method (#14930 by @cloudcome)
-- Element-plus Support last 2 versions of browsers (#15313 by @kooriookami)
+- Xianniu-plus Support last 2 versions of browsers (#15313 by @kooriookami)
 - Components [table] add `filterClassName` props in TableColumn (#15389 by @xiaoxian521)
 
 #### Bug fixes
@@ -1084,7 +1084,7 @@ _2023-10-13_
 - Docs [form] `label-position` type error (#14312 by @btea)
 - Components row-class-name bgColor can not cover fixed column (#14225 by @StephenKe)
 - Components [tabs] Fix some events accidentally firing (#14224 by @Mario34)
-- Cannot find type definition file for `element-plus/global` (#13698 by @mioxs)
+- Cannot find type definition file for `xianniu-plus/global` (#13698 by @mioxs)
 - Components [description] use `withDirectives` add custom directive (#14299 by @btea)
 - Components fix: update timepicker options when changing locale (#14287 by @cuongle-hdwebsoft)
 - Components [popper] invalid when props z-index is zero (#14375 by @betavs)
@@ -1625,7 +1625,7 @@ _2022-12-30_
 - Components [input-number] fix args order (#11020 by @sleepyShen1989)
 - Components [cascader] placeholder is not displayed correctly (#11031 by @btea)
 - Docs some wrong examples in the document (#11072 by @asdjgfr)
-- Element-plus exposing ElSubMenu component (#11100 by @tolking)
+- Xianniu-plus exposing ElSubMenu component (#11100 by @tolking)
 
 #### Refactors
 
@@ -2106,7 +2106,7 @@ _2022-08-12_
 - Components [color-picker] injected form context may be undefined (#8862 by @holazz)
 - Components [time-picker] injected form context may be undefined (#8866 by @holazz)
 - Components [checkbox] injected form context may be undefined (#8865 by @holazz)
-- Element-plus dts entry (#8842 by @holazz)
+- Xianniu-plus dts entry (#8842 by @holazz)
 - Timer-pick automatically skip disabled items (#8850 by @baiwusanyu-c)
 - Components [table] the empty slot height error (#9226 by @tolking)
 - Style(theme-chalk): fix message (#9143 by @kooriookami)
@@ -2163,7 +2163,7 @@ _2022-07-27_
 - Theme-chalk [picker] adjust range picker input height (#8879 by @holazz)
 - Components [dropdown] fix style (#9034 by @holazz)
 - Components [table] fix maxHeight doesn't consider footer height (#9011 by @plainheart)
-- Element-plus fix type error (#8982 by @holazz)
+- Xianniu-plus fix type error (#8982 by @holazz)
 - Directives [mousewheel] fix type error (#8880 by @holazz)
 - Theme-chalk [rate] fix vertical offset (#8959 by @Tsong-LC)
 - Time-picker clicking on prefix does not open the panel (#9044 by @xiaoxian521)
@@ -2464,7 +2464,7 @@ _2022-06-04_
 - Deps update dependency yaml-eslint-parser to v1 (#7978 by @renovate[bot])
 - Components [collection] type error (#7940 by @sxzz)
 - Image-viewer typescript error (#7938 by @sxzz)
-- Deps update dependency @element-plus/icons-vue to v2 (#7976 by @renovate[bot])
+- Deps update dependency @xianniu-plus/icons-vue to v2 (#7976 by @renovate[bot])
 - Utils type error (#7939 by @sxzz)
 - Components [button] :not overrides the disabled style (#7977 by @btea)
 - Components [button] link style and docs (#7996 by @chenxch)
@@ -2631,13 +2631,13 @@ _2022-05-20_
 
 _2022-05-09_
 
-[v2.2.0 release note](https://github.com/element-plus/element-plus/discussions/7578)
+[v2.2.0 release note](https://github.com/xianniu-plus/xianniu-plus/discussions/7578)
 
 #### Breaking changes
 
 ##### Button
 
-- `type="text"` has been removed from `button`, now you can do this, for more detail see [Documentation](https://element-plus.org/en-US/component/button.html#text-button)
+- `type="text"` has been removed from `button`, now you can do this, for more detail see [Documentation](https://xianniu-plus.org/en-US/component/button.html#text-button)
 
 ```diff
 --- <el-button type="text"/>
@@ -3166,7 +3166,7 @@ _2022-02-28_
 
 - Docs jitter when expand source code (#6279 by @msidolphin)
 - Docs fix banner covering sponsor problem (#6269 by @msidolphin)
-- Deps update dependency @element-plus/icons-vue to v1 (#6319 by @renovate[bot])
+- Deps update dependency @xianniu-plus/icons-vue to v1 (#6319 by @renovate[bot])
 - Components [el-dialog] don't ignore z-index (#6332 by @purepear)
 - Components [el-dialog] revert focus trapping feature (#6346 by @JeremyWuuuuu)
 
@@ -3544,7 +3544,7 @@ _2022-01-11_
 - Components [el-tooltip] restoring append-to API (#5296 by @JeremyWuuuuu)
 - Fix DateRangePicker custom style & class bug (#5300 by @0song)
 - [el-calendar] selected wrong date when change the month/year (#5297 by @msidolphin)
-- Project adding cypress into element plus (#5281 by @JeremyWuuuuu)
+- Project adding cypress into xianniu plus (#5281 by @JeremyWuuuuu)
 
 ### 1.3.0-beta.3
 
@@ -3607,7 +3607,7 @@ _2021-12-31_
 
 #### Breaking changes:
 
-- Please refer to: [1.3.0-beta.1 Breaking change](https://github.com/element-plus/element-plus/discussions/5037)
+- Please refer to: [1.3.0-beta.1 Breaking change](https://github.com/xianniu-plus/xianniu-plus/discussions/5037)
 
 #### Features
 
@@ -3688,14 +3688,14 @@ _2021-12-10_
 - Hooks fix translate option (#4619 by @sxzz)
 - Components [el-message] fit badge error type (#4662 by @btea)
 - Hooks return key name if not defined (#4664 by @sxzz)
-- Upgrade @element-plus/icons-vue to currentColor (#4671 by @YunYouJun)
+- Upgrade @xianniu-plus/icons-vue to currentColor (#4671 by @YunYouJun)
 - Vue type errors (#4696 by @sxzz)
 - Components [el-table] tooltip wrong style
 - Components [el-input-number]raise native form validation error (#4706 by @Alanscut)
 - Hooks [lockscreen] body lock remove unexpected (#4693 by @KawaiiZapic) (#4694)
 - Docs fix code not working in Codepen (#4678 by @imguolao) (#4679)
 - Components [el-input-number]set value equal to min will update (#4650 by @Alanscut)
-- Docs replace @element-plus/icons with @element-plus/icons-vue (#4704 by @pdsuwwz)
+- Docs replace @xianniu-plus/icons with @xianniu-plus/icons-vue (#4704 by @pdsuwwz)
 - Docs fix webpack config import syntax (#4718 by @owenvip)
 - Style override el-icon display in el-input__icon (#4684 by @YunYouJun)
 - Components [el-menu] third-party icons are hidden (#4754 by @Alanscut)
@@ -3865,7 +3865,7 @@ _2021-10-30_
 
 #### Breaking changes:
 
-- Please refer to: [1.2.0-beta.1 Breaking change](https://github.com/element-plus/element-plus/discussions/4060)
+- Please refer to: [1.2.0-beta.1 Breaking change](https://github.com/xianniu-plus/xianniu-plus/discussions/4060)
 
 #### Features
 
@@ -3880,7 +3880,7 @@ _2021-10-30_
 - Components [el-message] & [el-notification] appendTo option added (#4012 by @codespikex)
 - Add translation for Bengali language (#3972 by @IbrahimAlKhalil)
 - Dev play add unplugin-vue-components (#3931 by @sxzz)
-- Dev play add @element-plus/icons (#4034 by @xiaoxian521)
+- Dev play add @xianniu-plus/icons (#4034 by @xiaoxian521)
 
 #### Bug fixes
 
@@ -4420,7 +4420,7 @@ _2021-08-24_
 
 #### Breaking changes:
 
-- Please refer to: [Breaking changes made in 1.1.0-beta.1](https://github.com/element-plus/element-plus/discussions/3020)
+- Please refer to: [Breaking changes made in 1.1.0-beta.1](https://github.com/xianniu-plus/xianniu-plus/discussions/3020)
 
 #### Features
 

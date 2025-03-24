@@ -7,7 +7,7 @@ lang: en-US
 
 :::tip
 
-We provide a example in [element-plus-vite-starter](https://github.com/element-plus/element-plus-vite-starter).
+We provide a example in [xianniu-plus-vite-starter](https://github.com/xianniu-plus/xianniu-plus-vite-starter).
 Just check it.
 
 :::
@@ -38,7 +38,7 @@ Create `styles/element/index.scss`:
 
 ```scss [styles/element/index.scss]
 // we can add this to custom namespace, default is 'el'
-@forward 'element-plus/theme-chalk/src/mixins/config.scss' with (
+@forward 'xianniu-plus/theme-chalk/src/mixins/config.scss' with (
   $namespace: 'ep'
 );
 // ...

@@ -5,7 +5,7 @@ describe('error', () => {
   it('throwError should work', () => {
     expect(() =>
       throwError('scope', 'message')
-    ).toThrowErrorMatchingInlineSnapshot(`[ElementPlusError: [scope] message]`)
+    ).toThrowErrorMatchingInlineSnapshot(`[XianniuPlusError: [scope] message]`)
   })
 
   it('debugWarn should work', () => {
@@ -15,7 +15,7 @@ describe('error', () => {
     expect(warnFn.mock.calls).toMatchInlineSnapshot(`
       [
         [
-          [ElementPlusError: [scope] message],
+          [XianniuPlusError: [scope] message],
         ],
         [
           [SyntaxError: custom error],

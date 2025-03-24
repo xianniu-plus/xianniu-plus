@@ -11,7 +11,7 @@ Show animation while loading data.
 
 Displays animation in a container (such as a table) while loading data.
 
-:::demo Element Plus provides two ways to invoke Loading: directive and service. For the custom directive `v-loading`, you just need to bind a `boolean` value to it. By default, the loading mask will append to the element where the directive is used. Adding the `body` modifier makes the mask append to the body element.
+:::demo Xianniu Plus provides two ways to invoke Loading: directive and service. For the custom directive `v-loading`, you just need to bind a `boolean` value to it. By default, the loading mask will append to the element where the directive is used. Adding the `body` modifier makes the mask append to the body element.
 
 loading/basic
 
@@ -48,7 +48,7 @@ loading/fullscreen
 You can also invoke Loading with a service. Import Loading service:
 
 ```ts
-import { ElLoading } from 'element-plus'
+import { ElLoading } from 'xianniu-plus'
 ```
 
 Invoke it:
@@ -77,7 +77,7 @@ console.log(loadingInstance1 === loadingInstance2) // true
 
 Calling the `close` method on any one of them can close this full screen Loading.
 
-If Element Plus is imported entirely, a globally method `$loading` will be registered to `app.config.globalProperties`. You can invoke it like this: `this.$loading(options)`, and it also returns a Loading instance.
+If Xianniu Plus is imported entirely, a globally method `$loading` will be registered to `app.config.globalProperties`. You can invoke it like this: `this.$loading(options)`, and it also returns a Loading instance.
 
 ## API
 

@@ -11,7 +11,7 @@ With Virtualized Table, you can render massive chunks of data in a blink of an e
 
 :::tip
 
-This component is **still under testing**, use at your own risk. If you find any bugs or issues, please report them at [GitHub](https://github.com/element-plus/element-plus/issues) for us to fix. Also there were some APIs which are not mentioned in this documentation, some of them were not
+This component is **still under testing**, use at your own risk. If you find any bugs or issues, please report them at [GitHub](https://github.com/xianniu-plus/xianniu-plus/issues) for us to fix. Also there were some APIs which are not mentioned in this documentation, some of them were not
 fully developed yet, which is why they are not mentioned here.
 
 **Even though** Virtualized Table is efficient, when the data load is too large, your **network** and **memory size** can become the bottleneck of your app. So keep in mind that Virtualized Table is never the ultimate solution for everything, consider paginating your data, adding filters etc.
@@ -371,11 +371,11 @@ Note that these are `JavaScript` Objects, so you **CANNOT USE** kebab-case for t
 
 | Name               | Description                                                           | Type                                                                                                                                                                 | Default |
 | ------------------ | --------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------- |
-| align              | Alignment of the table cell content                                   | [Alignment](https://github.com/element-plus/element-plus/blob/b92b22932758f0ddea98810ae248f6ca62f77e25/packages/components/table-v2/src/constants.ts#L6)             | left    |
+| align              | Alignment of the table cell content                                   | [Alignment](https://github.com/xianniu-plus/xianniu-plus/blob/b92b22932758f0ddea98810ae248f6ca62f77e25/packages/components/table-v2/src/constants.ts#L6)             | left    |
 | class              | Class name for the column                                             | `string`                                                                                                                                                             | —       |
 | key                | Unique identification                                                 | [KeyType](#typings)                                                                                                                                                  | —       |
 | dataKey            | Unique identification of data                                         | [KeyType](#typings)                                                                                                                                                  | —       |
-| fixed              | Fixed direction of the column                                         | `boolean` / [FixedDir](https://github.com/element-plus/element-plus/blob/b92b22932758f0ddea98810ae248f6ca62f77e25/packages/components/table-v2/src/constants.ts#L11) | false   |
+| fixed              | Fixed direction of the column                                         | `boolean` / [FixedDir](https://github.com/xianniu-plus/xianniu-plus/blob/b92b22932758f0ddea98810ae248f6ca62f77e25/packages/components/table-v2/src/constants.ts#L11) | false   |
 | flexGrow           | CSSProperties flex grow, Only useful when this is not a fixed table   | `number`                                                                                                                                                             | 0       |
 | flexShrink         | CSSProperties flex shrink, Only useful when this is not a fixed table | `number`                                                                                                                                                             | 1       |
 | headerClass        | Used for customizing header column class                              | `string`                                                                                                                                                             | —       |

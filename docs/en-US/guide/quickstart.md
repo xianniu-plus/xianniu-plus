@@ -5,7 +5,7 @@ lang: en-US
 
 # Quick Start
 
-This section describes how to use Element Plus in your project.
+This section describes how to use Xianniu Plus in your project.
 
 ## Usage
 
@@ -15,13 +15,13 @@ If you don’t care about the bundle size so much, it’s more convenient to use
 
 ```ts [main.ts]
 import { createApp } from 'vue'
-import ElementPlus from 'element-plus'
-import 'element-plus/dist/index.css'
+import XianniuPlus from 'xianniu-plus'
+import 'xianniu-plus/dist/index.css'
 import App from './App.vue'
 
 const app = createApp(App)
 
-app.use(ElementPlus)
+app.use(XianniuPlus)
 app.mount('#app')
 ```
 
@@ -33,7 +33,7 @@ If you use volar, please add the global component type definition to `compilerOp
 {
   "compilerOptions": {
     // ...
-    "types": ["element-plus/global"]
+    "types": ["xianniu-plus/global"]
   }
 }
 ```
@@ -58,17 +58,17 @@ Then add the code below into your `Vite` or `Webpack` config file.
 import { defineConfig } from 'vite'
 import AutoImport from 'unplugin-auto-import/vite'
 import Components from 'unplugin-vue-components/vite'
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import { XianniuPlusResolver } from 'unplugin-vue-components/resolvers'
 
 export default defineConfig({
   // ...
   plugins: [
     // ...
     AutoImport({
-      resolvers: [ElementPlusResolver()],
+      resolvers: [XianniuPlusResolver()],
     }),
     Components({
-      resolvers: [ElementPlusResolver()],
+      resolvers: [XianniuPlusResolver()],
     }),
   ],
 })
@@ -79,16 +79,16 @@ export default defineConfig({
 ```js [webpack.config.js]
 const AutoImport = require('unplugin-auto-import/webpack')
 const Components = require('unplugin-vue-components/webpack')
-const { ElementPlusResolver } = require('unplugin-vue-components/resolvers')
+const { XianniuPlusResolver } = require('unplugin-vue-components/resolvers')
 
 module.exports = {
   // ...
   plugins: [
     AutoImport({
-      resolvers: [ElementPlusResolver()],
+      resolvers: [XianniuPlusResolver()],
     }),
     Components({
-      resolvers: [ElementPlusResolver()],
+      resolvers: [XianniuPlusResolver()],
     }),
   ],
 }
@@ -98,29 +98,29 @@ For more bundlers ([Rollup](https://rollupjs.org/), [Vue CLI](https://cli.vuejs.
 
 #### Nuxt
 
-For Nuxt users, you only need to install `@element-plus/nuxt`.
+For Nuxt users, you only need to install `@xianniu-plus/nuxt`.
 
 ```shell
-npm install -D @element-plus/nuxt
+npm install -D @xianniu-plus/nuxt
 ```
 
 Then add the code below into your config file.
 
 ```ts [nuxt.config.ts]
 export default defineNuxtConfig({
-  modules: ['@element-plus/nuxt'],
+  modules: ['@xianniu-plus/nuxt'],
 })
 ```
 
-Refer to the [docs](https://github.com/element-plus/element-plus-nuxt#readme) for how to configure it.
+Refer to the [docs](https://github.com/xianniu-plus/xianniu-plus-nuxt#readme) for how to configure it.
 
 ### Manually import
 
-Element Plus provides out of box [Tree Shaking](https://webpack.js.org/guides/tree-shaking/)
+Xianniu Plus provides out of box [Tree Shaking](https://webpack.js.org/guides/tree-shaking/)
 functionalities based on ES Module.
 
-But you need install [unplugin-element-plus](https://github.com/element-plus/unplugin-element-plus) for style import.
-And refer to the [docs](https://github.com/element-plus/unplugin-element-plus#readme) for how to configure it.
+But you need install [unplugin-xianniu-plus](https://github.com/xianniu-plus/unplugin-xianniu-plus) for style import.
+And refer to the [docs](https://github.com/xianniu-plus/unplugin-xianniu-plus#readme) for how to configure it.
 
 ```vue [App.vue]
 <template>
@@ -128,7 +128,7 @@ And refer to the [docs](https://github.com/element-plus/unplugin-element-plus#re
 </template>
 
 <script>
-import { ElButton } from 'element-plus'
+import { ElButton } from 'xianniu-plus'
 export default {
   components: { ElButton },
 }
@@ -137,25 +137,25 @@ export default {
 
 ```ts [vite.config.ts]
 import { defineConfig } from 'vite'
-import ElementPlus from 'unplugin-element-plus/vite'
+import XianniuPlus from 'unplugin-xianniu-plus/vite'
 
 export default defineConfig({
   // ...
-  plugins: [ElementPlus()],
+  plugins: [XianniuPlus()],
 })
 ```
 
 ## Starter Template
 
-We provide a [Vite Template](https://github.com/element-plus/element-plus-vite-starter).
+We provide a [Vite Template](https://github.com/xianniu-plus/xianniu-plus-vite-starter).
 
-For Nuxt users we have a [Nuxt Template](https://github.com/element-plus/element-plus-nuxt-starter).
+For Nuxt users we have a [Nuxt Template](https://github.com/xianniu-plus/xianniu-plus-nuxt-starter).
 
-For Laravel users we have a [Laravel Template](https://github.com/element-plus/element-plus-in-laravel-starter).
+For Laravel users we have a [Laravel Template](https://github.com/xianniu-plus/xianniu-plus-in-laravel-starter).
 
 ## Global Configuration
 
-When registering Element Plus, you can pass a global config object with `size` and
+When registering Xianniu Plus, you can pass a global config object with `size` and
 `zIndex` to set the default `size` for form components, and `zIndex` for
 popup components, the default value for `zIndex` is `2000`.
 
@@ -163,11 +163,11 @@ Full import:
 
 ```ts [main.ts]
 import { createApp } from 'vue'
-import ElementPlus from 'element-plus'
+import XianniuPlus from 'xianniu-plus'
 import App from './App.vue'
 
 const app = createApp(App)
-app.use(ElementPlus, { size: 'small', zIndex: 3000 })
+app.use(XianniuPlus, { size: 'small', zIndex: 3000 })
 ```
 
 On-demand:
@@ -181,7 +181,7 @@ On-demand:
 
 <script>
 import { defineComponent } from 'vue'
-import { ElConfigProvider } from 'element-plus'
+import { ElConfigProvider } from 'xianniu-plus'
 
 export default defineComponent({
   components: {
@@ -202,10 +202,10 @@ export default defineComponent({
 We can also use [Nuxt.js](https://nuxt.com):
 
 <div class="glitch-embed-wrap" style="height: 420px; width: 100%;">
-  <iframe src="https://glitch.com/edit/#!/element-plus-nuxt-starter?path=components%2FExamples.vue%3A1%3A0" alt="nuxt-element-plus on glitch" style="height: 100%; width: 100%; border: 0;"></iframe>
+  <iframe src="https://glitch.com/edit/#!/xianniu-plus-nuxt-starter?path=components%2FExamples.vue%3A1%3A0" alt="nuxt-xianniu-plus on glitch" style="height: 100%; width: 100%; border: 0;"></iframe>
 </div>
 
 ## Let's Get Started
 
 You can bootstrap your project from now on. For each components usage, please
-refer to [the individual component documentation](https://element-plus.org/en-US/component/button.html).
+refer to [the individual component documentation](https://xianniu-plus.org/en-US/component/button.html).

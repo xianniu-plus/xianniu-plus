@@ -190,7 +190,7 @@ input/length-limiting
 
 #### Why is the width of the ElInput component expanded by clearable?
 
-Typical issue: [#7287](https://github.com/element-plus/element-plus/issues/7287)
+Typical issue: [#7287](https://github.com/xianniu-plus/xianniu-plus/issues/7287)
 
 PS: Since the ElInput component does not have a default width, when the clearable icon is displayed, the width of the component will be expanded, which can be solved by setting width.
 

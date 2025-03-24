@@ -121,7 +121,7 @@ message-box/draggable
 
 ## Global method
 
-If Element Plus is fully imported, it will add the following global methods for `app.config.globalProperties`: `$msgbox`, `$alert`, `$confirm` and `$prompt`. So in a Vue instance you can call `MessageBox` like what we did in this page. The parameters are:
+If Xianniu Plus is fully imported, it will add the following global methods for `app.config.globalProperties`: `$msgbox`, `$alert`, `$confirm` and `$prompt`. So in a Vue instance you can call `MessageBox` like what we did in this page. The parameters are:
 
 - `$msgbox(options)`
 - `$alert(message, title, options)` or `$alert(message, options)`
@@ -134,7 +134,7 @@ Now message box accepts a `context` as second (forth if you are using message bo
 
 ```ts
 import { getCurrentInstance } from 'vue'
-import { ElMessageBox } from 'element-plus'
+import { ElMessageBox } from 'xianniu-plus'
 
 // in your setup method
 const { appContext } = getCurrentInstance()!
@@ -149,7 +149,7 @@ ElMessageBox.alert('Hello world!', 'Title', {}, appContext)
 If you prefer importing `MessageBox` on demand:
 
 ```ts
-import { ElMessageBox } from 'element-plus'
+import { ElMessageBox } from 'xianniu-plus'
 ```
 
 The corresponding methods are: `ElMessageBox`, `ElMessageBox.alert`, `ElMessageBox.confirm` and `ElMessageBox.prompt`. The parameters are the same as above.
