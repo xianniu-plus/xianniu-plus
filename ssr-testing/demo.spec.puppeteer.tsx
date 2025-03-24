@@ -4,7 +4,7 @@ import { renderToString } from '@vue/server-renderer'
 import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 import puppeteer from 'puppeteer'
 import glob from 'fast-glob'
-import ElementPlus, { ID_INJECTION_KEY } from '../dist/element-plus'
+import XianniuPlus, { ID_INJECTION_KEY } from '../dist/element-plus'
 
 import type { Browser } from 'puppeteer'
 
@@ -45,7 +45,7 @@ describe('Cypress Button', () => {
 
       const { default: Demo } = await import(path.join(demoRoot, demoPath))
       const app = createApp(<Demo />)
-        .use(ElementPlus)
+        .use(XianniuPlus)
         .provide(ID_INJECTION_KEY, {
           prefix: 100,
           current: 0,

@@ -56,7 +56,7 @@ jobs:
       - name: Generate common locale
         run: pnpm docs:gen-locale
 
-      - name: Build Element Plus
+      - name: Build Xianniu Plus
         run: pnpm build
         env:
           FORCE_COLOR: 2

@@ -1,7 +1,7 @@
 {
   "name": "@element-plus/directives",
   "version": "0.0.5",
-  "description": "Element Plus directives",
+  "description": "Xianniu Plus directives",
   "license": "MIT",
   "main": "index.ts",
   "module": "index.ts",

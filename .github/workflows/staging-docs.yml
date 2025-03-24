@@ -43,7 +43,7 @@ jobs:
       - name: Install dependencies
         run: pnpm i --frozen-lockfile
 
-      - name: Compile Element Plus
+      - name: Compile Xianniu Plus
         run: pnpm build
         env:
           NODE_OPTIONS: --max-old-space-size=4096
@@ -80,5 +80,5 @@ jobs:
           branch: main
           folder: docs/.vitepress/dist
           repository-name: element-plus/staging
-          git-config-name: ElementPlusBot
+          git-config-name: XianniuPlusBot
           git-config-email: element-plus@outlook.com

@@ -10,14 +10,14 @@ import esbuild from 'rollup-plugin-esbuild'
 import glob from 'fast-glob'
 import { epRoot, excludeFiles, pkgRoot } from '@element-plus/build-utils'
 import { generateExternal, withTaskName, writeBundles } from '../utils'
-import { ElementPlusAlias } from '../plugins/element-plus-alias'
+import { XianniuPlusAlias } from '../plugins/element-plus-alias'
 import { buildConfigEntries, target } from '../build-info'
 import type { TaskFunction } from 'gulp'
 
 import type { OutputOptions, Plugin } from 'rollup'
 
 const plugins: Plugin[] = [
-  ElementPlusAlias(),
+  XianniuPlusAlias(),
   VueMacros({
     setupComponent: false,
     setupSFC: false,

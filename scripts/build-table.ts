@@ -47,7 +47,7 @@ ${table}
 
 </details>
 
-<sub>Generated with :heart: by Element Plus bot</sub>`
+<sub>Generated with :heart: by Xianniu Plus bot</sub>`
   }
 
   await fs.writeFile(path.resolve(__dirname, '..', 'tmp/diff.md'), output)

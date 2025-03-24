@@ -1,7 +1,7 @@
 {
   "name": "@element-plus/hooks",
   "version": "0.0.5",
-  "description": "Element Plus composables",
+  "description": "Xianniu Plus composables",
   "license": "MIT",
   "main": "index.ts",
   "module": "index.ts",

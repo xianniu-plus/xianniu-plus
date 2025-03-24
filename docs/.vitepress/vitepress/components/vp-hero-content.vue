@@ -19,7 +19,7 @@
         href="https://github.com/element-plus"
         target="_blank"
         rel="noopener noreferer"
-        >Element Plus</a
+        >Xianniu Plus</a
       >
     </p>
   </div>

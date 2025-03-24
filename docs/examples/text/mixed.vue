@@ -2,7 +2,7 @@
   <el-space direction="vertical">
     <el-text>
       <el-icon>
-        <ElementPlus />
+        <XianniuPlus />
       </el-icon>
       Element-Plus
     </el-text>
@@ -22,5 +22,5 @@
 </template>
 
 <script lang="ts" setup>
-import { Bell, ElementPlus } from '@element-plus/icons-vue'
+import { Bell, XianniuPlus } from '@element-plus/icons-vue'
 </script>

@@ -45,7 +45,7 @@ jobs:
       - name: Generate common locale
         run: pnpm docs:gen-locale
 
-      - name: Install latest Element Plus
+      - name: Install latest Xianniu Plus
         run: cd docs && pnpm i element-plus@latest
 
       - name: Build Metadata
@@ -65,7 +65,7 @@ jobs:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: gh-pages
           folder: docs/.vitepress/dist
-          git-config-name: ElementPlusBot
+          git-config-name: XianniuPlusBot
           git-config-email: element-plus@outlook.com
           commit-message: website deploy
 
@@ -76,7 +76,7 @@ jobs:
           branch: main
           folder: docs/.vitepress/dist
           repository-name: element-plus/vercel-publish
-          git-config-name: ElementPlusBot
+          git-config-name: XianniuPlusBot
           git-config-email: element-plus@outlook.com
 
       - name: Sync

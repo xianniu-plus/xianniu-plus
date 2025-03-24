@@ -51,7 +51,7 @@ export const watermarkProps = buildProps({
    */
   content: {
     type: definePropType<string | string[]>([String, Array]),
-    default: 'Element Plus',
+    default: 'Xianniu Plus',
   },
   /**
    * @description Text style
