@@ -1,5 +1,5 @@
 {
-  "name": "@element-plus/play",
+  "name": "@xianniu-plus/play",
   "private": true,
   "scripts": {
     "dev": "vite",
@@ -8,7 +8,7 @@
     "postinstall": "node ./scripts/init.mjs"
   },
   "dependencies": {
-    "@element-plus/icons-vue": "^2.3.1",
+    "@xianniu-plus/icons-vue": "^2.3.1",
     "vue": "^3.2.37"
   },
   "devDependencies": {
