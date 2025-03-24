@@ -1,5 +1,5 @@
 import { defineComponent, getCurrentInstance, nextTick, watch } from 'vue'
-import { ElOption } from '@element-plus/components/select'
+import { ElOption } from '@xianniu-plus/components/select'
 
 const component = defineComponent({
   extends: ElOption,

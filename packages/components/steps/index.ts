@@ -1,8 +1,8 @@
-import { withInstall, withNoopInstall } from '@element-plus/utils'
+import { withInstall, withNoopInstall } from '@xianniu-plus/utils'
 
 import Steps from './src/steps.vue'
 import Step from './src/item.vue'
-import type { SFCWithInstall } from '@element-plus/utils'
+import type { SFCWithInstall } from '@xianniu-plus/utils'
 
 export const ElSteps: SFCWithInstall<typeof Steps> & {
   Step: typeof Step

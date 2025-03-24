@@ -1,9 +1,9 @@
 import { computed, inject, unref } from 'vue'
-import { buildProp } from '@element-plus/utils'
-import { componentSizes } from '@element-plus/constants'
+import { buildProp } from '@xianniu-plus/utils'
+import { componentSizes } from '@xianniu-plus/constants'
 
 import type { InjectionKey, Ref } from 'vue'
-import type { ComponentSize } from '@element-plus/constants'
+import type { ComponentSize } from '@xianniu-plus/constants'
 
 export const useSizeProp = buildProp({
   type: String,

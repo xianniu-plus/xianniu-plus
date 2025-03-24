@@ -1,8 +1,8 @@
-import { withInstall, withNoopInstall } from '@element-plus/utils'
+import { withInstall, withNoopInstall } from '@xianniu-plus/utils'
 
 import Breadcrumb from './src/breadcrumb.vue'
 import BreadcrumbItem from './src/breadcrumb-item.vue'
-import type { SFCWithInstall } from '@element-plus/utils'
+import type { SFCWithInstall } from '@xianniu-plus/utils'
 
 export const ElBreadcrumb: SFCWithInstall<typeof Breadcrumb> & {
   BreadcrumbItem: typeof BreadcrumbItem

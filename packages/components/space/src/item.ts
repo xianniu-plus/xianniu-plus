@@ -1,6 +1,6 @@
 import { computed, defineComponent, h, renderSlot } from 'vue'
-import { buildProps } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
+import { buildProps } from '@xianniu-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
 
 import type { ExtractPropTypes } from 'vue'
 

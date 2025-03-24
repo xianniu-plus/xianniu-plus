@@ -10,7 +10,7 @@
 </template>
 
 <script setup lang="ts">
-import { Delete } from '@element-plus/icons-vue'
+import { Delete } from '@xianniu-plus/icons-vue'
 
 const content = 'Delete'
 const title = 'Delete item'

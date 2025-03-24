@@ -91,15 +91,15 @@
 
 <script lang="ts" setup>
 import { computed, ref, useSlots } from 'vue'
-import { Close } from '@element-plus/icons-vue'
+import { Close } from '@xianniu-plus/icons-vue'
 
-import { ElOverlay } from '@element-plus/components/overlay'
-import ElFocusTrap from '@element-plus/components/focus-trap'
-import ElTeleport from '@element-plus/components/teleport'
-import { useDialog } from '@element-plus/components/dialog'
-import { addUnit } from '@element-plus/utils'
-import ElIcon from '@element-plus/components/icon'
-import { useDeprecated, useLocale, useNamespace } from '@element-plus/hooks'
+import { ElOverlay } from '@xianniu-plus/components/overlay'
+import ElFocusTrap from '@xianniu-plus/components/focus-trap'
+import ElTeleport from '@xianniu-plus/components/teleport'
+import { useDialog } from '@xianniu-plus/components/dialog'
+import { addUnit } from '@xianniu-plus/utils'
+import ElIcon from '@xianniu-plus/components/icon'
+import { useDeprecated, useLocale, useNamespace } from '@xianniu-plus/hooks'
 import { drawerEmits, drawerProps } from './drawer'
 
 defineOptions({

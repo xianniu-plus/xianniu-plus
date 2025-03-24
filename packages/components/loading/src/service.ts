@@ -6,10 +6,10 @@ import {
   isClient,
   isString,
   removeClass,
-} from '@element-plus/utils'
+} from '@xianniu-plus/utils'
 import { createLoadingComponent } from './loading'
 
-import type { UseNamespaceReturn, UseZIndexReturn } from '@element-plus/hooks'
+import type { UseNamespaceReturn, UseZIndexReturn } from '@xianniu-plus/hooks'
 import type { LoadingInstance } from './loading'
 import type { LoadingOptionsResolved } from '..'
 import type { LoadingOptions } from './types'

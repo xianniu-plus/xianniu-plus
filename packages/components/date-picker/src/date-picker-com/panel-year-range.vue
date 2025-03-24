@@ -94,10 +94,10 @@
 <script lang="ts" setup>
 import { computed, inject, ref, toRef, useSlots, watch } from 'vue'
 import dayjs from 'dayjs'
-import { isArray } from '@element-plus/utils'
-import { DArrowLeft, DArrowRight } from '@element-plus/icons-vue'
-import ElIcon from '@element-plus/components/icon'
-import { useLocale, useNamespace } from '@element-plus/hooks'
+import { isArray } from '@xianniu-plus/utils'
+import { DArrowLeft, DArrowRight } from '@xianniu-plus/icons-vue'
+import ElIcon from '@xianniu-plus/components/icon'
+import { useLocale, useNamespace } from '@xianniu-plus/hooks'
 import {
   panelYearRangeEmits,
   panelYearRangeProps,

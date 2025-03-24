@@ -162,30 +162,30 @@ import {
   toRefs,
   watch,
 } from 'vue'
-import ElButton from '@element-plus/components/button'
-import { TrapFocus } from '@element-plus/directives'
+import ElButton from '@xianniu-plus/components/button'
+import { TrapFocus } from '@xianniu-plus/directives'
 import {
   useDraggable,
   useId,
   useLockscreen,
   useSameTarget,
-} from '@element-plus/hooks'
-import ElInput from '@element-plus/components/input'
-import { ElOverlay } from '@element-plus/components/overlay'
+} from '@xianniu-plus/hooks'
+import ElInput from '@xianniu-plus/components/input'
+import { ElOverlay } from '@xianniu-plus/components/overlay'
 import {
   TypeComponents,
   TypeComponentsMap,
   isFunction,
   isString,
   isValidComponentSize,
-} from '@element-plus/utils'
-import { ElIcon } from '@element-plus/components/icon'
-import { Loading } from '@element-plus/icons-vue'
-import ElFocusTrap from '@element-plus/components/focus-trap'
-import { useGlobalComponentSettings } from '@element-plus/components/config-provider'
+} from '@xianniu-plus/utils'
+import { ElIcon } from '@xianniu-plus/components/icon'
+import { Loading } from '@xianniu-plus/icons-vue'
+import ElFocusTrap from '@xianniu-plus/components/focus-trap'
+import { useGlobalComponentSettings } from '@xianniu-plus/components/config-provider'
 
 import type { ComponentPublicInstance, PropType } from 'vue'
-import type { ComponentSize } from '@element-plus/constants'
+import type { ComponentSize } from '@xianniu-plus/constants'
 import type {
   Action,
   MessageBoxState,

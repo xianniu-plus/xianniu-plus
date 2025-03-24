@@ -1,6 +1,6 @@
-import { withInstall } from '@element-plus/utils'
+import { withInstall } from '@xianniu-plus/utils'
 import Dialog from './src/dialog.vue'
-import type { SFCWithInstall } from '@element-plus/utils'
+import type { SFCWithInstall } from '@xianniu-plus/utils'
 
 export const ElDialog: SFCWithInstall<typeof Dialog> = withInstall(Dialog)
 export default ElDialog

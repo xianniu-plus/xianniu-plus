@@ -1,8 +1,8 @@
-import { withInstall, withNoopInstall } from '@element-plus/utils'
+import { withInstall, withNoopInstall } from '@xianniu-plus/utils'
 
 import Skeleton from './src/skeleton.vue'
 import SkeletonItem from './src/skeleton-item.vue'
-import type { SFCWithInstall } from '@element-plus/utils'
+import type { SFCWithInstall } from '@xianniu-plus/utils'
 
 export const ElSkeleton: SFCWithInstall<typeof Skeleton> & {
   SkeletonItem: typeof SkeletonItem

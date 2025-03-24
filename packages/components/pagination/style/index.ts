@@ -1,4 +1,4 @@
-import '@element-plus/components/base/style'
-import '@element-plus/theme-chalk/src/pagination.scss'
-import '@element-plus/components/select/style'
-import '@element-plus/components/input/style'
+import '@xianniu-plus/components/base/style'
+import '@xianniu-plus/theme-chalk/src/pagination.scss'
+import '@xianniu-plus/components/select/style'
+import '@xianniu-plus/components/input/style'

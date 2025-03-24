@@ -1,7 +1,7 @@
-import { withInstall, withNoopInstall } from '@element-plus/utils'
+import { withInstall, withNoopInstall } from '@xianniu-plus/utils'
 import Table from './src/table.vue'
 import TableColumn from './src/tableColumn'
-import type { SFCWithInstall } from '@element-plus/utils'
+import type { SFCWithInstall } from '@xianniu-plus/utils'
 
 export const ElTable: SFCWithInstall<typeof Table> & {
   TableColumn: typeof TableColumn

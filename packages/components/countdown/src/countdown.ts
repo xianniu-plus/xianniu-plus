@@ -1,5 +1,5 @@
-import { buildProps, definePropType, isNumber } from '@element-plus/utils'
-import { CHANGE_EVENT } from '@element-plus/constants'
+import { buildProps, definePropType, isNumber } from '@xianniu-plus/utils'
+import { CHANGE_EVENT } from '@xianniu-plus/constants'
 
 import type { ExtractPropTypes, StyleValue } from 'vue'
 import type { Dayjs } from 'dayjs'

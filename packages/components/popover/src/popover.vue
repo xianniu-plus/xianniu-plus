@@ -46,11 +46,11 @@
 
 <script lang="ts" setup>
 import { computed, ref, unref } from 'vue'
-import { ElTooltip } from '@element-plus/components/tooltip'
-import { addUnit } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
+import { ElTooltip } from '@xianniu-plus/components/tooltip'
+import { addUnit } from '@xianniu-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
 import { popoverEmits, popoverProps } from './popover'
-import type { TooltipInstance } from '@element-plus/components/tooltip'
+import type { TooltipInstance } from '@xianniu-plus/components/tooltip'
 
 defineOptions({
   name: 'ElPopover',

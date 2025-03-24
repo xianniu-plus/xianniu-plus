@@ -1,4 +1,4 @@
-import { withInstallFunction } from '@element-plus/utils'
+import { withInstallFunction } from '@xianniu-plus/utils'
 
 import Notify from './src/notify'
 

@@ -1,7 +1,7 @@
-import { buildProps, definePropType } from '@element-plus/utils'
-import { CircleClose, Clock } from '@element-plus/icons-vue'
-import { useEmptyValuesProps, useSizeProp } from '@element-plus/hooks'
-import type { PopperEffect } from '@element-plus/components/popper'
+import { buildProps, definePropType } from '@xianniu-plus/utils'
+import { CircleClose, Clock } from '@xianniu-plus/icons-vue'
+import { useEmptyValuesProps, useSizeProp } from '@xianniu-plus/hooks'
+import type { PopperEffect } from '@xianniu-plus/components/popper'
 import type TimeSelect from './time-select.vue'
 import type { Component, ExtractPropTypes } from 'vue'
 

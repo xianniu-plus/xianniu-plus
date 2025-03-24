@@ -113,25 +113,25 @@ import {
 } from 'vue'
 import { debounce } from 'lodash-unified'
 import { onClickOutside } from '@vueuse/core'
-import { Loading } from '@element-plus/icons-vue'
-import { useAttrs, useId, useNamespace } from '@element-plus/hooks'
-import { isArray, throwError } from '@element-plus/utils'
+import { Loading } from '@xianniu-plus/icons-vue'
+import { useAttrs, useId, useNamespace } from '@xianniu-plus/hooks'
+import { isArray, throwError } from '@xianniu-plus/utils'
 import {
   CHANGE_EVENT,
   INPUT_EVENT,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
-import ElInput from '@element-plus/components/input'
-import ElScrollbar from '@element-plus/components/scrollbar'
-import ElTooltip from '@element-plus/components/tooltip'
-import ElIcon from '@element-plus/components/icon'
-import { useFormDisabled } from '@element-plus/components/form'
+} from '@xianniu-plus/constants'
+import ElInput from '@xianniu-plus/components/input'
+import ElScrollbar from '@xianniu-plus/components/scrollbar'
+import ElTooltip from '@xianniu-plus/components/tooltip'
+import ElIcon from '@xianniu-plus/components/icon'
+import { useFormDisabled } from '@xianniu-plus/components/form'
 import { autocompleteEmits, autocompleteProps } from './autocomplete'
 import type { AutocompleteData } from './autocomplete'
 
 import type { StyleValue } from 'vue'
-import type { TooltipInstance } from '@element-plus/components/tooltip'
-import type { InputInstance } from '@element-plus/components/input'
+import type { TooltipInstance } from '@xianniu-plus/components/tooltip'
+import type { InputInstance } from '@xianniu-plus/components/input'
 
 const COMPONENT_NAME = 'ElAutocomplete'
 defineOptions({

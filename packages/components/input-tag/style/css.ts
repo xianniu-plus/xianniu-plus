@@ -1,3 +1,3 @@
-import '@element-plus/components/base/style/css'
-import '@element-plus/components/tag/style/css'
-import '@element-plus/theme-chalk/el-input-tag.css'
+import '@xianniu-plus/components/base/style/css'
+import '@xianniu-plus/components/tag/style/css'
+import '@xianniu-plus/theme-chalk/el-input-tag.css'

@@ -4,7 +4,7 @@ import {
   createGlobalNode,
   isClient,
   removeGlobalNode,
-} from '@element-plus/utils'
+} from '@xianniu-plus/utils'
 
 import type { Ref, VNode } from 'vue'
 

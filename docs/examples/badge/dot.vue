@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Share } from '@element-plus/icons-vue'
+import { Share } from '@xianniu-plus/icons-vue'
 </script>
 
 <style scoped>

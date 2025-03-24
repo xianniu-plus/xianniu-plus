@@ -1,6 +1,6 @@
-import { withInstall } from '@element-plus/utils'
+import { withInstall } from '@xianniu-plus/utils'
 import Input from './src/input.vue'
-import type { SFCWithInstall } from '@element-plus/utils'
+import type { SFCWithInstall } from '@xianniu-plus/utils'
 
 export const ElInput: SFCWithInstall<typeof Input> = withInstall(Input)
 export default ElInput

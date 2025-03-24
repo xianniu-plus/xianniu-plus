@@ -18,9 +18,9 @@ import {
   ref,
   unref,
 } from 'vue'
-import { useId } from '@element-plus/hooks'
-import { composeEventHandlers } from '@element-plus/utils'
-import { EVENT_CODE } from '@element-plus/constants'
+import { useId } from '@xianniu-plus/hooks'
+import { composeEventHandlers } from '@xianniu-plus/utils'
+import { EVENT_CODE } from '@xianniu-plus/constants'
 import {
   ElCollectionItem as ElRovingFocusCollectionItem,
   ROVING_FOCUS_COLLECTION_INJECTION_KEY,

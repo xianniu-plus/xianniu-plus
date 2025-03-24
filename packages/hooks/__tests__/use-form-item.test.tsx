@@ -1,17 +1,17 @@
 import { defineComponent, provide } from 'vue'
 import { mount } from '@vue/test-utils'
 import { describe, expect, it } from 'vitest'
-import { NOOP } from '@element-plus/utils'
-import { ElButton, buttonGroupContextKey } from '@element-plus/components'
+import { NOOP } from '@xianniu-plus/utils'
+import { ElButton, buttonGroupContextKey } from '@xianniu-plus/components'
 import {
   formContextKey,
   formItemContextKey,
-} from '@element-plus/components/form'
+} from '@xianniu-plus/components/form'
 
 import type {
   FormContext,
   FormItemContext,
-} from '@element-plus/components/form'
+} from '@xianniu-plus/components/form'
 
 const AXIOM = 'Rem is the best girl'
 

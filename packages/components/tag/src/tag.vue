@@ -35,10 +35,10 @@
 
 <script lang="ts" setup>
 import { computed } from 'vue'
-import ElIcon from '@element-plus/components/icon'
-import { Close } from '@element-plus/icons-vue'
-import { useNamespace } from '@element-plus/hooks'
-import { useFormSize } from '@element-plus/components/form'
+import ElIcon from '@xianniu-plus/components/icon'
+import { Close } from '@xianniu-plus/icons-vue'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { useFormSize } from '@xianniu-plus/components/form'
 
 import { tagEmits, tagProps } from './tag'
 import type { VNode } from 'vue'

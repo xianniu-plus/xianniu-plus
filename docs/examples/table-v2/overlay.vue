@@ -20,7 +20,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Loading as LoadingIcon } from '@element-plus/icons-vue'
+import { Loading as LoadingIcon } from '@xianniu-plus/icons-vue'
 
 const generateColumns = (length = 10, prefix = 'column-', props?: any) =>
   Array.from({ length }).map((_, columnIndex) => ({

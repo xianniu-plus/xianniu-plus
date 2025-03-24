@@ -1,6 +1,6 @@
 import { placements } from '@popperjs/core'
-import { buildProps, isNumber } from '@element-plus/utils'
-import { UPDATE_MODEL_EVENT } from '@element-plus/constants'
+import { buildProps, isNumber } from '@xianniu-plus/utils'
+import { UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
 import type { ComponentPublicInstance, ExtractPropTypes, Ref } from 'vue'
 import type Button from './button.vue'
 

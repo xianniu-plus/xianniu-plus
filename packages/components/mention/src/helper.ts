@@ -1,4 +1,4 @@
-import { ensureArray, isFirefox } from '@element-plus/utils'
+import { ensureArray, isFirefox } from '@xianniu-plus/utils'
 
 import type { MentionCtx, MentionOption } from './types'
 

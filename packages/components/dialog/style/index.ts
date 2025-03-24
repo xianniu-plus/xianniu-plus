@@ -1,3 +1,3 @@
-import '@element-plus/components/base/style'
-import '@element-plus/theme-chalk/src/dialog.scss'
-import '@element-plus/components/overlay/style'
+import '@xianniu-plus/components/base/style'
+import '@xianniu-plus/theme-chalk/src/dialog.scss'
+import '@xianniu-plus/components/overlay/style'

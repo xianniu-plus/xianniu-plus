@@ -4,19 +4,19 @@ import {
   definePropType,
   isObject,
   isString,
-} from '@element-plus/utils'
-import { useTooltipContentProps } from '@element-plus/components/tooltip'
-import { useAriaProps } from '@element-plus/hooks'
+} from '@xianniu-plus/utils'
+import { useTooltipContentProps } from '@xianniu-plus/components/tooltip'
+import { useAriaProps } from '@xianniu-plus/hooks'
 import {
   CHANGE_EVENT,
   INPUT_EVENT,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
+} from '@xianniu-plus/constants'
 
 import type { ExtractPropTypes } from 'vue'
 import type Autocomplete from './autocomplete.vue'
-import type { Placement } from '@element-plus/components/popper'
-import type { Awaitable } from '@element-plus/utils'
+import type { Placement } from '@xianniu-plus/components/popper'
+import type { Awaitable } from '@xianniu-plus/utils'
 
 export type AutocompleteData = Record<string, any>[]
 export type AutocompleteFetchSuggestionsCallback = (

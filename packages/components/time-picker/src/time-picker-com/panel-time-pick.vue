@@ -40,9 +40,9 @@
 <script lang="ts" setup>
 import { computed, inject, ref } from 'vue'
 import dayjs from 'dayjs'
-import { EVENT_CODE } from '@element-plus/constants'
-import { useLocale, useNamespace } from '@element-plus/hooks'
-import { isUndefined } from '@element-plus/utils'
+import { EVENT_CODE } from '@xianniu-plus/constants'
+import { useLocale, useNamespace } from '@xianniu-plus/hooks'
+import { isUndefined } from '@xianniu-plus/utils'
 import { panelTimePickerProps } from '../props/panel-time-picker'
 import { useTimePanel } from '../composables/use-time-panel'
 import {

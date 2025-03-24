@@ -61,16 +61,16 @@ import {
   CHANGE_EVENT,
   EVENT_CODE,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
-import { hasClass, isArray, isObject, isString } from '@element-plus/utils'
+} from '@xianniu-plus/constants'
+import { hasClass, isArray, isObject, isString } from '@xianniu-plus/utils'
 import {
   formContextKey,
   formItemContextKey,
   useFormItemInputId,
   useFormSize,
-} from '@element-plus/components/form'
-import { ElIcon } from '@element-plus/components/icon'
-import { useNamespace } from '@element-plus/hooks'
+} from '@xianniu-plus/components/form'
+import { ElIcon } from '@xianniu-plus/components/icon'
+import { useNamespace } from '@xianniu-plus/hooks'
 import { rateEmits, rateProps } from './rate'
 import type { CSSProperties, Component } from 'vue'
 

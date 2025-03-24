@@ -1,3 +1,3 @@
-import '@element-plus/components/select/style/css'
-import '@element-plus/components/tree/style/css'
-import '@element-plus/theme-chalk/el-tree-select.css'
+import '@xianniu-plus/components/select/style/css'
+import '@xianniu-plus/components/tree/style/css'
+import '@xianniu-plus/theme-chalk/el-tree-select.css'

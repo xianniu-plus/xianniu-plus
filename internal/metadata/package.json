@@ -1,5 +1,5 @@
 {
-  "name": "@element-plus/metadata",
+  "name": "@xianniu-plus/metadata",
   "version": "0.0.1",
   "description": "Metadata for Xianniu Plus",
   "keywords": [
@@ -18,10 +18,10 @@
     "dev": "DEV=1 pnpm run build"
   },
   "devDependencies": {
-    "@element-plus/build": "workspace:*",
-    "@element-plus/build-constants": "workspace:*",
-    "@element-plus/build-utils": "workspace:*",
     "@types/lodash-es": "^4.17.6",
+    "@xianniu-plus/build": "workspace:*",
+    "@xianniu-plus/build-constants": "workspace:*",
+    "@xianniu-plus/build-utils": "workspace:*",
     "chalk": "^5.3.0",
     "consola": "^2.15.3",
     "fast-glob": "^3.3.2",

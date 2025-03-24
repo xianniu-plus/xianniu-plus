@@ -1,3 +1,3 @@
-import '@element-plus/components/base/style'
-import '@element-plus/components/badge/style'
-import '@element-plus/theme-chalk/src/message.scss'
+import '@xianniu-plus/components/base/style'
+import '@xianniu-plus/components/badge/style'
+import '@xianniu-plus/theme-chalk/src/message.scss'

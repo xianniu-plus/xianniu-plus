@@ -1,7 +1,7 @@
-import { withInstall, withNoopInstall } from '@element-plus/utils'
+import { withInstall, withNoopInstall } from '@xianniu-plus/utils'
 import Tour from './src/tour.vue'
 import TourStep from './src/step.vue'
-import type { SFCWithInstall } from '@element-plus/utils'
+import type { SFCWithInstall } from '@xianniu-plus/utils'
 
 export const ElTour: SFCWithInstall<typeof Tour> & {
   TourStep: typeof TourStep

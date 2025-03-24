@@ -74,15 +74,15 @@
 <script lang="ts" setup>
 import { computed, onMounted, onUpdated, reactive, ref, watch } from 'vue'
 import { isNil } from 'lodash-unified'
-import { ElInput } from '@element-plus/components/input'
-import { ElIcon } from '@element-plus/components/icon'
+import { ElInput } from '@xianniu-plus/components/input'
+import { ElIcon } from '@xianniu-plus/components/icon'
 import {
   useFormDisabled,
   useFormItem,
   useFormSize,
-} from '@element-plus/components/form'
-import { vRepeatClick } from '@element-plus/directives'
-import { useLocale, useNamespace } from '@element-plus/hooks'
+} from '@xianniu-plus/components/form'
+import { vRepeatClick } from '@xianniu-plus/directives'
+import { useLocale, useNamespace } from '@xianniu-plus/hooks'
 import {
   debugWarn,
   isFirefox,
@@ -90,16 +90,16 @@ import {
   isString,
   isUndefined,
   throwError,
-} from '@element-plus/utils'
-import { ArrowDown, ArrowUp, Minus, Plus } from '@element-plus/icons-vue'
+} from '@xianniu-plus/utils'
+import { ArrowDown, ArrowUp, Minus, Plus } from '@xianniu-plus/icons-vue'
 import {
   CHANGE_EVENT,
   INPUT_EVENT,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
+} from '@xianniu-plus/constants'
 import { inputNumberEmits, inputNumberProps } from './input-number'
 
-import type { InputInstance } from '@element-plus/components/input'
+import type { InputInstance } from '@xianniu-plus/components/input'
 
 defineOptions({
   name: 'ElInputNumber',

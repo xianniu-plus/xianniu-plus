@@ -1,12 +1,12 @@
 import { defineComponent, nextTick, ref } from 'vue'
 import { flushPromises, mount } from '@vue/test-utils'
 import { describe, expect, test, vi } from 'vitest'
-import { EVENT_CODE } from '@element-plus/constants'
+import { EVENT_CODE } from '@xianniu-plus/constants'
 import Tabs from '../src/tabs'
 import TabPane from '../src/tab-pane.vue'
 import TabNav from '../src/tab-nav'
 import type { TabPaneName } from '../src/tabs'
-import type { TabsPaneContext } from '@element-plus/components/tabs'
+import type { TabsPaneContext } from '@xianniu-plus/components/tabs'
 
 const Comp = defineComponent({
   components: {

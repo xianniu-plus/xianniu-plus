@@ -6,9 +6,9 @@ import {
   shallowRef,
   watch,
 } from 'vue'
-import { addUnit, getClientXY } from '@element-plus/utils'
-import { useLocale, useNamespace } from '@element-plus/hooks'
-import { EVENT_CODE } from '@element-plus/constants'
+import { addUnit, getClientXY } from '@xianniu-plus/utils'
+import { useLocale, useNamespace } from '@xianniu-plus/hooks'
+import { EVENT_CODE } from '@xianniu-plus/constants'
 import { draggable } from '../utils/draggable'
 
 import type { AlphaSliderProps } from '../props/alpha-slider'

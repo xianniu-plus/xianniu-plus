@@ -1,9 +1,9 @@
 import { computed, ref, unref } from 'vue'
-import { useNamespace, useZIndex } from '@element-plus/hooks'
+import { useNamespace, useZIndex } from '@xianniu-plus/hooks'
 
-import { isNumber } from '@element-plus/utils'
+import { isNumber } from '@xianniu-plus/utils'
 import type { CSSProperties, StyleValue } from 'vue'
-import type { UsePopperReturn } from '@element-plus/hooks'
+import type { UsePopperReturn } from '@xianniu-plus/hooks'
 import type { UsePopperContentReturn } from './use-content'
 import type { PopperContentProps } from '../content'
 

@@ -35,9 +35,9 @@ import {
   watch,
 } from 'vue'
 import { isNil } from 'lodash-unified'
-import { NOOP, isElement } from '@element-plus/utils'
-import ElFocusTrap from '@element-plus/components/focus-trap'
-import { formItemContextKey } from '@element-plus/components/form'
+import { NOOP, isElement } from '@xianniu-plus/utils'
+import ElFocusTrap from '@xianniu-plus/components/focus-trap'
+import { formItemContextKey } from '@xianniu-plus/components/form'
 import { POPPER_CONTENT_INJECTION_KEY } from './constants'
 import { popperContentEmits, popperContentProps } from './content'
 import {

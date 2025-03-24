@@ -1,6 +1,6 @@
 import { onBeforeUnmount, onMounted } from 'vue'
-import { isClient } from '@element-plus/utils'
-import { EVENT_CODE } from '@element-plus/constants'
+import { isClient } from '@xianniu-plus/utils'
+import { EVENT_CODE } from '@xianniu-plus/constants'
 
 let registeredEscapeHandlers: ((e: KeyboardEvent) => void)[] = []
 

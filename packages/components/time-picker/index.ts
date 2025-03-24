@@ -1,9 +1,9 @@
-import { withInstall } from '@element-plus/utils'
+import { withInstall } from '@xianniu-plus/utils'
 import TimePicker from './src/time-picker'
 import CommonPicker from './src/common/picker.vue'
 import TimePickPanel from './src/time-picker-com/panel-time-pick.vue'
 
-import type { SFCWithInstall } from '@element-plus/utils'
+import type { SFCWithInstall } from '@xianniu-plus/utils'
 
 export * from './src/utils'
 export * from './src/constants'

@@ -113,12 +113,12 @@ import {
 } from 'vue'
 import { useEventListener } from '@vueuse/core'
 import { throttle } from 'lodash-unified'
-import { useLocale, useNamespace, useZIndex } from '@element-plus/hooks'
-import { EVENT_CODE } from '@element-plus/constants'
-import { keysOf } from '@element-plus/utils'
-import ElFocusTrap from '@element-plus/components/focus-trap'
-import ElTeleport from '@element-plus/components/teleport'
-import ElIcon from '@element-plus/components/icon'
+import { useLocale, useNamespace, useZIndex } from '@xianniu-plus/hooks'
+import { EVENT_CODE } from '@xianniu-plus/constants'
+import { keysOf } from '@xianniu-plus/utils'
+import ElFocusTrap from '@xianniu-plus/components/focus-trap'
+import ElTeleport from '@xianniu-plus/components/teleport'
+import ElIcon from '@xianniu-plus/components/icon'
 import {
   ArrowLeft,
   ArrowRight,
@@ -129,7 +129,7 @@ import {
   ScaleToOriginal,
   ZoomIn,
   ZoomOut,
-} from '@element-plus/icons-vue'
+} from '@xianniu-plus/icons-vue'
 import { imageViewerEmits, imageViewerProps } from './image-viewer'
 
 import type { CSSProperties } from 'vue'

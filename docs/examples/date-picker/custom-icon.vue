@@ -214,7 +214,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { CaretLeft, CaretRight } from '@element-plus/icons-vue'
+import { CaretLeft, CaretRight } from '@xianniu-plus/icons-vue'
 
 const value1 = ref('')
 const value2 = ref('')

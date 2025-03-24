@@ -14,8 +14,8 @@ import {
   isNumber,
   isString,
   isValidElementNode,
-} from '@element-plus/utils'
-import { componentSizes } from '@element-plus/constants'
+} from '@xianniu-plus/utils'
+import { componentSizes } from '@xianniu-plus/constants'
 import Item from './item'
 import { useSpace } from './use-space'
 
@@ -26,7 +26,7 @@ import type {
   VNodeArrayChildren,
   VNodeChild,
 } from 'vue'
-import type { Arrayable } from '@element-plus/utils'
+import type { Arrayable } from '@xianniu-plus/utils'
 import type { AlignItemsProperty } from 'csstype'
 
 export const spaceProps = buildProps({

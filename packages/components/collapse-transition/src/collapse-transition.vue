@@ -5,7 +5,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@xianniu-plus/hooks'
 import type { RendererElement } from '@vue/runtime-core'
 
 defineOptions({

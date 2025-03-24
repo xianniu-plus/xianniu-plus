@@ -55,5 +55,5 @@
 </template>
 
 <script setup lang="ts">
-import { InfoFilled } from '@element-plus/icons-vue'
+import { InfoFilled } from '@xianniu-plus/icons-vue'
 </script>

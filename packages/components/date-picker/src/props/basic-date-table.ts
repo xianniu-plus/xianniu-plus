@@ -1,4 +1,4 @@
-import { buildProps, definePropType } from '@element-plus/utils'
+import { buildProps, definePropType } from '@xianniu-plus/utils'
 import { datePickerSharedProps, selectionModeWithDefault } from './shared'
 
 import type { ExtractPropTypes } from 'vue'

@@ -53,10 +53,10 @@
 </template>
 
 <script lang="ts" setup>
-import { ElIcon } from '@element-plus/components/icon'
-import { ElDivider } from '@element-plus/components/divider'
+import { ElIcon } from '@xianniu-plus/components/icon'
+import { ElDivider } from '@xianniu-plus/components/divider'
 
-import { useLocale, useNamespace } from '@element-plus/hooks'
+import { useLocale, useNamespace } from '@xianniu-plus/hooks'
 import { pageHeaderEmits, pageHeaderProps } from './page-header'
 
 defineOptions({

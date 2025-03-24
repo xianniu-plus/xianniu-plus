@@ -7,8 +7,8 @@ import {
   ref,
   unref,
 } from 'vue'
-import { useNamespace } from '@element-plus/hooks'
-import { ensureArray } from '@element-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { ensureArray } from '@xianniu-plus/utils'
 import { tableV2HeaderProps } from '../header'
 import { enforceUnit } from '../utils'
 

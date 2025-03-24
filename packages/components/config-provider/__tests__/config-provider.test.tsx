@@ -1,12 +1,12 @@
 import { defineComponent, nextTick, reactive, ref } from 'vue'
 import { mount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, it } from 'vitest'
-import { useLocale } from '@element-plus/hooks'
-import Chinese from '@element-plus/locale/lang/zh-cn'
-import English from '@element-plus/locale/lang/en'
-import { ElButton, ElMessage, ElPagination } from '@element-plus/components'
-import { rAF } from '@element-plus/test-utils/tick'
-import { getStyle } from '@element-plus/utils'
+import { useLocale } from '@xianniu-plus/hooks'
+import Chinese from '@xianniu-plus/locale/lang/zh-cn'
+import English from '@xianniu-plus/locale/lang/en'
+import { ElButton, ElMessage, ElPagination } from '@xianniu-plus/components'
+import { rAF } from '@xianniu-plus/test-utils/tick'
+import { getStyle } from '@xianniu-plus/utils'
 import {
   useGlobalComponentSettings,
   useGlobalConfig,
@@ -15,8 +15,8 @@ import ConfigProvider from '../src/config-provider'
 
 import type { PropType } from 'vue'
 import type { VueWrapper } from '@vue/test-utils'
-import type { Language } from '@element-plus/locale'
-import type { ComponentSize } from '@element-plus/constants'
+import type { Language } from '@xianniu-plus/locale'
+import type { ComponentSize } from '@xianniu-plus/constants'
 import type { ConfigProviderProps } from '../src/config-provider-props'
 
 const TestComp = defineComponent({

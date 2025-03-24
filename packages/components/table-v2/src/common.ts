@@ -1,4 +1,4 @@
-import { definePropType, mutable } from '@element-plus/utils'
+import { definePropType, mutable } from '@xianniu-plus/utils'
 
 import type { CSSProperties } from 'vue'
 import type { Column, KeyType } from './types'

@@ -1,8 +1,8 @@
 import { computed, inject, ref } from 'vue'
-import { UPDATE_MODEL_EVENT } from '@element-plus/constants'
-import { useFormDisabled, useFormSize } from '@element-plus/components/form'
-import { useDeprecated } from '@element-plus/hooks'
-import { isPropAbsent } from '@element-plus/utils'
+import { UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
+import { useFormDisabled, useFormSize } from '@xianniu-plus/components/form'
+import { useDeprecated } from '@xianniu-plus/hooks'
+import { isPropAbsent } from '@xianniu-plus/utils'
 import { radioGroupKey } from './constants'
 
 import type { RadioButtonProps } from './radio-button'

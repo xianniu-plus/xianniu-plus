@@ -5,8 +5,8 @@
 </template>
 
 <script lang="ts" setup>
-import { useNamespace } from '@element-plus/hooks'
-import { addClass, hasClass, removeClass } from '@element-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { addClass, hasClass, removeClass } from '@xianniu-plus/utils'
 import type { BaseTransitionProps, TransitionProps } from 'vue'
 
 defineOptions({

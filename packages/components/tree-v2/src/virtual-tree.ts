@@ -4,10 +4,10 @@ import {
   iconPropType,
   isBoolean,
   mutable,
-} from '@element-plus/utils'
-import type { CheckboxValueType } from '@element-plus/components/checkbox'
+} from '@xianniu-plus/utils'
+import type { CheckboxValueType } from '@xianniu-plus/components/checkbox'
 import type { InjectionKey } from 'vue'
-import type { TreeNodeData } from '@element-plus/components/tree/src/tree.type'
+import type { TreeNodeData } from '@xianniu-plus/components/tree/src/tree.type'
 import type {
   CheckedInfo,
   FilterMethod,

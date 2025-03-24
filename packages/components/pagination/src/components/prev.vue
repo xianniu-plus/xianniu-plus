@@ -16,8 +16,8 @@
 
 <script lang="ts" setup>
 import { computed } from 'vue'
-import { useLocale } from '@element-plus/hooks'
-import { ElIcon } from '@element-plus/components/icon'
+import { useLocale } from '@xianniu-plus/hooks'
+import { ElIcon } from '@xianniu-plus/components/icon'
 import { paginationPrevEmits, paginationPrevProps } from './prev'
 
 defineOptions({

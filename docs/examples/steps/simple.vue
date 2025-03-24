@@ -19,5 +19,5 @@
 </template>
 
 <script lang="ts" setup>
-import { Edit, Picture, UploadFilled } from '@element-plus/icons-vue'
+import { Edit, Picture, UploadFilled } from '@xianniu-plus/icons-vue'
 </script>

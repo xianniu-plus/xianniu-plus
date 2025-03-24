@@ -12,10 +12,10 @@ import {
   isString,
   isUndefined,
   throwError,
-} from '@element-plus/utils'
+} from '@xianniu-plus/utils'
 import ElTooltip, {
   type ElTooltipProps,
-} from '@element-plus/components/tooltip'
+} from '@xianniu-plus/components/tooltip'
 import type { Table, TreeProps } from './table/defaults'
 import type { TableColumnCtx } from './table-column/defaults'
 import type { VNode } from 'vue'

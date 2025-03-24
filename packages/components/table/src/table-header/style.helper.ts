@@ -1,6 +1,6 @@
 import { inject } from 'vue'
-import { useNamespace } from '@element-plus/hooks'
-import { isFunction, isString } from '@element-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { isFunction, isString } from '@xianniu-plus/utils'
 
 import {
   ensurePosition,

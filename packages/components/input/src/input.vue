@@ -160,37 +160,37 @@ import {
 } from 'vue'
 import { useResizeObserver } from '@vueuse/core'
 import { isNil } from 'lodash-unified'
-import { ElIcon } from '@element-plus/components/icon'
+import { ElIcon } from '@xianniu-plus/components/icon'
 import {
   CircleClose,
   Hide as IconHide,
   View as IconView,
-} from '@element-plus/icons-vue'
+} from '@xianniu-plus/icons-vue'
 import {
   useFormDisabled,
   useFormItem,
   useFormItemInputId,
   useFormSize,
-} from '@element-plus/components/form'
+} from '@xianniu-plus/components/form'
 import {
   NOOP,
   ValidateComponentsMap,
   debugWarn,
   isClient,
   isObject,
-} from '@element-plus/utils'
+} from '@xianniu-plus/utils'
 import {
   useAttrs,
   useComposition,
   useCursor,
   useFocusController,
   useNamespace,
-} from '@element-plus/hooks'
+} from '@xianniu-plus/hooks'
 import {
   CHANGE_EVENT,
   INPUT_EVENT,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
+} from '@xianniu-plus/constants'
 import { calcTextareaHeight } from './utils'
 import { inputEmits, inputProps } from './input'
 import type { StyleValue } from 'vue'

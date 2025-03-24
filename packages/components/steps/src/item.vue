@@ -55,10 +55,10 @@ import {
   ref,
   watch,
 } from 'vue'
-import { useNamespace } from '@element-plus/hooks'
-import { ElIcon } from '@element-plus/components/icon'
-import { Check, Close } from '@element-plus/icons-vue'
-import { isNumber } from '@element-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { ElIcon } from '@xianniu-plus/components/icon'
+import { Check, Close } from '@xianniu-plus/icons-vue'
+import { isNumber } from '@xianniu-plus/utils'
 import { stepProps } from './item'
 
 import type { CSSProperties, Ref } from 'vue'

@@ -1,5 +1,5 @@
 import { ref } from 'vue'
-import { isNumber } from '@element-plus/utils'
+import { isNumber } from '@xianniu-plus/utils'
 
 export const useScrollbar = () => {
   const scrollBarRef = ref()

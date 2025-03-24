@@ -69,7 +69,7 @@
 <script lang="ts" setup>
 import { computed, nextTick, onMounted, ref } from 'vue'
 import { useRouter } from 'vitepress'
-import { Search } from '@element-plus/icons-vue'
+import { Search } from '@xianniu-plus/icons-vue'
 import overviewLocale from '../../../i18n/component/overview.json'
 import type { InputInstance } from 'element-plus'
 import { useSidebar } from '~/composables/sidebar'

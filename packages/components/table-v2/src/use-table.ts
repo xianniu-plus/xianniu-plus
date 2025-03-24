@@ -7,8 +7,8 @@ import {
   unref,
   watch,
 } from 'vue'
-import { isArray, isNumber } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
+import { isArray, isNumber } from '@xianniu-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
 import {
   useColumns,
   useData,

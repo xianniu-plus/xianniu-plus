@@ -79,21 +79,21 @@ import {
   isBoolean,
   isPromise,
   throwError,
-} from '@element-plus/utils'
-import ElIcon from '@element-plus/components/icon'
+} from '@xianniu-plus/utils'
+import ElIcon from '@xianniu-plus/components/icon'
 import {
   useFormDisabled,
   useFormItem,
   useFormItemInputId,
   useFormSize,
-} from '@element-plus/components/form'
-import { Loading } from '@element-plus/icons-vue'
+} from '@xianniu-plus/components/form'
+import { Loading } from '@xianniu-plus/icons-vue'
 import {
   CHANGE_EVENT,
   INPUT_EVENT,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
-import { useNamespace } from '@element-plus/hooks'
+} from '@xianniu-plus/constants'
+import { useNamespace } from '@xianniu-plus/hooks'
 import { switchEmits, switchProps } from './switch'
 import type { CSSProperties } from 'vue'
 

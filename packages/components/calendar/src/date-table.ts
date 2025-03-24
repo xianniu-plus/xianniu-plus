@@ -1,5 +1,5 @@
-import { buildProps, definePropType, isObject } from '@element-plus/utils'
-import { rangeArr } from '@element-plus/components/time-picker'
+import { buildProps, definePropType, isObject } from '@xianniu-plus/utils'
+import { rangeArr } from '@xianniu-plus/components/time-picker'
 import type { ExtractPropTypes } from 'vue'
 import type { Dayjs } from 'dayjs'
 

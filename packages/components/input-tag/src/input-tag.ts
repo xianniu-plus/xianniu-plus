@@ -4,15 +4,15 @@ import {
   isArray,
   isString,
   isUndefined,
-} from '@element-plus/utils'
-import { useSizeProp } from '@element-plus/hooks'
+} from '@xianniu-plus/utils'
+import { useSizeProp } from '@xianniu-plus/hooks'
 import {
   CHANGE_EVENT,
   EVENT_CODE,
   INPUT_EVENT,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
-import { tagProps } from '@element-plus/components/tag/src/tag'
+} from '@xianniu-plus/constants'
+import { tagProps } from '@xianniu-plus/components/tag/src/tag'
 
 import type { ExtractPropTypes } from 'vue'
 

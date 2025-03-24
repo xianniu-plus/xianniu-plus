@@ -6,7 +6,7 @@
 
 <script lang="ts" setup>
 import { computed } from 'vue'
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@xianniu-plus/hooks'
 
 import type { CSSProperties } from 'vue'
 

@@ -22,5 +22,5 @@
 </template>
 
 <script lang="ts" setup>
-import { Bell, XianniuPlus } from '@element-plus/icons-vue'
+import { Bell, XianniuPlus } from '@xianniu-plus/icons-vue'
 </script>

@@ -1,3 +1,3 @@
-import '@element-plus/components/base/style'
-import '@element-plus/theme-chalk/src/image.scss'
-import '@element-plus/components/image-viewer/style'
+import '@xianniu-plus/components/base/style'
+import '@xianniu-plus/theme-chalk/src/image.scss'
+import '@xianniu-plus/components/image-viewer/style'

@@ -1,5 +1,5 @@
-import { buildProps, definePropType, isBoolean } from '@element-plus/utils'
-import { UPDATE_MODEL_EVENT } from '@element-plus/constants'
+import { buildProps, definePropType, isBoolean } from '@xianniu-plus/utils'
+import { UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
 import { dialogContentProps } from './dialog-content'
 
 import type { ExtractPropTypes } from 'vue'

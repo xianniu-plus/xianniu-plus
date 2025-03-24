@@ -107,7 +107,7 @@
 
 <script lang="ts" setup>
 import { computed, ref } from 'vue'
-import { ElIcon } from '@element-plus/components/icon'
+import { ElIcon } from '@xianniu-plus/components/icon'
 import {
   Check,
   CircleCheck,
@@ -115,10 +115,10 @@ import {
   Delete,
   Document,
   ZoomIn,
-} from '@element-plus/icons-vue'
-import { useLocale, useNamespace } from '@element-plus/hooks'
-import ElProgress from '@element-plus/components/progress'
-import { useFormDisabled } from '@element-plus/components/form'
+} from '@xianniu-plus/icons-vue'
+import { useLocale, useNamespace } from '@xianniu-plus/hooks'
+import ElProgress from '@xianniu-plus/components/progress'
+import { useFormDisabled } from '@xianniu-plus/components/form'
 
 import { uploadListEmits, uploadListProps } from './upload-list'
 import type { UploadFile } from './upload'

@@ -1,7 +1,7 @@
 import { computed, provide, ref, watch } from 'vue'
-import { ensureArray } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
-import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@element-plus/constants'
+import { ensureArray } from '@xianniu-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
 import { collapseContextKey } from './constants'
 
 import type { SetupContext } from 'vue'

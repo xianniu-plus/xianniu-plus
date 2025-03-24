@@ -1,7 +1,7 @@
 import { computed, useAttrs, useSlots } from 'vue'
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@xianniu-plus/hooks'
 import type { ComputedRef, Ref, StyleValue } from 'vue'
-import type { ComponentSize } from '@element-plus/constants'
+import type { ComponentSize } from '@xianniu-plus/constants'
 import type { InputTagProps } from '../input-tag'
 
 interface UseInputTagDomOptions {

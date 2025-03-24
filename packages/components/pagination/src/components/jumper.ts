@@ -1,5 +1,5 @@
-import { buildProps } from '@element-plus/utils'
-import { componentSizes } from '@element-plus/constants'
+import { buildProps } from '@xianniu-plus/utils'
+import { componentSizes } from '@xianniu-plus/constants'
 import type { ExtractPropTypes } from 'vue'
 import type Jumper from './jumper.vue'
 

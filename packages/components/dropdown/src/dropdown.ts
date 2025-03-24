@@ -1,16 +1,16 @@
-import { buildProps, definePropType, iconPropType } from '@element-plus/utils'
-import { EVENT_CODE } from '@element-plus/constants'
-import { createCollectionWithScope } from '@element-plus/components/collection'
+import { buildProps, definePropType, iconPropType } from '@xianniu-plus/utils'
+import { EVENT_CODE } from '@xianniu-plus/constants'
+import { createCollectionWithScope } from '@xianniu-plus/components/collection'
 import {
   useTooltipContentProps,
   useTooltipTriggerProps,
-} from '@element-plus/components/tooltip'
+} from '@xianniu-plus/components/tooltip'
 
-import { type Placement, roleTypes } from '@element-plus/components/popper'
+import { type Placement, roleTypes } from '@xianniu-plus/components/popper'
 import type { Options } from '@popperjs/core'
-import type { ButtonProps, ButtonType } from '@element-plus/components/button'
+import type { ButtonProps, ButtonType } from '@xianniu-plus/components/button'
 import type { ComponentInternalInstance, ComputedRef } from 'vue'
-import type { Nullable } from '@element-plus/utils'
+import type { Nullable } from '@xianniu-plus/utils'
 
 export interface IElDropdownInstance {
   instance?: ComponentInternalInstance

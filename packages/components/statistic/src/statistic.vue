@@ -25,8 +25,8 @@
 
 <script lang="ts" setup>
 import { computed } from 'vue'
-import { useNamespace } from '@element-plus/hooks'
-import { isFunction, isNumber } from '@element-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { isFunction, isNumber } from '@xianniu-plus/utils'
 import { statisticProps } from './statistic'
 
 defineOptions({

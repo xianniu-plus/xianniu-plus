@@ -15,22 +15,22 @@ import {
   withDirectives,
 } from 'vue'
 import { useTimeoutFn } from '@vueuse/core'
-import ElCollapseTransition from '@element-plus/components/collapse-transition'
-import ElTooltip from '@element-plus/components/tooltip'
+import ElCollapseTransition from '@xianniu-plus/components/collapse-transition'
+import ElTooltip from '@xianniu-plus/components/tooltip'
 import {
   buildProps,
   iconPropType,
   isString,
   throwError,
-} from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
-import { ArrowDown, ArrowRight } from '@element-plus/icons-vue'
-import { ElIcon } from '@element-plus/components/icon'
+} from '@xianniu-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { ArrowDown, ArrowRight } from '@xianniu-plus/icons-vue'
+import { ElIcon } from '@xianniu-plus/components/icon'
 import useMenu from './use-menu'
 import { useMenuCssVar } from './use-menu-css-var'
 
-import type { Placement } from '@element-plus/components/popper'
-import type { TooltipInstance } from '@element-plus/components/tooltip'
+import type { Placement } from '@xianniu-plus/components/popper'
+import type { TooltipInstance } from '@xianniu-plus/components/tooltip'
 import type { ExtractPropTypes, VNodeArrayChildren } from 'vue'
 import type { MenuProvider, SubMenuProvider } from './types'
 

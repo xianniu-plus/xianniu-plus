@@ -1,6 +1,6 @@
-import { UPDATE_MODEL_EVENT } from '@element-plus/constants'
-import { useAriaProps, useSizeProp } from '@element-plus/hooks'
-import { buildProps, definePropType, isArray } from '@element-plus/utils'
+import { UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
+import { useAriaProps, useSizeProp } from '@xianniu-plus/hooks'
+import { buildProps, definePropType, isArray } from '@xianniu-plus/utils'
 
 import type { ExtractPropTypes } from 'vue'
 import type checkboxGroup from './checkbox-group.vue'

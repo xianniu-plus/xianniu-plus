@@ -103,20 +103,20 @@ import {
   unref,
   watch,
 } from 'vue'
-import ElButton from '@element-plus/components/button'
-import ElTooltip from '@element-plus/components/tooltip'
-import ElScrollbar from '@element-plus/components/scrollbar'
-import ElIcon from '@element-plus/components/icon'
-import ElRovingFocusGroup from '@element-plus/components/roving-focus-group'
-import { ElOnlyChild } from '@element-plus/components/slot'
-import { useFormSize } from '@element-plus/components/form'
-import { addUnit, ensureArray } from '@element-plus/utils'
-import { ArrowDown } from '@element-plus/icons-vue'
-import { useId, useLocale, useNamespace } from '@element-plus/hooks'
+import ElButton from '@xianniu-plus/components/button'
+import ElTooltip from '@xianniu-plus/components/tooltip'
+import ElScrollbar from '@xianniu-plus/components/scrollbar'
+import ElIcon from '@xianniu-plus/components/icon'
+import ElRovingFocusGroup from '@xianniu-plus/components/roving-focus-group'
+import { ElOnlyChild } from '@xianniu-plus/components/slot'
+import { useFormSize } from '@xianniu-plus/components/form'
+import { addUnit, ensureArray } from '@xianniu-plus/utils'
+import { ArrowDown } from '@xianniu-plus/icons-vue'
+import { useId, useLocale, useNamespace } from '@xianniu-plus/hooks'
 import { ElCollection as ElDropdownCollection, dropdownProps } from './dropdown'
 import { DROPDOWN_INJECTION_KEY } from './tokens'
 
-import type { TooltipInstance } from '@element-plus/components/tooltip'
+import type { TooltipInstance } from '@xianniu-plus/components/tooltip'
 import type { CSSProperties } from 'vue'
 
 const { ButtonGroup: ElButtonGroup } = ElButton

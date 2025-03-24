@@ -1,15 +1,15 @@
 import { markRaw, nextTick, ref } from 'vue'
 import { mount } from '@vue/test-utils'
 import { afterEach, describe, expect, test, vi } from 'vitest'
-import { debugWarn } from '@element-plus/utils'
-import { Checked, CircleClose, Hide, View } from '@element-plus/icons-vue'
-import { ElFormItem } from '@element-plus/components/form'
-import { UPDATE_MODEL_EVENT } from '@element-plus/constants'
+import { debugWarn } from '@xianniu-plus/utils'
+import { Checked, CircleClose, Hide, View } from '@xianniu-plus/icons-vue'
+import { ElFormItem } from '@xianniu-plus/components/form'
+import { UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
 import Switch from '../src/switch.vue'
 import type { VueWrapper } from '@vue/test-utils'
 import type { SwitchInstance } from '../src/switch'
 
-vi.mock('@element-plus/utils/error', () => ({
+vi.mock('@xianniu-plus/utils/error', () => ({
   debugWarn: vi.fn(),
 }))
 

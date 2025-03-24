@@ -17,7 +17,7 @@ import {
   ElPopover,
   TableV2FixedDir,
 } from 'element-plus'
-import { Filter } from '@element-plus/icons-vue'
+import { Filter } from '@xianniu-plus/icons-vue'
 
 import type { HeaderCellSlotProps } from 'element-plus'
 

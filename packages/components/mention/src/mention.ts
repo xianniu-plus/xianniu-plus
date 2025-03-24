@@ -3,15 +3,15 @@ import {
   definePropType,
   isFunction,
   isString,
-} from '@element-plus/utils'
-import { UPDATE_MODEL_EVENT } from '@element-plus/constants'
-import { inputProps } from '@element-plus/components/input'
+} from '@xianniu-plus/utils'
+import { UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
+import { inputProps } from '@xianniu-plus/components/input'
 import { filterOption } from './helper'
 
 import type { ExtractPropTypes } from 'vue'
 import type Mention from './mention.vue'
 import type { MentionOption } from './types'
-import type { Options } from '@element-plus/components/popper'
+import type { Options } from '@xianniu-plus/components/popper'
 
 export const mentionProps = buildProps({
   ...inputProps,

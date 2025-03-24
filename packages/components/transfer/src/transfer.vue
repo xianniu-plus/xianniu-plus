@@ -61,12 +61,12 @@
 
 <script lang="ts" setup>
 import { Comment, computed, h, reactive, ref, useSlots, watch } from 'vue'
-import { debugWarn, isEmpty, isUndefined } from '@element-plus/utils'
-import { useLocale, useNamespace } from '@element-plus/hooks'
-import { ElButton } from '@element-plus/components/button'
-import { ElIcon } from '@element-plus/components/icon'
-import { useFormItem } from '@element-plus/components/form'
-import { ArrowLeft, ArrowRight } from '@element-plus/icons-vue'
+import { debugWarn, isEmpty, isUndefined } from '@xianniu-plus/utils'
+import { useLocale, useNamespace } from '@xianniu-plus/hooks'
+import { ElButton } from '@xianniu-plus/components/button'
+import { ElIcon } from '@xianniu-plus/components/icon'
+import { useFormItem } from '@xianniu-plus/components/form'
+import { ArrowLeft, ArrowRight } from '@xianniu-plus/icons-vue'
 import { transferEmits, transferProps } from './transfer'
 import {
   useCheckedChange,

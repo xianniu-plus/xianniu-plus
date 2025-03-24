@@ -1,8 +1,8 @@
 import installer from './defaults'
-export * from '@element-plus/components'
-export * from '@element-plus/constants'
-export * from '@element-plus/directives'
-export * from '@element-plus/hooks'
+export * from '@xianniu-plus/components'
+export * from '@xianniu-plus/constants'
+export * from '@xianniu-plus/directives'
+export * from '@xianniu-plus/hooks'
 export * from './make-installer'
 
 export const install = installer.install

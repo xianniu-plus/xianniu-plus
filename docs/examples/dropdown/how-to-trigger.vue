@@ -68,7 +68,7 @@ import {
   CirclePlus,
   CirclePlusFilled,
   Plus,
-} from '@element-plus/icons-vue'
+} from '@xianniu-plus/icons-vue'
 </script>
 
 <style scoped>

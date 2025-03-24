@@ -1,7 +1,7 @@
 import { defineComponent, provide, ref } from 'vue'
 import dayjs from 'dayjs'
 import customParseFormat from 'dayjs/plugin/customParseFormat.js'
-import { UPDATE_MODEL_EVENT } from '@element-plus/constants'
+import { UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
 import { DEFAULT_FORMATS_TIME } from './constants'
 import Picker from './common/picker.vue'
 import TimePickPanel from './time-picker-com/panel-time-pick.vue'

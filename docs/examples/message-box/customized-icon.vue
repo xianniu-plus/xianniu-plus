@@ -5,7 +5,7 @@
 <script lang="ts" setup>
 import { markRaw } from 'vue'
 import { ElMessageBox } from 'element-plus'
-import { Delete } from '@element-plus/icons-vue'
+import { Delete } from '@xianniu-plus/icons-vue'
 
 const open = () => {
   ElMessageBox.confirm(

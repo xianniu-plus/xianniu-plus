@@ -92,12 +92,12 @@
 
 <script lang="ts" setup>
 import { computed, useSlots } from 'vue'
-import { CircleClose } from '@element-plus/icons-vue'
-import { useAttrs, useCalcInputWidth } from '@element-plus/hooks'
-import { NOOP, ValidateComponentsMap } from '@element-plus/utils'
-import ElIcon from '@element-plus/components/icon'
-import ElTag from '@element-plus/components/tag'
-import { useFormItem, useFormItemInputId } from '@element-plus/components/form'
+import { CircleClose } from '@xianniu-plus/icons-vue'
+import { useAttrs, useCalcInputWidth } from '@xianniu-plus/hooks'
+import { NOOP, ValidateComponentsMap } from '@xianniu-plus/utils'
+import ElIcon from '@xianniu-plus/components/icon'
+import ElTag from '@xianniu-plus/components/tag'
+import { useFormItem, useFormItemInputId } from '@xianniu-plus/components/form'
 import { inputTagEmits, inputTagProps } from './input-tag'
 import {
   useDragTag,

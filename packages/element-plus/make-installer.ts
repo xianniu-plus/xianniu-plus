@@ -1,9 +1,9 @@
-import { provideGlobalConfig } from '@element-plus/components/config-provider'
-import { INSTALLED_KEY } from '@element-plus/constants'
+import { provideGlobalConfig } from '@xianniu-plus/components/config-provider'
+import { INSTALLED_KEY } from '@xianniu-plus/constants'
 import { version } from './version'
 
 import type { App, Plugin } from '@vue/runtime-core'
-import type { ConfigProviderContext } from '@element-plus/components/config-provider'
+import type { ConfigProviderContext } from '@xianniu-plus/components/config-provider'
 
 export const makeInstaller = (components: Plugin[] = []) => {
   const install = (app: App, options?: ConfigProviderContext) => {

@@ -1,7 +1,7 @@
-import { withInstall } from '@element-plus/utils'
+import { withInstall } from '@xianniu-plus/utils'
 import DatePicker from './src/date-picker'
 
-import type { SFCWithInstall } from '@element-plus/utils'
+import type { SFCWithInstall } from '@xianniu-plus/utils'
 
 export const ElDatePicker: SFCWithInstall<typeof DatePicker> =
   withInstall(DatePicker)

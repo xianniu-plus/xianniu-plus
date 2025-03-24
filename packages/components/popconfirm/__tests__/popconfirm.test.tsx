@@ -1,8 +1,8 @@
 import { nextTick } from 'vue'
 import { mount } from '@vue/test-utils'
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { rAF } from '@element-plus/test-utils/tick'
-import { usePopperContainerId } from '@element-plus/hooks'
+import { rAF } from '@xianniu-plus/test-utils/tick'
+import { usePopperContainerId } from '@xianniu-plus/hooks'
 import Popconfirm from '../src/popconfirm.vue'
 
 const AXIOM = 'rem is the best girl'

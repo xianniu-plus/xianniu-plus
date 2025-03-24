@@ -1,15 +1,15 @@
 import { placements } from '@popperjs/core'
-import { CommonProps } from '@element-plus/components/cascader-panel'
-import { buildProps, definePropType, isBoolean } from '@element-plus/utils'
-import { useEmptyValuesProps, useSizeProp } from '@element-plus/hooks'
-import { useTooltipContentProps } from '@element-plus/components/tooltip'
-import { tagProps } from '@element-plus/components/tag'
-import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@element-plus/constants'
+import { CommonProps } from '@xianniu-plus/components/cascader-panel'
+import { buildProps, definePropType, isBoolean } from '@xianniu-plus/utils'
+import { useEmptyValuesProps, useSizeProp } from '@xianniu-plus/hooks'
+import { useTooltipContentProps } from '@xianniu-plus/components/tooltip'
+import { tagProps } from '@xianniu-plus/components/tag'
+import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
 import type {
   CascaderNode,
   CascaderValue,
-} from '@element-plus/components/cascader-panel'
-import type { Placement } from '@element-plus/components/popper'
+} from '@xianniu-plus/components/cascader-panel'
+import type { Placement } from '@xianniu-plus/components/popper'
 
 export const cascaderProps = buildProps({
   ...CommonProps,

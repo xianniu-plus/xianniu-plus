@@ -1,5 +1,5 @@
 // @ts-nocheck
-import { useSizeProp } from '@element-plus/hooks'
+import { useSizeProp } from '@xianniu-plus/hooks'
 import type {
   CSSProperties,
   ComponentInternalInstance,
@@ -7,8 +7,8 @@ import type {
   Ref,
   VNode,
 } from 'vue'
-import type { ComponentSize } from '@element-plus/constants'
-import type { Nullable } from '@element-plus/utils'
+import type { ComponentSize } from '@xianniu-plus/constants'
+import type { Nullable } from '@xianniu-plus/utils'
 import type { Store } from '../store'
 import type { TableColumnCtx } from '../table-column/defaults'
 import type TableLayout from '../table-layout'

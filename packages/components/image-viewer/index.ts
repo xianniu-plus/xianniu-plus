@@ -1,7 +1,7 @@
-import { withInstall } from '@element-plus/utils'
+import { withInstall } from '@xianniu-plus/utils'
 
 import ImageViewer from './src/image-viewer.vue'
-import type { SFCWithInstall } from '@element-plus/utils'
+import type { SFCWithInstall } from '@xianniu-plus/utils'
 
 export const ElImageViewer: SFCWithInstall<typeof ImageViewer> =
   withInstall(ImageViewer)

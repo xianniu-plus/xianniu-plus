@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { Warning } from '@element-plus/icons-vue'
+import { Warning } from '@xianniu-plus/icons-vue'
 import { useLang } from '../../composables/lang'
 import apiTypingLocale from '../../../i18n/component/api-typing.json'
 

@@ -15,7 +15,7 @@
 <script lang="ts" setup>
 import { computed, onMounted, provide, ref, watch } from 'vue'
 import { useEventListener } from '@vueuse/core'
-import { useNamespace } from '@element-plus/hooks'
+import { useNamespace } from '@xianniu-plus/hooks'
 import {
   animateScrollTo,
   getElement,
@@ -25,8 +25,8 @@ import {
   isUndefined,
   isWindow,
   throttleByRaf,
-} from '@element-plus/utils'
-import { CHANGE_EVENT } from '@element-plus/constants'
+} from '@xianniu-plus/utils'
+import { CHANGE_EVENT } from '@xianniu-plus/constants'
 import { anchorEmits, anchorProps } from './anchor'
 import { anchorKey } from './constants'
 

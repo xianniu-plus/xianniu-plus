@@ -30,12 +30,12 @@ import { computed, defineComponent, inject } from 'vue'
 import {
   ROVING_FOCUS_GROUP_ITEM_INJECTION_KEY,
   ROVING_FOCUS_ITEM_COLLECTION_INJECTION_KEY,
-} from '@element-plus/components/roving-focus-group'
-import { COLLECTION_ITEM_SIGN } from '@element-plus/components/collection'
-import { ElIcon } from '@element-plus/components/icon'
-import { useNamespace } from '@element-plus/hooks'
-import { composeEventHandlers, composeRefs } from '@element-plus/utils'
-import { EVENT_CODE } from '@element-plus/constants'
+} from '@xianniu-plus/components/roving-focus-group'
+import { COLLECTION_ITEM_SIGN } from '@xianniu-plus/components/collection'
+import { ElIcon } from '@xianniu-plus/components/icon'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { composeEventHandlers, composeRefs } from '@xianniu-plus/utils'
+import { EVENT_CODE } from '@xianniu-plus/constants'
 import {
   DROPDOWN_COLLECTION_ITEM_INJECTION_KEY,
   dropdownItemProps,

@@ -16,10 +16,10 @@
 <script lang="ts" setup>
 import { computed, nextTick, provide, toRefs, watch } from 'vue'
 import { pick } from 'lodash-unified'
-import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@element-plus/constants'
-import { debugWarn } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
-import { useFormItem, useFormItemInputId } from '@element-plus/components/form'
+import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
+import { debugWarn } from '@xianniu-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { useFormItem, useFormItemInputId } from '@xianniu-plus/components/form'
 import { checkboxGroupEmits, checkboxGroupProps } from './checkbox-group'
 import { checkboxGroupContextKey } from './constants'
 

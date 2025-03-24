@@ -1,17 +1,17 @@
 import { placements } from '@popperjs/core'
-import { buildProps, definePropType } from '@element-plus/utils'
+import { buildProps, definePropType } from '@xianniu-plus/utils'
 import {
   useAriaProps,
   useEmptyValuesProps,
   useSizeProp,
-} from '@element-plus/hooks'
-import { CircleClose } from '@element-plus/icons-vue'
+} from '@xianniu-plus/hooks'
+import { CircleClose } from '@xianniu-plus/icons-vue'
 import { disabledTimeListsProps } from '../props/shared'
 
 import type { Component, ExtractPropTypes } from 'vue'
 import type { Options } from '@popperjs/core'
 import type { Dayjs } from 'dayjs'
-import type { Placement } from '@element-plus/components/popper'
+import type { Placement } from '@xianniu-plus/components/popper'
 
 export type SingleOrRange<T> = T | [T, T]
 export type DateModelType = number | string | Date

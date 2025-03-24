@@ -6,8 +6,8 @@
 
 <script lang="ts" setup>
 import { computed } from 'vue'
-import { CHANGE_EVENT } from '@element-plus/constants'
-import { useNamespace } from '@element-plus/hooks'
+import { CHANGE_EVENT } from '@xianniu-plus/constants'
+import { useNamespace } from '@xianniu-plus/hooks'
 import { checkTagEmits, checkTagProps } from './check-tag'
 
 defineOptions({

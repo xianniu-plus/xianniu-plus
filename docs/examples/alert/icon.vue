@@ -13,7 +13,7 @@
 </template>
 
 <script lang="ts" setup>
-import { Bell } from '@element-plus/icons-vue'
+import { Bell } from '@xianniu-plus/icons-vue'
 </script>
 
 <style scoped>

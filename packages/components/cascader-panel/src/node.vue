@@ -62,16 +62,16 @@
 
 <script lang="ts">
 import { computed, defineComponent, inject } from 'vue'
-import ElCheckbox from '@element-plus/components/checkbox'
-import ElRadio from '@element-plus/components/radio'
-import ElIcon from '@element-plus/components/icon'
-import { useNamespace } from '@element-plus/hooks'
-import { ArrowRight, Check, Loading } from '@element-plus/icons-vue'
+import ElCheckbox from '@xianniu-plus/components/checkbox'
+import ElRadio from '@xianniu-plus/components/radio'
+import ElIcon from '@xianniu-plus/components/icon'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { ArrowRight, Check, Loading } from '@xianniu-plus/icons-vue'
 import NodeContent from './node-content'
 import { CASCADER_PANEL_INJECTION_KEY } from './types'
 import type { default as CascaderNode } from './node'
 import type { PropType } from 'vue'
-import type { CheckboxValueType } from '@element-plus/components/checkbox'
+import type { CheckboxValueType } from '@xianniu-plus/components/checkbox'
 
 export default defineComponent({
   name: 'ElCascaderNode',

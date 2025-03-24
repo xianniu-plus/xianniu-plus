@@ -1,9 +1,9 @@
-import { buildProps, definePropType, isArray } from '@element-plus/utils'
-import { datePickTypes } from '@element-plus/constants'
+import { buildProps, definePropType, isArray } from '@xianniu-plus/utils'
+import { datePickTypes } from '@xianniu-plus/constants'
 
 import type { ExtractPropTypes } from 'vue'
 import type { Dayjs } from 'dayjs'
-import type { DatePickType } from '@element-plus/constants'
+import type { DatePickType } from '@xianniu-plus/constants'
 
 const selectionModes = [
   'date',

@@ -11,7 +11,7 @@
 </template>
 
 <script setup lang="ts">
-import { Plus } from '@element-plus/icons-vue'
+import { Plus } from '@xianniu-plus/icons-vue'
 </script>
 
 <style>

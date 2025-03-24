@@ -3,8 +3,8 @@ import {
   definePropType,
   iconPropType,
   isNumber,
-} from '@element-plus/utils'
-import { componentSizes } from '@element-plus/constants'
+} from '@xianniu-plus/utils'
+import { componentSizes } from '@xianniu-plus/constants'
 import type { ExtractPropTypes } from 'vue'
 import type { ObjectFitProperty } from 'csstype'
 

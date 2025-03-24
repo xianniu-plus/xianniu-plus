@@ -5,8 +5,8 @@ import {
   isBoolean,
   isClient,
   isFunction,
-} from '@element-plus/utils'
-import type { ExtractPropType } from '@element-plus/utils'
+} from '@xianniu-plus/utils'
+import type { ExtractPropType } from '@xianniu-plus/utils'
 import type { RouteLocationNormalizedLoaded } from 'vue-router'
 
 import type { ComponentPublicInstance, ExtractPropTypes, Ref } from 'vue'

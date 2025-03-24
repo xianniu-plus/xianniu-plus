@@ -7,7 +7,7 @@ import {
   Loading,
   SuccessFilled,
   WarningFilled,
-} from '@element-plus/icons-vue'
+} from '@xianniu-plus/icons-vue'
 import { definePropType } from './props'
 
 import type { Component } from 'vue'

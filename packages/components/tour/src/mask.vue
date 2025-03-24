@@ -26,7 +26,7 @@
 
 <script setup lang="ts">
 import { computed, inject, toRef } from 'vue'
-import { useLockscreen } from '@element-plus/hooks'
+import { useLockscreen } from '@xianniu-plus/hooks'
 import { maskProps } from './mask'
 import { tourKey } from './helper'
 import type { CSSProperties } from 'vue'

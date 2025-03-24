@@ -127,7 +127,7 @@
 </template>
 
 <script lang="ts" setup>
-import { useId, useNamespace } from '@element-plus/hooks'
+import { useId, useNamespace } from '@xianniu-plus/hooks'
 
 defineOptions({
   name: 'ImgEmpty',

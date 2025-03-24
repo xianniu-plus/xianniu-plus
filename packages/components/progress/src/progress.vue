@@ -83,16 +83,16 @@
 
 <script lang="ts" setup>
 import { computed } from 'vue'
-import { ElIcon } from '@element-plus/components/icon'
+import { ElIcon } from '@xianniu-plus/components/icon'
 import {
   Check,
   CircleCheck,
   CircleClose,
   Close,
   WarningFilled,
-} from '@element-plus/icons-vue'
-import { useNamespace } from '@element-plus/hooks'
-import { isFunction, isString } from '@element-plus/utils'
+} from '@xianniu-plus/icons-vue'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { isFunction, isString } from '@xianniu-plus/utils'
 import { progressProps } from './progress'
 import type { CSSProperties } from 'vue'
 import type { ProgressColor } from './progress'

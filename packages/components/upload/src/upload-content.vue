@@ -35,9 +35,9 @@
 <script lang="ts" setup>
 import { shallowRef } from 'vue'
 import { cloneDeep, isEqual } from 'lodash-unified'
-import { entriesOf, isFunction, isPlainObject } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
-import { useFormDisabled } from '@element-plus/components/form'
+import { entriesOf, isFunction, isPlainObject } from '@xianniu-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { useFormDisabled } from '@xianniu-plus/components/form'
 import UploadDragger from './upload-dragger.vue'
 import { uploadContentProps } from './upload-content'
 import { genFileId } from './upload'

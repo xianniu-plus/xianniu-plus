@@ -3,9 +3,9 @@ import {
   useFormDisabled,
   useFormItem,
   useFormSize,
-} from '@element-plus/components/form'
-import { useGlobalConfig } from '@element-plus/components/config-provider'
-import { useDeprecated } from '@element-plus/hooks'
+} from '@xianniu-plus/components/form'
+import { useGlobalConfig } from '@xianniu-plus/components/config-provider'
+import { useDeprecated } from '@xianniu-plus/hooks'
 import { buttonGroupContextKey } from './constants'
 
 import type { SetupContext } from 'vue'

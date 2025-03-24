@@ -15,9 +15,9 @@
 
 <script lang="ts" setup>
 import { computed, onBeforeUnmount, onMounted, ref, watch } from 'vue'
-import { ElStatistic } from '@element-plus/components/statistic'
-import { cAF, rAF } from '@element-plus/utils'
-import { CHANGE_EVENT } from '@element-plus/constants'
+import { ElStatistic } from '@xianniu-plus/components/statistic'
+import { cAF, rAF } from '@xianniu-plus/utils'
+import { CHANGE_EVENT } from '@xianniu-plus/constants'
 import { countdownEmits, countdownProps } from './countdown'
 import { formatTime, getTime } from './utils'
 

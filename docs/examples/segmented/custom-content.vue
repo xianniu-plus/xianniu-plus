@@ -22,7 +22,7 @@ import {
   Orange,
   Pear,
   Watermelon,
-} from '@element-plus/icons-vue'
+} from '@xianniu-plus/icons-vue'
 
 const value = ref('Apple')
 

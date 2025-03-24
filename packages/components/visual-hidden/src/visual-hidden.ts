@@ -1,4 +1,4 @@
-import { buildProps, definePropType } from '@element-plus/utils'
+import { buildProps, definePropType } from '@xianniu-plus/utils'
 import type { StyleValue } from 'vue'
 
 export const visualHiddenProps = buildProps({

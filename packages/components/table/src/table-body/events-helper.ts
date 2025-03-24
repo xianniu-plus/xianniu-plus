@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { h, inject, ref } from 'vue'
 import { debounce } from 'lodash-unified'
-import { addClass, hasClass, removeClass } from '@element-plus/utils'
+import { addClass, hasClass, removeClass } from '@xianniu-plus/utils'
 import {
   createTablePopper,
   getCell,

@@ -1,9 +1,9 @@
-import { withInstall, withNoopInstall } from '@element-plus/utils'
+import { withInstall, withNoopInstall } from '@xianniu-plus/utils'
 
 import Dropdown from './src/dropdown.vue'
 import DropdownItem from './src/dropdown-item.vue'
 import DropdownMenu from './src/dropdown-menu.vue'
-import type { SFCWithInstall } from '@element-plus/utils'
+import type { SFCWithInstall } from '@xianniu-plus/utils'
 
 export const ElDropdown: SFCWithInstall<typeof Dropdown> & {
   DropdownItem: typeof DropdownItem

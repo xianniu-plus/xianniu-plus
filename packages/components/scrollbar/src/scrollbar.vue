@@ -39,8 +39,8 @@ import {
   watch,
 } from 'vue'
 import { useEventListener, useResizeObserver } from '@vueuse/core'
-import { addUnit, debugWarn, isNumber, isObject } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
+import { addUnit, debugWarn, isNumber, isObject } from '@xianniu-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
 import Bar from './bar.vue'
 import { scrollbarContextKey } from './constants'
 import { scrollbarEmits, scrollbarProps } from './scrollbar'

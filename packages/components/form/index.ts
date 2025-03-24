@@ -1,7 +1,7 @@
-import { withInstall, withNoopInstall } from '@element-plus/utils'
+import { withInstall, withNoopInstall } from '@xianniu-plus/utils'
 import Form from './src/form.vue'
 import FormItem from './src/form-item.vue'
-import type { SFCWithInstall } from '@element-plus/utils'
+import type { SFCWithInstall } from '@xianniu-plus/utils'
 
 export const ElForm: SFCWithInstall<typeof Form> & {
   FormItem: typeof FormItem

@@ -61,8 +61,8 @@ import {
   isBoolean,
   isFunction,
   isString,
-} from '@element-plus/utils'
-import { useId, useNamespace } from '@element-plus/hooks'
+} from '@xianniu-plus/utils'
+import { useId, useNamespace } from '@xianniu-plus/hooks'
 import { useFormSize } from './hooks'
 import { formItemProps } from './form-item'
 import FormLabelWrap from './form-label-wrap'
@@ -70,7 +70,7 @@ import { formContextKey, formItemContextKey } from './constants'
 
 import type { CSSProperties } from 'vue'
 import type { RuleItem } from 'async-validator'
-import type { Arrayable } from '@element-plus/utils'
+import type { Arrayable } from '@xianniu-plus/utils'
 import type {
   FormItemContext,
   FormItemRule,

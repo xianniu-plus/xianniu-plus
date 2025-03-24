@@ -109,10 +109,10 @@
 <script lang="ts" setup>
 import { computed, inject, ref, toRef, unref } from 'vue'
 import dayjs from 'dayjs'
-import ElIcon from '@element-plus/components/icon'
-import { isArray } from '@element-plus/utils'
-import { useLocale } from '@element-plus/hooks'
-import { DArrowLeft, DArrowRight } from '@element-plus/icons-vue'
+import ElIcon from '@xianniu-plus/components/icon'
+import { isArray } from '@xianniu-plus/utils'
+import { useLocale } from '@xianniu-plus/hooks'
+import { DArrowLeft, DArrowRight } from '@xianniu-plus/icons-vue'
 import {
   correctlyParseUserInput,
   getDefaultValue,

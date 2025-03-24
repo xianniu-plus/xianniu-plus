@@ -1,12 +1,12 @@
 import { markRaw, nextTick, ref } from 'vue'
 import { mount } from '@vue/test-utils'
 import { describe, expect, it, test } from 'vitest'
-import { Loading, Search } from '@element-plus/icons-vue'
+import { Loading, Search } from '@xianniu-plus/icons-vue'
 
-import Form from '@element-plus/components/form'
+import Form from '@xianniu-plus/components/form'
 import Button from '../src/button.vue'
 import ButtonGroup from '../src/button-group.vue'
-import type { ComponentSize } from '@element-plus/constants'
+import type { ComponentSize } from '@xianniu-plus/constants'
 
 const AXIOM = 'Rem is the best girl'
 

@@ -14,7 +14,7 @@ import {
   epPackage,
   getPackageDependencies,
   projRoot,
-} from '@element-plus/build-utils'
+} from '@xianniu-plus/build-utils'
 import { MarkdownTransform } from '../plugins/markdown-transform'
 import type { Plugin, UserConfig } from 'vitepress'
 
@@ -27,7 +27,7 @@ const { dependencies: docsDeps } = getPackageDependencies(docPackage)
 const optimizeDeps = [...new Set([...epDeps, ...docsDeps])].filter(
   (dep) =>
     !dep.startsWith('@types/') &&
-    !['@element-plus/metadata', 'element-plus'].includes(dep)
+    !['@xianniu-plus/metadata', 'element-plus'].includes(dep)
 )
 optimizeDeps.push(
   ...(await glob(['dayjs/plugin/*.js'], {

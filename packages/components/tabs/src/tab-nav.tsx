@@ -19,11 +19,11 @@ import {
   definePropType,
   mutable,
   throwError,
-} from '@element-plus/utils'
-import { EVENT_CODE } from '@element-plus/constants'
-import { ElIcon } from '@element-plus/components/icon'
-import { ArrowLeft, ArrowRight, Close } from '@element-plus/icons-vue'
-import { useNamespace } from '@element-plus/hooks'
+} from '@xianniu-plus/utils'
+import { EVENT_CODE } from '@xianniu-plus/constants'
+import { ElIcon } from '@xianniu-plus/components/icon'
+import { ArrowLeft, ArrowRight, Close } from '@xianniu-plus/icons-vue'
+import { useNamespace } from '@xianniu-plus/hooks'
 import TabBar from './tab-bar.vue'
 import { tabsRootContextKey } from './constants'
 

@@ -20,5 +20,5 @@ import {
   Delete,
   Edit,
   Share,
-} from '@element-plus/icons-vue'
+} from '@xianniu-plus/icons-vue'
 </script>

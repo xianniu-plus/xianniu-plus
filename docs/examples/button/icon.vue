@@ -11,5 +11,5 @@
 </template>
 
 <script setup lang="ts">
-import { Delete, Edit, Search, Share, Upload } from '@element-plus/icons-vue'
+import { Delete, Edit, Search, Share, Upload } from '@xianniu-plus/icons-vue'
 </script>

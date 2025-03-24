@@ -1,4 +1,4 @@
-import { buildProps, definePropType } from '@element-plus/utils'
+import { buildProps, definePropType } from '@xianniu-plus/utils'
 import type { ExtractPropTypes } from 'vue'
 import type { RouteLocationRaw } from 'vue-router'
 

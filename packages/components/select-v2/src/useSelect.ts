@@ -22,33 +22,33 @@ import {
   isFunction,
   isNumber,
   isObject,
-} from '@element-plus/utils'
+} from '@xianniu-plus/utils'
 import {
   useComposition,
   useEmptyValues,
   useFocusController,
   useLocale,
   useNamespace,
-} from '@element-plus/hooks'
+} from '@xianniu-plus/hooks'
 import {
   CHANGE_EVENT,
   EVENT_CODE,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
+} from '@xianniu-plus/constants'
 import {
   useFormItem,
   useFormItemInputId,
   useFormSize,
-} from '@element-plus/components/form'
+} from '@xianniu-plus/components/form'
 
-import { ArrowDown } from '@element-plus/icons-vue'
+import { ArrowDown } from '@xianniu-plus/icons-vue'
 import { useAllowCreate } from './useAllowCreate'
 import { useProps } from './useProps'
 
 import type { Option, OptionType, SelectStates } from './select.types'
 import type { ISelectV2Props } from './token'
 import type { SelectEmitFn } from './defaults'
-import type { TooltipInstance } from '@element-plus/components/tooltip'
+import type { TooltipInstance } from '@xianniu-plus/components/tooltip'
 import type { SelectDropdownInstance } from './select-dropdown'
 
 const useSelect = (props: ISelectV2Props, emit: SelectEmitFn) => {

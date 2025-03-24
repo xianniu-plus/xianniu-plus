@@ -1,4 +1,4 @@
-import '@element-plus/components/base/style/css'
-import '@element-plus/theme-chalk/el-table-column.css'
-import '@element-plus/components/checkbox/style/css'
-import '@element-plus/components/tag/style/css'
+import '@xianniu-plus/components/base/style/css'
+import '@xianniu-plus/theme-chalk/el-table-column.css'
+import '@xianniu-plus/components/checkbox/style/css'
+import '@xianniu-plus/components/tag/style/css'

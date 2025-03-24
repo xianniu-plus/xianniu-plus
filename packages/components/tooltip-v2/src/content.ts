@@ -1,7 +1,7 @@
-import { buildProps, definePropType } from '@element-plus/utils'
-import { useAriaProps } from '@element-plus/hooks'
+import { buildProps, definePropType } from '@xianniu-plus/utils'
+import { useAriaProps } from '@xianniu-plus/hooks'
 
-import type { PopperEffect } from '@element-plus/components/popper'
+import type { PopperEffect } from '@xianniu-plus/components/popper'
 import type { ExtractPropTypes } from 'vue'
 import type { Placement, Strategy, VirtualElement } from '@floating-ui/dom'
 

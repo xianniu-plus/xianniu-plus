@@ -3,7 +3,7 @@ import {
   definePropType,
   isString,
   isUndefined,
-} from '@element-plus/utils'
+} from '@xianniu-plus/utils'
 
 import type { ExtractPropTypes } from 'vue'
 import type Anchor from './anchor.vue'

@@ -11,7 +11,7 @@
 
 <script lang="ts" setup>
 import { onMounted, provide, ref } from 'vue'
-import { useLocale, useNamespace } from '@element-plus/hooks'
+import { useLocale, useNamespace } from '@xianniu-plus/hooks'
 import { breadcrumbKey } from './constants'
 import { breadcrumbProps } from './breadcrumb'
 

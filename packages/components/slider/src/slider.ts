@@ -4,14 +4,14 @@ import {
   definePropType,
   isArray,
   isNumber,
-} from '@element-plus/utils'
+} from '@xianniu-plus/utils'
 import {
   CHANGE_EVENT,
   INPUT_EVENT,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
-import { useAriaProps, useSizeProp } from '@element-plus/hooks'
-import type { Arrayable } from '@element-plus/utils'
+} from '@xianniu-plus/constants'
+import { useAriaProps, useSizeProp } from '@xianniu-plus/hooks'
+import type { Arrayable } from '@xianniu-plus/utils'
 import type { ExtractPropTypes } from 'vue'
 import type { SliderMarkerProps } from './marker'
 import type Slider from './slider.vue'

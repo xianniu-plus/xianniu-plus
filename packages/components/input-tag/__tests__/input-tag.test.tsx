@@ -1,9 +1,9 @@
 import { nextTick, ref } from 'vue'
 import { mount } from '@vue/test-utils'
 import { describe, expect, test, vi } from 'vitest'
-import { ComponentSize, EVENT_CODE } from '@element-plus/constants'
-import { InputTagInstance } from '@element-plus/components/input-tag'
-import FormItem from '@element-plus/components/form/src/form-item.vue'
+import { ComponentSize, EVENT_CODE } from '@xianniu-plus/constants'
+import { InputTagInstance } from '@xianniu-plus/components/input-tag'
+import FormItem from '@xianniu-plus/components/form/src/form-item.vue'
 import InputTag from '../src/input-tag.vue'
 
 const AXIOM = 'Rem is the best girl'

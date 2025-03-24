@@ -5,8 +5,8 @@ import TreeSelect from '../src/tree-select.vue'
 
 import type { RenderFunction } from 'vue'
 import type { VueWrapper } from '@vue/test-utils'
-import type ElSelect from '@element-plus/components/select'
-import type ElTree from '@element-plus/components/tree'
+import type ElSelect from '@xianniu-plus/components/select'
+import type ElTree from '@xianniu-plus/components/tree'
 
 const createComponent = ({
   slots = {},

@@ -1,4 +1,4 @@
-import { isFirefox, isNumber } from '@element-plus/utils'
+import { isFirefox, isNumber } from '@xianniu-plus/utils'
 
 let hiddenTextarea: HTMLTextAreaElement | undefined = undefined
 

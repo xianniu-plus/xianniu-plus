@@ -5,9 +5,9 @@
 import { defineComponent, nextTick, reactive } from 'vue'
 import { mount } from '@vue/test-utils'
 import { beforeEach, describe, expect, it, test, vi } from 'vitest'
-import { NOOP } from '@element-plus/utils'
-import { usePopperContainerId } from '@element-plus/hooks'
-import { ElFormItem as FormItem } from '@element-plus/components/form'
+import { NOOP } from '@xianniu-plus/utils'
+import { usePopperContainerId } from '@xianniu-plus/hooks'
+import { ElFormItem as FormItem } from '@xianniu-plus/components/form'
 import Autocomplete from '../src/autocomplete.vue'
 
 vi.unmock('lodash')

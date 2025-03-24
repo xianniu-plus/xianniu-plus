@@ -110,9 +110,9 @@
 <script lang="ts" setup>
 import { computed, provide, reactive, toRefs } from 'vue'
 import { useEventListener } from '@vueuse/core'
-import ElInputNumber from '@element-plus/components/input-number'
-import { useFormItemInputId, useFormSize } from '@element-plus/components/form'
-import { useLocale, useNamespace } from '@element-plus/hooks'
+import ElInputNumber from '@xianniu-plus/components/input-number'
+import { useFormItemInputId, useFormSize } from '@xianniu-plus/components/form'
+import { useLocale, useNamespace } from '@xianniu-plus/hooks'
 import { sliderContextKey } from './constants'
 import { sliderEmits, sliderProps } from './slider'
 import SliderButton from './button.vue'

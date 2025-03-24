@@ -1,2 +1,2 @@
-import '@element-plus/components/base/style'
-import '@element-plus/theme-chalk/src/collapse-transition.scss'
+import '@xianniu-plus/components/base/style'
+import '@xianniu-plus/theme-chalk/src/collapse-transition.scss'

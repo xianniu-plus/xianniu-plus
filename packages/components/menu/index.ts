@@ -1,10 +1,10 @@
-import { withInstall, withNoopInstall } from '@element-plus/utils'
+import { withInstall, withNoopInstall } from '@xianniu-plus/utils'
 
 import Menu from './src/menu'
 import MenuItem from './src/menu-item.vue'
 import MenuItemGroup from './src/menu-item-group.vue'
 import SubMenu from './src/sub-menu'
-import type { SFCWithInstall } from '@element-plus/utils'
+import type { SFCWithInstall } from '@xianniu-plus/utils'
 
 export const ElMenu: SFCWithInstall<typeof Menu> & {
   MenuItem: typeof MenuItem

@@ -15,18 +15,18 @@ import {
   isNumber,
   isString,
   isUndefined,
-} from '@element-plus/utils'
-import { EVENT_CODE, UPDATE_MODEL_EVENT } from '@element-plus/constants'
-import ElIcon from '@element-plus/components/icon'
-import { Plus } from '@element-plus/icons-vue'
-import { useNamespace, useOrderedChildren } from '@element-plus/hooks'
+} from '@xianniu-plus/utils'
+import { EVENT_CODE, UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
+import ElIcon from '@xianniu-plus/components/icon'
+import { Plus } from '@xianniu-plus/icons-vue'
+import { useNamespace, useOrderedChildren } from '@xianniu-plus/hooks'
 import { tabsRootContextKey } from './constants'
 import TabNav from './tab-nav'
 
 import type { TabNavInstance } from './tab-nav'
 import type { TabsPaneContext } from './constants'
 import type { ExtractPropTypes, FunctionalComponent, VNode } from 'vue'
-import type { Awaitable } from '@element-plus/utils'
+import type { Awaitable } from '@xianniu-plus/utils'
 
 export type TabPaneName = string | number
 

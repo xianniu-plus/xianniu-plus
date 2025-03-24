@@ -28,12 +28,12 @@ import {
   isPlainObject,
   isUndefined,
   scrollIntoView,
-} from '@element-plus/utils'
+} from '@xianniu-plus/utils'
 import {
   CHANGE_EVENT,
   EVENT_CODE,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
+} from '@xianniu-plus/constants'
 import {
   useComposition,
   useEmptyValues,
@@ -41,14 +41,14 @@ import {
   useId,
   useLocale,
   useNamespace,
-} from '@element-plus/hooks'
+} from '@xianniu-plus/hooks'
 import {
   useFormItem,
   useFormItemInputId,
   useFormSize,
-} from '@element-plus/components/form'
+} from '@xianniu-plus/components/form'
 
-import type { TooltipInstance } from '@element-plus/components/tooltip'
+import type { TooltipInstance } from '@xianniu-plus/components/tooltip'
 import type { ISelectProps, SelectOptionProxy } from './token'
 
 export const useSelect = (props: ISelectProps, emit) => {

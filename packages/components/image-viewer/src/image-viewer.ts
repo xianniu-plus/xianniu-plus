@@ -3,7 +3,7 @@ import {
   definePropType,
   isNumber,
   mutable,
-} from '@element-plus/utils'
+} from '@xianniu-plus/utils'
 
 import type { Component, ExtractPropTypes } from 'vue'
 import type ImageViewer from './image-viewer.vue'

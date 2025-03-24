@@ -1,10 +1,10 @@
-import { buildProps } from '@element-plus/utils'
+import { buildProps } from '@xianniu-plus/utils'
 import {
   CircleCheckFilled,
   CircleCloseFilled,
   InfoFilled,
   WarningFilled,
-} from '@element-plus/icons-vue'
+} from '@xianniu-plus/icons-vue'
 import type { Component, ExtractPropTypes } from 'vue'
 import type Result from './result.vue'
 

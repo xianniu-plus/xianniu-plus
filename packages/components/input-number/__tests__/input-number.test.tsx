@@ -1,10 +1,10 @@
 import { nextTick, ref } from 'vue'
 import { mount } from '@vue/test-utils'
 import { describe, expect, it, test, vi } from 'vitest'
-import { ArrowDown, ArrowUp } from '@element-plus/icons-vue'
-import { ElFormItem } from '@element-plus/components/form'
-import { ElIcon } from '@element-plus/components/icon'
-import { UPDATE_MODEL_EVENT } from '@element-plus/constants'
+import { ArrowDown, ArrowUp } from '@xianniu-plus/icons-vue'
+import { ElFormItem } from '@xianniu-plus/components/form'
+import { ElIcon } from '@xianniu-plus/components/icon'
+import { UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
 import InputNumber from '../src/input-number.vue'
 
 const mouseup = new Event('mouseup')

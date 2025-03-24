@@ -1,1 +1,1 @@
-export * from '@element-plus/locale'
+export * from '@xianniu-plus/locale'

@@ -1,7 +1,7 @@
 // @ts-nocheck
 import { inject } from 'vue'
-import { useNamespace } from '@element-plus/hooks'
-import { isArray, isFunction, isObject, isString } from '@element-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { isArray, isFunction, isObject, isString } from '@xianniu-plus/utils'
 import {
   ensurePosition,
   getFixedColumnOffset,

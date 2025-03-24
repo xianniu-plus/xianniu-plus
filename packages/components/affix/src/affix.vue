@@ -21,9 +21,9 @@ import {
   useEventListener,
   useWindowSize,
 } from '@vueuse/core'
-import { addUnit, getScrollContainer, throwError } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
-import { CHANGE_EVENT } from '@element-plus/constants'
+import { addUnit, getScrollContainer, throwError } from '@xianniu-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { CHANGE_EVENT } from '@xianniu-plus/constants'
 import { affixEmits, affixProps } from './affix'
 import type { CSSProperties } from 'vue'
 

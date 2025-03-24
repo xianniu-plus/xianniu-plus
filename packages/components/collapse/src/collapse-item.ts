@@ -1,5 +1,5 @@
-import { buildProps, definePropType, iconPropType } from '@element-plus/utils'
-import { ArrowRight } from '@element-plus/icons-vue'
+import { buildProps, definePropType, iconPropType } from '@xianniu-plus/utils'
+import { ArrowRight } from '@xianniu-plus/icons-vue'
 import type { ExtractPropTypes } from 'vue'
 import type { CollapseActiveName } from './collapse'
 

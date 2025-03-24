@@ -208,40 +208,40 @@ import {
   getSibling,
   isClient,
   isPromise,
-} from '@element-plus/utils'
-import ElCascaderPanel from '@element-plus/components/cascader-panel'
-import ElInput from '@element-plus/components/input'
-import ElTooltip from '@element-plus/components/tooltip'
-import ElScrollbar from '@element-plus/components/scrollbar'
-import ElTag from '@element-plus/components/tag'
-import ElIcon from '@element-plus/components/icon'
-import { useFormItem, useFormSize } from '@element-plus/components/form'
-import { ClickOutside as vClickoutside } from '@element-plus/directives'
+} from '@xianniu-plus/utils'
+import ElCascaderPanel from '@xianniu-plus/components/cascader-panel'
+import ElInput from '@xianniu-plus/components/input'
+import ElTooltip from '@xianniu-plus/components/tooltip'
+import ElScrollbar from '@xianniu-plus/components/scrollbar'
+import ElTag from '@xianniu-plus/components/tag'
+import ElIcon from '@xianniu-plus/components/icon'
+import { useFormItem, useFormSize } from '@xianniu-plus/components/form'
+import { ClickOutside as vClickoutside } from '@xianniu-plus/directives'
 import {
   useComposition,
   useEmptyValues,
   useLocale,
   useNamespace,
-} from '@element-plus/hooks'
+} from '@xianniu-plus/hooks'
 import {
   CHANGE_EVENT,
   EVENT_CODE,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
-import { ArrowDown, Check, CircleClose } from '@element-plus/icons-vue'
+} from '@xianniu-plus/constants'
+import { ArrowDown, Check, CircleClose } from '@xianniu-plus/icons-vue'
 import { cascaderEmits, cascaderProps } from './cascader'
 
-import type { Options } from '@element-plus/components/popper'
+import type { Options } from '@xianniu-plus/components/popper'
 import type { ComputedRef, Ref, StyleValue } from 'vue'
-import type { TooltipInstance } from '@element-plus/components/tooltip'
-import type { InputInstance } from '@element-plus/components/input'
-import type { ScrollbarInstance } from '@element-plus/components/scrollbar'
+import type { TooltipInstance } from '@xianniu-plus/components/tooltip'
+import type { InputInstance } from '@xianniu-plus/components/input'
+import type { ScrollbarInstance } from '@xianniu-plus/components/scrollbar'
 import type {
   CascaderNode,
   CascaderPanelInstance,
   CascaderValue,
   Tag,
-} from '@element-plus/components/cascader-panel'
+} from '@xianniu-plus/components/cascader-panel'
 
 const popperOptions: Partial<Options> = {
   modifiers: [

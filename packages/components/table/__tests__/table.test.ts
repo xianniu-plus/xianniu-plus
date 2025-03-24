@@ -1,10 +1,10 @@
 // @ts-nocheck
 import { h, nextTick } from 'vue'
 import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
-import ElCheckbox from '@element-plus/components/checkbox'
-import triggerEvent from '@element-plus/test-utils/trigger-event'
-import { rAF } from '@element-plus/test-utils/tick'
-import { CaretBottom, CaretTop } from '@element-plus/icons-vue'
+import ElCheckbox from '@xianniu-plus/components/checkbox'
+import triggerEvent from '@xianniu-plus/test-utils/trigger-event'
+import { rAF } from '@xianniu-plus/test-utils/tick'
+import { CaretBottom, CaretTop } from '@xianniu-plus/icons-vue'
 import ElTable from '../src/table.vue'
 import ElTableColumn from '../src/table-column'
 import {

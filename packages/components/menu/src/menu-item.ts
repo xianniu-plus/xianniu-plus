@@ -3,7 +3,7 @@ import {
   definePropType,
   isArray,
   isString,
-} from '@element-plus/utils'
+} from '@xianniu-plus/utils'
 
 import type { ExtractPropTypes } from 'vue'
 import type { RouteLocationRaw } from 'vue-router'

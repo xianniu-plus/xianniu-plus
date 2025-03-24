@@ -28,8 +28,8 @@
 
 <script lang="ts" setup>
 import { computed } from 'vue'
-import { ElIcon } from '@element-plus/components/icon'
-import { useNamespace } from '@element-plus/hooks'
+import { ElIcon } from '@xianniu-plus/components/icon'
+import { useNamespace } from '@xianniu-plus/hooks'
 import { useButton } from './use-button'
 import { buttonEmits, buttonProps } from './button'
 import { useButtonCustomStyle } from './button-custom'

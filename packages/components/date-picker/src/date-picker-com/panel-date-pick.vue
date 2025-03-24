@@ -204,25 +204,25 @@ import {
   watch,
 } from 'vue'
 import dayjs from 'dayjs'
-import ElButton from '@element-plus/components/button'
-import { ClickOutside as vClickOutside } from '@element-plus/directives'
-import { useLocale, useNamespace } from '@element-plus/hooks'
-import ElInput from '@element-plus/components/input'
+import ElButton from '@xianniu-plus/components/button'
+import { ClickOutside as vClickOutside } from '@xianniu-plus/directives'
+import { useLocale, useNamespace } from '@xianniu-plus/hooks'
+import ElInput from '@xianniu-plus/components/input'
 import {
   TimePickPanel,
   extractDateFormat,
   extractTimeFormat,
-} from '@element-plus/components/time-picker'
-import { ElIcon } from '@element-plus/components/icon'
-import { isArray, isFunction } from '@element-plus/utils'
-import { EVENT_CODE } from '@element-plus/constants'
+} from '@xianniu-plus/components/time-picker'
+import { ElIcon } from '@xianniu-plus/components/icon'
+import { isArray, isFunction } from '@xianniu-plus/utils'
+import { EVENT_CODE } from '@xianniu-plus/constants'
 import {
   ArrowLeft,
   ArrowRight,
   DArrowLeft,
   DArrowRight,
-} from '@element-plus/icons-vue'
-import { TOOLTIP_INJECTION_KEY } from '@element-plus/components/tooltip'
+} from '@xianniu-plus/icons-vue'
+import { TOOLTIP_INJECTION_KEY } from '@xianniu-plus/components/tooltip'
 import { panelDatePickProps } from '../props/panel-date-pick'
 import {
   correctlyParseUserInput,

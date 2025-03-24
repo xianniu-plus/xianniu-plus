@@ -102,7 +102,7 @@ import {
   OfficeBuilding,
   Tickets,
   User,
-} from '@element-plus/icons-vue'
+} from '@xianniu-plus/icons-vue'
 import type { ComponentSize } from 'element-plus'
 
 const size = ref<ComponentSize>('default')

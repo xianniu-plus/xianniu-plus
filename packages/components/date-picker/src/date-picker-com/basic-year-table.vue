@@ -30,9 +30,9 @@
 <script lang="ts" setup>
 import { computed, nextTick, ref, watch } from 'vue'
 import dayjs from 'dayjs'
-import { useLocale, useNamespace } from '@element-plus/hooks'
-import { rangeArr } from '@element-plus/components/time-picker'
-import { castArray, hasClass } from '@element-plus/utils'
+import { useLocale, useNamespace } from '@xianniu-plus/hooks'
+import { rangeArr } from '@xianniu-plus/components/time-picker'
+import { castArray, hasClass } from '@xianniu-plus/utils'
 import { basicYearTableProps } from '../props/basic-year-table'
 import { getValidDateOfYear } from '../utils'
 import ElDatePickerCell from './basic-cell-render'

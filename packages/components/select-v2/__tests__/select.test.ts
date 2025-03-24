@@ -1,12 +1,12 @@
 // @ts-nocheck
 import { nextTick, ref } from 'vue'
 import { afterEach, beforeAll, describe, expect, it, vi } from 'vitest'
-import { NOOP, hasClass } from '@element-plus/utils'
-import { EVENT_CODE } from '@element-plus/constants'
-import { makeMountFunc } from '@element-plus/test-utils/make-mount'
-import { rAF } from '@element-plus/test-utils/tick'
-import { CircleClose } from '@element-plus/icons-vue'
-import { usePopperContainerId } from '@element-plus/hooks'
+import { NOOP, hasClass } from '@xianniu-plus/utils'
+import { EVENT_CODE } from '@xianniu-plus/constants'
+import { makeMountFunc } from '@xianniu-plus/test-utils/make-mount'
+import { rAF } from '@xianniu-plus/test-utils/tick'
+import { CircleClose } from '@xianniu-plus/icons-vue'
+import { usePopperContainerId } from '@xianniu-plus/hooks'
 import Select from '../src/select.vue'
 import type { Props } from '../useProps'
 

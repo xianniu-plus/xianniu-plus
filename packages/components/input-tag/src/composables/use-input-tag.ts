@@ -4,14 +4,14 @@ import {
   EVENT_CODE,
   INPUT_EVENT,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
-import { type EmitFn, debugWarn, isUndefined } from '@element-plus/utils'
-import { useComposition, useFocusController } from '@element-plus/hooks'
+} from '@xianniu-plus/constants'
+import { type EmitFn, debugWarn, isUndefined } from '@xianniu-plus/utils'
+import { useComposition, useFocusController } from '@xianniu-plus/hooks'
 import {
   type FormItemContext,
   useFormDisabled,
   useFormSize,
-} from '@element-plus/components/form'
+} from '@xianniu-plus/components/form'
 import type { InputTagEmits, InputTagProps } from '../input-tag'
 
 interface UseInputTagOptions {

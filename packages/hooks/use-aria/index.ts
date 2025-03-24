@@ -1,5 +1,5 @@
 import { pick } from 'lodash-unified'
-import { buildProps } from '@element-plus/utils'
+import { buildProps } from '@xianniu-plus/utils'
 
 export const ariaProps = buildProps({
   /**

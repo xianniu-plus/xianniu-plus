@@ -8,13 +8,13 @@ import {
   watch,
 } from 'vue'
 import { get } from 'lodash-unified'
-import { isIOS, isObject, isUndefined } from '@element-plus/utils'
+import { isIOS, isObject, isUndefined } from '@xianniu-plus/utils'
 import {
   DynamicSizeList,
   FixedSizeList,
-} from '@element-plus/components/virtual-list'
-import { useNamespace } from '@element-plus/hooks'
-import { EVENT_CODE } from '@element-plus/constants'
+} from '@xianniu-plus/components/virtual-list'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { EVENT_CODE } from '@xianniu-plus/constants'
 import GroupItem from './group-item.vue'
 import OptionItem from './option-item.vue'
 import { useProps } from './useProps'
@@ -25,7 +25,7 @@ import type {
   DynamicSizeListInstance,
   FixedSizeListInstance,
   ItemProps,
-} from '@element-plus/components/virtual-list'
+} from '@xianniu-plus/components/virtual-list'
 import type { Option, OptionItemProps } from './select.types'
 import type {
   ComponentPublicInstance,

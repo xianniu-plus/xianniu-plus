@@ -18,7 +18,7 @@ import {
   ElTooltip,
   TableV2FixedDir,
 } from 'element-plus'
-import { Timer } from '@element-plus/icons-vue'
+import { Timer } from '@xianniu-plus/icons-vue'
 
 import type { Column, RowClassNameGetter } from 'element-plus'
 

@@ -1,13 +1,13 @@
-import { Star, StarFilled } from '@element-plus/icons-vue'
-import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@element-plus/constants'
+import { Star, StarFilled } from '@xianniu-plus/icons-vue'
+import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
 import {
   buildProps,
   definePropType,
   iconPropType,
   isNumber,
   mutable,
-} from '@element-plus/utils'
-import { useAriaProps, useSizeProp } from '@element-plus/hooks'
+} from '@xianniu-plus/utils'
+import { useAriaProps, useSizeProp } from '@xianniu-plus/hooks'
 import type { Component, ExtractPropTypes } from 'vue'
 import type Rate from './rate.vue'
 

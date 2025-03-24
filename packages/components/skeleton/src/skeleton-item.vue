@@ -5,8 +5,8 @@
 </template>
 
 <script lang="ts" setup>
-import { useNamespace } from '@element-plus/hooks'
-import { PictureFilled } from '@element-plus/icons-vue'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { PictureFilled } from '@xianniu-plus/icons-vue'
 import { skeletonItemProps } from './skeleton-item'
 
 defineOptions({

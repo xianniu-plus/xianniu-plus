@@ -120,29 +120,29 @@ import {
   watch,
 } from 'vue'
 import { debounce } from 'lodash-unified'
-import { ElButton } from '@element-plus/components/button'
-import { ElIcon } from '@element-plus/components/icon'
-import { ClickOutside as vClickOutside } from '@element-plus/directives'
-import { ElTooltip } from '@element-plus/components/tooltip'
-import { ElInput } from '@element-plus/components/input'
+import { ElButton } from '@xianniu-plus/components/button'
+import { ElIcon } from '@xianniu-plus/components/icon'
+import { ClickOutside as vClickOutside } from '@xianniu-plus/directives'
+import { ElTooltip } from '@xianniu-plus/components/tooltip'
+import { ElInput } from '@xianniu-plus/components/input'
 import {
   useFormDisabled,
   useFormItem,
   useFormItemInputId,
   useFormSize,
-} from '@element-plus/components/form'
+} from '@xianniu-plus/components/form'
 import {
   useFocusController,
   useLocale,
   useNamespace,
-} from '@element-plus/hooks'
+} from '@xianniu-plus/hooks'
 import {
   CHANGE_EVENT,
   EVENT_CODE,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
-import { debugWarn } from '@element-plus/utils'
-import { ArrowDown, Close } from '@element-plus/icons-vue'
+} from '@xianniu-plus/constants'
+import { debugWarn } from '@xianniu-plus/utils'
+import { ArrowDown, Close } from '@xianniu-plus/icons-vue'
 import AlphaSlider from './components/alpha-slider.vue'
 import HueSlider from './components/hue-slider.vue'
 import Predefine from './components/predefine.vue'
@@ -153,7 +153,7 @@ import {
   colorPickerEmits,
   colorPickerProps,
 } from './color-picker'
-import type { TooltipInstance } from '@element-plus/components/tooltip'
+import type { TooltipInstance } from '@xianniu-plus/components/tooltip'
 
 defineOptions({
   name: 'ElColorPicker',

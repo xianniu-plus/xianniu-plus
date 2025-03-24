@@ -1,7 +1,7 @@
-import { withInstall } from '@element-plus/utils'
+import { withInstall } from '@xianniu-plus/utils'
 
 import Card from './src/card.vue'
-import type { SFCWithInstall } from '@element-plus/utils'
+import type { SFCWithInstall } from '@xianniu-plus/utils'
 
 export const ElCard: SFCWithInstall<typeof Card> = withInstall(Card)
 export default ElCard

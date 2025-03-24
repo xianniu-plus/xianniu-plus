@@ -35,7 +35,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { ArrowDown, ArrowUp, Minus, Plus } from '@element-plus/icons-vue'
+import { ArrowDown, ArrowUp, Minus, Plus } from '@xianniu-plus/icons-vue'
 
 const num = ref(1)
 </script>

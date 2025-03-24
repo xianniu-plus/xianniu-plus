@@ -19,13 +19,13 @@
 
 <script lang="ts" setup>
 import { inject, ref, toRef, unref } from 'vue'
-import { ElPopperTrigger } from '@element-plus/components/popper'
-import { composeEventHandlers } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
+import { ElPopperTrigger } from '@xianniu-plus/components/popper'
+import { composeEventHandlers } from '@xianniu-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
 import { TOOLTIP_INJECTION_KEY } from './constants'
 import { useTooltipTriggerProps } from './trigger'
 import { whenTrigger } from './utils'
-import type { OnlyChildExpose } from '@element-plus/components/slot'
+import type { OnlyChildExpose } from '@xianniu-plus/components/slot'
 
 defineOptions({
   name: 'ElTooltipTrigger',

@@ -7,7 +7,7 @@ import {
   ref,
   watch,
 } from 'vue'
-import { ArrowLeft, ArrowRight } from '@element-plus/icons-vue'
+import { ArrowLeft, ArrowRight } from '@xianniu-plus/icons-vue'
 import {
   buildProps,
   debugWarn,
@@ -15,15 +15,15 @@ import {
   iconPropType,
   isNumber,
   mutable,
-} from '@element-plus/utils'
+} from '@xianniu-plus/utils'
 import {
   useDeprecated,
   useGlobalSize,
   useLocale,
   useNamespace,
   useSizeProp,
-} from '@element-plus/hooks'
-import { CHANGE_EVENT } from '@element-plus/constants'
+} from '@xianniu-plus/hooks'
+import { CHANGE_EVENT } from '@xianniu-plus/constants'
 import { elPaginationKey } from './constants'
 
 import Prev from './components/prev.vue'

@@ -1,5 +1,5 @@
 import { defineComponent } from 'vue'
-import { buildProps } from '@element-plus/utils'
+import { buildProps } from '@xianniu-plus/utils'
 import { COMPONENT_NAME } from './constants'
 
 import type { ExtractPropTypes, Slot, VNode } from 'vue'

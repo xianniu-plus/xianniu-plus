@@ -42,8 +42,8 @@
 
 <script lang="ts" setup>
 import { nextTick } from 'vue'
-import { useNamespace } from '@element-plus/hooks'
-import { CHANGE_EVENT } from '@element-plus/constants'
+import { useNamespace } from '@xianniu-plus/hooks'
+import { CHANGE_EVENT } from '@xianniu-plus/constants'
 import { radioEmits, radioProps } from './radio'
 import { useRadio } from './use-radio'
 

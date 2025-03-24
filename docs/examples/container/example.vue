@@ -92,7 +92,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { Menu as IconMenu, Message, Setting } from '@element-plus/icons-vue'
+import { Menu as IconMenu, Message, Setting } from '@xianniu-plus/icons-vue'
 
 const item = {
   date: '2016-05-02',

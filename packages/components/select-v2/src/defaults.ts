@@ -3,29 +3,29 @@ import {
   useAriaProps,
   useEmptyValuesProps,
   useSizeProp,
-} from '@element-plus/hooks'
+} from '@xianniu-plus/hooks'
 import {
   buildProps,
   definePropType,
   iconPropType,
   isBoolean,
   isNumber,
-} from '@element-plus/utils'
-import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@element-plus/constants'
-import { useTooltipContentProps } from '@element-plus/components/tooltip'
-import { CircleClose } from '@element-plus/icons-vue'
+} from '@xianniu-plus/utils'
+import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
+import { useTooltipContentProps } from '@xianniu-plus/components/tooltip'
+import { CircleClose } from '@xianniu-plus/icons-vue'
 import { tagProps } from '../../tag'
 import { defaultProps } from './useProps'
 
 import type { Option, OptionType } from './select.types'
 import type { Props } from './useProps'
-import type { EmitFn } from '@element-plus/utils/vue/typescript'
+import type { EmitFn } from '@xianniu-plus/utils/vue/typescript'
 import type { ExtractPropTypes } from 'vue'
 import type {
   Options,
   Placement,
   PopperEffect,
-} from '@element-plus/components/popper'
+} from '@xianniu-plus/components/popper'
 
 export const SelectProps = buildProps({
   /**

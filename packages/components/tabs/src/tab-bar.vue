@@ -16,8 +16,8 @@ import {
   watch,
 } from 'vue'
 import { useResizeObserver } from '@vueuse/core'
-import { capitalize, throwError } from '@element-plus/utils'
-import { useNamespace } from '@element-plus/hooks'
+import { capitalize, throwError } from '@xianniu-plus/utils'
+import { useNamespace } from '@xianniu-plus/hooks'
 import { tabsRootContextKey } from './constants'
 import { tabBarProps } from './tab-bar'
 

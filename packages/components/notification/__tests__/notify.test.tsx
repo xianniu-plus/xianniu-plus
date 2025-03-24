@@ -1,6 +1,6 @@
 import { createApp, nextTick } from 'vue'
 import { afterEach, describe, expect, it, vi } from 'vitest'
-import { rAF } from '@element-plus/test-utils/tick'
+import { rAF } from '@xianniu-plus/test-utils/tick'
 import Notification, { closeAll } from '../src/notify'
 
 import type { NotificationHandle } from '../src/notification'

@@ -41,10 +41,10 @@
 <script lang="ts" setup>
 import { computed, onMounted, ref } from 'vue'
 import { useEventListener, useTimeoutFn } from '@vueuse/core'
-import { CloseComponents, TypeComponentsMap } from '@element-plus/utils'
-import { EVENT_CODE } from '@element-plus/constants'
-import { ElIcon } from '@element-plus/components/icon'
-import { useGlobalComponentSettings } from '@element-plus/components/config-provider'
+import { CloseComponents, TypeComponentsMap } from '@xianniu-plus/utils'
+import { EVENT_CODE } from '@xianniu-plus/constants'
+import { ElIcon } from '@xianniu-plus/components/icon'
+import { useGlobalComponentSettings } from '@xianniu-plus/components/config-provider'
 import { notificationEmits, notificationProps } from './notification'
 
 import type { CSSProperties } from 'vue'

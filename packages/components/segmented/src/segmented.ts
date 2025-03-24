@@ -4,9 +4,9 @@ import {
   isBoolean,
   isNumber,
   isString,
-} from '@element-plus/utils'
-import { useAriaProps, useSizeProp } from '@element-plus/hooks'
-import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@element-plus/constants'
+} from '@xianniu-plus/utils'
+import { useAriaProps, useSizeProp } from '@xianniu-plus/hooks'
+import { CHANGE_EVENT, UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
 
 import type { Option } from './types'
 import type { ExtractPropTypes } from 'vue'

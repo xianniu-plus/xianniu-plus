@@ -15,9 +15,9 @@
 
 <script lang="ts" setup>
 import { computed } from 'vue'
-import { ElIcon } from '@element-plus/components/icon'
-import { CaretTop } from '@element-plus/icons-vue'
-import { useNamespace } from '@element-plus/hooks'
+import { ElIcon } from '@xianniu-plus/components/icon'
+import { CaretTop } from '@xianniu-plus/icons-vue'
+import { useNamespace } from '@xianniu-plus/hooks'
 import { backtopEmits, backtopProps } from './backtop'
 import { useBackTop } from './use-backtop'
 

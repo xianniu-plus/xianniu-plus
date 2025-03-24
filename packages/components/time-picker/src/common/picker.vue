@@ -173,22 +173,22 @@ import {
   useFocusController,
   useLocale,
   useNamespace,
-} from '@element-plus/hooks'
-import { useFormItem, useFormSize } from '@element-plus/components/form'
-import ElInput from '@element-plus/components/input'
-import ElIcon from '@element-plus/components/icon'
-import ElTooltip from '@element-plus/components/tooltip'
-import { NOOP, debugWarn, isArray } from '@element-plus/utils'
+} from '@xianniu-plus/hooks'
+import { useFormItem, useFormSize } from '@xianniu-plus/components/form'
+import ElInput from '@xianniu-plus/components/input'
+import ElIcon from '@xianniu-plus/components/icon'
+import ElTooltip from '@xianniu-plus/components/tooltip'
+import { NOOP, debugWarn, isArray } from '@xianniu-plus/utils'
 import {
   CHANGE_EVENT,
   EVENT_CODE,
   UPDATE_MODEL_EVENT,
-} from '@element-plus/constants'
-import { Calendar, Clock } from '@element-plus/icons-vue'
+} from '@xianniu-plus/constants'
+import { Calendar, Clock } from '@xianniu-plus/icons-vue'
 import { dayOrDaysToDate, formatter, parseDate, valueEquals } from '../utils'
 import { timePickerDefaultProps } from './props'
 import PickerRangeTrigger from './picker-range-trigger.vue'
-import type { InputInstance } from '@element-plus/components/input'
+import type { InputInstance } from '@xianniu-plus/components/input'
 
 import type { Dayjs } from 'dayjs'
 import type { ComponentPublicInstance, Ref } from 'vue'
@@ -201,7 +201,7 @@ import type {
   TimePickerDefaultProps,
   UserInput,
 } from './props'
-import type { TooltipInstance } from '@element-plus/components/tooltip'
+import type { TooltipInstance } from '@xianniu-plus/components/tooltip'
 
 defineOptions({
   name: 'Picker',

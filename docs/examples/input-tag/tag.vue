@@ -23,7 +23,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { XianniuPlus } from '@element-plus/icons-vue'
+import { XianniuPlus } from '@xianniu-plus/icons-vue'
 import type { TagProps } from 'element-plus'
 
 const type: Array<TagProps['type']> = [

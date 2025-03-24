@@ -1,6 +1,6 @@
 import consola from 'consola'
-import { REPO_BRANCH, REPO_PATH } from '@element-plus/build-constants'
-import { docsDirName } from '@element-plus/build-utils'
+import { REPO_BRANCH, REPO_PATH } from '@xianniu-plus/build-constants'
+import { docsDirName } from '@xianniu-plus/build-utils'
 import { languages } from '../utils/lang'
 import { features } from './features'
 import { head } from './head'

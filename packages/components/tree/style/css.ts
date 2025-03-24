@@ -1,3 +1,3 @@
-import '@element-plus/components/base/style/css'
-import '@element-plus/theme-chalk/el-tree.css'
-import '@element-plus/components/checkbox/style/css'
+import '@xianniu-plus/components/base/style/css'
+import '@xianniu-plus/theme-chalk/el-tree.css'
+import '@xianniu-plus/components/checkbox/style/css'

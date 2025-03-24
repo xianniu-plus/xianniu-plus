@@ -1,7 +1,7 @@
 import { computed, inject, nextTick, ref, watch } from 'vue'
 import { debounce } from 'lodash-unified'
 import { useEventListener } from '@vueuse/core'
-import { EVENT_CODE, UPDATE_MODEL_EVENT } from '@element-plus/constants'
+import { EVENT_CODE, UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
 import { sliderContextKey } from '../constants'
 
 import type { CSSProperties, ComputedRef, Ref, SetupContext } from 'vue'
@@ -11,7 +11,7 @@ import type {
   SliderButtonInitData,
   SliderButtonProps,
 } from '../button'
-import type { TooltipInstance } from '@element-plus/components/tooltip'
+import type { TooltipInstance } from '@xianniu-plus/components/tooltip'
 
 const useTooltip = (
   props: SliderButtonProps,

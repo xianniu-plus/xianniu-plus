@@ -6,7 +6,7 @@ import {
   getScrollContainer,
   isFunction,
   throwError,
-} from '@element-plus/utils'
+} from '@xianniu-plus/utils'
 
 import type { ComponentPublicInstance, ObjectDirective } from 'vue'
 

@@ -50,7 +50,7 @@ import {
   Menu as IconMenu,
   Location,
   Setting,
-} from '@element-plus/icons-vue'
+} from '@xianniu-plus/icons-vue'
 
 const isCollapse = ref(true)
 const handleOpen = (key: string, keyPath: string[]) => {

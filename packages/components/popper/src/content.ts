@@ -1,6 +1,6 @@
 import { placements } from '@popperjs/core'
-import { buildProps, definePropType } from '@element-plus/utils'
-import { useAriaProps } from '@element-plus/hooks'
+import { buildProps, definePropType } from '@xianniu-plus/utils'
+import { useAriaProps } from '@xianniu-plus/hooks'
 
 import type { PopperEffect } from './popper'
 import type { ExtractPropTypes, StyleValue } from 'vue'

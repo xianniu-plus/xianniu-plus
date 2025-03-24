@@ -1,4 +1,4 @@
-import '@element-plus/components/base/style/css'
-import '@element-plus/components/empty/style/css'
-import '@element-plus/components/virtual-list/style/css'
-import '@element-plus/theme-chalk/el-table-v2.css'
+import '@xianniu-plus/components/base/style/css'
+import '@xianniu-plus/components/empty/style/css'
+import '@xianniu-plus/components/virtual-list/style/css'
+import '@xianniu-plus/theme-chalk/el-table-v2.css'

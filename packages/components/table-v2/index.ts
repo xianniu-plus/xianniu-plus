@@ -1,7 +1,7 @@
-import { withInstall } from '@element-plus/utils'
+import { withInstall } from '@xianniu-plus/utils'
 import TableV2 from './src/table-v2'
 import AutoResizer from './src/components/auto-resizer'
-import type { SFCWithInstall } from '@element-plus/utils'
+import type { SFCWithInstall } from '@xianniu-plus/utils'
 
 export {
   Alignment as TableV2Alignment,

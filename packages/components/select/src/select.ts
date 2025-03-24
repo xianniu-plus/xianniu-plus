@@ -3,16 +3,16 @@ import {
   useAriaProps,
   useEmptyValuesProps,
   useSizeProp,
-} from '@element-plus/hooks'
-import { buildProps, definePropType, iconPropType } from '@element-plus/utils'
-import { useTooltipContentProps } from '@element-plus/components/tooltip'
-import { ArrowDown, CircleClose } from '@element-plus/icons-vue'
-import { tagProps } from '@element-plus/components/tag'
+} from '@xianniu-plus/hooks'
+import { buildProps, definePropType, iconPropType } from '@xianniu-plus/utils'
+import { useTooltipContentProps } from '@xianniu-plus/components/tooltip'
+import { ArrowDown, CircleClose } from '@xianniu-plus/icons-vue'
+import { tagProps } from '@xianniu-plus/components/tag'
 import type {
   Options,
   Placement,
   PopperEffect,
-} from '@element-plus/components/popper'
+} from '@xianniu-plus/components/popper'
 
 export const SelectProps = buildProps({
   /**

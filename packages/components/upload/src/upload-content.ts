@@ -1,4 +1,4 @@
-import { NOOP, buildProps, definePropType } from '@element-plus/utils'
+import { NOOP, buildProps, definePropType } from '@xianniu-plus/utils'
 import { uploadBaseProps } from './upload'
 
 import type { ExtractPropTypes } from 'vue'

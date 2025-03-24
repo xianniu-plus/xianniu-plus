@@ -58,20 +58,20 @@
 <script lang="ts" setup>
 import { computed, mergeProps, nextTick, ref } from 'vue'
 import { pick } from 'lodash-unified'
-import { useFocusController, useId, useNamespace } from '@element-plus/hooks'
-import ElInput, { inputProps } from '@element-plus/components/input'
-import ElTooltip from '@element-plus/components/tooltip'
-import { EVENT_CODE, UPDATE_MODEL_EVENT } from '@element-plus/constants'
-import { useFormDisabled } from '@element-plus/components/form'
-import { isFunction } from '@element-plus/utils'
+import { useFocusController, useId, useNamespace } from '@xianniu-plus/hooks'
+import ElInput, { inputProps } from '@xianniu-plus/components/input'
+import ElTooltip from '@xianniu-plus/components/tooltip'
+import { EVENT_CODE, UPDATE_MODEL_EVENT } from '@xianniu-plus/constants'
+import { useFormDisabled } from '@xianniu-plus/components/form'
+import { isFunction } from '@xianniu-plus/utils'
 import { mentionEmits, mentionProps } from './mention'
 import { getCursorPosition, getMentionCtx } from './helper'
 import ElMentionDropdown from './mention-dropdown.vue'
 
 import type { Placement } from '@popperjs/core'
 import type { CSSProperties } from 'vue'
-import type { InputInstance } from '@element-plus/components/input'
-import type { TooltipInstance } from '@element-plus/components/tooltip'
+import type { InputInstance } from '@xianniu-plus/components/input'
+import type { TooltipInstance } from '@xianniu-plus/components/tooltip'
 import type { MentionCtx, MentionOption } from './types'
 
 defineOptions({

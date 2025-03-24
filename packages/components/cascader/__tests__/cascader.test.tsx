@@ -1,16 +1,16 @@
 import { nextTick, reactive, ref } from 'vue'
 import { mount } from '@vue/test-utils'
 import { afterEach, describe, expect, it, test, vi } from 'vitest'
-import { EVENT_CODE } from '@element-plus/constants'
-import triggerEvent from '@element-plus/test-utils/trigger-event'
-import { ArrowDown, Check, CircleClose } from '@element-plus/icons-vue'
-import { usePopperContainerId } from '@element-plus/hooks'
-import { hasClass } from '@element-plus/utils'
-import ElForm, { ElFormItem } from '@element-plus/components/form'
+import { EVENT_CODE } from '@xianniu-plus/constants'
+import triggerEvent from '@xianniu-plus/test-utils/trigger-event'
+import { ArrowDown, Check, CircleClose } from '@xianniu-plus/icons-vue'
+import { usePopperContainerId } from '@xianniu-plus/hooks'
+import { hasClass } from '@xianniu-plus/utils'
+import ElForm, { ElFormItem } from '@xianniu-plus/components/form'
 import Cascader from '../src/cascader.vue'
 
 import type { VNode } from 'vue'
-import type ElCascader from '@element-plus/components/cascader'
+import type ElCascader from '@xianniu-plus/components/cascader'
 
 vi.mock('lodash-unified', async () => {
   return {

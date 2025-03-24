@@ -1,7 +1,7 @@
 import { nextTick, ref } from 'vue'
 import { mount } from '@vue/test-utils'
 import { afterEach, beforeEach, describe, expect, test, vi } from 'vitest'
-import { CaretLeft, CaretRight } from '@element-plus/icons-vue'
+import { CaretLeft, CaretRight } from '@xianniu-plus/icons-vue'
 import Pagination from '../src/pagination'
 import selectDropdownVue from '../../select/src/select-dropdown.vue'
 import type { VueWrapper } from '@vue/test-utils'

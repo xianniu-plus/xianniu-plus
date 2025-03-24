@@ -1,12 +1,12 @@
 import { markRaw, nextTick } from 'vue'
 import { mount } from '@vue/test-utils'
 import { describe, expect, test } from 'vitest'
-import { User } from '@element-plus/icons-vue'
+import { User } from '@xianniu-plus/icons-vue'
 import {
   IMAGE_FAIL,
   IMAGE_SUCCESS,
   mockImageEvent,
-} from '@element-plus/test-utils/mock'
+} from '@xianniu-plus/test-utils/mock'
 
 import Avatar from '../src/avatar.vue'
 

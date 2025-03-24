@@ -1,10 +1,10 @@
-import { buildProps, definePropType } from '@element-plus/utils'
-import { useEmptyValuesProps, useSizeProp } from '@element-plus/hooks'
+import { buildProps, definePropType } from '@xianniu-plus/utils'
+import { useEmptyValuesProps, useSizeProp } from '@xianniu-plus/hooks'
 
 import type { ExtractPropTypes } from 'vue'
-import type { Language } from '@element-plus/locale'
-import type { ButtonConfigContext } from '@element-plus/components/button'
-import type { MessageConfigContext } from '@element-plus/components/message'
+import type { Language } from '@xianniu-plus/locale'
+import type { ButtonConfigContext } from '@xianniu-plus/components/button'
+import type { MessageConfigContext } from '@xianniu-plus/components/message'
 
 // eslint-disable-next-line @typescript-eslint/no-empty-object-type
 export type ExperimentalFeatures = {
