@@ -42,7 +42,7 @@ describe('Divider.vue', () => {
     const wrapper = mount(() => <Divider borderStyle="dashed" />)
     expect(
       getComputedStyle(wrapper.element, null).getPropertyValue(
-        '--el-border-style'
+        '--xn-border-style'
       )
     ).toBe('dashed')
   })
@@ -51,7 +51,7 @@ describe('Divider.vue', () => {
     const wrapper = mount(() => <Divider direction="vertical" />)
     expect(
       getComputedStyle(wrapper.element, null).getPropertyValue(
-        '--el-border-style'
+        '--xn-border-style'
       )
     ).toBe('solid')
   })

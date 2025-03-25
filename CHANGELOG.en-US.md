@@ -1927,7 +1927,7 @@ _2022-09-16_
 - Components [table] throw error when no matching column (#9682 by @qq282126990)
 - Components [table-v2] cell and header-cell slots parmas (#9665 by @chenxch)
 - Components [select-v2] fix placeholder style (#9707 by @holazz)
-- Components [select-v2] respect `--el-component-size` (#9706 by @holazz)
+- Components [select-v2] respect `--xn-component-size` (#9706 by @holazz)
 - Components [time-picker] fix end-time can't be callback (#9669 by @MrCat33)
 - Components [tree] setCurrentKey() type error (#9709 by @zhiyuanzmj)
 - Components [cascader] fix large interval when multiple checkboxes (#9428 by @Tsong-LC)
@@ -3707,7 +3707,7 @@ _2021-12-10_
 
 - Change icon package name (#4625 by @sxzz)
 - Components refactor drawer (#4282 by @Alanscut)
-- Style rename -color-base to --el-bg-color (#4615 by @YunYouJun)
+- Style rename -color-base to --xn-bg-color (#4615 by @YunYouJun)
 - Components refactor calendar (#4325 by @Alanscut)
 - Components refactor progress
 - Components refactor progress

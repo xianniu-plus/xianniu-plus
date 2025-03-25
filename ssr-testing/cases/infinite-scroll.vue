@@ -19,9 +19,9 @@
         align-items: center;
         justify-content: center;
         height: 50px;
-        background: var(--el-color-primary-light-9);
+        background: var(--xn-color-primary-light-9);
         margin: 10px;
-        color: var(--el-color-primary);
+        color: var(--xn-color-primary);
         margin-top: 10px;
       "
     >

@@ -516,7 +516,7 @@ describe('Cascader.vue', () => {
 
     for (const size in sizeMap) {
       cascaderSize.value = size as 'small' | 'default' | 'large'
-      inputEl.style.setProperty('--el-input-height', `${sizeMap[size]}px`)
+      inputEl.style.setProperty('--xn-input-height', `${sizeMap[size]}px`)
       // first is wait for the watch callback function of realSize which is to be called after nextTick
       await nextTick()
       // second is wait for input to set the height attribute

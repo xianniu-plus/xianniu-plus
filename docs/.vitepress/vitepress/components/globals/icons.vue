@@ -147,26 +147,26 @@ const filterCategories = computed(() => {
     overflow: hidden;
     list-style: none;
     padding: 0 !important;
-    border-left: 1px solid var(--el-border-color);
+    border-left: 1px solid var(--xn-border-color);
     border-radius: 4px;
     display: grid;
     grid-template-columns: repeat(7, 1fr);
 
     .icon-item {
       &:nth-child(-n + 7) {
-        border-top: 1px solid var(--el-border-color);
+        border-top: 1px solid var(--xn-border-color);
       }
 
       text-align: center;
-      color: var(--el-text-color-regular);
+      color: var(--xn-text-color-regular);
       height: 90px;
       font-size: 13px;
-      border-right: 1px solid var(--el-border-color);
-      border-bottom: 1px solid var(--el-border-color);
-      transition: background-color var(--el-transition-duration);
+      border-right: 1px solid var(--xn-border-color);
+      border-bottom: 1px solid var(--xn-border-color);
+      transition: background-color var(--xn-transition-duration);
 
       &:hover {
-        background-color: var(--el-border-color-extra-light);
+        background-color: var(--xn-border-color-extra-light);
 
         .el-icon {
           color: var(--brand-color-light);

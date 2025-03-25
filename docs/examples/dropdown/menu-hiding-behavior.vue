@@ -26,7 +26,7 @@ import { ArrowDown } from '@xianniu-plus/icons-vue'
 }
 .example-showcase .el-dropdown-link {
   cursor: pointer;
-  color: var(--el-color-primary);
+  color: var(--xn-color-primary);
   display: flex;
   align-items: center;
 }

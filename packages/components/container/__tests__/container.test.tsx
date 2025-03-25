@@ -56,7 +56,7 @@ describe('Header', () => {
   test('header height', () => {
     const wrapper = mount(() => <Header height="100px" />)
     const vm = wrapper.vm
-    expect(getCssVariable(vm.$el, '--el-header-height')).toEqual('100px')
+    expect(getCssVariable(vm.$el, '--xn-header-height')).toEqual('100px')
   })
 })
 
@@ -69,7 +69,7 @@ describe('Aside', () => {
   test('aside width', () => {
     const wrapper = mount(() => <Aside width="200px" />)
     const vm = wrapper.vm
-    expect(getCssVariable(vm.$el, '--el-aside-width')).toEqual('200px')
+    expect(getCssVariable(vm.$el, '--xn-aside-width')).toEqual('200px')
   })
 })
 
@@ -89,6 +89,6 @@ describe('Footer', () => {
   test('footer height', () => {
     const wrapper = mount(() => <Footer height="100px" />)
     const vm = wrapper.vm
-    expect(getCssVariable(vm.$el, '--el-footer-height')).toEqual('100px')
+    expect(getCssVariable(vm.$el, '--xn-footer-height')).toEqual('100px')
   })
 })

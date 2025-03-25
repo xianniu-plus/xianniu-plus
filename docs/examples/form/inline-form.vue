@@ -43,10 +43,10 @@ const onSubmit = () => {
 
 <style>
 .demo-form-inline .el-input {
-  --el-input-width: 220px;
+  --xn-input-width: 220px;
 }
 
 .demo-form-inline .el-select {
-  --el-select-width: 220px;
+  --xn-select-width: 220px;
 }
 </style>

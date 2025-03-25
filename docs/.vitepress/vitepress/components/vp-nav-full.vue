@@ -41,8 +41,8 @@ const fullscreen = ref()
   &.el-fade-in-enter-active,
   &.el-fade-in-leave-active {
     .full-screen-container {
-      transition: transform var(--el-transition-duration)
-        var(--el-transition-function-ease-in-out-bezier);
+      transition: transform var(--xn-transition-duration)
+        var(--xn-transition-function-ease-in-out-bezier);
     }
   }
 

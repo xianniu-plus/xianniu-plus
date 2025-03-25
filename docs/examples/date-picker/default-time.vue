@@ -33,7 +33,7 @@ const defaultTime = ref<[Date, Date]>([
 .demo-date-picker .block {
   padding: 30px 0;
   text-align: center;
-  border-right: solid 1px var(--el-border-color);
+  border-right: solid 1px var(--xn-border-color);
   flex: 1;
 }
 .demo-date-picker .block:last-child {

@@ -28,6 +28,6 @@ import { Plus } from '@xianniu-plus/icons-vue'
 }
 
 .el-tooltip-v2__content.scale-in {
-  animation: scale-in var(--el-transition-duration) ease-out forwards;
+  animation: scale-in var(--xn-transition-duration) ease-out forwards;
 }
 </style>

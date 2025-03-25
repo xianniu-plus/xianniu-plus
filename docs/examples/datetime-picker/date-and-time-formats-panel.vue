@@ -47,6 +47,6 @@ const value2 = ref('')
 }
 .line {
   width: 1px;
-  background-color: var(--el-border-color);
+  background-color: var(--xn-border-color);
 }
 </style>

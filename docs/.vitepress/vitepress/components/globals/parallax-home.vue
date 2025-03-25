@@ -162,7 +162,7 @@ useEventListener(window, 'scroll', handleScroll)
       position: absolute;
       right: -12px;
       bottom: 8px;
-      background: var(--el-color-primary);
+      background: var(--xn-color-primary);
       height: 8px;
       width: 8px;
       border-radius: 100%;
@@ -206,7 +206,7 @@ useEventListener(window, 'scroll', handleScroll)
       margin: 10px auto 0;
     }
     .cd-num {
-      color: var(--el-color-primary);
+      color: var(--xn-color-primary);
       font-size: 78px;
       font-weight: bold;
     }

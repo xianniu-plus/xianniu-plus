@@ -28,6 +28,6 @@ import { UserFilled } from '@xianniu-plus/icons-vue'
 }
 
 .demo-type > div:not(:last-child) {
-  border-right: 1px solid var(--el-border-color);
+  border-right: 1px solid var(--xn-border-color);
 }
 </style>

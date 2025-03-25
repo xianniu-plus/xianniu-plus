@@ -27,9 +27,9 @@
 
 <style scoped>
 :deep(.my-label) {
-  background: var(--el-color-success-light-9) !important;
+  background: var(--xn-color-success-light-9) !important;
 }
 :deep(.my-content) {
-  background: var(--el-color-danger-light-9);
+  background: var(--xn-color-danger-light-9);
 }
 </style>

@@ -54,9 +54,9 @@ const toTranslation = () => {
 
 <style lang="scss">
 .el-dropdown__popper.translation-popup {
-  --el-bg-color-overlay: var(--bg-color);
-  --el-popper-border-radius: 8px;
-  --el-border-color-light: transparent;
+  --xn-bg-color-overlay: var(--bg-color);
+  --xn-popper-border-radius: 8px;
+  --xn-border-color-light: transparent;
 
   padding: 7px 0;
   min-width: 192px;
@@ -71,7 +71,7 @@ const toTranslation = () => {
     line-height: 28px;
 
     &.selected {
-      --el-text-color-regular: var(--brand-color);
+      --xn-text-color-regular: var(--brand-color);
     }
   }
 }

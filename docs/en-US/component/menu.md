@@ -13,7 +13,7 @@ If you want to override the default height of el-menu, you can use the following
 
 ```css
 .el-menu--horizontal {
-  --el-menu-horizontal-height: 100px;
+  --xn-menu-horizontal-height: 100px;
 }
 ```
 
@@ -89,9 +89,9 @@ menu/popper-offset
 | popper-class ^(2.5.0)           | custom class name for all popup menus                                                                                                                                 | ^[string]                              | —        |
 | show-timeout ^(2.5.0)           | control timeout for all menus before showing                                                                                                                          | ^[number]                              | 300      |
 | hide-timeout ^(2.5.0)           | control timeout for all menus before hiding                                                                                                                           | ^[number]                              | 300      |
-| background-color ^(deprecated)  | background color of Menu (hex format) (use `--el-menu-bg-color` in a style class instead)                                                                             | ^[string]                              | #ffffff  |
-| text-color ^(deprecated)        | text color of Menu (hex format) ( use `--el-menu-text-color` in a style class instead)                                                                                | ^[string]                              | #303133  |
-| active-text-color ^(deprecated) | text color of currently active menu item (hex format) ( use `--el-menu-active-color` in a style class instead)                                                        | ^[string]                              | #409eff  |
+| background-color ^(deprecated)  | background color of Menu (hex format) (use `--xn-menu-bg-color` in a style class instead)                                                                             | ^[string]                              | #ffffff  |
+| text-color ^(deprecated)        | text color of Menu (hex format) ( use `--xn-menu-text-color` in a style class instead)                                                                                | ^[string]                              | #303133  |
+| active-text-color ^(deprecated) | text color of currently active menu item (hex format) ( use `--xn-menu-active-color` in a style class instead)                                                        | ^[string]                              | #409eff  |
 | persistent ^(2.9.5)             | when menu inactive and `persistent` is `false` , dropdown menu will be destroyed                                                                                      | ^[boolean]                             | true     |
 
 ### Menu Events

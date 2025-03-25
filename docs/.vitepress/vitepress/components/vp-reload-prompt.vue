@@ -47,7 +47,7 @@ watch(needRefresh, (value) => {
 
 .pwa-popup-enter-active,
 .pwa-popup-leave-active {
-  transition: var(--el-transition-md-fade);
+  transition: var(--xn-transition-md-fade);
 }
 
 .pwa-popup-enter,

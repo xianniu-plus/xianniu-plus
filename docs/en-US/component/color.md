@@ -15,7 +15,7 @@ Xianniu Plus uses a specific set of palettes to specify colors to provide a cons
   margin: 8px 0;
   height: 112px;
   box-sizing: border-box;
-  color: var(--el-color-white);
+  color: var(--xn-color-white);
   font-size: 14px;
 
   .bg-color-sub {
@@ -30,7 +30,7 @@ Xianniu Plus uses a specific set of palettes to specify colors to provide a cons
       display: inline-block;
 
       &:first-child {
-        border-radius: 0 0 0 var(--el-border-radius-base);
+        border-radius: 0 0 0 var(--xn-border-radius-base);
       }
     }
 
@@ -38,7 +38,7 @@ Xianniu Plus uses a specific set of palettes to specify colors to provide a cons
       height: 100%;
       display: inline-block;
       &:first-child {
-        border-radius: 0 0 0 var(--el-border-radius-base);
+        border-radius: 0 0 0 var(--xn-border-radius-base);
       }
     }
   }
@@ -49,7 +49,7 @@ Xianniu Plus uses a specific set of palettes to specify colors to provide a cons
 }
 
 .demo-color-box-lite {
-  color: var(--el-text-color-primary);
+  color: var(--xn-text-color-primary);
 }
 </style>
 

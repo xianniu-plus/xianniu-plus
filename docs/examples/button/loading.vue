@@ -40,7 +40,7 @@ import { Eleme } from '@xianniu-plus/icons-vue'
   stroke-dasharray: 90, 150;
   stroke-dashoffset: 0;
   stroke-width: 2;
-  stroke: var(--el-button-text-color);
+  stroke: var(--xn-button-text-color);
   stroke-linecap: round;
 }
 </style>

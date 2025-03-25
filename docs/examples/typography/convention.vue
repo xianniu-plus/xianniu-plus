@@ -9,12 +9,12 @@
       <tr
         v-for="(fontSize, i) in fontSizes"
         :key="i"
-        :style="`font-size: var(--el-font-size-${fontSize.type})`"
+        :style="`font-size: var(--xn-font-size-${fontSize.type})`"
       >
         <td>{{ fontSize.level }}</td>
         <td>
           {{
-            useCssVar(`--el-font-size-${fontSize.type}`).value +
+            useCssVar(`--xn-font-size-${fontSize.type}`).value +
             ' ' +
             formatType(fontSize.type)
           }}

@@ -215,21 +215,21 @@ Like this:
 
 ```css
 :root {
-  --el-color-primary: green;
+  --xn-color-primary: green;
 }
 ```
 
 If you just want to customize a particular component, just add inline styles for certain components individually.
 
 ```html
-<el-tag style="--el-tag-bg-color: red">Tag</el-tag>
+<el-tag style="--xn-tag-bg-color: red">Tag</el-tag>
 ```
 
 For performance reasons, it is more recommended to custom css variables under a class rather than the global `:root`.
 
 ```css
 .custom-class {
-  --el-tag-bg-color: red;
+  --xn-tag-bg-color: red;
 }
 ```
 
@@ -241,10 +241,10 @@ const el = document.documentElement
 // const el = document.getElementById('xxx')
 
 // get css var
-getComputedStyle(el).getPropertyValue(`--el-color-primary`)
+getComputedStyle(el).getPropertyValue(`--xn-color-primary`)
 
 // set css var
-el.style['--el-color-primary'] = 'red'
+el.style['--xn-color-primary'] = 'red'
 ```
 
 If you want a more elegant way, check this out.
