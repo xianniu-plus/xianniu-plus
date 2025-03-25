@@ -1037,7 +1037,7 @@ describe('Table.vue', () => {
       wrapper.unmount()
     })
 
-    // https://github.com/element-plus/element-plus/issues/4589
+    // https://github.com/xianniu-plus/xianniu-plus/issues/4589
     it('sort-change event', async () => {
       const handleSortChange = vi.fn()
       const wrapper = mount({

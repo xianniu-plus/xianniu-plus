@@ -2659,7 +2659,7 @@ describe('Select', () => {
     expect(wrapper.findAll('.el-tag')[0].text()).toBe('option 1')
   })
 
-  // fix: https://github.com/element-plus/element-plus/issues/11991
+  // fix: https://github.com/xianniu-plus/xianniu-plus/issues/11991
   it('backspace key should delete selected tag but should not delete disabled options', async () => {
     const options = [
       {
