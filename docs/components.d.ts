@@ -19,8 +19,8 @@ declare module 'vue' {
     DeprecatedTag: typeof import('./.vitepress/vitepress/components/dev/deprecated-tag.vue')['default']
     DesignGuide: typeof import('./.vitepress/vitepress/components/globals/design-guide.vue')['default']
     EfficiencySvg: typeof import('./.vitepress/vitepress/components/globals/design/efficiency-svg.vue')['default']
-    XianniuPlusLogo: typeof import('./.vitepress/vitepress/components/icons/xianniu-plus-logo.vue')['default']
-    XianniuPlusTextLogo: typeof import('./.vitepress/vitepress/components/icons/xianniu-plus-text-logo.vue')['default']
+    ElementPlusLogo: typeof import('./.vitepress/vitepress/components/icons/element-plus-logo.vue')['default']
+    ElementPlusTextLogo: typeof import('./.vitepress/vitepress/components/icons/element-plus-text-logo.vue')['default']
     Expand: typeof import('./.vitepress/vitepress/components/icons/expand.vue')['default']
     FeedbackSvg: typeof import('./.vitepress/vitepress/components/globals/design/feedback-svg.vue')['default']
     FigmaTemplateSvg: typeof import('./.vitepress/vitepress/components/globals/resources/figma-template-svg.vue')['default']
@@ -186,5 +186,7 @@ declare module 'vue' {
     VpTableOfContent: typeof import('./.vitepress/vitepress/components/doc-content/vp-table-of-content.vue')['default']
     VpThemeToggler: typeof import('./.vitepress/vitepress/components/navbar/vp-theme-toggler.vue')['default']
     VpTranslation: typeof import('./.vitepress/vitepress/components/navbar/vp-translation.vue')['default']
+    XianniuPlusLogo: typeof import('./.vitepress/vitepress/components/icons/xianniu-plus-logo.vue')['default']
+    XianniuPlusTextLogo: typeof import('./.vitepress/vitepress/components/icons/xianniu-plus-text-logo.vue')['default']
   }
 }
