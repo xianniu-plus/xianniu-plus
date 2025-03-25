@@ -53,7 +53,7 @@ export const useCheckboxEvent = (
     if (isLimitExceeded.value) return
 
     if (!hasOwnLabel.value && !isDisabled.value && isLabeledByFormItem.value) {
-      // fix: https://github.com/element-plus/element-plus/issues/9981
+      // fix: https://github.com/xianniu-plus/xianniu-plus/issues/9981
       const eventTargets: EventTarget[] = e.composedPath()
       const hasLabel = eventTargets.some(
         (item) => (item as HTMLElement).tagName === 'LABEL'

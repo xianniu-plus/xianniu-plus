@@ -135,7 +135,7 @@ function useEvents<T>(props: Partial<TableBodyProps<T>>) {
     const range = document.createRange()
     range.setStart(cellChild, 0)
     range.setEnd(cellChild, cellChild.childNodes.length)
-    /** detail: https://github.com/element-plus/element-plus/issues/10790
+    /** detail: https://github.com/xianniu-plus/xianniu-plus/issues/10790
      *  What went wrong?
      *  UI > Browser > Zoom, In Blink/WebKit, getBoundingClientRect() sometimes returns inexact values, probably due to lost precision during internal calculations. In the example above:
      *    - Expected: 188

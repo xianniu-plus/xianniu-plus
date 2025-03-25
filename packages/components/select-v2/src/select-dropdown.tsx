@@ -254,7 +254,7 @@ export default defineComponent({
       const { data, width } = props
       const { height, multiple, scrollbarAlwaysOn } = select.props
       const isScrollbarAlwaysOn = computed(() => {
-        // fix https://github.com/element-plus/element-plus/issues/19127
+        // fix https://github.com/xianniu-plus/xianniu-plus/issues/19127
         return isIOS ? true : scrollbarAlwaysOn
       })
 

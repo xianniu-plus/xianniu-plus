@@ -248,7 +248,7 @@ export const useCarousel = (
   }
 
   function PlaceholderItem() {
-    // fix: https://github.com/element-plus/element-plus/issues/12139
+    // fix: https://github.com/xianniu-plus/xianniu-plus/issues/12139
     const defaultSlots = slots.default?.()
     if (!defaultSlots) return null
 

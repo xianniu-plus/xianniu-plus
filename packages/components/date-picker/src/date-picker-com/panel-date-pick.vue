@@ -337,7 +337,7 @@ const handleDatePick = async (value: DateTableEmits, keepOpen?: boolean) => {
     }
     innerDate.value = newDate
     emit(newDate, showTime.value || keepOpen)
-    // fix: https://github.com/element-plus/element-plus/issues/14728
+    // fix: https://github.com/xianniu-plus/xianniu-plus/issues/14728
     if (props.type === 'datetime') {
       await nextTick()
       handleFocusPicker()

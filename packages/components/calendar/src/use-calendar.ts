@@ -122,7 +122,7 @@ export const useCalendar = (
   const prevYearDayjs = computed(() => date.value.subtract(1, 'year').date(1))
   const nextYearDayjs = computed(() => date.value.add(1, 'year').date(1))
 
-  // https://github.com/element-plus/element-plus/issues/3155
+  // https://github.com/xianniu-plus/xianniu-plus/issues/3155
   // Calculate the validate date range according to the start and end dates
   const calculateValidatedDateRange = (
     startDayjs: Dayjs,

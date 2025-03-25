@@ -43,7 +43,7 @@ export const useSelect = (
     style: computed(() => attrs.style),
     // attrs is not reactive, when v-model binding source changes,
     // this listener is still old, see the bug(or test 'v-model source change'):
-    // https://github.com/element-plus/element-plus/issues/14204
+    // https://github.com/xianniu-plus/xianniu-plus/issues/14204
     'onUpdate:modelValue': (value) => emit(UPDATE_MODEL_EVENT, value),
     valueKey: key,
     popperClass: computed(() => {

@@ -165,7 +165,7 @@ function useStore<T>() {
 
     changeSortCondition(states: StoreStates, options: Sort) {
       // 修复 pr https://github.com/ElemeFE/element/pull/15012 导致的 bug
-      // https://github.com/element-plus/element-plus/pull/4640
+      // https://github.com/xianniu-plus/xianniu-plus/pull/4640
       const { sortingColumn, sortProp, sortOrder } = states
       const columnValue = unref(sortingColumn),
         propValue = unref(sortProp),

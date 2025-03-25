@@ -42,7 +42,7 @@ const displayValue = computed(() => {
 
   if (isFunction(formatter)) return formatter(value)
 
-  // https://github.com/element-plus/element-plus/issues/17784
+  // https://github.com/xianniu-plus/xianniu-plus/issues/17784
   if (!isNumber(value) || Number.isNaN(value)) return value
 
   let [integer, decimal = ''] = String(value).split('.')
