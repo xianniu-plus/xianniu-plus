@@ -18,12 +18,12 @@ async function main() {
   consola.log(chalk.cyan(`$TAG_VERSION: ${tagVersion}`))
   consola.log(chalk.cyan(`$GIT_HEAD: ${gitHead}`))
 
-  consola.debug(chalk.yellow(`Updating package.json for element-plus`))
+  consola.debug(chalk.yellow(`Updating package.json for xianniu-plus`))
 
   const pkgs = Object.fromEntries(
     (await getWorkspacePackages()).map((pkg) => [pkg.manifest.name!, pkg])
   )
-  const elementPlus = pkgs['element-plus'] || pkgs['@xianniu-plus/nightly']
+  const xianniuPlus = pkgs['element-plus'] || pkgs['@xianniu-plus/nightly']
   const eslintConfig = pkgs['@xianniu-plus/eslint-config']
   const metadata = pkgs['@xianniu-plus/metadata']
 
@@ -36,7 +36,7 @@ async function main() {
   }
 
   try {
-    await writeVersion(elementPlus)
+    await writeVersion(xianniuPlus)
     await writeVersion(eslintConfig)
     await writeVersion(metadata)
   } catch (err: any) {

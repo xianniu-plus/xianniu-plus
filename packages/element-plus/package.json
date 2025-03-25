@@ -3,16 +3,16 @@
   "version": "0.0.0-dev.1",
   "description": "A Component Library for Vue 3",
   "keywords": [
-    "element-plus",
-    "element",
+    "xianniu-plus",
+    "xianniu",
     "component library",
     "ui framework",
     "ui",
     "vue"
   ],
-  "homepage": "https://element-plus.org/",
+  "homepage": "https://xianniu-plus.org/",
   "bugs": {
-    "url": "https://github.com/element-plus/element-plus/issues"
+    "url": "https://github.com/xianniu-plus/xianniu-plus/issues"
   },
   "license": "MIT",
   "main": "lib/index.js",
