@@ -7,7 +7,7 @@ pnpm update:version
 
 pnpm build
 
-cd dist/element-plus
+cd dist/xianniu-plus
 npm publish --provenance
 cd -
 

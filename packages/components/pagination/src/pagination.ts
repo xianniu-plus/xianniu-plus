@@ -209,7 +209,7 @@ export default defineComponent({
         replacement: 'size',
         version: '3.0.0',
         scope: 'el-pagination',
-        ref: 'https://element-plus.org/zh-CN/component/pagination.html',
+        ref: 'https://xianniu-plus.org/zh-CN/component/pagination.html',
       },
       computed(() => !!props.small)
     )

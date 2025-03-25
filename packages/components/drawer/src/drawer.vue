@@ -117,7 +117,7 @@ useDeprecated(
     from: 'the title slot',
     replacement: 'the header slot',
     version: '3.0.0',
-    ref: 'https://element-plus.org/en-US/component/drawer.html#slots',
+    ref: 'https://xianniu-plus.org/en-US/component/drawer.html#slots',
   },
   computed(() => !!slots.title)
 )
