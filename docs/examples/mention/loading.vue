@@ -11,7 +11,7 @@
 
 <script setup lang="ts">
 import { onBeforeUnmount, ref } from 'vue'
-import type { MentionOption } from 'element-plus'
+import type { MentionOption } from 'xianniu-plus'
 
 const value = ref('')
 const loading = ref(false)

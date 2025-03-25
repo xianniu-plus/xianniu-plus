@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ElNotification } from 'element-plus'
+import { ElNotification } from 'xianniu-plus'
 
 const open = () => {
   ElNotification.success({

@@ -5,7 +5,7 @@
 
 <script lang="ts" setup>
 import { h, ref } from 'vue'
-import { ElMessageBox, ElSwitch } from 'element-plus'
+import { ElMessageBox, ElSwitch } from 'xianniu-plus'
 
 const open = () => {
   ElMessageBox({

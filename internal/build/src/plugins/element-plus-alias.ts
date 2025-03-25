@@ -8,7 +8,7 @@ export function XianniuPlusAlias(): Plugin {
   const bundleThemeChalk = `${PKG_NAME}/${themeChalk}` as const
 
   return {
-    name: 'element-plus-alias-plugin',
+    name: 'xianniu-plus-alias-plugin',
     resolveId(id) {
       if (!id.startsWith(sourceThemeChalk)) return
       return {

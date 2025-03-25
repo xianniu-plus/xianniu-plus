@@ -245,15 +245,15 @@ importers:
       clipboard-copy:
         specifier: ^4.0.1
         version: 4.0.1
-      element-plus:
-        specifier: npm:element-plus@latest
-        version: 2.8.1(vue@3.4.31(typescript@5.5.4))
       normalize.css:
         specifier: ^8.0.1
         version: 8.0.1
       nprogress:
         specifier: ^0.2.0
         version: 0.2.0
+      xianniu-plus:
+        specifier: npm:xianniu-plus@latest
+        version: 1.0.2(vue@3.4.31(typescript@5.5.4))
     devDependencies:
       '@crowdin/cli':
         specifier: ^4.5.0
@@ -1233,11 +1233,6 @@ packages:
         optional: true
       search-insights:
         optional: true
-
-  '@element-plus/icons-vue@2.3.1':
-    resolution: {integrity: sha512-XxVUZv48RZAd87ucGS48jPf6pKu0yV5UCg9f4FFwtrYxXOwWuVJo6wOvSLKEoMQKjv8GsX/mhP6UsC1lRwbUWg==}
-    peerDependencies:
-      vue: ^3.2.0
 
   '@esbuild-kit/cjs-loader@2.2.1':
     resolution: {integrity: sha512-pq2Z4DcqTBF7y1wQuIzFVqmHJVnmP6hgHEWN2ubPjeG7OzXMZ9NvozW+YA/MIeMdZWp1jcJ/EvXk2+mfEKoCDQ==}
@@ -4210,11 +4205,6 @@ packages:
 
   electron-to-chromium@1.5.50:
     resolution: {integrity: sha512-eMVObiUQ2LdgeO1F/ySTXsvqvxb6ZH2zPGaMYsWzRDdOddUa77tdmI0ltg+L16UpbWdhPmuF3wIQYyQq65WfZw==}
-
-  element-plus@2.8.1:
-    resolution: {integrity: sha512-p11/6w/O0+hGvPhiN3jrcgh+XG+eg5jZlLdQVYvcPHZYhhCh3J3YeZWW1JO/REPES1vevkboT6VAi+9wHA8Dsg==}
-    peerDependencies:
-      vue: ^3.2.0
 
   emoji-regex@8.0.0:
     resolution: {integrity: sha512-MSjYzcWNOA0ewAHpz0MxpYFvwg6yjy1NG3xteoqz644VCo/RPgnr1/GGt+ic3iJTzQ8Eu3TdM14SawnVUmGE6A==}
@@ -8376,6 +8366,11 @@ packages:
       utf-8-validate:
         optional: true
 
+  xianniu-plus@1.0.2:
+    resolution: {integrity: sha512-HdZoQuKcAXtxsQVuSuQPlDO09eTtDCRK7NGyvUdxIevU4d1+Hsf0UEfm79IYXYYW7MMZKyJN0yx6CDvv+e/oGw==}
+    peerDependencies:
+      vue: ^3.2.0
+
   xml-name-validator@3.0.0:
     resolution: {integrity: sha512-A5CUptxDsvxKJEU3yO6DuWBSJz/qizqzJKOMIfUJHETbBw/sFaDxgd6fxm1ewUaM0jZ444Fc5vC5ROYurg/4Pw==}
 
@@ -9301,10 +9296,6 @@ snapshots:
       search-insights: 2.15.0
     transitivePeerDependencies:
       - '@algolia/client-search'
-
-  '@element-plus/icons-vue@2.3.1(vue@3.4.31(typescript@5.5.4))':
-    dependencies:
-      vue: 3.4.31(typescript@5.5.4)
 
   '@esbuild-kit/cjs-loader@2.2.1':
     dependencies:
@@ -12766,27 +12757,6 @@ snapshots:
   electron-to-chromium@1.4.825: {}
 
   electron-to-chromium@1.5.50: {}
-
-  element-plus@2.8.1(vue@3.4.31(typescript@5.5.4)):
-    dependencies:
-      '@ctrl/tinycolor': 3.6.1
-      '@element-plus/icons-vue': 2.3.1(vue@3.4.31(typescript@5.5.4))
-      '@floating-ui/dom': 1.6.8
-      '@popperjs/core': '@sxzz/popperjs-es@2.11.7'
-      '@types/lodash': 4.17.7
-      '@types/lodash-es': 4.17.12
-      '@vueuse/core': 9.1.0(vue@3.4.31(typescript@5.5.4))
-      async-validator: 4.2.5(patch_hash=wdmp4xlpil2odxo3rasjmxbdfm)
-      dayjs: 1.11.13
-      escape-html: 1.0.3
-      lodash: 4.17.21
-      lodash-es: 4.17.21
-      lodash-unified: 1.0.3(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
-      memoize-one: 6.0.0
-      normalize-wheel-es: 1.2.0
-      vue: 3.4.31(typescript@5.5.4)
-    transitivePeerDependencies:
-      - '@vue/composition-api'
 
   emoji-regex@8.0.0: {}
 
@@ -17373,6 +17343,27 @@ snapshots:
   ws@7.5.8: {}
 
   ws@8.8.1: {}
+
+  xianniu-plus@1.0.2(vue@3.4.31(typescript@5.5.4)):
+    dependencies:
+      '@ctrl/tinycolor': 3.6.1
+      '@floating-ui/dom': 1.6.8
+      '@popperjs/core': '@sxzz/popperjs-es@2.11.7'
+      '@types/lodash': 4.17.7
+      '@types/lodash-es': 4.17.12
+      '@vueuse/core': 9.1.0(vue@3.4.31(typescript@5.5.4))
+      '@xianniu-plus/icons-vue': 2.3.1(vue@3.4.31(typescript@5.5.4))
+      async-validator: 4.2.5(patch_hash=wdmp4xlpil2odxo3rasjmxbdfm)
+      dayjs: 1.11.13
+      escape-html: 1.0.3
+      lodash: 4.17.21
+      lodash-es: 4.17.21
+      lodash-unified: 1.0.3(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
+      memoize-one: 6.0.0
+      normalize-wheel-es: 1.2.0
+      vue: 3.4.31(typescript@5.5.4)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
 
   xml-name-validator@3.0.0: {}
 

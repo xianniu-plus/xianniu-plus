@@ -22,7 +22,7 @@
 
 <script lang="ts" setup>
 import { reactive, ref } from 'vue'
-import type { FormInstance, FormRules } from 'element-plus'
+import type { FormInstance, FormRules } from 'xianniu-plus'
 
 interface RuleForm {
   name: string

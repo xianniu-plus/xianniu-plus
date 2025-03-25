@@ -12,7 +12,7 @@
     "skipLibCheck": true,
     "lib": ["WebWorker"],
     "paths": {
-      "element-plus": ["../packages/element-plus"],
+      "xianniu-plus": ["../packages/xianniu-plus"],
       "~/*": ["./.vitepress/vitepress/*"]
     },
     "jsx": "preserve"

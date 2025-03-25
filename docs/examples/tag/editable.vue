@@ -26,8 +26,8 @@
 
 <script lang="ts" setup>
 import { nextTick, ref } from 'vue'
-import { ElInput } from 'element-plus'
-import type { InputInstance } from 'element-plus'
+import { ElInput } from 'xianniu-plus'
+import type { InputInstance } from 'xianniu-plus'
 
 const inputValue = ref('')
 const dynamicTags = ref(['Tag 1', 'Tag 2', 'Tag 3'])

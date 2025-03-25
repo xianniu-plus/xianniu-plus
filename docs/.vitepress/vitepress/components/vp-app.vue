@@ -1,10 +1,10 @@
 <script setup lang="ts">
 import { onMounted } from 'vue'
-// import { ElMessageBox } from 'element-plus'
+// import { ElMessageBox } from 'xianniu-plus'
 import nprogress from 'nprogress'
 // import dayjs from 'dayjs'
 import { isClient, useEventListener, useToggle } from '@vueuse/core'
-import { EVENT_CODE } from 'element-plus'
+import { EVENT_CODE } from 'xianniu-plus'
 import { useSidebar } from '../composables/sidebar'
 import { useToggleWidgets } from '../composables/toggle-widgets'
 // import { useLang } from '../composables/lang'
@@ -22,7 +22,7 @@ const [isSidebarOpen, toggleSidebar] = useToggle(false)
 const { hasSidebar } = useSidebar()
 // const lang = useLang()
 
-// const mirrorUrl = 'element-plus.gitee.io'
+// const mirrorUrl = 'xianniu-plus.gitee.io'
 // const isMirrorUrl = () => {
 //   if (!isClient) return
 //   return window.location.hostname === mirrorUrl
@@ -99,7 +99,7 @@ onMounted(async () => {
   //       }
   //     )
   //     const toLang = '/zh-CN/'
-  //     location.href = `https://element-plus.gitee.io${toLang}${location.pathname.slice(
+  //     location.href = `https://xianniu-plus.gitee.io${toLang}${location.pathname.slice(
   //       toLang.length
   //     )}`
   //   } catch {

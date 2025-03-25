@@ -15,7 +15,7 @@ let compPaths: string[]
 
 export function MarkdownTransform(): Plugin {
   return {
-    name: 'element-plus-md-transform',
+    name: 'xianniu-plus-md-transform',
 
     enforce: 'pre',
 

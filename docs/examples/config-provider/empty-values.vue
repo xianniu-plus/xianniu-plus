@@ -33,7 +33,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { ElMessage } from 'element-plus'
+import { ElMessage } from 'xianniu-plus'
 
 const value1 = ref('')
 const value2 = ref('')

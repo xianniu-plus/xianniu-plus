@@ -65,7 +65,7 @@ import type {
   TransferDirection,
   TransferKey,
   renderContent,
-} from 'element-plus'
+} from 'xianniu-plus'
 interface Option {
   key: number
   label: string

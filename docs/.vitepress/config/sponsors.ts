@@ -17,7 +17,7 @@ export const rightLogoSmallSponsors = [
     name: 'BuildAdmin',
     img: '/images/buildadmin.png',
     imgL: '/images/buildadmin-l.png',
-    url: 'https://doc.buildadmin.com/?from=element-plus',
+    url: 'https://doc.buildadmin.com/?from=xianniu-plus',
     slogan: 'Vue3 open source admin system',
     slogan_cn: 'Vue3企业级开源后台管理系统',
   },

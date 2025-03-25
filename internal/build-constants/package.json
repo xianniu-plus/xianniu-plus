@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "description": "Build constants for Xianniu Plus",
   "keywords": [
-    "element-plus"
+    "xianniu-plus"
   ],
   "license": "MIT",
   "main": "./dist/index.cjs",

@@ -53,7 +53,7 @@ jobs:
         run: pnpm docs:gen-locale
 
       - name: Install latest Xianniu Plus
-        run: cd docs && pnpm i element-plus@latest
+        run: cd docs && pnpm i xianniu-plus@latest
 
       - name: Build Metadata
         run: cd internal/metadata && pnpm build
@@ -73,7 +73,7 @@ jobs:
           branch: gh-pages
           folder: docs/.vitepress/dist
           git-config-name: XianniuPlusBot
-          git-config-email: element-plus@outlook.com
+          git-config-email: xianniu-plus@outlook.com
           commit-message: website deploy
 
       - name: Deploy to vercel
@@ -82,9 +82,9 @@ jobs:
           token: ${{ secrets.EP_BOT_TOKEN }}
           branch: main
           folder: docs/.vitepress/dist
-          repository-name: element-plus/vercel-publish
+          repository-name: xianniu-plus/vercel-publish
           git-config-name: XianniuPlusBot
-          git-config-email: element-plus@outlook.com
+          git-config-email: xianniu-plus@outlook.com
 
       - name: Sync
         env:

@@ -17,10 +17,10 @@ import {
   ElTag,
   ElTooltip,
   TableV2FixedDir,
-} from 'element-plus'
+} from 'xianniu-plus'
 import { Timer } from '@xianniu-plus/icons-vue'
 
-import type { Column } from 'element-plus'
+import type { Column } from 'xianniu-plus'
 
 let id = 0
 

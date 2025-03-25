@@ -3,7 +3,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ElMessage } from 'element-plus'
+import { ElMessage } from 'xianniu-plus'
 
 const openHTML = () => {
   ElMessage({

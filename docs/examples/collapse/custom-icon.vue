@@ -57,7 +57,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { CaretRight } from '@xianniu-plus/icons-vue'
-import type { CollapseModelValue } from 'element-plus'
+import type { CollapseModelValue } from 'xianniu-plus'
 
 const activeNames = ref(['1'])
 const handleChange = (val: CollapseModelValue) => {

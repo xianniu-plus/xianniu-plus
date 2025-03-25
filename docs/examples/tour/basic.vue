@@ -13,7 +13,7 @@
     <el-tour-step :target="ref1?.$el" title="Upload File">
       <img
         style="width: 240px"
-        src="https://element-plus.org/images/element-plus-logo.svg"
+        src="https://xianniu-plus.org/images/xianniu-plus-logo.svg"
         alt="tour.png"
       />
       <div>Put you files here.</div>
@@ -34,7 +34,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { MoreFilled } from '@xianniu-plus/icons-vue'
-import type { ButtonInstance } from 'element-plus'
+import type { ButtonInstance } from 'xianniu-plus'
 
 const ref1 = ref<ButtonInstance>()
 const ref2 = ref<ButtonInstance>()

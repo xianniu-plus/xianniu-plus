@@ -18,7 +18,7 @@ import {
   ElTag,
   TableV2FixedDir,
   TableV2SortOrder,
-} from 'element-plus'
+} from 'xianniu-plus'
 
 import type { Column, SortBy } from '@xianniu-plus/components/table-v2'
 

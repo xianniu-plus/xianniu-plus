@@ -15,13 +15,13 @@
 </template>
 
 <script lang="tsx" setup>
-import { TableV2FixedDir, TableV2Placeholder } from 'element-plus'
+import { TableV2FixedDir, TableV2Placeholder } from 'xianniu-plus'
 
 import type { FunctionalComponent } from 'vue'
 import type {
   HeaderClassNameGetter,
   TableV2CustomizedHeaderSlotParam,
-} from 'element-plus'
+} from 'xianniu-plus'
 
 const generateColumns = (length = 10, prefix = 'column-', props?: any) =>
   Array.from({ length }).map((_, columnIndex) => ({

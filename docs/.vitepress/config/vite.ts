@@ -27,7 +27,7 @@ const { dependencies: docsDeps } = getPackageDependencies(docPackage)
 const optimizeDeps = [...new Set([...epDeps, ...docsDeps])].filter(
   (dep) =>
     !dep.startsWith('@types/') &&
-    !['@xianniu-plus/metadata', 'element-plus'].includes(dep)
+    !['@xianniu-plus/metadata', 'xianniu-plus'].includes(dep)
 )
 optimizeDeps.push(
   ...(await glob(['dayjs/plugin/*.js'], {
@@ -45,11 +45,11 @@ const alias: AliasOptions = [
     ? []
     : [
         {
-          find: /^element-plus(\/(es|lib))?$/,
-          replacement: path.resolve(projRoot, 'packages/element-plus/index.ts'),
+          find: /^xianniu-plus(\/(es|lib))?$/,
+          replacement: path.resolve(projRoot, 'packages/xianniu-plus/index.ts'),
         },
         {
-          find: /^element-plus\/(es|lib)\/(.*)$/,
+          find: /^xianniu-plus\/(es|lib)\/(.*)$/,
           replacement: `${path.resolve(projRoot, 'packages')}/$2`,
         },
       ]),

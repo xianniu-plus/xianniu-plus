@@ -17,7 +17,7 @@
 
 <script lang="ts" setup>
 import { MoreFilled } from '@xianniu-plus/icons-vue'
-import type { TimelineItemProps } from 'element-plus'
+import type { TimelineItemProps } from 'xianniu-plus'
 
 interface ActivityType extends Partial<TimelineItemProps> {
   content: string

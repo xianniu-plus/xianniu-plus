@@ -26,7 +26,7 @@
 <script lang="ts" setup>
 import { h } from 'vue'
 import type { VNode } from 'vue'
-import type { TableColumnCtx } from 'element-plus'
+import type { TableColumnCtx } from 'xianniu-plus'
 
 interface Product {
   id: string

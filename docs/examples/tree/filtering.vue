@@ -18,7 +18,7 @@
 
 <script lang="ts" setup>
 import { ref, watch } from 'vue'
-import { ElTree } from 'element-plus'
+import { ElTree } from 'xianniu-plus'
 
 interface Tree {
   [key: string]: any

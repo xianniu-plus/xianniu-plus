@@ -16,7 +16,7 @@
 </template>
 
 <script lang="ts" setup>
-import { ElTable } from 'element-plus'
+import { ElTable } from 'xianniu-plus'
 
 interface User {
   date: string

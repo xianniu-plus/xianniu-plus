@@ -12,7 +12,7 @@ import FigmaVariablesSvg from './resources/figma-variables-svg.vue'
 import FigmaUiKitSvg from './resources/figma-ui-kit-svg.vue'
 import MasterGoUiKitSvg from './resources/master-go-ui-kit-svg.vue'
 
-const mirrorUrl = 'element-plus.gitee.io'
+const mirrorUrl = 'xianniu-plus.gitee.io'
 const isMirrorUrl = () => {
   if (!isClient) return
   return window.location.hostname === mirrorUrl
@@ -26,9 +26,9 @@ const resourceUrl = {
   },
   gitee: {
     sketch:
-      'https://gitee.com/element-plus/resources/raw/master/Xianniu_Plus_Design_System_2022_1.0_Beta.zip',
+      'https://gitee.com/xianniu-plus/resources/raw/master/Xianniu_Plus_Design_System_2022_1.0_Beta.zip',
     axure:
-      'https://gitee.com/element-plus/resources/raw/master/Element_Components_v2.1.0.rplib',
+      'https://gitee.com/xianniu-plus/resources/raw/master/Element_Components_v2.1.0.rplib',
   },
 }[isMirrorUrl() ? 'gitee' : 'github']
 
@@ -45,7 +45,7 @@ const resourceCards = computed(() => [
     description: '2023 Figma UI Kit',
     icon: FigmaUiKitSvg,
     intro: resourceLang.value.figma2023Intro,
-    url: 'https://www.figma.com/community/file/1305760370797950824/element-plus-design-system-ui-kit',
+    url: 'https://www.figma.com/community/file/1305760370797950824/xianniu-plus-design-system-ui-kit',
   },
   {
     key: 'figma-variables',

@@ -12,7 +12,7 @@
 import type {
   TreeNode,
   TreeNodeData,
-} from 'element-plus/es/components/tree-v2/src/types'
+} from 'xianniu-plus/es/components/tree-v2/src/types'
 
 interface Tree {
   id?: string

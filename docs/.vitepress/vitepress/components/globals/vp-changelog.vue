@@ -25,7 +25,7 @@ const onVersionChange = (val) => {
 onMounted(async () => {
   try {
     const response = await fetch(
-      'https://api.github.com/repos/element-plus/element-plus/releases'
+      'https://api.github.com/repos/xianniu-plus/xianniu-plus/releases'
     )
     const data: Release[] = await response.json()
     if (response.ok) {

@@ -11,7 +11,7 @@
 </template>
 
 <script lang="ts" setup>
-import type { TableColumnCtx } from 'element-plus'
+import type { TableColumnCtx } from 'xianniu-plus'
 
 interface User {
   date: string

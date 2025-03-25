@@ -1,5 +1,5 @@
 export const PKG_PREFIX = '@xianniu-plus'
-export const PKG_NAME = 'element-plus'
+export const PKG_NAME = 'xianniu-plus'
 export const PKG_CAMELCASE_NAME = 'XianniuPlus'
 export const PKG_CAMELCASE_LOCAL_NAME = 'XianniuPlusLocale'
 export const PKG_BRAND_NAME = 'Xianniu Plus'

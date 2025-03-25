@@ -13,7 +13,7 @@ jobs:
   build:
     name: Build
     runs-on: ubuntu-latest
-    if: ${{ github.repository_owner == 'element-plus' }}
+    if: ${{ github.repository_owner == 'xianniu-plus' }}
 
     steps:
       - name: Checkout
@@ -79,6 +79,6 @@ jobs:
           token: ${{ secrets.EP_BOT_TOKEN }}
           branch: main
           folder: docs/.vitepress/dist
-          repository-name: element-plus/staging
+          repository-name: xianniu-plus/staging
           git-config-name: XianniuPlusBot
-          git-config-email: element-plus@outlook.com
+          git-config-email: xianniu-plus@outlook.com

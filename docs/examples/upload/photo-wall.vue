@@ -18,7 +18,7 @@
 import { ref } from 'vue'
 import { Plus } from '@xianniu-plus/icons-vue'
 
-import type { UploadProps, UploadUserFile } from 'element-plus'
+import type { UploadProps, UploadUserFile } from 'xianniu-plus'
 
 const fileList = ref<UploadUserFile[]>([
   {

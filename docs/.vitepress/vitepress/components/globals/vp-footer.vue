@@ -16,21 +16,21 @@ const homeLang = computed(() => homeLocale[lang.value])
     <div class="footer-main">
       <h4>{{ homeLang['10'] }}</h4>
       <a
-        href="https://github.com/element-plus/element-plus"
+        href="https://github.com/xianniu-plus/xianniu-plus"
         class="footer-main-link"
         target="_blank"
       >
         {{ homeLang['11'] }}
       </a>
       <a
-        href="https://cn.element-plus.org/zh-CN/"
+        href="https://cn.xianniu-plus.org/zh-CN/"
         class="footer-main-link"
         target="_blank"
       >
         {{ homeLang['china_mirror'] }}
       </a>
       <a
-        href="https://github.com/element-plus/element-plus/releases"
+        href="https://github.com/xianniu-plus/xianniu-plus/releases"
         class="footer-main-link"
         target="_blank"
       >
@@ -55,21 +55,21 @@ const homeLang = computed(() => homeLocale[lang.value])
         {{ homeLang['discord'] }}
       </a>
       <a
-        href="https://github.com/element-plus/element-plus/issues"
+        href="https://github.com/xianniu-plus/xianniu-plus/issues"
         class="footer-main-link"
         target="_blank"
       >
         {{ homeLang['16'] }}
       </a>
       <a
-        href="https://github.com/element-plus/element-plus/blob/dev/.github/CONTRIBUTING.en-US.md"
+        href="https://github.com/xianniu-plus/xianniu-plus/blob/dev/.github/CONTRIBUTING.en-US.md"
         class="footer-main-link"
         target="_blank"
       >
         {{ homeLang['17'] }}
       </a>
       <a
-        href="https://segmentfault.com/t/element-plus"
+        href="https://segmentfault.com/t/xianniu-plus"
         class="footer-main-link"
         target="_blank"
       >

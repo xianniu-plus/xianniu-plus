@@ -24,7 +24,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 import { XianniuPlus } from '@xianniu-plus/icons-vue'
-import type { TagProps } from 'element-plus'
+import type { TagProps } from 'xianniu-plus'
 
 const type: Array<TagProps['type']> = [
   'primary',

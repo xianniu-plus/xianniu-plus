@@ -54,5 +54,5 @@ export function createCrowdinUrl(targetLang: string) {
   } else {
     translateLang = targetLang.split('-').shift()!.toLocaleLowerCase()
   }
-  return `https://crowdin.com/translate/element-plus/all/en-${translateLang}`
+  return `https://crowdin.com/translate/xianniu-plus/all/en-${translateLang}`
 }

@@ -27,7 +27,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { MoreFilled } from '@xianniu-plus/icons-vue'
-import type { ButtonInstance } from 'element-plus'
+import type { ButtonInstance } from 'xianniu-plus'
 
 const el = () => document.querySelector<HTMLElement>('#btn2')
 const btnRef = ref<ButtonInstance>()

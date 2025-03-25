@@ -62,8 +62,8 @@ const setupConfig = (configEnv) => {
       editLinks: true,
       editLinkText: 'Edit this page on GitHub',
 
-      logo: '/images/element-plus-logo.svg',
-      logoSmall: '/images/element-plus-logo-small.svg',
+      logo: '/images/xianniu-plus-logo.svg',
+      logoSmall: '/images/xianniu-plus-logo-small.svg',
       sidebars,
       nav,
       agolia: {

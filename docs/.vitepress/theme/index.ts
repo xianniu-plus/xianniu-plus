@@ -1,7 +1,7 @@
 import XianniuPlus, {
   ID_INJECTION_KEY,
   ZINDEX_INJECTION_KEY,
-} from 'element-plus'
+} from 'xianniu-plus'
 
 import VPApp, { NotFound, globals } from '../vitepress'
 import { define } from '../utils/types'

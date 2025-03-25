@@ -43,7 +43,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import type { TableColumnCtx, TableInstance } from 'element-plus'
+import type { TableColumnCtx, TableInstance } from 'xianniu-plus'
 
 interface User {
   date: string

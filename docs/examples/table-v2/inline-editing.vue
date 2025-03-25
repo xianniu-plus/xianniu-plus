@@ -16,10 +16,10 @@
 
 <script lang="tsx" setup>
 import { ref, withKeys } from 'vue'
-import { ElInput } from 'element-plus'
+import { ElInput } from 'xianniu-plus'
 
 import type { FunctionalComponent } from 'vue'
-import type { Column, InputInstance } from 'element-plus'
+import type { Column, InputInstance } from 'xianniu-plus'
 
 type SelectionCellProps = {
   value: string

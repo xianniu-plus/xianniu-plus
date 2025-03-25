@@ -19,7 +19,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import type { TabPaneName } from 'element-plus'
+import type { TabPaneName } from 'xianniu-plus'
 
 let tabIndex = 2
 const editableTabsValue = ref('2')

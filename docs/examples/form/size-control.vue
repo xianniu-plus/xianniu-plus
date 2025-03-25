@@ -76,7 +76,7 @@
 
 <script lang="ts" setup>
 import { reactive, ref } from 'vue'
-import type { ComponentSize, FormProps } from 'element-plus'
+import type { ComponentSize, FormProps } from 'xianniu-plus'
 
 const size = ref<ComponentSize>('default')
 const labelPosition = ref<FormProps['labelPosition']>('right')

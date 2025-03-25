@@ -10,7 +10,7 @@ export const head: HeadConfig[] = [
     'link',
     {
       rel: 'icon',
-      href: '/images/element-plus-logo-small.svg',
+      href: '/images/xianniu-plus-logo-small.svg',
       type: 'image/svg+xm',
     },
   ],
@@ -55,7 +55,7 @@ export const head: HeadConfig[] = [
     'meta',
     {
       property: 'og:image',
-      content: '/images/element-plus-og-image.png',
+      content: '/images/xianniu-plus-og-image.png',
     },
   ],
   [

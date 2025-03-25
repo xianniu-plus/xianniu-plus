@@ -34,7 +34,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import { MoreFilled } from '@xianniu-plus/icons-vue'
-import type { ButtonInstance } from 'element-plus'
+import type { ButtonInstance } from 'xianniu-plus'
 
 const ref1 = ref<ButtonInstance>()
 const ref2 = ref<ButtonInstance>()

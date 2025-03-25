@@ -21,7 +21,7 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import type { MentionOption } from 'element-plus'
+import type { MentionOption } from 'xianniu-plus'
 
 const MOCK_DATA: Record<string, string[]> = {
   '@': ['Fuphoenixes', 'kooriookami', 'Jeremy', 'btea'],

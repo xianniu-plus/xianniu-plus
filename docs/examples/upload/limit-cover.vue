@@ -23,8 +23,8 @@
 
 <script setup lang="ts">
 import { ref } from 'vue'
-import { genFileId } from 'element-plus'
-import type { UploadInstance, UploadProps, UploadRawFile } from 'element-plus'
+import { genFileId } from 'xianniu-plus'
+import type { UploadInstance, UploadProps, UploadRawFile } from 'xianniu-plus'
 
 const upload = ref<UploadInstance>()
 

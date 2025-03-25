@@ -17,7 +17,7 @@ export const usePlayground = (source: string) => {
 
   const encoded = code ? utoa(JSON.stringify(originCode)) : ''
 
-  let link = `https://element-plus.run/`
+  let link = `https://xianniu-plus.run/`
 
   if (usePreview()) {
     link = `${link}?pr=${usePreviewPR()}`

@@ -16,7 +16,7 @@
     <p class="mt-1">
       Made with ❤️ by
       <a
-        href="https://github.com/element-plus"
+        href="https://github.com/xianniu-plus"
         target="_blank"
         rel="noopener noreferer"
         >Xianniu Plus</a

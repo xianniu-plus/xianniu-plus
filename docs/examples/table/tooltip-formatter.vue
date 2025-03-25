@@ -38,7 +38,7 @@
 
 <script lang="ts" setup>
 import { h } from 'vue'
-import { ElLink, type TableTooltipData } from 'element-plus'
+import { ElLink, type TableTooltipData } from 'xianniu-plus'
 
 type TableData = {
   address: string
@@ -50,22 +50,22 @@ const tableData: TableData[] = [
   {
     address: 'Lohrbergstr. 86c, Süd Lilli, Saarland',
     tags: ['Office', 'Home', 'Park', 'Garden'],
-    url: 'https://github.com/element-plus/element-plus/issues',
+    url: 'https://github.com/xianniu-plus/xianniu-plus/issues',
   },
   {
     address: '760 A Street, South Frankfield, Illinois',
     tags: ['error', 'warning', 'success', 'info'],
-    url: 'https://github.com/element-plus/element-plus/pulls',
+    url: 'https://github.com/xianniu-plus/xianniu-plus/pulls',
   },
   {
     address: 'Arnold-Ohletz-Str. 41a, Alt Malinascheid, Thüringen',
     tags: ['one', 'two', 'three', 'four', 'five'],
-    url: 'https://github.com/element-plus/element-plus/discussions',
+    url: 'https://github.com/xianniu-plus/xianniu-plus/discussions',
   },
   {
     address: '23618 Windsor Drive, West Ricardoview, Idaho',
     tags: ['blue', 'white', 'dark', 'gray', 'red', 'bright'],
-    url: 'https://github.com/element-plus/element-plus/actions',
+    url: 'https://github.com/xianniu-plus/xianniu-plus/actions',
   },
 ]
 

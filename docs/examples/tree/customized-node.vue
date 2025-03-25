@@ -43,8 +43,8 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { ElButton } from 'element-plus'
-import type Node from 'element-plus/es/components/tree/src/model/node'
+import { ElButton } from 'xianniu-plus'
+import type Node from 'xianniu-plus/es/components/tree/src/model/node'
 
 interface Tree {
   id: number
