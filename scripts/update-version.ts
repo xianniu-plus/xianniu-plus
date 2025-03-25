@@ -23,7 +23,7 @@ async function main() {
   const pkgs = Object.fromEntries(
     (await getWorkspacePackages()).map((pkg) => [pkg.manifest.name!, pkg])
   )
-  const xianniuPlus = pkgs['element-plus'] || pkgs['@xianniu-plus/nightly']
+  const xianniuPlus = pkgs['xianniu-plus'] || pkgs['@xianniu-plus/nightly']
   const eslintConfig = pkgs['@xianniu-plus/eslint-config']
   const metadata = pkgs['@xianniu-plus/metadata']
 

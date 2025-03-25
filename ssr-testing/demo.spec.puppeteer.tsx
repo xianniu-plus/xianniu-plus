@@ -4,7 +4,7 @@ import { renderToString } from '@vue/server-renderer'
 import { afterAll, beforeAll, describe, expect, it } from 'vitest'
 import puppeteer from 'puppeteer'
 import glob from 'fast-glob'
-import XianniuPlus, { ID_INJECTION_KEY } from '../dist/element-plus'
+import XianniuPlus, { ID_INJECTION_KEY } from '../dist/xianniu-plus'
 
 import type { Browser } from 'puppeteer'
 
@@ -37,7 +37,7 @@ describe('Cypress Button', () => {
         path: path.join(
           projectRoot,
           'dist',
-          'element-plus',
+          'xianniu-plus',
           'dist',
           'index.css'
         ),

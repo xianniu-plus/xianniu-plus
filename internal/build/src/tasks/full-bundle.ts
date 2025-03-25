@@ -16,8 +16,8 @@ import {
   PKG_CAMELCASE_NAME,
 } from '@xianniu-plus/build-constants'
 import { epOutput, epRoot, localeRoot } from '@xianniu-plus/build-utils'
-import { version } from '../../../../packages/element-plus/version'
-import { XianniuPlusAlias } from '../plugins/element-plus-alias'
+import { version } from '../../../../packages/xianniu-plus/version'
+import { XianniuPlusAlias } from '../plugins/xianniu-plus-alias'
 import {
   formatBundleFilename,
   generateExternal,

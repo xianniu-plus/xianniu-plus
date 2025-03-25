@@ -10,7 +10,7 @@ import esbuild from 'rollup-plugin-esbuild'
 import glob from 'fast-glob'
 import { epRoot, excludeFiles, pkgRoot } from '@xianniu-plus/build-utils'
 import { generateExternal, withTaskName, writeBundles } from '../utils'
-import { XianniuPlusAlias } from '../plugins/element-plus-alias'
+import { XianniuPlusAlias } from '../plugins/xianniu-plus-alias'
 import { buildConfigEntries, target } from '../build-info'
 import type { TaskFunction } from 'gulp'
 

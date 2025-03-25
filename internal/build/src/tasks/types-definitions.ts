@@ -19,7 +19,7 @@ export const generateTypesDefinitions = async () => {
     await writeFile(filePath, pathRewriter('esm')(content), 'utf8')
   })
   await Promise.all(rewriteTasks)
-  const sourceDir = path.join(typesDir, 'element-plus')
+  const sourceDir = path.join(typesDir, 'xianniu-plus')
   await copy(sourceDir, typesDir)
   await remove(sourceDir)
 }
