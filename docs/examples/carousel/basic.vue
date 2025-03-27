@@ -24,7 +24,7 @@
   color: var(--xn-text-color-secondary);
 }
 
-.el-carousel__item h3 {
+.xn-carousel__item h3 {
   color: #475669;
   opacity: 0.75;
   line-height: 150px;
@@ -32,11 +32,11 @@
   text-align: center;
 }
 
-.el-carousel__item:nth-child(2n) {
+.xn-carousel__item:nth-child(2n) {
   background-color: #99a9bf;
 }
 
-.el-carousel__item:nth-child(2n + 1) {
+.xn-carousel__item:nth-child(2n + 1) {
   background-color: #d3dce6;
 }
 </style>

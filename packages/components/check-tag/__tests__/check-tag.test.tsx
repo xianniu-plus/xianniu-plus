@@ -33,11 +33,11 @@ describe('CheckTag.vue', () => {
     })
     expect(wrapper.text()).toEqual(AXIOM)
 
-    await wrapper.find('.el-check-tag').trigger('click')
+    await wrapper.find('.xn-check-tag').trigger('click')
 
     expect(wrapper.vm.checked).toBe(true)
 
-    await wrapper.find('.el-check-tag').trigger('click')
+    await wrapper.find('.xn-check-tag').trigger('click')
 
     expect(wrapper.vm.checked).toBe(false)
   })
@@ -60,7 +60,7 @@ describe('CheckTag.vue', () => {
     expect(wrapper.text()).toEqual(AXIOM)
     expect(wrapper.classes()).toContain('is-disabled')
 
-    await wrapper.find('.el-check-tag').trigger('click')
+    await wrapper.find('.xn-check-tag').trigger('click')
 
     expect(wrapper.vm.checked).toBe(false)
   })

@@ -293,7 +293,7 @@ describe('submenu', () => {
     )
     const submenu = await wrapper.findComponent({ ref: 'submenu' })
     const submenuItem2 = await wrapper.findComponent({ ref: 'submenuItem2' })
-    submenu.vm.$el.querySelector('.el-sub-menu__title').click()
+    submenu.vm.$el.querySelector('.xn-sub-menu__title').click()
     await nextTick()
     expect(submenu.classes()).toContain('is-opened')
     submenuItem2.trigger('click')
@@ -386,7 +386,7 @@ describe('other', () => {
       </el-menu>`
     )
     const submenu2 = await wrapper.findComponent({ ref: 'submenu2' })
-    submenu2.vm.$el.querySelector('.el-sub-menu__title').click()
+    submenu2.vm.$el.querySelector('.xn-sub-menu__title').click()
     await nextTick()
     const submenu1 = await wrapper.findComponent({ ref: 'submenu1' })
     expect(submenu1.classes().includes('is-opened')).toBeFalsy()
@@ -441,7 +441,7 @@ describe('other', () => {
     )
     const group1 = await wrapper.findComponent({ ref: 'group1' })
     expect(
-      group1.vm.$el.querySelector('.el-menu-item-group__title').innerHTML
+      group1.vm.$el.querySelector('.xn-menu-item-group__title').innerHTML
     ).toEqual('分组一')
   })
   test('dynamic menus, issue 9092', async () => {
@@ -474,7 +474,7 @@ describe('other', () => {
 
     await nextTick()
     expect(
-      instance.$el.querySelector('.el-menu-item.is-active').innerHTML
+      instance.$el.querySelector('.xn-menu-item.is-active').innerHTML
     ).toEqual('new')
   })
 })

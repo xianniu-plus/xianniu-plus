@@ -115,11 +115,11 @@ describe('config-provider', () => {
 
       await nextTick()
       expect(
-        wrapper.find('.el-button .el-button__text--expand').exists()
+        wrapper.find('.xn-button .xn-button__text--expand').exists()
       ).toBeTruthy()
       await wrapper.find('.toggle').trigger('click')
       expect(
-        wrapper.find('.el-button .el-button__text--expand').exists()
+        wrapper.find('.xn-button .xn-button__text--expand').exists()
       ).toBeFalsy()
     })
   })
@@ -162,21 +162,21 @@ describe('config-provider', () => {
       ))
 
       await nextTick()
-      wrapper.find('.el-button').trigger('click')
-      wrapper.find('.el-button').trigger('click')
-      wrapper.find('.el-button').trigger('click')
-      wrapper.find('.el-button').trigger('click')
+      wrapper.find('.xn-button').trigger('click')
+      wrapper.find('.xn-button').trigger('click')
+      wrapper.find('.xn-button').trigger('click')
+      wrapper.find('.xn-button').trigger('click')
       await nextTick()
-      expect(document.querySelectorAll('.el-message').length).toBe(3)
+      expect(document.querySelectorAll('.xn-message').length).toBe(3)
 
       config.max = 10
       await nextTick()
-      wrapper.find('.el-button').trigger('click')
-      wrapper.find('.el-button').trigger('click')
-      wrapper.find('.el-button').trigger('click')
-      wrapper.find('.el-button').trigger('click')
+      wrapper.find('.xn-button').trigger('click')
+      wrapper.find('.xn-button').trigger('click')
+      wrapper.find('.xn-button').trigger('click')
+      wrapper.find('.xn-button').trigger('click')
       await nextTick()
-      expect(document.querySelectorAll('.el-message').length).toBe(7)
+      expect(document.querySelectorAll('.xn-message').length).toBe(7)
     })
 
     it('new config parameters effective', async () => {
@@ -197,12 +197,12 @@ describe('config-provider', () => {
 
       await rAF()
 
-      wrapper.find('.el-button').trigger('click')
-      wrapper.find('.el-button').trigger('click')
+      wrapper.find('.xn-button').trigger('click')
+      wrapper.find('.xn-button').trigger('click')
       await nextTick()
-      const elements = document.querySelectorAll('.el-message')
+      const elements = document.querySelectorAll('.xn-message')
       expect(elements.length).toBe(1)
-      expect(document.querySelectorAll('.el-message__closeBtn').length).toBe(1)
+      expect(document.querySelectorAll('.xn-message__closeBtn').length).toBe(1)
 
       const getTopValue = (elm: Element): number =>
         Number.parseFloat(getStyle(elm as HTMLElement, 'top'))
@@ -229,11 +229,11 @@ describe('config-provider', () => {
       ))
 
       await rAF()
-      await wrapper.find('.el-button').trigger('click')
-      await wrapper.find('.el-button').trigger('click')
-      await wrapper.find('.el-button').trigger('click')
+      await wrapper.find('.xn-button').trigger('click')
+      await wrapper.find('.xn-button').trigger('click')
+      await wrapper.find('.xn-button').trigger('click')
       await nextTick()
-      expect(document.querySelectorAll('.el-message').length).toBe(1)
+      expect(document.querySelectorAll('.xn-message').length).toBe(1)
     })
   })
 

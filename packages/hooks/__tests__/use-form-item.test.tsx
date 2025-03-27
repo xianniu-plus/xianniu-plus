@@ -29,7 +29,7 @@ const mountComponent = (setup = NOOP, options = {}) =>
 describe('use-form-item', () => {
   it('should return local value', () => {
     const wrapper = mountComponent()
-    expect(wrapper.find('.el-button').exists()).toBe(true)
+    expect(wrapper.find('.xn-button').exists()).toBe(true)
   })
 
   it('should return props.size instead of injected.size', () => {
@@ -45,7 +45,7 @@ describe('use-form-item', () => {
       }
     )
 
-    expect(wrapper.find(`.el-button--${propSize}`).exists()).toBe(true)
+    expect(wrapper.find(`.xn-button--${propSize}`).exists()).toBe(true)
   })
 
   it('should return fallback.size instead inject.size', () => {
@@ -60,7 +60,7 @@ describe('use-form-item', () => {
       } as FormItemContext)
     })
 
-    expect(wrapper.find(`.el-button--${fallbackSize}`).exists()).toBe(true)
+    expect(wrapper.find(`.xn-button--${fallbackSize}`).exists()).toBe(true)
   })
 
   it('should return formItem.size instead form.size', () => {
@@ -75,6 +75,6 @@ describe('use-form-item', () => {
       } as FormContext)
     })
 
-    expect(wrapper.find(`.el-button--${itemSize}`).exists()).toBe(true)
+    expect(wrapper.find(`.xn-button--${itemSize}`).exists()).toBe(true)
   })
 })

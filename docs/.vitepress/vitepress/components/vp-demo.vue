@@ -196,7 +196,7 @@ const copyCode = async () => {
     justify-content: flex-end;
     height: 2.5rem;
 
-    .el-icon {
+    .xn-icon {
       &:hover {
         color: var(--text-color);
       }

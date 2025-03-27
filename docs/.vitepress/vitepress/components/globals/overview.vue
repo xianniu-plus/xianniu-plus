@@ -125,7 +125,7 @@ onMounted(() => {
     top: 60px;
     z-index: 10;
 
-    .el-input {
+    .xn-input {
       background: var(--bg-color);
     }
   }
@@ -148,7 +148,7 @@ onMounted(() => {
         grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
         gap: 16px;
 
-        :deep(.el-card) {
+        :deep(.xn-card) {
           cursor: pointer;
           transition: none;
 
@@ -157,14 +157,14 @@ onMounted(() => {
             outline-offset: 1px;
           }
 
-          .el-card__header {
+          .xn-card__header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             gap: 8px;
             padding: 8px 12px;
 
-            .el-text {
+            .xn-text {
               font-size: 14px;
               font-weight: 500;
               color: var(--xn-text-color-regular);
@@ -172,7 +172,7 @@ onMounted(() => {
             }
           }
 
-          .el-card__body {
+          .xn-card__body {
             padding: 0;
             display: flex;
             justify-content: center;

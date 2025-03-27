@@ -12,7 +12,7 @@ Menu that provides navigation for your website.
 If you want to override the default height of el-menu, you can use the following CSS:
 
 ```css
-.el-menu--horizontal {
+.xn-menu--horizontal {
   --xn-menu-horizontal-height: 100px;
 }
 ```

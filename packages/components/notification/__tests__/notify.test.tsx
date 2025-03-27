@@ -6,7 +6,7 @@ import Notification, { closeAll } from '../src/notify'
 import type { NotificationHandle } from '../src/notification'
 import type { VNode } from 'vue'
 
-const selector = '.el-notification'
+const selector = '.xn-notification'
 
 describe('Notification on command', () => {
   afterEach(() => {
@@ -92,7 +92,7 @@ describe('Notification on command', () => {
   it('it should be able to render all types notification', () => {
     for (const type of ['success', 'warning', 'error', 'info'] as const) {
       Notification[type]({})
-      expect(document.querySelector(`.el-icon-${type}`)).toBeDefined()
+      expect(document.querySelector(`.xn-icon-${type}`)).toBeDefined()
     }
   })
 
@@ -172,7 +172,7 @@ describe('Notification on command', () => {
 
     await rAF()
     expect(
-      document.querySelector('.el-notification__content')!.textContent
+      document.querySelector('.xn-notification__content')!.textContent
     ).toBe(text)
     close()
   })

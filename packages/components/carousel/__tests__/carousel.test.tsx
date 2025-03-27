@@ -50,7 +50,7 @@ describe('Carousel', () => {
     const carousel = wrapper.findComponent({ ref: 'carousel' })
       .vm as CarouselInstance
     expect(carousel.direction).toBe('horizontal')
-    expect(wrapper.findAll('.el-carousel__item').length).toEqual(3)
+    expect(wrapper.findAll('.xn-carousel__item').length).toEqual(3)
   })
 
   it('auto play', async () => {
@@ -60,7 +60,7 @@ describe('Carousel', () => {
 
     await nextTick()
     await wait(10)
-    const items = wrapper.vm.$el.querySelectorAll('.el-carousel__item')
+    const items = wrapper.vm.$el.querySelectorAll('.xn-carousel__item')
     expect(items[0].classList.contains('is-active')).toBeTruthy()
     await wait(60)
     expect(items[1].classList.contains('is-active')).toBeTruthy()
@@ -77,7 +77,7 @@ describe('Carousel', () => {
 
     expect(
       wrapper.vm.$el
-        .querySelectorAll('.el-carousel__item')[1]
+        .querySelectorAll('.xn-carousel__item')[1]
         .classList.contains('is-active')
     ).toBeTruthy()
   })
@@ -87,7 +87,7 @@ describe('Carousel', () => {
       interval: 500,
     })
     await nextTick()
-    const items = wrapper.vm.$el.querySelectorAll('.el-carousel__item')
+    const items = wrapper.vm.$el.querySelectorAll('.xn-carousel__item')
     await wrapper.trigger('mouseenter')
     await nextTick()
     expect(items[0].classList.contains('is-active')).toBeTruthy()
@@ -120,7 +120,7 @@ describe('Carousel', () => {
   it('label', async () => {
     wrapper = createComponent(undefined, 3, true)
     await nextTick()
-    expect(wrapper.find('.el-carousel__button span').text()).toBe('1')
+    expect(wrapper.find('.xn-carousel__button span').text()).toBe('1')
   })
 
   describe('manual control', () => {
@@ -131,12 +131,12 @@ describe('Carousel', () => {
 
       await nextTick()
       await wait()
-      await wrapper.findAll('.el-carousel__indicator')[1].trigger('mouseenter')
+      await wrapper.findAll('.xn-carousel__indicator')[1].trigger('mouseenter')
       await nextTick()
       await wait()
       expect(
         wrapper.vm.$el
-          .querySelectorAll('.el-carousel__item')[1]
+          .querySelectorAll('.xn-carousel__item')[1]
           .classList.contains('is-active')
       ).toBeTruthy()
     })
@@ -154,7 +154,7 @@ describe('Carousel', () => {
 
     await nextTick()
     await wait()
-    const items = wrapper.vm.$el.querySelectorAll('.el-carousel__item')
+    const items = wrapper.vm.$el.querySelectorAll('.xn-carousel__item')
     expect(items[0].classList.contains('is-active')).toBeTruthy()
     expect(items[1].classList.contains('is-in-stage')).toBeTruthy()
     expect(items[6].classList.contains('is-in-stage')).toBeTruthy()
@@ -163,7 +163,7 @@ describe('Carousel', () => {
     expect(items[0].getAttribute('style')).toContain('scale(0.6)')
     expect(items[1].getAttribute('style')).toContain('scale(1)')
     expect(items[1].classList.contains('is-active')).toBeTruthy()
-    await wrapper.vm.$el.querySelector('.el-carousel__arrow--left').click()
+    await wrapper.vm.$el.querySelector('.xn-carousel__arrow--left').click()
     await wait()
     expect(items[0].classList.contains('is-active')).toBeTruthy()
     await items[6].click()
@@ -178,7 +178,7 @@ describe('Carousel', () => {
       direction: 'vertical',
       height: '100px',
     })
-    const items = wrapper.vm.$el.querySelectorAll('.el-carousel__item')
+    const items = wrapper.vm.$el.querySelectorAll('.xn-carousel__item')
     const carousel = wrapper.findComponent({ ref: 'carousel' })
       .vm as CarouselInstance
     expect(carousel.direction).toBe('vertical')
@@ -192,8 +192,8 @@ describe('Carousel', () => {
     })
 
     await nextTick()
-    await wrapper.find('.el-carousel').trigger('mouseenter')
-    const items = wrapper.vm.$el.querySelectorAll('.el-carousel__item')
+    await wrapper.find('.xn-carousel').trigger('mouseenter')
+    const items = wrapper.vm.$el.querySelectorAll('.xn-carousel__item')
     await nextTick()
     await wait(60)
     expect(items[1].classList.contains('is-active')).toBeTruthy()
@@ -216,7 +216,7 @@ describe('Carousel', () => {
 
     await nextTick()
     await wait(100)
-    const items = wrapper.vm.$el.querySelectorAll('.el-transitioning')
+    const items = wrapper.vm.$el.querySelectorAll('.xn-transitioning')
     expect(items.length).toBe(1)
   })
 
@@ -241,7 +241,7 @@ describe('Carousel', () => {
 
     data.splice(1, 0, 5)
     await nextTick()
-    const indicators = wrapper.findAll('.el-carousel__button')
+    const indicators = wrapper.findAll('.xn-carousel__button')
     data.forEach((value, index) => {
       expect(indicators[index].element.textContent).toEqual(value.toString())
     })
@@ -265,7 +265,7 @@ describe('Carousel', () => {
       },
     })
 
-    const items = wrapper.vm.$el.querySelectorAll('.el-carousel__item')
+    const items = wrapper.vm.$el.querySelectorAll('.xn-carousel__item')
 
     Array.from<HTMLElement>(items).forEach((item) => {
       vi.spyOn(item, 'offsetHeight', 'get').mockImplementation(() => {
@@ -277,7 +277,7 @@ describe('Carousel', () => {
     expect(items[0].classList.contains('is-active')).toBeTruthy()
 
     const container = wrapper.find<HTMLElement>(
-      '.el-carousel__container'
+      '.xn-carousel__container'
     ).element
 
     expect(container.style.height).toBe('100px')
@@ -305,7 +305,7 @@ describe('Carousel', () => {
       },
     })
 
-    const items = wrapper.vm.$el.querySelectorAll('.el-carousel__item')
+    const items = wrapper.vm.$el.querySelectorAll('.xn-carousel__item')
 
     Array.from<HTMLElement>(items).forEach((item) => {
       vi.spyOn(item, 'offsetHeight', 'get').mockImplementation(() => {
@@ -319,7 +319,7 @@ describe('Carousel', () => {
       .vm as CarouselInstance
 
     const container = wrapper.find<HTMLElement>(
-      '.el-carousel__container'
+      '.xn-carousel__container'
     ).element
 
     expect(items[0].classList.contains('is-active')).toBeTruthy()

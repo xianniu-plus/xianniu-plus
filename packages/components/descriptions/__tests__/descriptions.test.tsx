@@ -15,10 +15,10 @@ describe('Descriptions.vue', () => {
       </ElDescriptions>
     ))
 
-    expect(wrapper.find('.el-descriptions__title').text()).toEqual('title')
-    expect(wrapper.find('.el-descriptions__extra').text()).toEqual('extra')
-    expect(wrapper.findAll('.el-descriptions__label').length).toEqual(4)
-    expect(wrapper.findAll('.el-descriptions__content').length).toEqual(4)
+    expect(wrapper.find('.xn-descriptions__title').text()).toEqual('title')
+    expect(wrapper.find('.xn-descriptions__extra').text()).toEqual('extra')
+    expect(wrapper.findAll('.xn-descriptions__label').length).toEqual(4)
+    expect(wrapper.findAll('.xn-descriptions__content').length).toEqual(4)
   })
 
   test('render empty label', () => {
@@ -30,8 +30,8 @@ describe('Descriptions.vue', () => {
       </ElDescriptions>
     ))
 
-    expect(wrapper.findAll('.el-descriptions__label').length).toEqual(0)
-    expect(wrapper.findAll('.el-descriptions__content').length).toEqual(3)
+    expect(wrapper.findAll('.xn-descriptions__label').length).toEqual(0)
+    expect(wrapper.findAll('.xn-descriptions__content').length).toEqual(3)
   })
 
   test('should render border props', () => {
@@ -53,10 +53,10 @@ describe('Descriptions.vue', () => {
       </ElDescriptions>
     ))
 
-    expect(wrapper.find('.el-descriptions__label').classes()).toContain(
+    expect(wrapper.find('.xn-descriptions__label').classes()).toContain(
       'is-center'
     )
-    expect(wrapper.find('.el-descriptions__content').classes()).toContain(
+    expect(wrapper.find('.xn-descriptions__content').classes()).toContain(
       'is-right'
     )
   })
@@ -71,10 +71,10 @@ describe('Descriptions.vue', () => {
     ))
 
     expect(
-      wrapper.find('.el-descriptions__label').attributes('style')
+      wrapper.find('.xn-descriptions__label').attributes('style')
     ).toContain('width: 50px; min-width: 60px;')
     expect(
-      wrapper.find('.el-descriptions__content').attributes('style')
+      wrapper.find('.xn-descriptions__content').attributes('style')
     ).toContain('width: 50px; min-width: 60px;')
   })
 
@@ -90,10 +90,10 @@ describe('Descriptions.vue', () => {
       </ElDescriptions>
     ))
 
-    expect(wrapper.find('.el-descriptions__label').classes()).toContain(
+    expect(wrapper.find('.xn-descriptions__label').classes()).toContain(
       'label-class-name'
     )
-    expect(wrapper.find('.el-descriptions__content').classes()).toContain(
+    expect(wrapper.find('.xn-descriptions__content').classes()).toContain(
       'class-name'
     )
   })
@@ -156,7 +156,7 @@ describe('Descriptions.vue', () => {
       ></ElDescriptions>
     ))
 
-    expect(wrapper.find('.el-descriptions__title').text()).toEqual('title')
+    expect(wrapper.find('.xn-descriptions__title').text()).toEqual('title')
   })
 
   test('should render span props', async () => {
@@ -215,7 +215,7 @@ describe('Descriptions.vue', () => {
     ))
 
     expect(
-      wrapper.find('.el-descriptions__label').attributes('style')
+      wrapper.find('.xn-descriptions__label').attributes('style')
     ).toContain('width: 150px')
   })
 
@@ -229,7 +229,7 @@ describe('Descriptions.vue', () => {
     ))
 
     expect(
-      wrapper.find('.el-descriptions__label').attributes('style')
+      wrapper.find('.xn-descriptions__label').attributes('style')
     ).toContain('width: 150px')
   })
 
@@ -244,10 +244,10 @@ describe('Descriptions.vue', () => {
     ))
 
     expect(
-      wrapper.findAll('.el-descriptions__label')[0].attributes('style')
+      wrapper.findAll('.xn-descriptions__label')[0].attributes('style')
     ).toContain('width: 100px')
     expect(
-      wrapper.findAll('.el-descriptions__label')[1].attributes('style')
+      wrapper.findAll('.xn-descriptions__label')[1].attributes('style')
     ).toContain('width: 150px')
   })
 
@@ -261,7 +261,7 @@ describe('Descriptions.vue', () => {
     ))
 
     expect(
-      wrapper.find('.el-descriptions__label').attributes('style')
+      wrapper.find('.xn-descriptions__label').attributes('style')
     ).toContain('width: 150px')
   })
 
@@ -275,7 +275,7 @@ describe('Descriptions.vue', () => {
     ))
 
     expect(
-      wrapper.find('.el-descriptions__label').attributes('style')
+      wrapper.find('.xn-descriptions__label').attributes('style')
     ).toContain('width: 150px')
   })
 
@@ -290,10 +290,10 @@ describe('Descriptions.vue', () => {
     ))
 
     expect(
-      wrapper.findAll('.el-descriptions__label')[0].attributes('style')
+      wrapper.findAll('.xn-descriptions__label')[0].attributes('style')
     ).toContain('width: 100px')
     expect(
-      wrapper.findAll('.el-descriptions__label')[1].attributes('style')
+      wrapper.findAll('.xn-descriptions__label')[1].attributes('style')
     ).toContain('width: 150px')
   })
 
@@ -310,9 +310,9 @@ describe('Descriptions.vue', () => {
       </ElDescriptions>
     ))
 
-    expect(wrapper.find('.el-descriptions__title').text()).toEqual('title')
-    expect(wrapper.find('.el-descriptions__extra').text()).toEqual('extra')
-    expect(wrapper.findAll('.el-descriptions__label').length).toEqual(3)
-    expect(wrapper.findAll('.el-descriptions__content').length).toEqual(3)
+    expect(wrapper.find('.xn-descriptions__title').text()).toEqual('title')
+    expect(wrapper.find('.xn-descriptions__extra').text()).toEqual('extra')
+    expect(wrapper.findAll('.xn-descriptions__label').length).toEqual(3)
+    expect(wrapper.findAll('.xn-descriptions__content').length).toEqual(3)
   })
 })

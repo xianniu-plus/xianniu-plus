@@ -53,16 +53,16 @@ describe('TableV2.vue', () => {
         }}
       />
     ))
-    expect(wrapper.find('.el-table-v2').exists()).toBe(true)
-    const cell = wrapper.findAll('.el-table-v2__row-cell')
+    expect(wrapper.find('.xn-table-v2').exists()).toBe(true)
+    const cell = wrapper.findAll('.xn-table-v2__row-cell')
 
-    expect(cell[0].find('.el-table-v2__cell-text').exists()).toBe(false)
+    expect(cell[0].find('.xn-table-v2__cell-text').exists()).toBe(false)
     expect(cell[0].find('span').exists()).toBe(true)
     expect(cell[0].find('span').text()).toBe(customText)
 
     expect(cell[1].find('span').exists()).toBe(false)
-    expect(cell[1].find('.el-table-v2__cell-text').exists()).toBe(true)
-    expect(cell[1].find('.el-table-v2__cell-text').text()).toBe('Row 0 - Col 1')
+    expect(cell[1].find('.xn-table-v2__cell-text').exists()).toBe(true)
+    expect(cell[1].find('.xn-table-v2__cell-text').text()).toBe('Row 0 - Col 1')
   })
 
   test('slots header-cell', async () => {
@@ -83,15 +83,15 @@ describe('TableV2.vue', () => {
         }}
       />
     ))
-    expect(wrapper.find('.el-table-v2').exists()).toBe(true)
-    const cell = wrapper.findAll('.el-table-v2__header-cell')
-    expect(cell[0].find('.el-table-v2__header-cell-text').exists()).toBe(false)
+    expect(wrapper.find('.xn-table-v2').exists()).toBe(true)
+    const cell = wrapper.findAll('.xn-table-v2__header-cell')
+    expect(cell[0].find('.xn-table-v2__header-cell-text').exists()).toBe(false)
     expect(cell[0].find('span').exists()).toBe(true)
     expect(cell[0].find('span').text()).toBe(customText)
 
     expect(cell[1].find('span').exists()).toBe(false)
-    expect(cell[1].find('.el-table-v2__header-cell-text').exists()).toBe(true)
-    expect(cell[1].find('.el-table-v2__header-cell-text').text()).toBe(
+    expect(cell[1].find('.xn-table-v2__header-cell-text').exists()).toBe(true)
+    expect(cell[1].find('.xn-table-v2__header-cell-text').text()).toBe(
       'Column 1'
     )
   })
@@ -114,10 +114,10 @@ describe('TableV2.vue', () => {
         }}
       />
     ))
-    expect(wrapper.find('.el-table-v2').exists()).toBe(true)
+    expect(wrapper.find('.xn-table-v2').exists()).toBe(true)
     let customEmpty = wrapper.find('span.custom-empty')
     expect(customEmpty.exists()).toBe(true)
-    let defaultEmpty = wrapper.find('.el-empty')
+    let defaultEmpty = wrapper.find('.xn-empty')
     expect(defaultEmpty.exists()).toBe(false)
 
     isCustomEmpty.value = false
@@ -125,7 +125,7 @@ describe('TableV2.vue', () => {
 
     customEmpty = wrapper.find('span.custom-empty')
     expect(customEmpty.exists()).toBe(false)
-    defaultEmpty = wrapper.find('.el-empty')
+    defaultEmpty = wrapper.find('.xn-empty')
     expect(defaultEmpty.exists()).toBe(true)
   })
 
@@ -149,8 +149,8 @@ describe('TableV2.vue', () => {
         }}
       />
     ))
-    expect(wrapper.find('.el-table-v2').exists()).toBe(true)
-    const cell = wrapper.find('.el-table-v2__row-cell')
+    expect(wrapper.find('.xn-table-v2').exists()).toBe(true)
+    const cell = wrapper.find('.xn-table-v2__row-cell')
     expect(cell.exists()).toBe(true)
     expect(cell.find('span').text()).toBe(
       `${data.value[0][columns.value[0].dataKey]}${customText}`
@@ -177,8 +177,8 @@ describe('TableV2.vue', () => {
         }}
       />
     ))
-    expect(wrapper.find('.el-table-v2').exists()).toBe(true)
-    const cell = wrapper.find('.el-table-v2__header-cell')
+    expect(wrapper.find('.xn-table-v2').exists()).toBe(true)
+    const cell = wrapper.find('.xn-table-v2__header-cell')
     expect(cell.exists()).toBe(true)
     expect(cell.find('span').text()).toBe(
       `${columns.value[0].title}${customText}`
@@ -212,8 +212,8 @@ describe('TableV2.vue', () => {
         height={400}
       />
     ))
-    expect(wrapper.find('.el-table-v2').exists()).toBe(true)
-    const cell = wrapper.find('.el-table-v2__row-cell')
+    expect(wrapper.find('.xn-table-v2').exists()).toBe(true)
+    const cell = wrapper.find('.xn-table-v2__row-cell')
     expect(cell.exists()).toBe(true)
     expect(cell.find('div [style^=margin-inline-star]').exists()).toBe(false)
   })

@@ -103,12 +103,12 @@ const CUSTOM_PROPS_OPTIONS = [
   },
 ]
 
-const MENU = '.el-cascader-menu'
-const NODE = '.el-cascader-node'
-const VALID_NODE = '.el-cascader-node:not(.is-disabled)'
-const EXPAND_ARROW = '.arrow-right.el-cascader-node__postfix'
-const CHECKBOX = '.el-checkbox__input'
-const RADIO = '.el-radio__input'
+const MENU = '.xn-cascader-menu'
+const NODE = '.xn-cascader-node'
+const VALID_NODE = '.xn-cascader-node:not(.is-disabled)'
+const EXPAND_ARROW = '.arrow-right.xn-cascader-node__postfix'
+const CHECKBOX = '.xn-checkbox__input'
+const RADIO = '.xn-radio__input'
 
 let id = 0
 

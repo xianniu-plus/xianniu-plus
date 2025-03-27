@@ -44,8 +44,8 @@ describe('Mention.vue', () => {
 
     vi.advanceTimersByTime(150)
     await nextTick()
-    expect(document.querySelector('.el-mention-dropdown')).not.toEqual(null)
-    expect(document.querySelectorAll('.el-mention-dropdown__item').length).toBe(
+    expect(document.querySelector('.xn-mention-dropdown')).not.toEqual(null)
+    expect(document.querySelectorAll('.xn-mention-dropdown__item').length).toBe(
       4
     )
   })
@@ -75,7 +75,7 @@ describe('Mention.vue', () => {
     await wrapper.find('input').setValue('@')
     vi.advanceTimersByTime(150)
     await nextTick()
-    expect(document.querySelector('.el-mention-dropdown__loading')).not.toEqual(
+    expect(document.querySelector('.xn-mention-dropdown__loading')).not.toEqual(
       null
     )
   })
@@ -90,8 +90,8 @@ describe('Mention.vue', () => {
     await wrapper.find('input').setValue('#')
     vi.advanceTimersByTime(150)
     await nextTick()
-    expect(document.querySelector('.el-mention-dropdown')).not.toEqual(null)
-    expect(document.querySelectorAll('.el-mention-dropdown__item').length).toBe(
+    expect(document.querySelector('.xn-mention-dropdown')).not.toEqual(null)
+    expect(document.querySelectorAll('.xn-mention-dropdown__item').length).toBe(
       4
     )
   })
@@ -116,8 +116,8 @@ describe('Mention.vue', () => {
     vi.advanceTimersByTime(150)
     await nextTick()
     const dropdown = wrapper.findComponent({ name: 'ElMentionDropdown' })
-    const list = dropdown.find('.el-mention-dropdown__list')
-    const option = dropdown.find('.el-mention-dropdown__item')
+    const list = dropdown.find('.xn-mention-dropdown__list')
+    const option = dropdown.find('.xn-mention-dropdown__item')
 
     expect(list.attributes('id')).toBeTruthy()
     expect(list.attributes('role')).toBe('listbox')
@@ -139,9 +139,9 @@ describe('Mention.vue', () => {
     })
 
     const dropdown = wrapper.findComponent({ name: 'ElMentionDropdown' })
-    const option = dropdown.find('.el-mention-dropdown__item')
+    const option = dropdown.find('.xn-mention-dropdown__item')
 
-    expect(wrapper.find('.el-input').classes()).toContain('is-disabled')
+    expect(wrapper.find('.xn-input').classes()).toContain('is-disabled')
     expect(wrapper.find('input').attributes()).toHaveProperty('disabled')
     expect(option.attributes('aria-disabled')).toBe('true')
     expect(option.classes()).toContain('is-disabled')

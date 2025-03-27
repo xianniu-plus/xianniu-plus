@@ -12,7 +12,7 @@ import { Edit, View as IconView } from '@xianniu-plus/icons-vue'
 </script>
 
 <style scoped>
-.el-link {
+.xn-link {
   margin-right: 8px;
 }
 </style>

@@ -29,7 +29,7 @@ defineProps<{
   align-items: center;
 }
 
-.el-icon {
+.xn-icon {
   margin-left: 4px;
 }
 </style>

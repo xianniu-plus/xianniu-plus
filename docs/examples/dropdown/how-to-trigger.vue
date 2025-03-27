@@ -79,7 +79,7 @@ import {
   margin-bottom: 20px;
 }
 
-.block-col-2 .el-dropdown-link {
+.block-col-2 .xn-dropdown-link {
   display: flex;
   align-items: center;
 }

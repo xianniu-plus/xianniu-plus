@@ -70,7 +70,7 @@ const visible = ref(false)
 </script>
 
 <style scoped>
-.el-button + .el-button {
+.xn-button + .xn-button {
   margin-left: 8px;
 }
 </style>

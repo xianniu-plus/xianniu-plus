@@ -38,16 +38,16 @@ const fullscreen = ref()
   transition: background-color 0.5s;
   overflow-y: auto;
 
-  &.el-fade-in-enter-active,
-  &.el-fade-in-leave-active {
+  &.xn-fade-in-enter-active,
+  &.xn-fade-in-leave-active {
     .full-screen-container {
       transition: transform var(--xn-transition-duration)
         var(--xn-transition-function-ease-in-out-bezier);
     }
   }
 
-  &.el-fade-in-enter-from,
-  &.el-fade-in-leave-to {
+  &.xn-fade-in-enter-from,
+  &.xn-fade-in-leave-to {
     .full-screen-container {
       transform: translateY(-8px);
     }

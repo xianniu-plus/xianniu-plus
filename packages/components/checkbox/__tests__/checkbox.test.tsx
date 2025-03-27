@@ -23,7 +23,7 @@ describe('Checkbox', () => {
 
   test('label set to number 0', async () => {
     const wrapper = mount(() => <Checkbox label={0} />)
-    expect(wrapper.find('.el-checkbox__label').text()).toBe('0')
+    expect(wrapper.find('.xn-checkbox__label').text()).toBe('0')
   })
 
   describe('no v-model', () => {
@@ -383,7 +383,7 @@ describe('Checkbox', () => {
       </CheckboxGroup>
     ))
 
-    const checkbox = wrapper.find('.el-checkbox')
+    const checkbox = wrapper.find('.xn-checkbox')
     await checkbox.trigger('click')
     expect(checklist.value[0]).toEqual('')
   })
@@ -398,7 +398,7 @@ describe('Checkbox', () => {
       </CheckboxGroup>
     ))
 
-    const checkbox = wrapper.find('.el-checkbox')
+    const checkbox = wrapper.find('.xn-checkbox')
     await checkbox.trigger('click')
     expect(checklist.value[0]).toEqual({ a: 1 })
     expect(checkbox.classes()).contains('is-checked')
@@ -519,7 +519,7 @@ describe('check-button', () => {
     expect(checkList.value.length).toBe(2)
     expect(checkbox.classes()).contains('is-checked')
     expect(
-      checkbox.find('.el-checkbox-button__inner').attributes('style')
+      checkbox.find('.xn-checkbox-button__inner').attributes('style')
     ).contains('border-color: #ff0000;')
   })
 
@@ -643,7 +643,7 @@ describe('check-button', () => {
     test('checked', () => {
       const wrapper = mount(() => <Checkbox checked />)
 
-      expect(wrapper.find('.el-checkbox').classes()).contains('is-checked')
+      expect(wrapper.find('.xn-checkbox').classes()).contains('is-checked')
     })
   })
 
@@ -657,8 +657,8 @@ describe('check-button', () => {
 
       const formItem = await wrapper.findComponent(ElFormItem)
       const checkbox = await wrapper.findComponent(Checkbox)
-      const formItemLabel = formItem.find('.el-form-item__label')
-      const checkboxInput = checkbox.find('.el-checkbox__original')
+      const formItemLabel = formItem.find('.xn-form-item__label')
+      const checkboxInput = checkbox.find('.xn-checkbox__original')
       expect(checkboxInput.attributes('id')).toBe(
         formItemLabel.attributes('for')
       )
@@ -673,8 +673,8 @@ describe('check-button', () => {
 
       const formItem = await wrapper.findComponent(ElFormItem)
       const checkbox = await wrapper.findComponent(Checkbox)
-      const checkboxLabel = checkbox.find('.el-checkbox__label')
-      const checkboxInput = checkbox.find('.el-checkbox__original')
+      const checkboxLabel = checkbox.find('.xn-checkbox__label')
+      const checkboxInput = checkbox.find('.xn-checkbox__original')
       expect(checkboxLabel.element.textContent).toBe('Foo')
       expect(checkboxInput.attributes('id')).toBeFalsy()
       expect(formItem.attributes('role')).toBe('group')
@@ -692,7 +692,7 @@ describe('check-button', () => {
 
       const formItem = await wrapper.findComponent(ElFormItem)
       const checkboxGroup = await wrapper.findComponent(CheckboxGroup)
-      const formItemLabel = formItem.find('.el-form-item__label')
+      const formItemLabel = formItem.find('.xn-form-item__label')
       expect(formItem.attributes('role')).toBeFalsy()
       expect(checkboxGroup.attributes('role')).toBe('group')
       expect(formItemLabel.attributes('for')).toBe(
@@ -715,7 +715,7 @@ describe('check-button', () => {
 
       const formItem = await wrapper.findComponent(ElFormItem)
       const checkboxGroup = await wrapper.findComponent(CheckboxGroup)
-      const formItemLabel = formItem.find('.el-form-item__label')
+      const formItemLabel = formItem.find('.xn-form-item__label')
       expect(formItemLabel.attributes('for')).toBe(
         checkboxGroup.attributes('id')
       )
@@ -749,7 +749,7 @@ describe('check-button', () => {
       const checkboxGroup2 = await wrapper.findComponent({
         ref: 'checkboxGroup2',
       })
-      const formItemLabel = formItem.find('.el-form-item__label')
+      const formItemLabel = formItem.find('.xn-form-item__label')
       expect(formItem.attributes('role')).toBe('group')
       expect(formItem.attributes()['aria-labelledby']).toBe(
         formItemLabel.attributes('id')

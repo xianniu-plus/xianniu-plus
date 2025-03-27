@@ -53,7 +53,7 @@ describe('Form', () => {
         )
       },
     })
-    expect(findStyle(wrapper, '.el-form-item__label').width).toBe('80px')
+    expect(findStyle(wrapper, '.xn-form-item__label').width).toBe('80px')
   })
 
   it('auto label width', async () => {
@@ -84,7 +84,7 @@ describe('Form', () => {
 
     await nextTick()
 
-    const formItems = wrapper.findAll<HTMLElement>('.el-form-item__content')
+    const formItems = wrapper.findAll<HTMLElement>('.xn-form-item__content')
     const marginLeft = Number.parseInt(
       formItems[0].element.style.marginLeft,
       10
@@ -98,7 +98,7 @@ describe('Form', () => {
     labelPosition.value = 'left'
     await nextTick()
 
-    const formItems1 = wrapper.findAll<HTMLElement>('.el-form-item__content')
+    const formItems1 = wrapper.findAll<HTMLElement>('.xn-form-item__content')
     const marginRight = Number.parseInt(
       formItems1[0].element.style.marginRight,
       10
@@ -144,9 +144,9 @@ describe('Form', () => {
 
     await nextTick()
 
-    const formItemLabels = wrapper.findAll<HTMLElement>('.el-form-item__label')
+    const formItemLabels = wrapper.findAll<HTMLElement>('.xn-form-item__label')
     const formItemLabelWraps = wrapper.findAll<HTMLElement>(
-      '.el-form-item__label-wrap'
+      '.xn-form-item__label-wrap'
     )
 
     const labelWrapMarginLeft1 = formItemLabelWraps[0].element.style.marginLeft
@@ -297,7 +297,7 @@ describe('Form', () => {
 
     await nextTick()
     expect(valid).toBe(false)
-    expect(wrapper.find('.el-form-item__error').exists()).toBe(false)
+    expect(wrapper.find('.xn-form-item__error').exists()).toBe(false)
   })
 
   it('reset field', async () => {
@@ -367,7 +367,7 @@ describe('Form', () => {
     expect(form.name).toBe('')
     expect(form.address).toBe('')
     expect(form.type.length).toBe(0)
-    expect(wrapper.findAll('.el-form-item__error')).toHaveLength(0)
+    expect(wrapper.findAll('.xn-form-item__error')).toHaveLength(0)
     vi.useRealTimers()
   })
 
@@ -680,7 +680,7 @@ describe('Form', () => {
     await nextTick()
     expect(value.value).toBe(1)
     expect(rules.value.age[0].message).toBe('age is: 1')
-    expect(wrapper.find('.el-form-item__error').text()).toBe('age is: 1')
+    expect(wrapper.find('.xn-form-item__error').text()).toBe('age is: 1')
   })
 
   describe('FormItem', () => {

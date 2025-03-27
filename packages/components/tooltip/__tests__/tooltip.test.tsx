@@ -48,7 +48,7 @@ describe('<ElTooltip />', () => {
       wrapper = createComponent({ appendTo: '#test' }, 'test appendTo props')
       await nextTick()
       const trigger$ = findTrigger()
-      const triggerEl = trigger$.find('.el-tooltip__trigger')
+      const triggerEl = trigger$.find('.xn-tooltip__trigger')
       await triggerEl.trigger('mouseenter')
       expect(document.querySelector('#test')?.innerHTML).toContain(
         'test appendTo props'
@@ -73,7 +73,7 @@ describe('<ElTooltip />', () => {
       await nextTick()
 
       const trigger$ = findTrigger()
-      const triggerEl = trigger$.find('.el-tooltip__trigger')
+      const triggerEl = trigger$.find('.xn-tooltip__trigger')
 
       vi.useFakeTimers()
       await triggerEl.trigger('mouseenter')
@@ -102,7 +102,7 @@ describe('<ElTooltip />', () => {
       await nextTick()
 
       const trigger$ = findTrigger()
-      const triggerEl = trigger$.find('.el-tooltip__trigger')
+      const triggerEl = trigger$.find('.xn-tooltip__trigger')
 
       vi.useFakeTimers()
       await triggerEl.trigger('click')

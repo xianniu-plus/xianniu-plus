@@ -5,7 +5,7 @@ import { rAF } from '@xianniu-plus/test-utils/tick'
 import { ElMessage } from '..'
 import Message from '../src/method'
 
-const selector = '.el-message'
+const selector = '.xn-message'
 // TODO: testing the original transition with `nextTick`'
 
 describe('Message on command', () => {

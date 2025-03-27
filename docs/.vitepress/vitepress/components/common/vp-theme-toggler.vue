@@ -78,12 +78,12 @@ const beforeChange = () => {
 </template>
 
 <style lang="scss" scoped>
-:deep(.el-switch__core) {
+:deep(.xn-switch__core) {
   --xn-switch-on-color: var(--bg-color-mute);
   --xn-switch-off-color: var(--bg-color-mute);
   --xn-switch-border-color: var(--border-color);
 
-  .el-switch__action {
+  .xn-switch__action {
     width: 14px;
     height: 14px;
   }

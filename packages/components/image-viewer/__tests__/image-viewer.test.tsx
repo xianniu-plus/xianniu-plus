@@ -14,9 +14,9 @@ describe('<image-viewer />', () => {
     const wrapper = mount(<ImageViewer urlList={[IMAGE_SUCCESS]} />)
 
     await doubleWait()
-    const viewer = wrapper.find('.el-image-viewer__wrapper')
+    const viewer = wrapper.find('.xn-image-viewer__wrapper')
     expect(viewer.exists()).toBe(true)
-    await wrapper.find('.el-image-viewer__close').trigger('click')
+    await wrapper.find('.xn-image-viewer__close').trigger('click')
     expect(wrapper.emitted('close')).toEqual([[]])
     wrapper.unmount()
   })
@@ -25,16 +25,16 @@ describe('<image-viewer />', () => {
     const wrapper = mount(<ImageViewer urlList={[IMAGE_SUCCESS]} />)
 
     await doubleWait()
-    const viewer = wrapper.find('.el-image-viewer__wrapper')
+    const viewer = wrapper.find('.xn-image-viewer__wrapper')
     expect(viewer.exists()).toBe(true)
-    await wrapper.find('.el-image-viewer__mask').trigger('click')
+    await wrapper.find('.xn-image-viewer__mask').trigger('click')
     expect(wrapper.emitted('close')).toBeUndefined()
 
     await wrapper.setProps({
       hideOnClickModal: true,
     })
 
-    await wrapper.find('.el-image-viewer__mask').trigger('click')
+    await wrapper.find('.xn-image-viewer__mask').trigger('click')
     expect(wrapper.emitted('close')).toBeDefined()
     wrapper.unmount()
   })
@@ -45,10 +45,10 @@ describe('<image-viewer />', () => {
     )
 
     await doubleWait()
-    const viewer = wrapper.find('.el-image-viewer__wrapper')
+    const viewer = wrapper.find('.xn-image-viewer__wrapper')
     expect(viewer.exists()).toBe(true)
 
-    const imgList = wrapper.findAll('.el-image-viewer__img')
+    const imgList = wrapper.findAll('.xn-image-viewer__img')
     expect(imgList[0].attributes('style')).not.contains('display: none;')
     expect(imgList[1].attributes('style')).contains('display: none;')
 
@@ -69,11 +69,11 @@ describe('<image-viewer />', () => {
     )
 
     await doubleWait()
-    const viewer = wrapper.find('.el-image-viewer__wrapper')
+    const viewer = wrapper.find('.xn-image-viewer__wrapper')
     expect(viewer.exists()).toBe(true)
-    await wrapper.find('.el-image-viewer__next').trigger('click')
+    await wrapper.find('.xn-image-viewer__next').trigger('click')
     await doubleWait()
-    const innerText = wrapper.find('.el-image-viewer__progress').text()
+    const innerText = wrapper.find('.xn-image-viewer__progress').text()
     expect(innerText).toBe('1 / 2')
     wrapper.unmount()
   })

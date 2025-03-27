@@ -60,7 +60,7 @@ const { circleUrl, squareUrl, sizeList } = toRefs(state)
 .demo-basic .block {
   flex: 1;
 }
-.demo-basic .el-col:not(:last-child) {
+.demo-basic .xn-col:not(:last-child) {
   border-right: 1px solid var(--xn-border-color);
 }
 </style>

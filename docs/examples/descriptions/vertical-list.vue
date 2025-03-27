@@ -61,7 +61,7 @@ const blockMargin = computed(() => {
 </script>
 
 <style scoped>
-.el-descriptions {
+.xn-descriptions {
   margin-top: 20px;
 }
 </style>

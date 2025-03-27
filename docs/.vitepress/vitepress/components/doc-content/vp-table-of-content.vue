@@ -61,8 +61,8 @@ const removeTag = (str: string) => str.replace(/<span.*<\/span>/g, '')
     width: 100%;
   }
 }
-.el-anchor__item {
-  .el-anchor__link > div {
+.xn-anchor__item {
+  .xn-anchor__link > div {
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;

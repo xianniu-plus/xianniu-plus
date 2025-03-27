@@ -110,22 +110,22 @@ const headerClass = ({
 </script>
 
 <style>
-.el-el-table-v2__header-row .custom-header-cell {
+.xn-el-table-v2__header-row .custom-header-cell {
   border-right: 1px solid var(--xn-border-color);
 }
 
-.el-el-table-v2__header-row .custom-header-cell:last-child {
+.xn-el-table-v2__header-row .custom-header-cell:last-child {
   border-right: none;
 }
 
-.el-primary-color {
+.xn-primary-color {
   background-color: var(--xn-color-primary);
   color: var(--xn-color-white);
   font-size: 14px;
   font-weight: bold;
 }
 
-.el-primary-color .custom-header-cell {
+.xn-primary-color .custom-header-cell {
   padding: 0 4px;
 }
 </style>

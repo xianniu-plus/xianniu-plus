@@ -59,7 +59,7 @@ describe('Dropdown', () => {
     >
 
     vi.useFakeTimers()
-    const triggerElm = wrapper.find('.el-tooltip__trigger')
+    const triggerElm = wrapper.find('.xn-tooltip__trigger')
     expect(content.open).toBe(false)
     await triggerElm.trigger(MOUSE_ENTER_EVENT)
     vi.runAllTimers()
@@ -101,7 +101,7 @@ describe('Dropdown', () => {
     )
     await nextTick()
     // const content = wrapper.findComponent({ ref: 'b' }).vm as any
-    const triggerElm = wrapper.find('.el-tooltip__trigger')
+    const triggerElm = wrapper.find('.xn-tooltip__trigger')
     await triggerElm.trigger(MOUSE_ENTER_EVENT)
     await nextTick()
     await wrapper
@@ -109,7 +109,7 @@ describe('Dropdown', () => {
       .findComponent({
         name: 'DropdownItemImpl',
       })
-      .find('.el-dropdown-menu__item')
+      .find('.xn-dropdown-menu__item')
       .trigger('click')
     await nextTick()
     expect(commandHandler).toHaveBeenCalled()
@@ -142,7 +142,7 @@ describe('Dropdown', () => {
     const content = wrapper.findComponent(ElTooltip).vm as InstanceType<
       typeof ElTooltip
     >
-    const triggerElm = wrapper.find('.el-dropdown-link')
+    const triggerElm = wrapper.find('.xn-dropdown-link')
     expect(content.open).toBe(false)
     await triggerElm.trigger(MOUSE_ENTER_EVENT)
     expect(content.open).toBe(false)
@@ -180,7 +180,7 @@ describe('Dropdown', () => {
     const content = wrapper.findComponent(ElTooltip).vm as InstanceType<
       typeof ElTooltip
     >
-    const triggerElm = wrapper.find('.el-dropdown-link')
+    const triggerElm = wrapper.find('.xn-dropdown-link')
     expect(content.open).toBe(false)
     await triggerElm.trigger(CONTEXTMENU)
     await rAF()
@@ -254,8 +254,8 @@ describe('Dropdown', () => {
     const content = wrapper.findComponent(ElTooltip).vm as InstanceType<
       typeof ElTooltip
     >
-    const triggerElm = wrapper.find('.el-dropdown__caret-button')
-    const button = wrapper.find('.el-button')
+    const triggerElm = wrapper.find('.xn-dropdown__caret-button')
+    const button = wrapper.find('.xn-button')
     expect(content.open).toBe(false)
     await button.trigger('click')
     expect(handleClick).toHaveBeenCalled()
@@ -291,7 +291,7 @@ describe('Dropdown', () => {
       typeof ElTooltip
     >
     expect(content.open).toBe(false)
-    const triggerElm = wrapper.find('.el-tooltip__trigger')
+    const triggerElm = wrapper.find('.xn-tooltip__trigger')
     vi.useFakeTimers()
     await triggerElm.trigger(MOUSE_ENTER_EVENT)
     vi.runAllTimers()
@@ -331,7 +331,7 @@ describe('Dropdown', () => {
     const content = wrapper.findComponent(ElTooltip).vm as InstanceType<
       typeof ElTooltip
     >
-    const triggerElm = wrapper.find('.el-tooltip__trigger')
+    const triggerElm = wrapper.find('.xn-tooltip__trigger')
 
     vi.useFakeTimers()
     await triggerElm.trigger(MOUSE_ENTER_EVENT)
@@ -374,7 +374,7 @@ describe('Dropdown', () => {
     )
     await nextTick()
     const content = wrapper.findComponent({ ref: 'dropdown-menu' })
-    const triggerElm = wrapper.find('.el-tooltip__trigger')
+    const triggerElm = wrapper.find('.xn-tooltip__trigger')
     await triggerElm.trigger(MOUSE_ENTER_EVENT)
     await rAF()
     await content.trigger('keydown', {
@@ -387,7 +387,7 @@ describe('Dropdown', () => {
         .findComponent({
           name: 'DropdownItemImpl',
         })
-        .find('.el-dropdown-menu__item')
+        .find('.xn-dropdown-menu__item')
         .element.getAttribute('tabindex')
     ).toBe('0')
   })
@@ -418,7 +418,7 @@ describe('Dropdown', () => {
         ref: 'b',
       })
       .findComponent({ ref: 'scrollbar' })
-    expect(scrollbar.find('.el-scrollbar__wrap').attributes('style')).toContain(
+    expect(scrollbar.find('.xn-scrollbar__wrap').attributes('style')).toContain(
       'max-height: 60px;'
     )
   })
@@ -446,7 +446,7 @@ describe('Dropdown', () => {
     const content = wrapper.findComponent(ElTooltip).vm as InstanceType<
       typeof ElTooltip
     >
-    const triggerElm = wrapper.find('.el-tooltip__trigger')
+    const triggerElm = wrapper.find('.xn-tooltip__trigger')
     expect(content.open).toBe(false)
 
     vi.useFakeTimers()
@@ -508,7 +508,7 @@ describe('Dropdown', () => {
         .findComponent({
           name: 'DropdownItemImpl',
         })
-        .find('.el-dropdown-menu__item').element.dataset.customAttribute
+        .find('.xn-dropdown-menu__item').element.dataset.customAttribute
     ).toBe('hello')
   })
 
@@ -691,7 +691,7 @@ describe('Dropdown', () => {
         () => ({})
       )
       await nextTick()
-      const trigger = wrapper.find('.el-dropdown__caret-button')
+      const trigger = wrapper.find('.xn-dropdown__caret-button')
       const menu = wrapper.findComponent({ ref: 'menu' })
       expect(trigger.attributes()['role']).toBe('button')
       expect(trigger.attributes()['tabindex']).toBe('0')
@@ -718,7 +718,7 @@ describe('Dropdown', () => {
         () => ({})
       )
       const menu = wrapper.findComponent({ ref: 'menu' })
-      const menuItem = menu.find('.el-dropdown-menu__item')
+      const menuItem = menu.find('.xn-dropdown-menu__item')
       expect(menu.attributes()['role']).toBe('menu')
       expect(menuItem.attributes()['role']).toBe('menuitem')
     })
@@ -737,7 +737,7 @@ describe('Dropdown', () => {
         () => ({})
       )
       const menu = wrapper.findComponent({ ref: 'menu' })
-      const menuItem = menu.find('.el-dropdown-menu__item')
+      const menuItem = menu.find('.xn-dropdown-menu__item')
       expect(menu.attributes()['role']).toBe('navigation')
       expect(menuItem.attributes()['role']).toBe('link')
     })
@@ -756,7 +756,7 @@ describe('Dropdown', () => {
         () => ({})
       )
       const menu = wrapper.findComponent({ ref: 'menu' })
-      const menuItem = menu.find('.el-dropdown-menu__item')
+      const menuItem = menu.find('.xn-dropdown-menu__item')
       expect(menu.attributes()['role']).toBe('group')
       expect(menuItem.attributes()['role']).toBe('button')
     })

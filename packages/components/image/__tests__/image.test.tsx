@@ -35,7 +35,7 @@ describe('Image.vue', () => {
 
   test('render test', () => {
     const wrapper = mount(Image)
-    expect(wrapper.find('.el-image').exists()).toBe(true)
+    expect(wrapper.find('.xn-image').exists()).toBe(true)
   })
 
   test('image load success test', async () => {
@@ -49,13 +49,13 @@ describe('Image.vue', () => {
         return () => <Image {...props} />
       },
     })
-    expect(wrapper.find('.el-image__placeholder').exists()).toBe(true)
+    expect(wrapper.find('.xn-image__placeholder').exists()).toBe(true)
     await doubleWait()
-    expect(wrapper.find('.el-image__inner').exists()).toBe(true)
+    expect(wrapper.find('.xn-image__inner').exists()).toBe(true)
     expect(wrapper.find('img').exists()).toBe(true)
     await nextTick()
-    expect(wrapper.find('.el-image__placeholder').exists()).toBe(false)
-    expect(wrapper.find('.el-image__error').exists()).toBe(false)
+    expect(wrapper.find('.xn-image__placeholder').exists()).toBe(false)
+    expect(wrapper.find('.xn-image__error').exists()).toBe(false)
   })
 
   test('image load error test', async () => {
@@ -66,9 +66,9 @@ describe('Image.vue', () => {
     })
     await doubleWait()
     wrapper.emitted('error') && expect(wrapper.emitted('error')).toBeDefined()
-    expect(wrapper.find('.el-image__inner').exists()).toBe(false)
+    expect(wrapper.find('.xn-image__inner').exists()).toBe(false)
     expect(wrapper.find('img').exists()).toBe(false)
-    expect(wrapper.find('.el-image__error').exists()).toBe(true)
+    expect(wrapper.find('.xn-image__error').exists()).toBe(true)
   })
 
   test('image load sequence success test', async () => {
@@ -80,13 +80,13 @@ describe('Image.vue', () => {
     wrapper.setProps({
       src: IMAGE_SUCCESS,
     })
-    expect(wrapper.find('.el-image__placeholder').exists()).toBe(true)
+    expect(wrapper.find('.xn-image__placeholder').exists()).toBe(true)
     await doubleWait()
     expect(wrapper.emitted('error')).toBeUndefined()
-    expect(wrapper.find('.el-image__inner').exists()).toBe(true)
+    expect(wrapper.find('.xn-image__inner').exists()).toBe(true)
     expect(wrapper.find('img').exists()).toBe(true)
-    expect(wrapper.find('.el-image__placeholder').exists()).toBe(false)
-    expect(wrapper.find('.el-image__error').exists()).toBe(false)
+    expect(wrapper.find('.xn-image__placeholder').exists()).toBe(false)
+    expect(wrapper.find('.xn-image__error').exists()).toBe(false)
   })
 
   test('imageStyle fit test', async () => {
@@ -119,9 +119,9 @@ describe('Image.vue', () => {
     }
     const wrapper = mount(() => <Image {...props} />)
     await doubleWait()
-    await wrapper.find('.el-image__inner').trigger('click')
+    await wrapper.find('.xn-image__inner').trigger('click')
     expect(
-      wrapper.findAll('.el-image-viewer__img')[1].attributes('style')
+      wrapper.findAll('.xn-image-viewer__img')[1].attributes('style')
     ).not.toContain('display: none')
   })
 
@@ -162,7 +162,7 @@ describe('Image.vue', () => {
     }
     const wrapper = mount(() => <Image {...props} />)
     await doubleWait()
-    await wrapper.find('.el-image__inner').trigger('click')
+    await wrapper.find('.xn-image__inner').trigger('click')
     expect(result).toBeTruthy()
   })
 
@@ -174,7 +174,7 @@ describe('Image.vue', () => {
     }
     const wrapper = mount(() => <Image {...props} />)
     await doubleWait()
-    expect(wrapper.find('.el-image__inner').exists()).toBe(true)
+    expect(wrapper.find('.xn-image__inner').exists()).toBe(true)
     expect(handleLoad).toBeCalled()
   })
 
@@ -200,7 +200,7 @@ describe('Image.vue', () => {
     wrapper.vm.$refs.imageRef.showPreview()
     await doubleWait()
     expect(
-      wrapper.findAll('.el-image-viewer__img')[1].attributes('style')
+      wrapper.findAll('.xn-image-viewer__img')[1].attributes('style')
     ).not.toContain('display: none')
   })
   //@todo lazy image test

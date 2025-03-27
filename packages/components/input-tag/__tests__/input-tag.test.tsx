@@ -18,11 +18,11 @@ describe('InputTag.vue', () => {
   test('modelValue', async () => {
     const wrapper = mount(() => <InputTag modelValue={[AXIOM]} />)
 
-    const tags = wrapper.findAll('.el-tag')
+    const tags = wrapper.findAll('.xn-tag')
 
     expect(tags.length).toBe(1)
     expect(tags[0].text()).toBe(AXIOM)
-    expect(wrapper.find('.el-tag__close').exists()).toBe(true)
+    expect(wrapper.find('.xn-tag__close').exists()).toBe(true)
   })
 
   test('v-model', async () => {
@@ -31,25 +31,25 @@ describe('InputTag.vue', () => {
 
     await wrapper.find('input').setValue(AXIOM)
     await wrapper.find('input').trigger('keydown', { code: EVENT_CODE.enter })
-    expect(wrapper.findAll('.el-tag').length).toBe(1)
-    expect(wrapper.find('.el-tag').text()).toBe(AXIOM)
+    expect(wrapper.findAll('.xn-tag').length).toBe(1)
+    expect(wrapper.find('.xn-tag').text()).toBe(AXIOM)
     expect(inputValue.value).toEqual([AXIOM])
 
     await wrapper.find('input').setValue('--')
     await wrapper.find('input').trigger('keydown', { code: EVENT_CODE.enter })
-    expect(wrapper.findAll('.el-tag').length).toBe(2)
-    expect(wrapper.findAll('.el-tag')[1].text()).toBe('--')
+    expect(wrapper.findAll('.xn-tag').length).toBe(2)
+    expect(wrapper.findAll('.xn-tag')[1].text()).toBe('--')
     expect(inputValue.value).toEqual([AXIOM, '--'])
 
     await wrapper
       .find('input')
       .trigger('keydown', { code: EVENT_CODE.backspace })
-    expect(wrapper.findAll('.el-tag').length).toBe(1)
-    expect(wrapper.find('.el-tag').text()).toBe(AXIOM)
+    expect(wrapper.findAll('.xn-tag').length).toBe(1)
+    expect(wrapper.find('.xn-tag').text()).toBe(AXIOM)
     expect(inputValue.value).toEqual([AXIOM])
 
-    await wrapper.find('.el-tag__close').trigger('click')
-    expect(wrapper.findAll('.el-tag').length).toBe(0)
+    await wrapper.find('.xn-tag__close').trigger('click')
+    expect(wrapper.findAll('.xn-tag').length).toBe(0)
   })
 
   test('trigger', async () => {
@@ -60,22 +60,22 @@ describe('InputTag.vue', () => {
 
     await wrapper.find('input').setValue(AXIOM)
     await wrapper.find('input').trigger('keydown', { code: EVENT_CODE.enter })
-    expect(wrapper.findAll('.el-tag').length).toBe(0)
+    expect(wrapper.findAll('.xn-tag').length).toBe(0)
 
     await wrapper.find('input').trigger('keydown', { code: EVENT_CODE.space })
-    expect(wrapper.findAll('.el-tag').length).toBe(1)
-    expect(wrapper.find('.el-tag').text()).toBe(AXIOM)
+    expect(wrapper.findAll('.xn-tag').length).toBe(1)
+    expect(wrapper.find('.xn-tag').text()).toBe(AXIOM)
   })
 
   test('max', async () => {
     const inputValue = ref<string[]>(['Rem'])
     const wrapper = mount(() => <InputTag v-model={inputValue.value} max={1} />)
 
-    expect(wrapper.findAll('.el-tag').length).toBe(1)
+    expect(wrapper.findAll('.xn-tag').length).toBe(1)
 
     await wrapper.find('input').setValue(AXIOM)
     await wrapper.find('input').trigger('keydown', { code: EVENT_CODE.enter })
-    expect(wrapper.findAll('.el-tag').length).toBe(1)
+    expect(wrapper.findAll('.xn-tag').length).toBe(1)
   })
 
   test('id', async () => {
@@ -90,24 +90,24 @@ describe('InputTag.vue', () => {
       <InputTag modelValue={[AXIOM]} size={size.value} />
     ))
 
-    expect(wrapper.find('.el-input-tag').classes()).toContain(
+    expect(wrapper.find('.xn-input-tag').classes()).toContain(
       'el-input-tag--default'
     )
-    expect(wrapper.find('.el-tag').classes()).toContain('el-tag--default')
+    expect(wrapper.find('.xn-tag').classes()).toContain('el-tag--default')
 
     size.value = 'large'
     await nextTick()
-    expect(wrapper.find('.el-input-tag').classes()).toContain(
+    expect(wrapper.find('.xn-input-tag').classes()).toContain(
       'el-input-tag--large'
     )
-    expect(wrapper.find('.el-tag').classes()).toContain('el-tag--default')
+    expect(wrapper.find('.xn-tag').classes()).toContain('el-tag--default')
 
     size.value = 'small'
     await nextTick()
-    expect(wrapper.find('.el-input-tag').classes()).toContain(
+    expect(wrapper.find('.xn-input-tag').classes()).toContain(
       'el-input-tag--small'
     )
-    expect(wrapper.find('.el-tag').classes()).toContain('el-tag--small')
+    expect(wrapper.find('.xn-tag').classes()).toContain('el-tag--small')
   })
 
   test('disabled', async () => {
@@ -117,12 +117,12 @@ describe('InputTag.vue', () => {
     ))
 
     expect(wrapper.find('input').attributes('disabled')).toBe('')
-    expect(wrapper.find('.el-tag__close').exists()).toBe(false)
+    expect(wrapper.find('.xn-tag__close').exists()).toBe(false)
 
     disabled.value = false
     await nextTick()
     expect(wrapper.find('input').attributes('disabled')).toBe(undefined)
-    expect(wrapper.find('.el-tag__close').exists()).toBe(true)
+    expect(wrapper.find('.xn-tag__close').exists()).toBe(true)
   })
 
   test('placeholder', async () => {
@@ -149,12 +149,12 @@ describe('InputTag.vue', () => {
     ))
 
     expect(wrapper.find('input').attributes('readonly')).toBe('')
-    expect(wrapper.find('.el-tag__close').exists()).toBe(false)
+    expect(wrapper.find('.xn-tag__close').exists()).toBe(false)
 
     readonly.value = false
     await nextTick()
     expect(wrapper.find('input').attributes('readonly')).toBe(undefined)
-    expect(wrapper.find('.el-tag__close').exists()).toBe(true)
+    expect(wrapper.find('.xn-tag__close').exists()).toBe(true)
   })
 
   test('clearable', async () => {
@@ -165,11 +165,11 @@ describe('InputTag.vue', () => {
 
     await wrapper.find('input').trigger('focus')
     await wrapper.find('input').setValue(AXIOM)
-    expect(wrapper.find('.el-input-tag__clear').exists()).toBe(true)
+    expect(wrapper.find('.xn-input-tag__clear').exists()).toBe(true)
     expect(wrapper.find('input').element).toHaveProperty('value', AXIOM)
 
-    await wrapper.find('.el-input-tag__clear').trigger('click')
-    expect(wrapper.findAll('.el-tag').length).toBe(0)
+    await wrapper.find('.xn-input-tag__clear').trigger('click')
+    expect(wrapper.findAll('.xn-tag').length).toBe(0)
     expect(inputValue.value).toBe(undefined)
     expect(wrapper.find('input').element).toHaveProperty('value', '')
   })
@@ -192,23 +192,23 @@ describe('InputTag.vue', () => {
       <InputTag modelValue={[AXIOM]} tagType={type.value} />
     ))
 
-    expect(wrapper.find('.el-tag').classes()).toContain('el-tag--info')
+    expect(wrapper.find('.xn-tag').classes()).toContain('el-tag--info')
 
     type.value = 'primary'
     await nextTick()
-    expect(wrapper.find('.el-tag').classes()).toContain(`el-tag--primary`)
+    expect(wrapper.find('.xn-tag').classes()).toContain(`el-tag--primary`)
 
     type.value = 'success'
     await nextTick()
-    expect(wrapper.find('.el-tag').classes()).toContain(`el-tag--success`)
+    expect(wrapper.find('.xn-tag').classes()).toContain(`el-tag--success`)
 
     type.value = 'warning'
     await nextTick()
-    expect(wrapper.find('.el-tag').classes()).toContain(`el-tag--warning`)
+    expect(wrapper.find('.xn-tag').classes()).toContain(`el-tag--warning`)
 
     type.value = 'danger'
     await nextTick()
-    expect(wrapper.find('.el-tag').classes()).toContain(`el-tag--danger`)
+    expect(wrapper.find('.xn-tag').classes()).toContain(`el-tag--danger`)
   })
 
   test('tagEffect', async () => {
@@ -217,11 +217,11 @@ describe('InputTag.vue', () => {
       <InputTag modelValue={[AXIOM]} tagEffect={effect.value} />
     ))
 
-    expect(wrapper.find('.el-tag').classes()).toContain('el-tag--light')
+    expect(wrapper.find('.xn-tag').classes()).toContain('el-tag--light')
 
     effect.value = 'dark'
     await nextTick()
-    expect(wrapper.find('.el-tag').classes()).toContain(`el-tag--dark`)
+    expect(wrapper.find('.xn-tag').classes()).toContain(`el-tag--dark`)
   })
 
   test('$attrs', async () => {
@@ -317,7 +317,7 @@ describe('InputTag.vue', () => {
         <InputTag v-model={inputValue.value} onRemove-tag={handleTagRemove} />
       ))
 
-      await wrapper.find('.el-tag__close').trigger('click')
+      await wrapper.find('.xn-tag__close').trigger('click')
       expect(handleTagRemove).toHaveBeenCalledOnce()
       expect(handleTagRemove).toHaveBeenCalledWith(AXIOM)
       expect(inputValue.value).toEqual([AXIOM])
@@ -343,7 +343,7 @@ describe('InputTag.vue', () => {
       ))
 
       await wrapper.find('input').trigger('focus')
-      await wrapper.find('.el-input-tag__clear').trigger('click')
+      await wrapper.find('.xn-input-tag__clear').trigger('click')
       expect(handleClear).toHaveBeenCalledOnce()
       expect(inputValue.value).toBe(undefined)
     })
@@ -355,7 +355,7 @@ describe('InputTag.vue', () => {
         <InputTag v-slots={{ prefix: () => AXIOM }} />
       ))
 
-      expect(wrapper.find('.el-input-tag__prefix').text()).toBe(AXIOM)
+      expect(wrapper.find('.xn-input-tag__prefix').text()).toBe(AXIOM)
     })
 
     test('suffix', async () => {
@@ -363,7 +363,7 @@ describe('InputTag.vue', () => {
         <InputTag v-slots={{ suffix: () => AXIOM }} />
       ))
 
-      expect(wrapper.find('.el-input-tag__suffix').text()).toBe(AXIOM)
+      expect(wrapper.find('.xn-input-tag__suffix').text()).toBe(AXIOM)
     })
 
     test('tag', async () => {
@@ -374,7 +374,7 @@ describe('InputTag.vue', () => {
         />
       ))
 
-      expect(wrapper.find('.el-tag').text()).toBe(`-${AXIOM}-`)
+      expect(wrapper.find('.xn-tag').text()).toBe(`-${AXIOM}-`)
     })
   })
 
@@ -399,7 +399,7 @@ describe('InputTag.vue', () => {
       await nextTick()
       const formItem = wrapper.find('[data-test-ref="item"]')
       const input = wrapper.find('[data-test-ref="input"]')
-      const formItemLabel = formItem.find('.el-form-item__label')
+      const formItemLabel = formItem.find('.xn-form-item__label')
       expect(formItem.attributes().role).toBeFalsy()
       expect(formItemLabel.attributes().for).toBe(input.attributes().id)
     })
@@ -414,7 +414,7 @@ describe('InputTag.vue', () => {
       await nextTick()
       const formItem = wrapper.find('[data-test-ref="item"]')
       const input = wrapper.find('[data-test-ref="input"]')
-      const formItemLabel = formItem.find('.el-form-item__label')
+      const formItemLabel = formItem.find('.xn-form-item__label')
       expect(formItem.attributes().role).toBeFalsy()
       expect(input.attributes().id).toBe('input-tag')
       expect(formItemLabel.attributes().for).toBe(input.attributes().id)

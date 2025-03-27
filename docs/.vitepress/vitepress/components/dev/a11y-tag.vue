@@ -3,16 +3,16 @@
 </template>
 
 <style scoped>
-.el-tag {
+.xn-tag {
   color: #6222c2;
 }
-.el-tag.is-hit {
+.xn-tag.is-hit {
   border-color: #9065db;
 }
-.dark .el-tag {
+.dark .xn-tag {
   color: #9065db;
 }
-.dark .el-tag.is-hit {
+.dark .xn-tag.is-hit {
   border-color: #6222c2;
 }
 </style>

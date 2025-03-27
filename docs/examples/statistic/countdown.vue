@@ -44,7 +44,7 @@ function reset() {
 </script>
 
 <style scoped>
-.el-col {
+.xn-col {
   text-align: center;
 }
 

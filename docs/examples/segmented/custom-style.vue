@@ -13,7 +13,7 @@ const options = ['Delicacy', 'Desserts&Drinks', 'Fresh foods', 'Supermarket']
 </script>
 
 <style scoped>
-.custom-style .el-segmented {
+.custom-style .xn-segmented {
   --xn-segmented-item-selected-color: var(--xn-text-color-primary);
   --xn-segmented-item-selected-bg-color: #ffd100;
   --xn-border-radius-base: 16px;

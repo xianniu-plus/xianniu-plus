@@ -48,7 +48,7 @@ const beforeAvatarUpload: UploadProps['beforeUpload'] = (rawFile) => {
 </style>
 
 <style>
-.avatar-uploader .el-upload {
+.avatar-uploader .xn-upload {
   border: 1px dashed var(--xn-border-color);
   border-radius: 6px;
   cursor: pointer;
@@ -57,11 +57,11 @@ const beforeAvatarUpload: UploadProps['beforeUpload'] = (rawFile) => {
   transition: var(--xn-transition-duration-fast);
 }
 
-.avatar-uploader .el-upload:hover {
+.avatar-uploader .xn-upload:hover {
   border-color: var(--xn-color-primary);
 }
 
-.el-icon.avatar-uploader-icon {
+.xn-icon.avatar-uploader-icon {
   font-size: 28px;
   color: #8c939d;
   width: 178px;

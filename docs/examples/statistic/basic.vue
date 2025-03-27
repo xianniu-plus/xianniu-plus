@@ -44,7 +44,7 @@ source.value = 172000
 </script>
 
 <style scoped>
-.el-col {
+.xn-col {
   text-align: center;
 }
 </style>

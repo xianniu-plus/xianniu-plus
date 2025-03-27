@@ -13,7 +13,7 @@
     <template #tag="{ value }">
       <div class="flex items-center">
         <el-icon class="mr-1">
-          <XianniuPlus />
+          <ElementPlus />
         </el-icon>
         <span>{{ value }}</span>
       </div>
@@ -23,7 +23,7 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { XianniuPlus } from '@xianniu-plus/icons-vue'
+import { ElementPlus } from '@xianniu-plus/icons-vue'
 import type { TagProps } from 'xianniu-plus'
 
 const type: Array<TagProps['type']> = [

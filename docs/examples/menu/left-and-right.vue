@@ -39,7 +39,7 @@ const handleSelect = (key: string, keyPath: string[]) => {
 </script>
 
 <style scoped>
-.el-menu--horizontal > .el-menu-item:nth-child(1) {
+.xn-menu--horizontal > .xn-menu-item:nth-child(1) {
   margin-right: auto;
 }
 </style>

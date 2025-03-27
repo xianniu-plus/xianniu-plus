@@ -110,7 +110,7 @@ const fixedColumns = columns.map((column, columnIndex) => {
 </script>
 
 <style>
-.el-table-v2__demo-filter {
+.xn-table-v2__demo-filter {
   border-top: var(--xn-border);
   margin: 12px -12px -12px;
   padding: 0 12px;

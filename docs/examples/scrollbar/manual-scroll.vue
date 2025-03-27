@@ -51,7 +51,7 @@ const formatTooltip = (value: number) => `${value} px`
   background: var(--xn-color-primary-light-9);
   color: var(--xn-color-primary);
 }
-.el-slider {
+.xn-slider {
   margin-top: 20px;
 }
 </style>

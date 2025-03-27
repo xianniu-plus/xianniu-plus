@@ -20,13 +20,13 @@ import { Calendar } from '@xianniu-plus/icons-vue'
 </script>
 
 <style>
-.demo-tabs > .el-tabs__content {
+.demo-tabs > .xn-tabs__content {
   padding: 32px;
   color: #6b778c;
   font-size: 32px;
   font-weight: 600;
 }
-.demo-tabs .custom-tabs-label .el-icon {
+.demo-tabs .custom-tabs-label .xn-icon {
   vertical-align: middle;
 }
 .demo-tabs .custom-tabs-label span {

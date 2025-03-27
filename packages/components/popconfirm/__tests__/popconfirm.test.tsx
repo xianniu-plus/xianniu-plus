@@ -7,7 +7,7 @@ import Popconfirm from '../src/popconfirm.vue'
 
 const AXIOM = 'rem is the best girl'
 const FUN = 'dQw4w9WgXcQ'
-const selector = '.el-popper'
+const selector = '.xn-popper'
 
 describe('Popconfirm.vue', () => {
   afterEach(() => {
@@ -99,7 +99,7 @@ describe('Popconfirm.vue', () => {
 
       const content = document.querySelector(selector)!.innerHTML
       expect(content).toContain(FUN)
-      expect(content).not.toContain('.el-button')
+      expect(content).not.toContain('.xn-button')
     })
 
     it('should pass handlers that can emit events', async () => {

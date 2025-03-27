@@ -32,11 +32,11 @@ const value2 = ref<[Date, Date]>([
 </script>
 
 <style>
-.demo-range .el-date-editor {
+.demo-range .xn-date-editor {
   margin: 8px;
 }
 
-.demo-range .el-range-separator {
+.demo-range .xn-range-separator {
   box-sizing: content-box;
 }
 </style>

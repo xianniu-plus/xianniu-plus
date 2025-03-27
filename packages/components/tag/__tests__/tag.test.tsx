@@ -42,7 +42,7 @@ describe('Tag.vue', () => {
   test('closable', async () => {
     const wrapper = mount(() => <Tag closable={true} />)
     const comp = wrapper.getComponent(Tag)
-    const closeBtn = comp.find('.el-tag .el-tag__close')
+    const closeBtn = comp.find('.xn-tag .xn-tag__close')
     expect(closeBtn.exists()).toBe(true)
 
     await closeBtn.trigger('click')

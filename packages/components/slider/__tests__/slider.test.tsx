@@ -48,7 +48,7 @@ describe('Slider', () => {
     const value = ref(0)
     const wrapper = mount(() => <Slider v-model={value.value} size="small" />)
 
-    expect(wrapper.find('.el-slider--small').exists()).toBe(true)
+    expect(wrapper.find('.xn-slider--small').exists()).toBe(true)
   })
 
   it('show tooltip', () => {
@@ -121,7 +121,7 @@ describe('Slider', () => {
       const slider = wrapper.findComponent({ name: 'ElSliderButton' })
 
       vi.spyOn(
-        wrapper.find('.el-slider__runway').element,
+        wrapper.find('.xn-slider__runway').element,
         'clientWidth',
         'get'
       ).mockImplementation(() => 200)
@@ -163,7 +163,7 @@ describe('Slider', () => {
 
       const slider = wrapper.findComponent({ name: 'ElSliderButton' })
       vi.spyOn(
-        wrapper.find('.el-slider__runway').element,
+        wrapper.find('.xn-slider__runway').element,
         'clientHeight',
         'get'
       ).mockImplementation(() => 200)
@@ -282,7 +282,7 @@ describe('Slider', () => {
     )
 
     const mockClientWidth = vi
-      .spyOn(wrapper.find('.el-slider__runway').element, 'clientWidth', 'get')
+      .spyOn(wrapper.find('.xn-slider__runway').element, 'clientWidth', 'get')
       .mockImplementation(() => 200)
     const slider = wrapper.findComponent({ name: 'ElSliderButton' })
     await nextTick()
@@ -316,7 +316,7 @@ describe('Slider', () => {
     const wrapper = mount(() => <Slider v-model={value.value} />)
 
     const mockClientWidth = vi
-      .spyOn(wrapper.find('.el-slider__runway').element, 'clientWidth', 'get')
+      .spyOn(wrapper.find('.xn-slider__runway').element, 'clientWidth', 'get')
       .mockImplementation(() => 200)
     const slider = wrapper.findComponent({ name: 'ElSlider' })
     slider.vm.onSliderClick(new MouseEvent('mousedown', { clientX: 100 }))
@@ -339,7 +339,7 @@ describe('Slider', () => {
     const slider = wrapper.findComponent({ name: 'ElSlider' })
     const mockRectLeft = vi
       .spyOn(
-        wrapper.find('.el-slider__runway').element,
+        wrapper.find('.xn-slider__runway').element,
         'getBoundingClientRect'
       )
       .mockImplementation(() => {
@@ -348,7 +348,7 @@ describe('Slider', () => {
         } as DOMRect
       })
     const mockClientWidth = vi
-      .spyOn(wrapper.find('.el-slider__runway').element, 'clientWidth', 'get')
+      .spyOn(wrapper.find('.xn-slider__runway').element, 'clientWidth', 'get')
       .mockImplementation(() => 200)
     expect(data.value).toBe(0)
     slider.vm.onSliderClick(new MouseEvent('mousedown', { clientX: 100 }))
@@ -372,7 +372,7 @@ describe('Slider', () => {
     const slider = wrapper.findComponent({ name: 'ElSlider' })
     const mockRectLeft = vi
       .spyOn(
-        wrapper.find('.el-slider__runway').element,
+        wrapper.find('.xn-slider__runway').element,
         'getBoundingClientRect'
       )
       .mockImplementation(() => {
@@ -381,7 +381,7 @@ describe('Slider', () => {
         } as DOMRect
       })
     const mockClientWidth = vi
-      .spyOn(wrapper.find('.el-slider__runway').element, 'clientWidth', 'get')
+      .spyOn(wrapper.find('.xn-slider__runway').element, 'clientWidth', 'get')
       .mockImplementation(() => 200)
     await nextTick()
     expect(data.value).toBe(0)
@@ -398,7 +398,7 @@ describe('Slider', () => {
     const wrapper = mount(() => <Slider v-model={value.value} disabled />)
 
     const mockClientWidth = vi
-      .spyOn(wrapper.find('.el-slider__runway').element, 'clientWidth', 'get')
+      .spyOn(wrapper.find('.xn-slider__runway').element, 'clientWidth', 'get')
       .mockImplementation(() => 200)
     const slider = wrapper.findComponent({ name: 'ElSliderButton' })
     slider.vm.onButtonDown({ clientX: 0 })
@@ -427,7 +427,7 @@ describe('Slider', () => {
     const value = ref(0)
     const wrapper = mount(() => <Slider v-model={value.value} show-input />)
 
-    const increaseButton = wrapper.find('.el-input-number__increase')
+    const increaseButton = wrapper.find('.xn-input-number__increase')
     await increaseButton.trigger('mousedown')
     vi.advanceTimersByTime(200)
     expect(value.value > 0).toBeTruthy()
@@ -461,7 +461,7 @@ describe('Slider', () => {
   it('show stops', () => {
     const wrapper = mount(() => <Slider step={10} show-stops />)
 
-    const stops = wrapper.findAll('.el-slider__stop')
+    const stops = wrapper.findAll('.xn-slider__stop')
     expect(stops.length).toBe(9)
   })
 
@@ -477,7 +477,7 @@ describe('Slider', () => {
 
     const mockRectBottom = vi
       .spyOn(
-        wrapper.find('.el-slider__runway').element,
+        wrapper.find('.xn-slider__runway').element,
         'getBoundingClientRect'
       )
       .mockImplementation(() => {
@@ -486,7 +486,7 @@ describe('Slider', () => {
         } as DOMRect
       })
     const mockClientHeight = vi
-      .spyOn(wrapper.find('.el-slider__runway').element, 'clientHeight', 'get')
+      .spyOn(wrapper.find('.xn-slider__runway').element, 'clientHeight', 'get')
       .mockImplementation(() => 200)
     const slider = wrapper.getComponent({ name: 'ElSlider' })
     slider.vm.onSliderClick(new MouseEvent('mousedown', { clientX: 100 }))
@@ -556,7 +556,7 @@ describe('Slider', () => {
 
       const mockRectLeft = vi
         .spyOn(
-          wrapper.find('.el-slider__runway').element,
+          wrapper.find('.xn-slider__runway').element,
           'getBoundingClientRect'
         )
         .mockImplementation(() => {
@@ -565,7 +565,7 @@ describe('Slider', () => {
           } as DOMRect
         })
       const mockClientWidth = vi
-        .spyOn(wrapper.find('.el-slider__runway').element, 'clientWidth', 'get')
+        .spyOn(wrapper.find('.xn-slider__runway').element, 'clientWidth', 'get')
         .mockImplementation(() => 200)
       const slider = wrapper.getComponent({ name: 'ElSlider' })
       slider.vm.onSliderClick(new MouseEvent('mousedown', { clientX: 100 }))
@@ -605,7 +605,7 @@ describe('Slider', () => {
       ))
 
       await nextTick()
-      const stops = wrapper.findAll('.el-slider__stop')
+      const stops = wrapper.findAll('.xn-slider__stop')
       expect(stops.length).toBe(5)
     })
 
@@ -634,8 +634,8 @@ describe('Slider', () => {
       ))
 
       await nextTick()
-      const stops = wrapper.findAll('.el-slider__marks-stop.el-slider__stop')
-      const marks = wrapper.findAll('.el-slider__marks .el-slider__marks-text')
+      const stops = wrapper.findAll('.xn-slider__marks-stop.xn-slider__stop')
+      const marks = wrapper.findAll('.xn-slider__marks .xn-slider__marks-text')
       expect(marks.length).toBe(2)
       expect(stops.length).toBe(2)
       expect(getComputedStyle(marks[marks.length - 1].element).color).toBe(
@@ -654,8 +654,8 @@ describe('Slider', () => {
 
       await nextTick()
       const formItem = wrapper.find('[data-test-ref="item"]')
-      const formItemLabel = formItem.find('.el-form-item__label')
-      const sliderButton = wrapper.find('.el-slider__button-wrapper')
+      const formItemLabel = formItem.find('.xn-form-item__label')
+      const sliderButton = wrapper.find('.xn-slider__button-wrapper')
       expect(formItem.attributes().role).toBeFalsy()
       expect(formItemLabel.attributes().for).toBe(sliderButton.attributes().id)
     })
@@ -669,8 +669,8 @@ describe('Slider', () => {
 
       await nextTick()
       const formItem = wrapper.find('[data-test-ref="item"]')
-      const formItemLabel = formItem.find('.el-form-item__label')
-      const sliderWrapper = wrapper.find('.el-slider')
+      const formItemLabel = formItem.find('.xn-form-item__label')
+      const sliderWrapper = wrapper.find('.xn-slider')
       expect(formItem.attributes().role).toBeFalsy()
       expect(formItemLabel.attributes().for).toBe(sliderWrapper.attributes().id)
     })
@@ -684,8 +684,8 @@ describe('Slider', () => {
 
       await nextTick()
       const formItem = wrapper.find('[data-test-ref="item"]')
-      const formItemLabel = formItem.find('.el-form-item__label')
-      const sliderButton = wrapper.find('.el-slider__button-wrapper')
+      const formItemLabel = formItem.find('.xn-form-item__label')
+      const sliderButton = wrapper.find('.xn-slider__button-wrapper')
       expect(formItem.attributes().role).toBeFalsy()
       expect(sliderButton.attributes().id).toBe('foobar')
       expect(formItemLabel.attributes().for).toBe(sliderButton.attributes().id)
@@ -700,8 +700,8 @@ describe('Slider', () => {
 
       await nextTick()
       const formItem = wrapper.find('[data-test-ref="item"]')
-      const formItemLabel = formItem.find('.el-form-item__label')
-      const sliderWrapper = wrapper.find('.el-slider')
+      const formItemLabel = formItem.find('.xn-form-item__label')
+      const sliderWrapper = wrapper.find('.xn-slider')
       expect(formItem.attributes().role).toBeFalsy()
       expect(sliderWrapper.attributes().id).toBe('foobar')
       expect(formItemLabel.attributes().for).toBe(sliderWrapper.attributes().id)

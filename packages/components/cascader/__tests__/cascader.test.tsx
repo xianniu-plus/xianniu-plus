@@ -46,12 +46,12 @@ const OPTIONS = [
 
 const AXIOM = 'Rem is the best girl'
 
-const TRIGGER = '.el-cascader'
-const NODE = '.el-cascader-node'
-const TAG = '.el-tag'
-const SUGGESTION_ITEM = '.el-cascader__suggestion-item'
-const SUGGESTION_PANEL = '.el-cascader__suggestion-panel'
-const DROPDOWN = '.el-cascader__dropdown'
+const TRIGGER = '.xn-cascader'
+const NODE = '.xn-cascader-node'
+const TAG = '.xn-tag'
+const SUGGESTION_ITEM = '.xn-cascader__suggestion-item'
+const SUGGESTION_PANEL = '.xn-cascader__suggestion-panel'
+const DROPDOWN = '.xn-cascader__dropdown'
 
 const _mount = (render: () => VNode) =>
   mount(render, {
@@ -210,7 +210,7 @@ describe('Cascader.vue', () => {
     expect(tags.length).toBe(2)
     expect(firstTag.text()).toBe('Zhejiang / Hangzhou')
     expect(secondTag.text()).toBe('Zhejiang / Ningbo')
-    await firstTag.find('.el-tag__close').trigger('click')
+    await firstTag.find('.xn-tag__close').trigger('click')
     expect(wrapper.findAll(TAG).length).toBe(1)
     expect(value.value).toEqual([['zhejiang', 'ningbo']])
   })
@@ -256,7 +256,7 @@ describe('Cascader.vue', () => {
 
     await nextTick()
     const tooltipTags = document.querySelectorAll(
-      `.el-cascader__collapse-tags ${TAG}`
+      `.xn-cascader__collapse-tags ${TAG}`
     )
     expect(tooltipTags.length).toBe(2)
     expect(tooltipTags[0].textContent).toBe('Zhejiang / Ningbo')
@@ -288,7 +288,7 @@ describe('Cascader.vue', () => {
     expect(secondTag.text()).toBe('Zhejiang / Ningbo')
     expect(thirdTag.text()).toBe('+ 1')
     const tooltipTags = document.querySelectorAll(
-      `.el-cascader__collapse-tags ${TAG}`
+      `.xn-cascader__collapse-tags ${TAG}`
     )
     expect(tooltipTags.length).toBe(1)
   })
@@ -305,7 +305,7 @@ describe('Cascader.vue', () => {
     ))
 
     await nextTick()
-    expect(wrapper.find('.el-tag').classes()).toContain('el-tag--success')
+    expect(wrapper.find('.xn-tag').classes()).toContain('el-tag--success')
   })
 
   test('tag effect', async () => {
@@ -320,7 +320,7 @@ describe('Cascader.vue', () => {
     ))
 
     await nextTick()
-    expect(wrapper.find('.el-tag').classes()).toContain('el-tag--dark')
+    expect(wrapper.find('.xn-tag').classes()).toContain('el-tag--dark')
   })
 
   test('filterable', async () => {
@@ -364,7 +364,7 @@ describe('Cascader.vue', () => {
       />
     ))
 
-    const input = wrapper.find('.el-cascader__search-input')
+    const input = wrapper.find('.xn-cascader__search-input')
     ;(input.element as HTMLInputElement).value = 'Ha'
     await input.trigger('input')
     await nextTick()
@@ -537,7 +537,7 @@ describe('Cascader.vue', () => {
 
       await wrapper.find(TRIGGER).trigger('click')
       const emptySlotEl = document.querySelector(
-        '.el-cascader-menu__empty-text'
+        '.xn-cascader-menu__empty-text'
       )
       expect(emptySlotEl?.textContent).toBe('-=-empty-=-')
     })
@@ -554,7 +554,7 @@ describe('Cascader.vue', () => {
       const input = wrapper.find('input')
       await input.trigger('focus')
       const emptySlotEl = document.querySelector(
-        '.el-cascader-menu__empty-text'
+        '.xn-cascader-menu__empty-text'
       )
       expect(emptySlotEl?.textContent).toBe('-=-empty-=-no-data')
     })
@@ -570,7 +570,7 @@ describe('Cascader.vue', () => {
         </Cascader>
       ))
 
-      const prefixSlotEl = document.querySelector('.el-input__prefix-inner')
+      const prefixSlotEl = document.querySelector('.xn-input__prefix-inner')
       expect(prefixSlotEl?.textContent).toBe('-=-prefix-=-')
     })
   })

@@ -12,7 +12,7 @@ lang: zh-CN
 如果您想要覆盖 el-menu 的默认高度, 您可以使用下列 CSS
 
 ```css
-.el-menu--horizontal {
+.xn-menu--horizontal {
   --xn-menu-horizontal-height: 100px;
 }
 ```

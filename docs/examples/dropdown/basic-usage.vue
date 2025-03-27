@@ -23,7 +23,7 @@ import { ArrowDown } from '@xianniu-plus/icons-vue'
 </script>
 
 <style scoped>
-.example-showcase .el-dropdown-link {
+.example-showcase .xn-dropdown-link {
   cursor: pointer;
   color: var(--xn-color-primary);
   display: flex;

@@ -37,7 +37,7 @@ import { Picture as IconPicture } from '@xianniu-plus/icons-vue'
   font-size: 14px;
   margin-bottom: 20px;
 }
-.demo-image__error .el-image {
+.demo-image__error .xn-image {
   padding: 0 5px;
   max-width: 300px;
   max-height: 200px;
@@ -55,7 +55,7 @@ import { Picture as IconPicture } from '@xianniu-plus/icons-vue'
   color: var(--xn-text-color-secondary);
   font-size: 30px;
 }
-.demo-image__error .image-slot .el-icon {
+.demo-image__error .image-slot .xn-icon {
   font-size: 30px;
 }
 </style>

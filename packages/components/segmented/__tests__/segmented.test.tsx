@@ -33,10 +33,10 @@ describe('Segmented.vue', () => {
       <Segmented v-model={value.value} options={options.value}></Segmented>
     ))
     await nextTick()
-    expect(wrapper.findAll('.el-segmented__item').length).toEqual(2)
+    expect(wrapper.findAll('.xn-segmented__item').length).toEqual(2)
     options.value.push('c')
     await nextTick()
-    expect(wrapper.findAll('.el-segmented__item').length).toEqual(3)
+    expect(wrapper.findAll('.xn-segmented__item').length).toEqual(3)
   })
 
   test('render block', async () => {
@@ -60,7 +60,7 @@ describe('Segmented.vue', () => {
       ></Segmented>
     ))
     await nextTick()
-    expect(wrapper.find('.el-segmented--large').exists()).toBe(true)
+    expect(wrapper.find('.xn-segmented--large').exists()).toBe(true)
   })
 
   test('render disabled', async () => {
@@ -70,7 +70,7 @@ describe('Segmented.vue', () => {
       <Segmented v-model={value.value} options={options} disabled></Segmented>
     ))
     await nextTick()
-    // 8 = options.length + .el-segmented__item-selected
+    // 8 = options.length + .xn-segmented__item-selected
     expect(wrapper.findAll('.is-disabled').length).toBe(8)
   })
 
@@ -113,7 +113,7 @@ describe('Segmented.vue', () => {
       <Segmented v-model={value.value} options={options}></Segmented>
     ))
     await nextTick()
-    // 4 = the disabled options + .el-segmented__item-selected
+    // 4 = the disabled options + .xn-segmented__item-selected
     expect(wrapper.findAll('.is-disabled').length).toBe(4)
   })
 
@@ -152,7 +152,7 @@ describe('Segmented.vue', () => {
     await nextTick()
     expect(
       wrapper
-        .find('.el-segmented__item-selected')
+        .find('.xn-segmented__item-selected')
         .classes()
         .includes('is-disabled')
     ).toBeTruthy()

@@ -91,10 +91,10 @@ describe('Transfer', () => {
       />
     ))
 
-    const label = wrapper.find('.el-transfer-panel__header .el-checkbox__label')
+    const label = wrapper.find('.xn-transfer-panel__header .xn-checkbox__label')
     expect(label.text().includes('表1')).toBeTruthy()
     expect(
-      wrapper.find('.el-transfer-panel__list .el-checkbox__label span').text()
+      wrapper.find('.xn-transfer-panel__list .xn-checkbox__label span').text()
     ).toBe('1 - 备选项 1')
     expect(label.find('span').text()).toBe('no')
   })
@@ -125,7 +125,7 @@ describe('Transfer', () => {
       ElTransfer.vm.addToRight()
       await nextTick()
       const targetItems = wrapper.findAll(
-        '.el-transfer__buttons + .el-transfer-panel .el-transfer-panel__body .el-checkbox__label span'
+        '.xn-transfer__buttons + .xn-transfer-panel .xn-transfer-panel__body .xn-checkbox__label span'
       )
       expect(targetItems.map((item) => item.text())).toStrictEqual([
         '备选项 1',
@@ -150,7 +150,7 @@ describe('Transfer', () => {
       ElTransfer.vm.addToRight()
       await nextTick()
       const targetItems = wrapper.findAll(
-        '.el-transfer__buttons + .el-transfer-panel .el-transfer-panel__body .el-checkbox__label span'
+        '.xn-transfer__buttons + .xn-transfer-panel .xn-transfer-panel__body .xn-checkbox__label span'
       )
       expect(targetItems.map((item) => item.text())).toStrictEqual([
         '备选项 1',
@@ -175,7 +175,7 @@ describe('Transfer', () => {
       ElTransfer.vm.addToRight()
       await nextTick()
       const targetItems = wrapper.findAll(
-        '.el-transfer__buttons + .el-transfer-panel .el-transfer-panel__body .el-checkbox__label span'
+        '.xn-transfer__buttons + .xn-transfer-panel .xn-transfer-panel__body .xn-checkbox__label span'
       )
       expect(targetItems.map((item) => item.text())).toStrictEqual([
         '备选项 2',
@@ -226,9 +226,9 @@ describe('Transfer', () => {
         },
       })
 
-      const leftPanel = wrapper.find('.el-transfer-panel')
+      const leftPanel = wrapper.find('.xn-transfer-panel')
       const labels = leftPanel.findAll(
-        '.el-transfer-panel__body .el-checkbox__label'
+        '.xn-transfer-panel__body .xn-checkbox__label'
       )
 
       expect(labels.map((l) => l.text())).toMatchInlineSnapshot(`
@@ -265,9 +265,9 @@ describe('Transfer', () => {
         },
       })
 
-      const leftPanel = wrapper.find('.el-transfer-panel')
+      const leftPanel = wrapper.find('.xn-transfer-panel')
       const labels = leftPanel.findAll(
-        '.el-transfer-panel__body .el-checkbox__label'
+        '.xn-transfer-panel__body .xn-checkbox__label'
       )
 
       expect(labels.map((l) => l.text())).toMatchInlineSnapshot(`
@@ -306,9 +306,9 @@ describe('Transfer', () => {
         },
       })
 
-      const leftPanel = wrapper.find('.el-transfer-panel')
+      const leftPanel = wrapper.find('.xn-transfer-panel')
       const labels = leftPanel.findAll(
-        '.el-transfer-panel__body .el-checkbox__label'
+        '.xn-transfer-panel__body .xn-checkbox__label'
       )
 
       expect(labels.map((l) => l.text())).toMatchInlineSnapshot(`
@@ -345,7 +345,7 @@ describe('Transfer', () => {
         />
       ))
 
-      const panels = wrapper.findAll('.el-transfer-panel__empty')
+      const panels = wrapper.findAll('.xn-transfer-panel__empty')
       expect(panels).toHaveLength(2)
       expect(panels[0].text()).toBe('No data')
       expect(panels[1].text()).toBe('No data')
@@ -354,7 +354,7 @@ describe('Transfer', () => {
     it('render default empty content when slots not provided', () => {
       const wrapper = mount(() => <Transfer data={[]} />)
 
-      const panels = wrapper.findAll('.el-transfer-panel__empty')
+      const panels = wrapper.findAll('.xn-transfer-panel__empty')
       expect(panels).toHaveLength(2)
       expect(panels[0].text()).toBe('No data')
       expect(panels[1].text()).toBe('No data')
@@ -375,7 +375,7 @@ describe('Transfer', () => {
       leftPanel.vm.query = 'non-existing-data'
       await nextTick()
 
-      const emptyContent = wrapper.find('.el-transfer-panel__empty')
+      const emptyContent = wrapper.find('.xn-transfer-panel__empty')
       expect(emptyContent.exists()).toBe(true)
       expect(emptyContent.text()).toBe('No data')
     })

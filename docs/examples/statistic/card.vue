@@ -106,7 +106,7 @@ import {
   background-color: var(--xn-fill-color) !important;
 }
 
-.el-statistic {
+.xn-statistic {
   --xn-statistic-content-font-size: 28px;
 }
 

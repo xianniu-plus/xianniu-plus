@@ -21,12 +21,12 @@ const urls = [
   height: 400px;
   overflow-y: auto;
 }
-.demo-image__lazy .el-image {
+.demo-image__lazy .xn-image {
   display: block;
   min-height: 200px;
   margin-bottom: 10px;
 }
-.demo-image__lazy .el-image:last-child {
+.demo-image__lazy .xn-image:last-child {
   margin-bottom: 0;
 }
 </style>

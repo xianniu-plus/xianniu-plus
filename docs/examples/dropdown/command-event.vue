@@ -25,7 +25,7 @@ const handleCommand = (command: string | number | object) => {
 </script>
 
 <style scoped>
-.example-showcase .el-dropdown-link {
+.example-showcase .xn-dropdown-link {
   cursor: pointer;
   color: var(--xn-color-primary);
   display: flex;

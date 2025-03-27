@@ -42,11 +42,11 @@ const onSubmit = () => {
 </script>
 
 <style>
-.demo-form-inline .el-input {
+.demo-form-inline .xn-input {
   --xn-input-width: 220px;
 }
 
-.demo-form-inline .el-select {
+.demo-form-inline .xn-select {
   --xn-select-width: 220px;
 }
 </style>

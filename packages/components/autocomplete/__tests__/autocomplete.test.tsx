@@ -131,21 +131,21 @@ describe('Autocomplete.vue', () => {
 
     await wrapper.setProps({ popperClass: 'error' })
     expect(
-      document.body.querySelector('.el-popper')?.classList.contains('error')
+      document.body.querySelector('.xn-popper')?.classList.contains('error')
     ).toBe(true)
 
     await wrapper.setProps({ popperClass: 'success' })
     expect(
-      document.body.querySelector('.el-popper')?.classList.contains('error')
+      document.body.querySelector('.xn-popper')?.classList.contains('error')
     ).toBe(false)
     expect(
-      document.body.querySelector('.el-popper')?.classList.contains('success')
+      document.body.querySelector('.xn-popper')?.classList.contains('success')
     ).toBe(true)
   })
 
   test('teleported', async () => {
     _mount({ teleported: false })
-    expect(document.body.querySelector('.el-popper__mask')).toBeNull()
+    expect(document.body.querySelector('.xn-popper__mask')).toBeNull()
   })
 
   test('debounce / fetchSuggestions', async () => {
@@ -260,9 +260,9 @@ describe('Autocomplete.vue', () => {
     vi.runAllTimers()
     await nextTick()
 
-    expect(document.body.querySelector('.el-icon-loading')).toBeDefined()
+    expect(document.body.querySelector('.xn-icon-loading')).toBeDefined()
     await wrapper.setProps({ hideLoading: true })
-    expect(document.body.querySelector('.el-icon-loading')).toBeNull()
+    expect(document.body.querySelector('.xn-icon-loading')).toBeNull()
   })
 
   test('selectWhenUnmatched', async () => {
@@ -311,7 +311,7 @@ describe('Autocomplete.vue', () => {
     })
     await nextTick()
 
-    const inputDom = wrapper.find('.el-input').element
+    const inputDom = wrapper.find('.xn-input').element
     const mockInputWidth = vi
       .spyOn(inputDom as HTMLElement, 'offsetWidth', 'get')
       .mockReturnValue(200)
@@ -324,7 +324,7 @@ describe('Autocomplete.vue', () => {
     expect(
       (
         document.body.querySelector(
-          '.el-autocomplete-suggestion'
+          '.xn-autocomplete-suggestion'
         ) as HTMLElement
       ).style.width
     ).toBe('200px')
@@ -364,7 +364,7 @@ describe('Autocomplete.vue', () => {
       await nextTick()
       const formItem = wrapper.find('[data-test-ref="item"]')
       const input = await wrapper.find('[data-test-ref="input"]')
-      const formItemLabel = formItem.find('.el-form-item__label')
+      const formItemLabel = formItem.find('.xn-form-item__label')
       expect(formItem.attributes().role).toBeFalsy()
       expect(formItemLabel.attributes().for).toBe(input.attributes().id)
     })
@@ -380,7 +380,7 @@ describe('Autocomplete.vue', () => {
       await nextTick()
       const formItem = wrapper.find('[data-test-ref="item"]')
       const input = await wrapper.find('[data-test-ref="input"]')
-      const formItemLabel = formItem.find('.el-form-item__label')
+      const formItemLabel = formItem.find('.xn-form-item__label')
       expect(formItem.attributes().role).toBeFalsy()
       expect(input.attributes().id).toBe('foobar')
       expect(formItemLabel.attributes().for).toBe(input.attributes().id)
@@ -451,7 +451,7 @@ describe('Autocomplete.vue', () => {
       const wrapper = _mount()
       await nextTick()
 
-      const container = wrapper.find('.el-autocomplete')
+      const container = wrapper.find('.xn-autocomplete')
       expect(container.attributes('role')).toBe('combobox')
       expect(container.attributes('aria-haspopup')).toBe('listbox')
       expect(container.attributes('aria-expanded')).toBe('false')

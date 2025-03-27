@@ -49,7 +49,7 @@ const homeLang = computed(() => homeLocale[lang.value])
     max-width: 1200px;
   }
 
-  .el-card {
+  .xn-card {
     height: 430px;
     background: var(--bg-color);
     border: 1px solid var(--border-color);
@@ -60,12 +60,12 @@ const homeLang = computed(() => homeLocale[lang.value])
     transition: all 0.3s;
     bottom: 0;
 
-    .el-card__body {
+    .xn-card__body {
       padding: 0;
       height: 100%;
     }
 
-    .el-card__footer {
+    .xn-card__footer {
       position: sticky;
       bottom: 0;
       padding: 0;
@@ -119,7 +119,7 @@ const homeLang = computed(() => homeLocale[lang.value])
       grid-template-columns: 1fr;
     }
 
-    .el-card {
+    .xn-card {
       height: auto;
     }
   }

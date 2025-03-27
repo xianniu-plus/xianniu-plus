@@ -123,7 +123,7 @@ const filterCategories = computed(() => {
   top: 60px;
   z-index: 10;
 
-  .el-input {
+  .xn-input {
     background: var(--bg-color);
   }
 }
@@ -168,7 +168,7 @@ const filterCategories = computed(() => {
       &:hover {
         background-color: var(--xn-border-color-extra-light);
 
-        .el-icon {
+        .xn-icon {
           color: var(--brand-color-light);
         }
 

@@ -237,7 +237,7 @@ describe('Select', () => {
       }),
     })
     await nextTick()
-    expect([...document.querySelector('.el-popper').classList]).toContain(
+    expect([...document.querySelector('.xn-popper').classList]).toContain(
       'custom-dropdown'
     )
   })
@@ -422,7 +422,7 @@ describe('Select', () => {
     const vm = wrapper.vm as any
     const placeholder = wrapper.find(`.${PLACEHOLDER_CLASS_NAME}`)
     const option = document.querySelector<HTMLElement>(
-      `.el-select-dropdown__item.is-disabled`
+      `.xn-select-dropdown__item.is-disabled`
     )
     expect(option.textContent).toBe(vm.options[1].label)
     option.click()
@@ -432,7 +432,7 @@ describe('Select', () => {
     vm.options[2].disabled = true
     await nextTick()
     const options = document.querySelectorAll<HTMLElement>(
-      `.el-select-dropdown__item.is-disabled`
+      `.xn-select-dropdown__item.is-disabled`
     )
     expect(options.length).toBe(2)
     expect(options.item(1).textContent).toBe(vm.options[2].label)
@@ -596,7 +596,7 @@ describe('Select', () => {
       await nextTick()
       expect(vm.value.length).toBe(2)
       expect(vm.value[1]).toBe(vm.options[3].value)
-      const tagIcon = wrapper.find('.el-tag__close')
+      const tagIcon = wrapper.find('.xn-tag__close')
       await tagIcon.trigger('click')
       expect(vm.value.length).toBe(1)
     })
@@ -624,7 +624,7 @@ describe('Select', () => {
       options[2].click()
       await nextTick()
       expect(vm.value.length).toBe(3)
-      const tagCloseIcons = wrapper.findAll('.el-tag__close')
+      const tagCloseIcons = wrapper.findAll('.xn-tag__close')
       await tagCloseIcons[1].trigger('click')
       expect(vm.value.length).toBe(2)
       await tagCloseIcons[0].trigger('click')
@@ -740,9 +740,9 @@ describe('Select', () => {
 
       await nextTick()
       const vm = wrapper.vm as any
-      expect(wrapper.findAll('.el-tag').length).toBe(1)
-      expect(wrapper.find('.el-select__tags-text').text()).toBe('option')
-      const tagCloseIcons = wrapper.findAll('.el-tag__close')
+      expect(wrapper.findAll('.xn-tag').length).toBe(1)
+      expect(wrapper.find('.xn-select__tags-text').text()).toBe('option')
+      const tagCloseIcons = wrapper.findAll('.xn-tag__close')
       await tagCloseIcons[0].trigger('click')
       expect(vm.value.length).toBe(0)
     })
@@ -771,7 +771,7 @@ describe('Select', () => {
       options[2].click()
       await nextTick()
       expect(vm.value.length).toBe(3)
-      const tags = wrapper.findAll('.el-tag').filter((item) => {
+      const tags = wrapper.findAll('.xn-tag').filter((item) => {
         return !hasClass(item.element, 'in-tooltip')
       })
       expect(tags.length).toBe(2)
@@ -800,7 +800,7 @@ describe('Select', () => {
       options[2].click()
       await nextTick()
       expect(vm.value.length).toBe(3)
-      expect(wrapper.findAll('.el-tag')[1].element.textContent.trim()).toBe(
+      expect(wrapper.findAll('.xn-tag')[1].element.textContent.trim()).toBe(
         '+ 2'
       )
     })
@@ -829,7 +829,7 @@ describe('Select', () => {
       options[3].click()
       await nextTick()
       expect(vm.value.length).toBe(4)
-      const tags = wrapper.findAll('.el-tag').filter((item) => {
+      const tags = wrapper.findAll('.xn-tag').filter((item) => {
         return !hasClass(item.element, 'in-tooltip')
       })
       expect(tags.length).toBe(4)
@@ -886,13 +886,13 @@ describe('Select', () => {
 
       vm.value = ['option_1']
       await nextTick()
-      expect(wrapper.find('.el-select__tags-text').text()).toBe('a0')
+      expect(wrapper.find('.xn-select__tags-text').text()).toBe('a0')
       placeholder = wrapper.find(`.${PLACEHOLDER_CLASS_NAME}`)
       expect(placeholder.exists()).toBeFalsy()
 
       vm.value = []
       await nextTick()
-      expect(wrapper.find('.el-select__tags-text').exists()).toBeFalsy()
+      expect(wrapper.find('.xn-select__tags-text').exists()).toBeFalsy()
       placeholder = wrapper.find(`.${PLACEHOLDER_CLASS_NAME}`)
       expect(placeholder.exists()).toBeTruthy()
     })
@@ -914,7 +914,7 @@ describe('Select', () => {
       await input.trigger('input')
       vm.value = ['option_1']
       await nextTick()
-      expect(wrapper.find('.el-select__tags-text').text()).toBe('a0')
+      expect(wrapper.find('.xn-select__tags-text').text()).toBe('a0')
     })
 
     it('set object modelValue in single select', async () => {
@@ -1140,7 +1140,7 @@ describe('Select', () => {
       await input.trigger('click')
       expect(selectVm.filteredOptions.length).toBe(5)
       // remove tag
-      const tagCloseIcons = wrapper.findAll('.el-tag__close')
+      const tagCloseIcons = wrapper.findAll('.xn-tag__close')
       await tagCloseIcons[1].trigger('click')
       await rAF()
       expect(selectVm.filteredOptions.length).toBe(4)
@@ -1463,12 +1463,12 @@ describe('Select', () => {
       },
     })
     await nextTick()
-    expect(wrapper.findAll('.el-tag').length).toBe(2)
-    const tagCloseIcons = wrapper.findAll('.el-tag__close')
+    expect(wrapper.findAll('.xn-tag').length).toBe(2)
+    const tagCloseIcons = wrapper.findAll('.xn-tag__close')
     expect(tagCloseIcons.length).toBe(1)
     await tagCloseIcons[0].trigger('click')
-    expect(wrapper.findAll('.el-tag__close').length).toBe(0)
-    expect(wrapper.findAll('.el-tag').length).toBe(1)
+    expect(wrapper.findAll('.xn-tag__close').length).toBe(0)
+    expect(wrapper.findAll('.xn-tag').length).toBe(1)
   })
 
   it('modelValue should be deep reactive in multiple mode', async () => {
@@ -1481,11 +1481,11 @@ describe('Select', () => {
       },
     })
     await nextTick()
-    expect(wrapper.findAll('.el-tag').length).toBe(3)
+    expect(wrapper.findAll('.xn-tag').length).toBe(3)
     const vm = wrapper.vm as any
     vm.value.splice(0, 1)
     await nextTick()
-    expect(wrapper.findAll('.el-tag').length).toBe(2)
+    expect(wrapper.findAll('.xn-tag').length).toBe(2)
   })
 
   it('should reset placeholder after clear when both multiple and filterable are true', async () => {
@@ -1502,7 +1502,7 @@ describe('Select', () => {
     await nextTick()
     expect(wrapper.find(`.${PLACEHOLDER_CLASS_NAME}`).exists()).toBeFalsy()
     // When all tags are removed, the placeholder should be displayed
-    const tagCloseIcon = wrapper.find('.el-tag__close')
+    const tagCloseIcon = wrapper.find('.xn-tag__close')
     await tagCloseIcon.trigger('click')
     expect(wrapper.find(`.${PLACEHOLDER_CLASS_NAME}`).text()).toBe(
       DEFAULT_PLACEHOLDER
@@ -1652,7 +1652,7 @@ describe('Select', () => {
     input.element.value = 'A'
     await input.trigger('input')
 
-    const tag = wrapper.find('.el-select__tags-text')
+    const tag = wrapper.find('.xn-select__tags-text')
     // filter or remote-search scenarios should be not initialized
     expect(tag.text()).toBe('label:Alabama')
 
@@ -1777,7 +1777,7 @@ describe('Select', () => {
     })
     const select = wrapper.findComponent(Select)
     const selectVm = select.vm as any
-    const selectDom = wrapper.find('.el-select__wrapper').element
+    const selectDom = wrapper.find('.xn-select__wrapper').element
     const selectRect = {
       height: 40,
       width: 221,
@@ -1796,7 +1796,7 @@ describe('Select', () => {
     await nextTick()
     options[2].click()
     await nextTick()
-    const tagWrappers = wrapper.findAll('.el-select__tags-text')
+    const tagWrappers = wrapper.findAll('.xn-select__tags-text')
     for (const tagWrapper of tagWrappers) {
       const tagWrapperDom = tagWrapper.element
       expect(
@@ -1814,7 +1814,7 @@ describe('Select', () => {
       const tipDefWrapper = wrapper.find(`.${WRAPPER_CLASS_NAME}`)
       await tipDefWrapper.trigger('click')
       expect((select.vm as any).expanded).toBeTruthy()
-      const box = document.querySelector<HTMLElement>('.el-vl__wrapper')
+      const box = document.querySelector<HTMLElement>('.xn-vl__wrapper')
       expect(hasClass(box, 'always-on')).toBe(false)
     })
 
@@ -1831,7 +1831,7 @@ describe('Select', () => {
       const tipDefWrapper = wrapper.find(`.${WRAPPER_CLASS_NAME}`)
       await tipDefWrapper.trigger('click')
       expect((select.vm as any).expanded).toBeTruthy()
-      const box = document.querySelector<HTMLElement>('.el-vl__wrapper')
+      const box = document.querySelector<HTMLElement>('.xn-vl__wrapper')
       expect(hasClass(box, 'always-on')).toBe(true)
     })
   })
@@ -1975,22 +1975,22 @@ describe('Select', () => {
       },
     })
     await nextTick()
-    const selectInput = wrapper.find('.el-select__input')
-    expect(wrapper.findAll('.el-tag').length).toBe(2)
+    const selectInput = wrapper.find('.xn-select__input')
+    expect(wrapper.findAll('.xn-tag').length).toBe(2)
     // after deletion, an el-tag will be deleted
     await selectInput.trigger('keydown', {
       code: EVENT_CODE.backspace,
       key: EVENT_CODE.backspace,
     })
     await nextTick()
-    expect(wrapper.findAll('.el-tag').length).toBe(1)
+    expect(wrapper.findAll('.xn-tag').length).toBe(1)
     await selectInput.trigger('keydown', {
       code: EVENT_CODE.backspace,
       key: EVENT_CODE.backspace,
     })
     await nextTick()
     // after deletion, an el-tag still exist
-    expect(wrapper.findAll('.el-tag').length).toBe(1)
+    expect(wrapper.findAll('.xn-tag').length).toBe(1)
   })
 
   it('should be trigger the click event', async () => {

@@ -68,7 +68,7 @@ const _mount = (template: string, data: any = () => ({}), otherObj?) =>
 function getOptions(): HTMLElement[] {
   return Array.from(
     document.querySelectorAll<HTMLElement>(
-      'body > div:last-child .el-select-dropdown__item'
+      'body > div:last-child .xn-select-dropdown__item'
     )
   )
 }
@@ -1134,7 +1134,7 @@ describe('Select', () => {
     options[3].click()
     await nextTick()
     expect(vm.value.includes('选项2') && vm.value.includes('选项4')).toBe(true)
-    const tagCloseIcons = wrapper.findAll('.el-tag__close')
+    const tagCloseIcons = wrapper.findAll('.xn-tag__close')
     await tagCloseIcons[0].trigger('click')
     expect(vm.value.indexOf('选项1')).toBe(-1)
   })
@@ -1185,7 +1185,7 @@ describe('Select', () => {
     await nextTick()
     options[2].click()
     await nextTick()
-    const tagWrappers = wrapper.findAll('.el-tag')
+    const tagWrappers = wrapper.findAll('.xn-tag')
     for (const tagWrapper of tagWrappers) {
       const tagWrapperDom = tagWrapper.element
       expect(tagWrapperDom.style.maxWidth).toBe('200px')
@@ -1234,7 +1234,7 @@ describe('Select', () => {
     selectRef.vm.states.selectionWidth = 200
     options[0].click()
     await nextTick()
-    const tagWrappers = wrapper.findAll('.el-tag')
+    const tagWrappers = wrapper.findAll('.xn-tag')
     const tagWrapperDom = tagWrappers[0].element
     expect(tagWrapperDom.style.maxWidth).toBe('200px')
     options[1].click()
@@ -1288,9 +1288,9 @@ describe('Select', () => {
     await nextTick()
     options[2].click()
     await nextTick()
-    const triggerWrappers = wrapper.findAll('.el-tooltip__trigger')
+    const triggerWrappers = wrapper.findAll('.xn-tooltip__trigger')
     expect(triggerWrappers[0]).toBeDefined()
-    const tags = document.querySelectorAll('.el-select__tags-text')
+    const tags = document.querySelectorAll('.xn-select__tags-text')
     expect(tags.length).toBe(4)
     expect(tags[3].textContent).toBe('蚵仔煎')
   })
@@ -1338,9 +1338,9 @@ describe('Select', () => {
     await nextTick()
     options[2].click()
     await nextTick()
-    const triggerWrappers = wrapper.findAll('.el-tooltip__trigger')
+    const triggerWrappers = wrapper.findAll('.xn-tooltip__trigger')
     expect(triggerWrappers[0]).toBeDefined()
-    const tags = document.querySelectorAll('.el-select__tags-text')
+    const tags = document.querySelectorAll('.xn-select__tags-text')
     expect(tags.length).toBe(3)
   })
 
@@ -1390,7 +1390,7 @@ describe('Select', () => {
     const vm = wrapper.vm as any
     await nextTick()
     expect(vm.value.length).toBe(2)
-    const tagCloseIcons = wrapper.findAll('.el-tag__close')
+    const tagCloseIcons = wrapper.findAll('.xn-tag__close')
     await tagCloseIcons[1].trigger('click')
     expect(vm.value.length).toBe(1)
 
@@ -1580,7 +1580,7 @@ describe('Select', () => {
 
     await input.trigger('focus')
     expect(handleFocus).toHaveBeenCalledTimes(1)
-    const tagCloseIcons = wrapper.findAll('.el-tag__close')
+    const tagCloseIcons = wrapper.findAll('.xn-tag__close')
     await tagCloseIcons[1].trigger('click')
     await tagCloseIcons[0].trigger('click')
     expect(handleFocus).toHaveBeenCalledTimes(1)
@@ -1767,10 +1767,10 @@ describe('Select', () => {
     await trigger.trigger('click')
     await nextTick()
     expect(
-      !!(document.querySelector('.el-select__popper') as HTMLElement).style
+      !!(document.querySelector('.xn-select__popper') as HTMLElement).style
         .display
     ).toBeFalsy()
-    expect(wrapper.findAll('.el-select-dropdown__empty').length).toBe(0)
+    expect(wrapper.findAll('.xn-select-dropdown__empty').length).toBe(0)
   })
 
   test('multiple select with remote load', async () => {
@@ -2129,12 +2129,12 @@ describe('Select', () => {
     const vm = wrapper.vm as any
     await nextTick()
     const selectVm = wrapper.findComponent({ name: 'ElSelect' }).vm as any
-    expect(wrapper.findAll('.el-tag').length).toBe(3)
-    const tagCloseIcons = wrapper.findAll('.el-tag__close')
+    expect(wrapper.findAll('.xn-tag').length).toBe(3)
+    const tagCloseIcons = wrapper.findAll('.xn-tag__close')
     expect(tagCloseIcons.length).toBe(1)
     await tagCloseIcons[0].trigger('click')
-    expect(wrapper.findAll('.el-tag__close').length).toBe(0)
-    expect(wrapper.findAll('.el-tag').length).toBe(2)
+    expect(wrapper.findAll('.xn-tag__close').length).toBe(0)
+    expect(wrapper.findAll('.xn-tag').length).toBe(2)
 
     //test if is clearable
     vm.isClearable = true
@@ -2143,9 +2143,9 @@ describe('Select', () => {
     selectVm.states.inputHovering = true
     await selectVm.$nextTick()
     const iconClear = wrapper.findComponent(CircleClose)
-    expect(wrapper.findAll('.el-tag').length).toBe(3)
+    expect(wrapper.findAll('.xn-tag').length).toBe(3)
     await iconClear.trigger('click')
-    expect(wrapper.findAll('.el-tag').length).toBe(2)
+    expect(wrapper.findAll('.xn-tag').length).toBe(2)
 
     // test for collapse select
     vm.vendors = [1, 2, 4]
@@ -2153,17 +2153,17 @@ describe('Select', () => {
     vm.isClearable = false
     await nextTick()
     expect(
-      wrapper.findAll('.el-tag').filter((item) => {
+      wrapper.findAll('.xn-tag').filter((item) => {
         return !hasClass(item.element, 'in-tooltip')
       }).length
     ).toBe(2)
-    await wrapper.find('.el-tag__close').trigger('click')
+    await wrapper.find('.xn-tag__close').trigger('click')
     expect(
-      wrapper.findAll('.el-tag').filter((item) => {
+      wrapper.findAll('.xn-tag').filter((item) => {
         return !hasClass(item.element, 'in-tooltip')
       }).length
     ).toBe(2)
-    expect(wrapper.findAll('.el-tag__close').length).toBe(0)
+    expect(wrapper.findAll('.xn-tag__close').length).toBe(0)
 
     // test for collapse select if is clearable
     vm.vendors = [1, 2, 4]
@@ -2171,17 +2171,17 @@ describe('Select', () => {
     vm.isClearable = true
     await nextTick()
     expect(
-      wrapper.findAll('.el-tag__close').filter((item) => {
+      wrapper.findAll('.xn-tag__close').filter((item) => {
         return !hasClass(item.element.parentElement, 'in-tooltip')
       }).length
     ).toBe(1)
-    await wrapper.find('.el-tag__close').trigger('click')
+    await wrapper.find('.xn-tag__close').trigger('click')
     expect(
-      wrapper.findAll('.el-tag').filter((item) => {
+      wrapper.findAll('.xn-tag').filter((item) => {
         return !hasClass(item.element, 'in-tooltip')
       }).length
     ).toBe(2)
-    expect(wrapper.findAll('.el-tag__close').length).toBe(0)
+    expect(wrapper.findAll('.xn-tag__close').length).toBe(0)
   })
 
   test('tag type', async () => {
@@ -2216,7 +2216,7 @@ describe('Select', () => {
     const options = getOptions()
     options[1].click()
     await nextTick()
-    expect(wrapper.find('.el-tag').classes()).toContain('el-tag--success')
+    expect(wrapper.find('.xn-tag').classes()).toContain('el-tag--success')
   })
 
   test('modelValue should be deep reactive in multiple mode', async () => {
@@ -2243,12 +2243,12 @@ describe('Select', () => {
     )
     const vm = wrapper.vm as any
     await nextTick()
-    expect(wrapper.findAll('.el-tag').length).toBe(1)
+    expect(wrapper.findAll('.xn-tag').length).toBe(1)
 
     vm.modelValue.splice(0, 1)
 
     await nextTick()
-    expect(wrapper.findAll('.el-tag').length).toBe(0)
+    expect(wrapper.findAll('.xn-tag').length).toBe(0)
   })
 
   test('should reset placeholder after clear when both multiple and filterable are true', async () => {
@@ -2266,7 +2266,7 @@ describe('Select', () => {
 
     expect(wrapper.find(`.${PLACEHOLDER_CLASS_NAME}`).exists()).toBe(false)
 
-    const tagCloseIcon = wrapper.find('.el-tag__close')
+    const tagCloseIcon = wrapper.find('.xn-tag__close')
     await tagCloseIcon.trigger('click')
     expect(wrapper.find(`.${PLACEHOLDER_CLASS_NAME}`).text()).toBe(placeholder)
 
@@ -2523,7 +2523,7 @@ describe('Select', () => {
 
       await nextTick()
       const formItem = wrapper.find('[data-test-ref="item"]')
-      const formItemLabel = formItem.find('.el-form-item__label')
+      const formItemLabel = formItem.find('.xn-form-item__label')
       const innerInput = wrapper.find('input')
       expect(formItem.attributes().role).toBeFalsy()
       expect(formItemLabel.attributes().for).toBe(innerInput.attributes().id)
@@ -2543,7 +2543,7 @@ describe('Select', () => {
 
       await nextTick()
       const formItem = wrapper.find('[data-test-ref="item"]')
-      const formItemLabel = formItem.find('.el-form-item__label')
+      const formItemLabel = formItem.find('.xn-form-item__label')
       const innerInput = wrapper.find('input')
       expect(formItem.attributes().role).toBeFalsy()
       expect(innerInput.attributes().id).toBe('foobar')
@@ -2656,7 +2656,7 @@ describe('Select', () => {
     nativeInput.focus()
     vm.options = options
     await nextTick()
-    expect(wrapper.findAll('.el-tag')[0].text()).toBe('option 1')
+    expect(wrapper.findAll('.xn-tag')[0].text()).toBe('option 1')
   })
 
   // fix: https://github.com/xianniu-plus/xianniu-plus/issues/11991
@@ -2696,22 +2696,22 @@ describe('Select', () => {
       })
     )
     await nextTick()
-    const selectInput = wrapper.find('.el-select__input')
-    expect(wrapper.findAll('.el-tag').length).toBe(2)
+    const selectInput = wrapper.find('.xn-select__input')
+    expect(wrapper.findAll('.xn-tag').length).toBe(2)
     // after deletion, an el-tag will be deleted
     await selectInput.trigger('keydown', {
       code: EVENT_CODE.backspace,
       key: EVENT_CODE.backspace,
     })
     await nextTick()
-    expect(wrapper.findAll('.el-tag').length).toBe(1)
+    expect(wrapper.findAll('.xn-tag').length).toBe(1)
     await selectInput.trigger('keydown', {
       code: EVENT_CODE.backspace,
       key: EVENT_CODE.backspace,
     })
     await nextTick()
     // after deletion, an el-tag still exist
-    expect(wrapper.findAll('.el-tag').length).toBe(1)
+    expect(wrapper.findAll('.xn-tag').length).toBe(1)
   })
   it('should ensure that isDisabled is fresh to prevent selected tag from being cleared', async () => {
     const disabled = ref(false)
@@ -2737,20 +2737,20 @@ describe('Select', () => {
     await nextTick()
     const iconClear = wrapper.findComponent(CircleClose)
     await iconClear.trigger('click')
-    expect(wrapper.findAll('.el-tag').length).toBe(1)
-    const selectInput = wrapper.find('.el-select__input')
+    expect(wrapper.findAll('.xn-tag').length).toBe(1)
+    const selectInput = wrapper.find('.xn-select__input')
     await selectInput.trigger('keydown', {
       code: EVENT_CODE.backspace,
       key: EVENT_CODE.backspace,
     })
     await nextTick()
-    expect(wrapper.findAll('.el-tag').length).toBe(1)
+    expect(wrapper.findAll('.xn-tag').length).toBe(1)
     await selectInput.trigger('keydown', {
       code: EVENT_CODE.enter,
       key: EVENT_CODE.enter,
     })
     await nextTick()
-    expect(wrapper.findAll('.el-tag').length).toBe(1)
+    expect(wrapper.findAll('.xn-tag').length).toBe(1)
   })
   it('It should generate accessible attributes', async () => {
     wrapper = _mount(
@@ -2763,10 +2763,10 @@ describe('Select', () => {
 
     const dropdown = wrapper.findComponent({ name: 'ElSelectDropdown' })
     const input = wrapper.find('input')
-    const list = dropdown.find('.el-select-dropdown__list')
-    const option = dropdown.find('.el-select-dropdown__item')
+    const list = dropdown.find('.xn-select-dropdown__list')
+    const option = dropdown.find('.xn-select-dropdown__item')
     const disabledOption = dropdown.find(
-      '.el-select-dropdown__item:nth-child(2)'
+      '.xn-select-dropdown__item:nth-child(2)'
     )
 
     expect(input.attributes('role')).toBe('combobox')
@@ -2843,7 +2843,7 @@ describe('Select', () => {
     await wrapper.find(`.${WRAPPER_CLASS_NAME}`).trigger('focus')
     await nextTick()
     expect(
-      (document.querySelector('.el-select__popper') as HTMLElement).style
+      (document.querySelector('.xn-select__popper') as HTMLElement).style
         .display
     ).toBe('none')
   })

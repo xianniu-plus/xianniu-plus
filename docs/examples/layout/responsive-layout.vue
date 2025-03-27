@@ -16,7 +16,7 @@
 </template>
 
 <style>
-.el-col {
+.xn-col {
   border-radius: 4px;
 }
 

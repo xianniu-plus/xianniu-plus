@@ -23,7 +23,7 @@ const options = Array.from({ length: 1000 }).map((_, idx) => ({
 </script>
 
 <style scoped>
-.example-showcase .el-select-v2 {
+.example-showcase .xn-select-v2 {
   margin-right: 20px;
 }
 </style>

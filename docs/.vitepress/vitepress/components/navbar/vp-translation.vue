@@ -53,7 +53,7 @@ const toTranslation = () => {
 </style>
 
 <style lang="scss">
-.el-dropdown__popper.translation-popup {
+.xn-dropdown__popper.translation-popup {
   --xn-bg-color-overlay: var(--bg-color);
   --xn-popper-border-radius: 8px;
   --xn-border-color-light: transparent;
@@ -62,7 +62,7 @@ const toTranslation = () => {
   min-width: 192px;
   transition: background-color 0.5s;
 
-  .el-popper__arrow {
+  .xn-popper__arrow {
     display: none;
   }
 

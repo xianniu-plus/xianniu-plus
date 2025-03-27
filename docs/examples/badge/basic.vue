@@ -44,7 +44,7 @@ import { CaretBottom } from '@xianniu-plus/icons-vue'
   margin-right: 30px;
 }
 
-.el-dropdown {
+.xn-dropdown {
   margin-top: 1.1rem;
 }
 </style>

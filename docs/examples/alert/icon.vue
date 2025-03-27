@@ -17,10 +17,10 @@ import { Bell } from '@xianniu-plus/icons-vue'
 </script>
 
 <style scoped>
-.el-alert {
+.xn-alert {
   margin: 20px 0 0;
 }
-.el-alert:first-child {
+.xn-alert:first-child {
   margin: 0;
 }
 </style>

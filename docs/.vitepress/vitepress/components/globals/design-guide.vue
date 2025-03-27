@@ -30,7 +30,7 @@
 </template>
 
 <style scoped lang="scss">
-.el-col {
+.xn-col {
   padding: 0 7px;
 }
 .card {
@@ -51,7 +51,7 @@
 }
 
 @media screen and (max-width: 767px) {
-  .el-col {
+  .xn-col {
     padding-bottom: 8px;
   }
 }

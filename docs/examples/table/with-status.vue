@@ -57,10 +57,10 @@ const tableData: User[] = [
 </script>
 
 <style>
-.el-table .warning-row {
+.xn-table .warning-row {
   --xn-table-tr-bg-color: var(--xn-color-warning-light-9);
 }
-.el-table .success-row {
+.xn-table .success-row {
   --xn-table-tr-bg-color: var(--xn-color-success-light-9);
 }
 </style>
