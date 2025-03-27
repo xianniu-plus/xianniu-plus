@@ -11,7 +11,7 @@ Element Plus 提供了一套常用的图标集合。
 
 - 如果你想像用例一样**直接使用**，你需要[全局注册组件](https://v3.vuejs.org/guide/component-registration.html#global-registration)，才能够直接在项目里使用。
 
-- 如若需要查看所有可用的 SVG 图标请查阅 [@element-plus/icons-vue@1.x](https://unpkg.com/browse/@element-plus/icons-vue@1/dist/es/)[@element-plus/icons-vue@latest](https://unpkg.com/browse/@element-plus/icons-vue@latest/dist/types/components/) 和有关 [Icon Collection](#icon-collection) 的源码 [element-plus-icons](https://github.com/element-plus/element-plus-icons)
+- 如若需要查看所有可用的 SVG 图标请查阅 [@xianniu-plus/icons-vue@1.x](https://unpkg.com/browse/@xianniu-plus/icons-vue@1/dist/es/)[@xianniu-plus/icons-vue@latest](https://unpkg.com/browse/@xianniu-plus/icons-vue@latest/dist/types/components/) 和有关 [Icon Collection](#icon-collection) 的源码 [xianniu-plus-icons](https://github.com/xianniu-plus/xianniu-plus-icons)
 
 ## 安装
 
@@ -22,28 +22,28 @@ Element Plus 提供了一套常用的图标集合。
 ::: code-group
 
 ```shell [npm]
-$ npm install @element-plus/icons-vue
+$ npm install @xianniu-plus/icons-vue
 ```
 
 ```shell [yarn]
-$ yarn add @element-plus/icons-vue
+$ yarn add @xianniu-plus/icons-vue
 ```
 
 ```shell [pnpm]
-$ pnpm install @element-plus/icons-vue
+$ pnpm install @xianniu-plus/icons-vue
 ```
 
 :::
 
 ### 注册所有图标
 
-您需要从 `@element-plus/icons-vue` 中导入所有图标并进行全局注册。
+您需要从 `@xianniu-plus/icons-vue` 中导入所有图标并进行全局注册。
 
 ```ts
 // main.ts
 
 // 如果您正在使用CDN引入，请删除下面一行。
-import * as ElementPlusIconsVue from '@element-plus/icons-vue'
+import * as ElementPlusIconsVue from '@xianniu-plus/icons-vue'
 
 const app = createApp(App)
 for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
@@ -62,13 +62,13 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 #### 使用 unpkg
 
 ```html
-<script src="//unpkg.com/@element-plus/icons-vue"></script>
+<script src="//unpkg.com/@xianniu-plus/icons-vue"></script>
 ```
 
 #### 使用 jsDelivr
 
 ```html
-<script src="//cdn.jsdelivr.net/npm/@element-plus/icons-vue"></script>
+<script src="//cdn.jsdelivr.net/npm/@xianniu-plus/icons-vue"></script>
 ```
 
 :::tip
@@ -79,7 +79,7 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 
 ### 自动导入
 
-使用 [unplugin-icons](https://github.com/antfu/unplugin-icons) 和 [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) 从 iconify 中自动导入任何图标集。 您可以参考[此模板](https://github.com/sxzz/element-plus-best-practices/blob/db2dfc983ccda5570033a0ac608a1bd9d9a7f658/vite.config.ts#L21-L58)。
+使用 [unplugin-icons](https://github.com/antfu/unplugin-icons) 和 [unplugin-auto-import](https://github.com/antfu/unplugin-auto-import) 从 iconify 中自动导入任何图标集。 您可以参考[此模板](https://github.com/sxzz/xianniu-plus-best-practices/blob/db2dfc983ccda5570033a0ac608a1bd9d9a7f658/vite.config.ts#L21-L58)。
 
 ## 基础用法
 
@@ -103,7 +103,7 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 ```
 
 <vp-script setup>
-import { Edit, Share, Delete, Search, Loading } from '@element-plus/icons-vue'
+import { Edit, Share, Delete, Search, Loading } from '@xianniu-plus/icons-vue'
 </vp-script>
 
 <ElRow>
@@ -202,7 +202,7 @@ import { Edit, Share, Delete, Search, Loading } from '@element-plus/icons-vue'
 
 :::tip
 
-只要你安装了 @element-plus/icons-vue，**就可以在任意版本里使用 SVG 图标**。
+只要你安装了 @xianniu-plus/icons-vue，**就可以在任意版本里使用 SVG 图标**。
 
 **您可以点击图标复制代码。**
 
@@ -214,13 +214,13 @@ import { Edit, Share, Delete, Search, Loading } from '@element-plus/icons-vue'
 
 ### Attributes
 
-| 属性名   | 说明                    | 类型                    | 默认值    |
-| ----- | --------------------- | --------------------- | ------ |
-| color | svg 的 fill 颜色         | ^[string]             | 继承颜色   |
-| size  | SVG 图标的大小，size x size | ^[number] / ^[string] | 继承字体大小 |
+| 属性名 | 说明                        | 类型                  | 默认值       |
+| ------ | --------------------------- | --------------------- | ------------ |
+| color  | svg 的 fill 颜色            | ^[string]             | 继承颜色     |
+| size   | SVG 图标的大小，size x size | ^[number] / ^[string] | 继承字体大小 |
 
 ### Slots
 
-| 名称      | 说明      |
-| ------- | ------- |
+| 名称    | 说明           |
+| ------- | -------------- |
 | default | 自定义默认内容 |

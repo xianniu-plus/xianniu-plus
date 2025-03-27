@@ -1,7 +1,7 @@
 ;(() => {
   const supportedLangs = window.supportedLangs
   const cacheKey = 'preferred_lang'
-  const defaultLang = 'en-US'
+  const defaultLang = 'zh-CN'
   const handleNavigatorLang = (navLang) => {
     const { language, region } = new Intl.Locale(navLang).maximize()
     return `${language}-${region}`
