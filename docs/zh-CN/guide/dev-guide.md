@@ -27,7 +27,7 @@ pnpm docs:dev
 
 ## 本地开发
 
-查看 [本地开发指南](https://github.com/element-plus/element-plus/blob/dev/CONTRIBUTING.md)
+查看 [本地开发指南](https://github.com/xianniu-plus/xianniu-plus/blob/dev/CONTRIBUTING.md)
 
 1. 使用命令
 
@@ -45,8 +45,8 @@ pnpm dev
 </template>
 
 <script setup lang="ts">
-// 要保证当前组件已注册到 @element-plus/components
-import { ComponentYouAreDeveloping } from '@element-plus/components'
+// 要保证当前组件已注册到 @xianniu-plus/components
+import { ComponentYouAreDeveloping } from '@xianniu-plus/components'
 </script>
 ```
 

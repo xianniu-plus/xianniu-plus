@@ -11,7 +11,7 @@ lang: zh-CN
 
 从顶部出现，3 秒后自动消失。
 
-:::demo Message 在配置上与 Notification 非常类似，所以部分 options 在此不做详尽解释。 文末有 options 列表，可以结合 Notification 的文档理解它们。 Element Plus 注册了一个全局的 `$message`方法用于调用。 Message 可以接收一个字符串或一个 VNode 作为参数，它会被显示为正文内容。
+:::demo Message 在配置上与 Notification 非常类似，所以部分 options 在此不做详尽解释。 文末有 options 列表，可以结合 Notification 的文档理解它们。 Xianniu Plus 注册了一个全局的 `$message`方法用于调用。 Message 可以接收一个字符串或一个 VNode 作为参数，它会被显示为正文内容。
 
 message/basic
 
@@ -85,12 +85,12 @@ message/grouping
 
 ## 全局方法
 
-Element Plus 为 `app.config.globalProperties` 添加了全局方法 `$message`。 因此在 vue 实例中你可以使用当前页面中的调用方式调用 `Message`
+Xianniu Plus 为 `app.config.globalProperties` 添加了全局方法 `$message`。 因此在 vue 实例中你可以使用当前页面中的调用方式调用 `Message`
 
 ## 单独引用
 
 ```ts
-import { ElMessage } from 'element-plus'
+import { ElMessage } from 'xianniu-plus'
 ```
 
 此时调用方法为 `ElMessage(options)`。 我们也为每个 type 定义了各自的方法，如 `ElMessage.success(options)`。 并且可以调用 `ElMessage.closeAll()` 手动关闭所有实例。
@@ -109,7 +109,7 @@ import { ElMessage } from 'element-plus'
 
 ```ts
 import { getCurrentInstance } from 'vue'
-import { ElMessage } from 'element-plus'
+import { ElMessage } from 'xianniu-plus'
 
 // 在你的 setup 方法中
 const { appContext } = getCurrentInstance()!
@@ -120,27 +120,27 @@ ElMessage({}, appContext)
 
 ### Message 配置项
 
-| 名称                       | 说明                                            | 类型                                                      | 默认值   |
-| ------------------------ | --------------------------------------------- | ------------------------------------------------------- | ----- |
-| message                  | 消息文字                                          | ^[string] / ^[VNode] / ^[Function]`() => VNode`      | ''    |
-| type                     | 消息类型                                          | ^[enum]`'success' \| 'warning' \| 'info' \| 'error'` | info  |
-| plain ^(2.6.3)           | 是否纯色                                          | ^[boolean]                                              | false |
-| icon                     | 自定义图标，该属性会覆盖 `type` 的图标。                      | ^[string] / ^[Component]                                | —     |
-| dangerouslyUseHTMLString | 是否将 message 属性作为 HTML 片段处理                    | ^[boolean]                                              | false |
-| customClass              | 自定义类名                                         | ^[string]                                               | ''    |
-| duration                 | 显示时间，单位为毫秒。 设为 0 则不会自动关闭                      | ^[number]                                               | 3000  |
-| showClose                | 是否显示关闭按钮                                      | ^[boolean]                                              | false |
-| center                   | 文字是否居中                                        | ^[boolean]                                              | false |
-| onClose                  | 关闭时的回调函数, 参数为被关闭的 message 实例                  | ^[Function]`() => void`                              | —     |
-| offset                   | Message 距离窗口顶部的偏移量                            | ^[number]                                               | 16    |
-| appendTo                 | 设置 message 的根元素，默认为 `document.body`           | ^[string] / ^[HTMLElement]                              | —     |
-| grouping                 | 合并内容相同的消息，不支持 VNode 类型的消息                     | ^[boolean]                                              | false |
-| repeatNum                | 重复次数，类似于 Badge 。当和 `grouping` 属性一起使用时作为初始数量使用 | ^[number]                                               | 1     |
+| 名称                     | 说明                                                                    | 类型                                                 | 默认值 |
+| ------------------------ | ----------------------------------------------------------------------- | ---------------------------------------------------- | ------ |
+| message                  | 消息文字                                                                | ^[string] / ^[VNode] / ^[Function]`() => VNode`      | ''     |
+| type                     | 消息类型                                                                | ^[enum]`'success' \| 'warning' \| 'info' \| 'error'` | info   |
+| plain ^(2.6.3)           | 是否纯色                                                                | ^[boolean]                                           | false  |
+| icon                     | 自定义图标，该属性会覆盖 `type` 的图标。                                | ^[string] / ^[Component]                             | —      |
+| dangerouslyUseHTMLString | 是否将 message 属性作为 HTML 片段处理                                   | ^[boolean]                                           | false  |
+| customClass              | 自定义类名                                                              | ^[string]                                            | ''     |
+| duration                 | 显示时间，单位为毫秒。 设为 0 则不会自动关闭                            | ^[number]                                            | 3000   |
+| showClose                | 是否显示关闭按钮                                                        | ^[boolean]                                           | false  |
+| center                   | 文字是否居中                                                            | ^[boolean]                                           | false  |
+| onClose                  | 关闭时的回调函数, 参数为被关闭的 message 实例                           | ^[Function]`() => void`                              | —      |
+| offset                   | Message 距离窗口顶部的偏移量                                            | ^[number]                                            | 16     |
+| appendTo                 | 设置 message 的根元素，默认为 `document.body`                           | ^[string] / ^[HTMLElement]                           | —      |
+| grouping                 | 合并内容相同的消息，不支持 VNode 类型的消息                             | ^[boolean]                                           | false  |
+| repeatNum                | 重复次数，类似于 Badge 。当和 `grouping` 属性一起使用时作为初始数量使用 | ^[number]                                            | 1      |
 
 ### Message 方法
 
 调用 `Message` 或 `this.$message` 会返回当前 Message 的实例。 如果需要手动关闭实例，可以调用它的 `close` 方法。
 
-| 名称    | 描述            | 类型                         |
-| ----- | ------------- | -------------------------- |
+| 名称  | 描述               | 类型                    |
+| ----- | ------------------ | ----------------------- |
 | close | 关闭当前的 Message | ^[Function]`() => void` |

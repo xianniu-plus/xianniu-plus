@@ -13,7 +13,7 @@ lang: zh-CN
 
 请注意父容器避免使用 `inline` 相关样式，会导致组件宽度不能撑满。
 
-列的基本单位为1，最多24个，最少0个。
+列的基本单位为 1，最多 24 个，最少 0 个。
 
 :::
 
@@ -31,7 +31,7 @@ layout/basic-layout
 
 支持列间距。
 
-:::demo 行提供 `gutter` 属性来指定列之间的间距，其默认值为0。
+:::demo 行提供 `gutter` 属性来指定列之间的间距，其默认值为 0。
 
 layout/column-spacing
 
@@ -61,7 +61,7 @@ layout/column-offset
 
 默认使用 flex 布局来对分栏进行灵活的对齐。
 
-:::demo 您可以通过`justify` 属性来定义子元素的排版方式，其取值为start、center、end、space-between、space-around或space-evenly。
+:::demo 您可以通过`justify` 属性来定义子元素的排版方式，其取值为 start、center、end、space-between、space-around 或 space-evenly。
 
 layout/alignment
 
@@ -79,10 +79,10 @@ layout/responsive-layout
 
 ## 基于断点的隐藏类
 
-Element Plus 额外提供了一系列类名，用于在某些条件下隐藏元素。 这些类名可以添加在任何 DOM 元素或自定义组件上。 如果需要，请自行引入以下文件：
+Xianniu Plus 额外提供了一系列类名，用于在某些条件下隐藏元素。 这些类名可以添加在任何 DOM 元素或自定义组件上。 如果需要，请自行引入以下文件：
 
 ```js
-import 'element-plus/theme-chalk/display.css'
+import 'xianniu-plus/theme-chalk/display.css'
 ```
 
 这些类名为：
@@ -103,40 +103,40 @@ import 'element-plus/theme-chalk/display.css'
 
 ### Row Attributes
 
-| 属性名     | 说明              | 类型                                                                                                | 默认值   |
-| ------- | --------------- | ------------------------------------------------------------------------------------------------- | ----- |
-| gutter  | 栅格间隔            | ^[number]                                                                                         | 0     |
-| justify | flex 布局下的水平排列方式 | ^[enum]`'start' \| 'end' \| 'center' \| 'space-around' \| 'space-between' \| 'space-evenly'` | start |
-| align   | flex 布局下的垂直排列方式 | ^[enum]`'top' \| 'middle' \| 'bottom'`                                                          | —     |
-| tag     | 自定义元素标签         | ^[string]                                                                                         | div   |
+| 属性名  | 说明                      | 类型                                                                                         | 默认值 |
+| ------- | ------------------------- | -------------------------------------------------------------------------------------------- | ------ |
+| gutter  | 栅格间隔                  | ^[number]                                                                                    | 0      |
+| justify | flex 布局下的水平排列方式 | ^[enum]`'start' \| 'end' \| 'center' \| 'space-around' \| 'space-between' \| 'space-evenly'` | start  |
+| align   | flex 布局下的垂直排列方式 | ^[enum]`'top' \| 'middle' \| 'bottom'`                                                       | —      |
+| tag     | 自定义元素标签            | ^[string]                                                                                    | div    |
 
 ### Row Slots
 
-| 插槽名     | 说明      | 子标签 |
-| ------- | ------- | --- |
-| default | 自定义默认内容 | Col |
+| 插槽名  | 说明           | 子标签 |
+| ------- | -------------- | ------ |
+| default | 自定义默认内容 | Col    |
 
 ## Col API
 
 ### Col Attributes
 
-| 属性名    | 说明                         | 类型                                                                                    | 默认值 |
-| ------ | -------------------------- | ------------------------------------------------------------------------------------- | --- |
-| span   | 栅格占据的列数                    | ^[number]                                                                             | 24  |
-| offset | 栅格左侧的间隔格数                  | ^[number]                                                                             | 0   |
-| push   | 栅格向右移动格数                   | ^[number]                                                                             | 0   |
-| pull   | 栅格向左移动格数                   | ^[number]                                                                             | 0   |
-| xs     | `<768px` 响应式栅格数或者栅格属性对象 | ^[number] / ^[object]`{span?: number, offset?: number, pull?: number, push?: number}` | —   |
-| sm     | `≥768px` 响应式栅格数或者栅格属性对象    | ^[number] / ^[object]`{span?: number, offset?: number, pull?: number, push?: number}` | —   |
-| md     | `≥992px` 响应式栅格数或者栅格属性对象    | ^[number] / ^[object]`{span?: number, offset?: number, pull?: number, push?: number}` | —   |
-| lg     | `≥1200px` 响应式栅格数或者栅格属性对象   | ^[number] / ^[object]`{span?: number, offset?: number, pull?: number, push?: number}` | —   |
-| xl     | `≥1920px` 响应式栅格数或者栅格属性对象   | ^[number] / ^[object]`{span?: number, offset?: number, pull?: number, push?: number}` | —   |
-| tag    | 自定义元素标签                    | ^[string]                                                                             | div |
+| 属性名 | 说明                                   | 类型                                                                                  | 默认值 |
+| ------ | -------------------------------------- | ------------------------------------------------------------------------------------- | ------ |
+| span   | 栅格占据的列数                         | ^[number]                                                                             | 24     |
+| offset | 栅格左侧的间隔格数                     | ^[number]                                                                             | 0      |
+| push   | 栅格向右移动格数                       | ^[number]                                                                             | 0      |
+| pull   | 栅格向左移动格数                       | ^[number]                                                                             | 0      |
+| xs     | `<768px` 响应式栅格数或者栅格属性对象  | ^[number] / ^[object]`{span?: number, offset?: number, pull?: number, push?: number}` | —      |
+| sm     | `≥768px` 响应式栅格数或者栅格属性对象  | ^[number] / ^[object]`{span?: number, offset?: number, pull?: number, push?: number}` | —      |
+| md     | `≥992px` 响应式栅格数或者栅格属性对象  | ^[number] / ^[object]`{span?: number, offset?: number, pull?: number, push?: number}` | —      |
+| lg     | `≥1200px` 响应式栅格数或者栅格属性对象 | ^[number] / ^[object]`{span?: number, offset?: number, pull?: number, push?: number}` | —      |
+| xl     | `≥1920px` 响应式栅格数或者栅格属性对象 | ^[number] / ^[object]`{span?: number, offset?: number, pull?: number, push?: number}` | —      |
+| tag    | 自定义元素标签                         | ^[string]                                                                             | div    |
 
 ### Col Slots
 
-| 插槽名     | 说明      |
-| ------- | ------- |
+| 插槽名  | 说明           |
+| ------- | -------------- |
 | default | 自定义默认内容 |
 
 <style lang="scss">

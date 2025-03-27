@@ -64,7 +64,7 @@ radio/radio-button-group
 
 你可以让单选框看起来像一个按钮一样。
 
-:::demo 只需要把 `el-radio` 元素换成 `el-radio-button` 元素即可， 此外，Element Plus 还提供了 `size` 属性用来控制单选框的大小。
+:::demo 只需要把 `el-radio` 元素换成 `el-radio-button` 元素即可， 此外，Xianniu Plus 还提供了 `size` 属性用来控制单选框的大小。
 
 radio/button-style
 
@@ -82,70 +82,70 @@ radio/with-borders
 
 ### Radio Attributes
 
-| 属性名                   | 说明                                           | 类型                                         | 默认值   |
-| --------------------- | -------------------------------------------- | ------------------------------------------ | ----- |
-| model-value / v-model | 选中项绑定值                                       | ^[string] / ^[number] / ^[boolean]         | —     |
-| value ^(2.6.0)        | 单选框的值                                        | ^[string] / ^[number] / ^[boolean]         | —     |
-| label                 | 单选框的 label 如果`value`没有值， `label`则作为`value`使用 | ^[string] / ^[number] / ^[boolean]         | —     |
-| disabled              | 是否禁用单选框                                      | ^[boolean]                                 | false |
-| border                | 是否显示边框                                       | ^[boolean]                                 | false |
-| size                  | 单选框的尺寸                                       | ^[enum]`'large' \| 'default' \| 'small'` | —     |
-| name                  | 原始 `name` 属性                                 | ^[string]                                  | —     |
+| 属性名                | 说明                                                        | 类型                                     | 默认值 |
+| --------------------- | ----------------------------------------------------------- | ---------------------------------------- | ------ |
+| model-value / v-model | 选中项绑定值                                                | ^[string] / ^[number] / ^[boolean]       | —      |
+| value ^(2.6.0)        | 单选框的值                                                  | ^[string] / ^[number] / ^[boolean]       | —      |
+| label                 | 单选框的 label 如果`value`没有值， `label`则作为`value`使用 | ^[string] / ^[number] / ^[boolean]       | —      |
+| disabled              | 是否禁用单选框                                              | ^[boolean]                               | false  |
+| border                | 是否显示边框                                                | ^[boolean]                               | false  |
+| size                  | 单选框的尺寸                                                | ^[enum]`'large' \| 'default' \| 'small'` | —      |
+| name                  | 原始 `name` 属性                                            | ^[string]                                | —      |
 
 ### Radio Events
 
-| 事件名    | 说明          | 类型                                                             |
-| ------ | ----------- | -------------------------------------------------------------- |
+| 事件名 | 说明                   | 类型                                                      |
+| ------ | ---------------------- | --------------------------------------------------------- |
 | change | 绑定值变化时触发的事件 | ^[Function]`(value: string \| number \| boolean) => void` |
 
 ### Radio Slots
 
-| 插槽名     | 说明      |
-| ------- | ------- |
+| 插槽名  | 说明           |
+| ------- | -------------- |
 | default | 自定义默认内容 |
 
 ## RadioGroup API
 
 ### RadioGroup Attributes
 
-| 属性名                         | 说明                                | 类型                                 | 默认值     |
-| --------------------------- | --------------------------------- | ---------------------------------- | ------- |
-| model-value / v-model       | 绑定值                               | ^[string] / ^[number] / ^[boolean] | —       |
-| size                        | 单选框按钮或边框按钮的大小                     | ^[string]                          | default |
-| disabled                    | 是否禁用                              | ^[boolean]                         | false   |
-| text-color                  | 按钮形式的 Radio 激活时的文本颜色              | ^[string]                          | #ffffff |
-| fill                        | 按钮形式的 Radio 激活时的填充色和边框色           | ^[string]                          | #409eff |
-| validate-event              | 输入时是否触发表单的校验                      | ^[boolean]                         | true    |
+| 属性名                      | 说明                                     | 类型                               | 默认值  |
+| --------------------------- | ---------------------------------------- | ---------------------------------- | ------- |
+| model-value / v-model       | 绑定值                                   | ^[string] / ^[number] / ^[boolean] | —       |
+| size                        | 单选框按钮或边框按钮的大小               | ^[string]                          | default |
+| disabled                    | 是否禁用                                 | ^[boolean]                         | false   |
+| text-color                  | 按钮形式的 Radio 激活时的文本颜色        | ^[string]                          | #ffffff |
+| fill                        | 按钮形式的 Radio 激活时的填充色和边框色  | ^[string]                          | #409eff |
+| validate-event              | 输入时是否触发表单的校验                 | ^[boolean]                         | true    |
 | aria-label ^(a11y) ^(2.7.2) | 与 RadioGroup 中的 `aria-label` 属性相同 | ^[string]                          | —       |
-| name                        | 原生 `name` 属性                      | ^[string]                          | —       |
-| id                          | 原生 `id` 属性                        | ^[string]                          | —       |
+| name                        | 原生 `name` 属性                         | ^[string]                          | —       |
+| id                          | 原生 `id` 属性                           | ^[string]                          | —       |
 | label ^(a11y) ^(deprecated) | 与 RadioGroup 中的 `aria-label` 属性相同 | ^[string]                          | —       |
 
 ### RadioGroup Events
 
-| 事件名    | 说明          | 类型                                                             |
-| ------ | ----------- | -------------------------------------------------------------- |
+| 事件名 | 说明                   | 类型                                                      |
+| ------ | ---------------------- | --------------------------------------------------------- |
 | change | 绑定值变化时触发的事件 | ^[Function]`(value: string \| number \| boolean) => void` |
 
 ### RadioGroup Slots
 
-| 插槽名     | 说明      | 子标签                 |
-| ------- | ------- | ------------------- |
+| 插槽名  | 说明           | 子标签              |
+| ------- | -------------- | ------------------- |
 | default | 自定义默认内容 | Radio / RadioButton |
 
 ## RadioButton API
 
 ### RadioButton Attributes
 
-| 属性名            | 说明                                         | 类型                                 | 默认    |
-| -------------- | ------------------------------------------ | ---------------------------------- | ----- |
-| value ^(2.6.0) | 单选框的值                                      | ^[string] / ^[number] / ^[boolean] | —     |
+| 属性名         | 说明                                                     | 类型                               | 默认  |
+| -------------- | -------------------------------------------------------- | ---------------------------------- | ----- |
+| value ^(2.6.0) | 单选框的值                                               | ^[string] / ^[number] / ^[boolean] | —     |
 | label          | 单选框的 label 如果没有 value， `label`则作为`value`使用 | ^[string] / ^[number] / ^[boolean] | —     |
-| disabled       | 是否禁用单选框                                    | ^[boolean]                         | false |
-| name           | 原生 name 属性                                 | ^[string]                          | —     |
+| disabled       | 是否禁用单选框                                           | ^[boolean]                         | false |
+| name           | 原生 name 属性                                           | ^[string]                          | —     |
 
 ### RadioButton Slots
 
-| 插槽名     | 说明     |
-| ------- | ------ |
+| 插槽名  | 说明         |
+| ------- | ------------ |
 | default | 默认插槽内容 |

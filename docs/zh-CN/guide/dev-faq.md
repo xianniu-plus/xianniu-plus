@@ -19,23 +19,23 @@ pnpm i
 ```shell
 # 获取构建结果
 pnpm build
-cd dist/element-plus
-# set cur element-plus to global `node_modules`
+cd dist/xianniu-plus
+# set cur xianniu-plus to global `node_modules`
 pnpm link --global
-# for esm we also need link element-plus for dist
-pnpm link --global element-plus
+# for esm we also need link xianniu-plus for dist
+pnpm link --global xianniu-plus
 
-# 进入你的项目, 链接到 `element-plus`
+# 进入你的项目, 链接到 `xianniu-plus`
 cd your-project
-pnpm link --global element-plus
+pnpm link --global xianniu-plus
 ```
 
 > 更多信息查看 [pnpm link](https://pnpm.io/cli/link)
 
 ## 主题
 
-我们不应在scss文件中写入中文注释
+我们不应在 scss 文件中写入中文注释
 
 那将会在 vite 构建下的 css 文件开头生成警告信息 `@charset "UTF-8";`
 
-> 更多信息见 [#3219](https://github.com/element-plus/element-plus/issues/3219)
+> 更多信息见 [#3219](https://github.com/xianniu-plus/xianniu-plus/issues/3219)

@@ -37,7 +37,7 @@ switch/text-description
 
 :::tip
 
-使用 `inactive-icon` 和 `active-icon` 属性来添加图标。 您可以传递组件名称的字符串（提前注册）或组件本身是一个 SVG Vue 组件。 Element Plus 提供了一组图标，您可以在 [icon component](/zh-CN/component/icon) 查看。
+使用 `inactive-icon` 和 `active-icon` 属性来添加图标。 您可以传递组件名称的字符串（提前注册）或组件本身是一个 SVG Vue 组件。 Xianniu Plus 提供了一组图标，您可以在 [icon component](/zh-CN/component/icon) 查看。
 
 :::
 
@@ -99,48 +99,48 @@ switch/custom-action-slot
 
 ### Attributes
 
-| 属性名                           | 说明                                                          | 类型                                                        | Default |
-| ----------------------------- | ----------------------------------------------------------- | --------------------------------------------------------- | ------- |
-| model-value / v-model         | 绑定值，必须等于 `active-value` 或 `inactive-value`，默认为 `Boolean` 类型 | ^[boolean] / ^[string] / ^[number]                        | false   |
-| disabled                      | 是否禁用                                                        | ^[boolean]                                                | false   |
-| loading                       | 是否显示加载中                                                     | ^[boolean]                                                | false   |
-| size                          | switch 的大小                                                  | ^[enum]`'' \| 'large' \| 'default' \| 'small'`         | ''      |
-| width                         | switch 的宽度                                                  | ^[number] / ^[string]                                     | ''      |
-| inline-prompt                 | 无论图标或文本是否显示在点内，只会呈现文本的第一个字符                                 | ^[boolean]                                                | false   |
-| active-icon                   | switch 状态为 `on` 时所显示图标，设置此项会忽略 `active-text`                | ^[string] / ^[Component]                                  | —       |
-| inactive-icon                 | switch 状态为 `off` 时所显示图标，设置此项会忽略 `inactive-text`             | ^[string] / ^[Component]                                  | —       |
-| active-action-icon ^(2.3.9)   | ` on `状态下显示的图标组件                                            | ^[string] / ^[Component]                                  | —       |
-| inactive-action-icon ^(2.3.9) | ` off `状态下显示的图标组件                                           | ^[string] / ^[Component]                                  | —       |
-| active-text                   | switch 打开时的文字描述                                             | ^[string]                                                 | ''      |
-| inactive-text                 | switch 的状态为 `off` 时的文字描述                                    | ^[string]                                                 | ''      |
-| active-value                  | switch 状态为 `on` 时的值                                         | ^[boolean] / ^[string] / ^[number]                        | true    |
-| inactive-value                | switch的状态为 `off` 时的值                                        | ^[boolean] / ^[string] / ^[number]                        | false   |
-| name                          | switch 对应的 name 属性                                          | ^[string]                                                 | ''      |
-| validate-event                | 是否触发表单验证                                                    | ^[boolean]                                                | true    |
-| before-change                 | switch 状态改变前的钩子， 返回 `false` 或者返回 `Promise` 且被 reject 则停止切换  | ^[boolean] / ^[Function]`() => Promise<boolean>` | —       |
-| id                            | input 的 id                                                  | ^[string]                                                 | —       |
-| tabindex                      | input 的 tabindex                                            | ^[string] / ^[number]                                     | —       |
-| aria-label ^(a11y) ^(2.7.2)   | 等价于原生 input `aria-label` 属性                                 | ^[string]                                                 | —       |
-| active-color ^(deprecated)    | 当在 `on` 状态时的背景颜色(推荐使用 CSS var `--el-switch-on-color` )      | ^[string]                                                 | ''      |
-| inactive-color ^(deprecated)  | `off` 状态时的背景颜色(推荐使用 CSS var `--el-switch-off-color` )       | ^[string]                                                 | ''      |
-| border-color ^(deprecated)    | 开关的边框颜色 ( 推荐使用 CSS var `--el-switch-border-color` )         | ^[string]                                                 | ''      |
-| label ^(a11y) ^(deprecated)   | 等价于原生 input `aria-label` 属性                                 | ^[string]                                                 | —       |
+| 属性名                        | 说明                                                                             | 类型                                             | Default |
+| ----------------------------- | -------------------------------------------------------------------------------- | ------------------------------------------------ | ------- |
+| model-value / v-model         | 绑定值，必须等于 `active-value` 或 `inactive-value`，默认为 `Boolean` 类型       | ^[boolean] / ^[string] / ^[number]               | false   |
+| disabled                      | 是否禁用                                                                         | ^[boolean]                                       | false   |
+| loading                       | 是否显示加载中                                                                   | ^[boolean]                                       | false   |
+| size                          | switch 的大小                                                                    | ^[enum]`'' \| 'large' \| 'default' \| 'small'`   | ''      |
+| width                         | switch 的宽度                                                                    | ^[number] / ^[string]                            | ''      |
+| inline-prompt                 | 无论图标或文本是否显示在点内，只会呈现文本的第一个字符                           | ^[boolean]                                       | false   |
+| active-icon                   | switch 状态为 `on` 时所显示图标，设置此项会忽略 `active-text`                    | ^[string] / ^[Component]                         | —       |
+| inactive-icon                 | switch 状态为 `off` 时所显示图标，设置此项会忽略 `inactive-text`                 | ^[string] / ^[Component]                         | —       |
+| active-action-icon ^(2.3.9)   | `on`状态下显示的图标组件                                                         | ^[string] / ^[Component]                         | —       |
+| inactive-action-icon ^(2.3.9) | `off`状态下显示的图标组件                                                        | ^[string] / ^[Component]                         | —       |
+| active-text                   | switch 打开时的文字描述                                                          | ^[string]                                        | ''      |
+| inactive-text                 | switch 的状态为 `off` 时的文字描述                                               | ^[string]                                        | ''      |
+| active-value                  | switch 状态为 `on` 时的值                                                        | ^[boolean] / ^[string] / ^[number]               | true    |
+| inactive-value                | switch 的状态为 `off` 时的值                                                     | ^[boolean] / ^[string] / ^[number]               | false   |
+| name                          | switch 对应的 name 属性                                                          | ^[string]                                        | ''      |
+| validate-event                | 是否触发表单验证                                                                 | ^[boolean]                                       | true    |
+| before-change                 | switch 状态改变前的钩子， 返回 `false` 或者返回 `Promise` 且被 reject 则停止切换 | ^[boolean] / ^[Function]`() => Promise<boolean>` | —       |
+| id                            | input 的 id                                                                      | ^[string]                                        | —       |
+| tabindex                      | input 的 tabindex                                                                | ^[string] / ^[number]                            | —       |
+| aria-label ^(a11y) ^(2.7.2)   | 等价于原生 input `aria-label` 属性                                               | ^[string]                                        | —       |
+| active-color ^(deprecated)    | 当在 `on` 状态时的背景颜色(推荐使用 CSS var `--el-switch-on-color` )             | ^[string]                                        | ''      |
+| inactive-color ^(deprecated)  | `off` 状态时的背景颜色(推荐使用 CSS var `--el-switch-off-color` )                | ^[string]                                        | ''      |
+| border-color ^(deprecated)    | 开关的边框颜色 ( 推荐使用 CSS var `--el-switch-border-color` )                   | ^[string]                                        | ''      |
+| label ^(a11y) ^(deprecated)   | 等价于原生 input `aria-label` 属性                                               | ^[string]                                        | —       |
 
 ### 事件
 
-| 事件名    | 说明                  | Type                                                         |
-| ------ | ------------------- | ------------------------------------------------------------ |
+| 事件名 | 说明                            | Type                                                    |
+| ------ | ------------------------------- | ------------------------------------------------------- |
 | change | switch 状态发生变化时的回调函数 | ^[Function]`(val: boolean \| string \| number) => void` |
 
 ### Switch Slots
 
-| 名称                       | 说明              |
-| ------------------------ | --------------- |
+| 名称                     | 说明                 |
+| ------------------------ | -------------------- |
 | active-action ^(2.4.4)   | 自定义 active 行为   |
 | inactive-action ^(2.4.4) | 自定义 inactive 行为 |
 
 ### Exposes
 
-| 方法    | 详情                   | Type                       |
-| ----- | -------------------- | -------------------------- |
+| 方法  | 详情                      | Type                    |
+| ----- | ------------------------- | ----------------------- |
 | focus | 手动 focus 到 switch 组件 | ^[Function]`() => void` |

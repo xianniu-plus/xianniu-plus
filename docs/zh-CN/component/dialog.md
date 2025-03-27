@@ -25,7 +25,7 @@ dialog/basic-usage
 
 ## 自定义内容
 
-对话框的内容可以是任何东西，甚至是一个表格或表单。 此示例显示如何在 Dialog 中使用 Element Plus 的表格和表单。
+对话框的内容可以是任何东西，甚至是一个表格或表单。 此示例显示如何在 Dialog 中使用 Xianniu Plus 的表格和表单。
 
 :::demo
 
@@ -107,7 +107,7 @@ dialog/draggable-dialog
 
 ## 全屏
 
-设置 ` fullscreen ` 属性来打开全屏对话框。
+设置 `fullscreen` 属性来打开全屏对话框。
 
 :::demo
 
@@ -145,36 +145,36 @@ dialog/events
 
 ### Attributes
 
-| 属性名                        | 说明                                                       | 类型                                     | 默认    |
-| -------------------------- | -------------------------------------------------------- | -------------------------------------- | ----- |
-| model-value / v-model      | 是否显示 Dialog                                              | ^[boolean]                             | —     |
-| title                      | Dialog 对话框 Dialog 的标题， 也可通过具名 slot （见下表）传入               | ^[string]                              | ''    |
-| width                      | 对话框的宽度，默认值为 50%                                          | ^[string] / ^[number]                  | ''    |
-| fullscreen                 | 是否为全屏 Dialog                                             | ^[boolean]                             | false |
-| top                        | dialog CSS 中的 margin-top 值，默认为 15vh                      | ^[string]                              | ''    |
-| modal                      | 是否需要遮罩层                                                  | ^[boolean]                             | true  |
-| modal-class                | 遮罩的自定义类名                                                 | ^[string]                              | —     |
-| header-class ^(2.9.3)      | header 部分的自定义 class 名                                    | ^[string]                              | —     |
-| body-class ^(2.9.3)        | body 部分的自定义 class 名                                      | ^[string]                              | —     |
-| footer-class ^(2.9.3)      | footer 部分的自定义 class 名                                    | ^[string]                              | —     |
-| append-to-body             | Dialog 自身是否插入至 body 元素上。 嵌套的 Dialog 必须指定该属性并赋值为 `true`   | ^[boolean]                             | false |
-| append-to ^(2.4.3)         | Dialog 挂载到哪个 DOM 元素 将覆盖 `append-to-body`                 | ^[string] / ^[HTMLElement]             | body  |
-| lock-scroll                | 是否在 Dialog 出现时将 body 滚动锁定                                | ^[boolean]                             | true  |
-| open-delay                 | dialog 打开的延时时间，单位毫秒                                      | ^[number]                              | 0     |
-| close-delay                | dialog 关闭的延时时间，单位毫秒                                      | ^[number]                              | 0     |
-| close-on-click-modal       | 是否可以通过点击 modal 关闭 Dialog                                 | ^[boolean]                             | true  |
-| close-on-press-escape      | 是否可以通过按下 ESC 关闭 Dialog                                   | ^[boolean]                             | true  |
-| show-close                 | 是否显示关闭按钮                                                 | ^[boolean]                             | true  |
+| 属性名                     | 说明                                                                                            | 类型                                | 默认  |
+| -------------------------- | ----------------------------------------------------------------------------------------------- | ----------------------------------- | ----- |
+| model-value / v-model      | 是否显示 Dialog                                                                                 | ^[boolean]                          | —     |
+| title                      | Dialog 对话框 Dialog 的标题， 也可通过具名 slot （见下表）传入                                  | ^[string]                           | ''    |
+| width                      | 对话框的宽度，默认值为 50%                                                                      | ^[string] / ^[number]               | ''    |
+| fullscreen                 | 是否为全屏 Dialog                                                                               | ^[boolean]                          | false |
+| top                        | dialog CSS 中的 margin-top 值，默认为 15vh                                                      | ^[string]                           | ''    |
+| modal                      | 是否需要遮罩层                                                                                  | ^[boolean]                          | true  |
+| modal-class                | 遮罩的自定义类名                                                                                | ^[string]                           | —     |
+| header-class ^(2.9.3)      | header 部分的自定义 class 名                                                                    | ^[string]                           | —     |
+| body-class ^(2.9.3)        | body 部分的自定义 class 名                                                                      | ^[string]                           | —     |
+| footer-class ^(2.9.3)      | footer 部分的自定义 class 名                                                                    | ^[string]                           | —     |
+| append-to-body             | Dialog 自身是否插入至 body 元素上。 嵌套的 Dialog 必须指定该属性并赋值为 `true`                 | ^[boolean]                          | false |
+| append-to ^(2.4.3)         | Dialog 挂载到哪个 DOM 元素 将覆盖 `append-to-body`                                              | ^[string] / ^[HTMLElement]          | body  |
+| lock-scroll                | 是否在 Dialog 出现时将 body 滚动锁定                                                            | ^[boolean]                          | true  |
+| open-delay                 | dialog 打开的延时时间，单位毫秒                                                                 | ^[number]                           | 0     |
+| close-delay                | dialog 关闭的延时时间，单位毫秒                                                                 | ^[number]                           | 0     |
+| close-on-click-modal       | 是否可以通过点击 modal 关闭 Dialog                                                              | ^[boolean]                          | true  |
+| close-on-press-escape      | 是否可以通过按下 ESC 关闭 Dialog                                                                | ^[boolean]                          | true  |
+| show-close                 | 是否显示关闭按钮                                                                                | ^[boolean]                          | true  |
 | before-close               | 关闭前的回调，会暂停 Dialog 的关闭. 回调函数内执行 done 参数方法的时候才是真正关闭对话框的时候. | ^[Function]`(done: DoneFn) => void` | —     |
-| draggable                  | 为 Dialog 启用可拖拽功能                                         | ^[boolean]                             | false |
-| overflow ^(2.5.4)          | 拖动范围可以超出可视区                                              | ^[boolean]                             | false |
-| center                     | 是否让 Dialog 的 header 和 footer 部分居中排列                      | ^[boolean]                             | false |
-| align-center ^(2.2.16)     | 是否水平垂直对齐对话框                                              | ^[boolean]                             | false |
-| destroy-on-close           | 当关闭 Dialog 时，销毁其中的元素                                     | ^[boolean]                             | false |
-| close-icon                 | 自定义关闭图标，默认 Close                                         | ^[string] / ^[Component]               | —     |
-| z-index                    | 和原生的 CSS 的 z-index 相同，改变 z 轴的顺序                          | ^[number]                              | —     |
-| header-aria-level ^(a11y)  | header 的 `aria-level` 属性                                 | ^[string]                              | 2     |
-| custom-class ^(deprecated) | Dialog 的自定义类名                                            | ^[string]                              | ''    |
+| draggable                  | 为 Dialog 启用可拖拽功能                                                                        | ^[boolean]                          | false |
+| overflow ^(2.5.4)          | 拖动范围可以超出可视区                                                                          | ^[boolean]                          | false |
+| center                     | 是否让 Dialog 的 header 和 footer 部分居中排列                                                  | ^[boolean]                          | false |
+| align-center ^(2.2.16)     | 是否水平垂直对齐对话框                                                                          | ^[boolean]                          | false |
+| destroy-on-close           | 当关闭 Dialog 时，销毁其中的元素                                                                | ^[boolean]                          | false |
+| close-icon                 | 自定义关闭图标，默认 Close                                                                      | ^[string] / ^[Component]            | —     |
+| z-index                    | 和原生的 CSS 的 z-index 相同，改变 z 轴的顺序                                                   | ^[number]                           | —     |
+| header-aria-level ^(a11y)  | header 的 `aria-level` 属性                                                                     | ^[string]                           | 2     |
+| custom-class ^(deprecated) | Dialog 的自定义类名                                                                             | ^[string]                           | ''    |
 
 :::warning
 
@@ -184,12 +184,12 @@ dialog/events
 
 ### Slots
 
-| 插槽名                 | 说明                          |
-| ------------------- | --------------------------- |
-| default             | 对话框的默认内容                    |
+| 插槽名              | 说明                                                   |
+| ------------------- | ------------------------------------------------------ |
+| default             | 对话框的默认内容                                       |
 | header              | 对话框标题的内容；会替换标题部分，但不会移除关闭按钮。 |
-| footer              | Dialog 按钮操作区的内容             |
-| title ^(deprecated) | 与 header 作用相同 请使用 header    |
+| footer              | Dialog 按钮操作区的内容                                |
+| title ^(deprecated) | 与 header 作用相同 请使用 header                       |
 
 :::warning
 
@@ -199,31 +199,31 @@ dialog/events
 
 ### 事件
 
-| 名称               | 详情                    | Type                       |
-| ---------------- | --------------------- | -------------------------- |
-| open             | Dialog 打开的回调          | ^[Function]`() => void` |
-| opened           | Dialog 打开动画结束时的回调     | ^[Function]`() => void` |
-| close            | Dialog 关闭的回调          | ^[Function]`() => void` |
-| closed           | Dialog 关闭动画结束时的回调     | ^[Function]`() => void` |
+| 名称             | 详情                               | Type                    |
+| ---------------- | ---------------------------------- | ----------------------- |
+| open             | Dialog 打开的回调                  | ^[Function]`() => void` |
+| opened           | Dialog 打开动画结束时的回调        | ^[Function]`() => void` |
+| close            | Dialog 关闭的回调                  | ^[Function]`() => void` |
+| closed           | Dialog 关闭动画结束时的回调        | ^[Function]`() => void` |
 | open-auto-focus  | 输入焦点聚焦在 Dialog 内容时的回调 | ^[Function]`() => void` |
 | close-auto-focus | 输入焦点从 Dialog 内容失焦时的回调 | ^[Function]`() => void` |
 
 ### Exposes
 
-| 名称                     | 详情   | 类型                         |
-| ---------------------- | ---- | -------------------------- |
+| 名称                   | 详情     | 类型                    |
+| ---------------------- | -------- | ----------------------- |
 | resetPosition ^(2.8.1) | 重置位置 | ^[Function]`() => void` |
 
 ## FAQ
 
 #### 在 SFC 文件中使用对话框，scope 样式不会生效。
 
-典型议题：[#10515](https://github.com/element-plus/element-plus/issues/10515)
+典型议题：[#10515](https://github.com/xianniu-plus/xianniu-plus/issues/10515)
 
 PS：既然对话框是使用 `Teleport` 渲染的，建议在全局范围写入根节点的样式。
 
 #### 当对话框被显示及隐藏时，页面元素会来回移动（抖动）。
 
-典型议题：[#10481](https://github.com/element-plus/element-plus/issues/10481)
+典型议题：[#10481](https://github.com/xianniu-plus/xianniu-plus/issues/10481)
 
 PS：建议将滚动区域放置在一个挂载的 vue 节点，如 `<div id="app" />` 下，并对 body 使用 `overflow: hidden` 样式。

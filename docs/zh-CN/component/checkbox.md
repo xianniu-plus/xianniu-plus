@@ -84,7 +84,7 @@ checkbox/limitation
 
 按钮样式的多选组合。
 
-:::demo 只需要把 `el-checkbox` 元素替换为 `el-checkbox-button` 元素即可。 此外，Element Plus 还提供了`size`属性。
+:::demo 只需要把 `el-checkbox` 元素替换为 `el-checkbox-button` 元素即可。 此外，Xianniu Plus 还提供了`size`属性。
 
 checkbox/button-style
 
@@ -102,87 +102,87 @@ checkbox/with-border
 
 ### Checkbox Attributes
 
-| 属性名                            | 说明                                                                                                                                          | 类型                                             | 默认值   |
-| ------------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ----- |
-| model-value / v-model          | 选中项绑定值                                                                                                                                      | ^[string] / ^[number] / ^[boolean]             | —     |
-| value ^(2.6.0)                 | 选中状态的值（只有在`checkbox-group`或者绑定对象类型为`array`时有效）                                                                                              | ^[string] / ^[number] / ^[boolean] / ^[object] | —     |
-| label                          | 选中状态的值，只有在绑定对象类型为 `array` 时有效。 如果没有 value， `label`则作为`value`使用                                                                              | ^[string] / ^[number] / ^[boolean] / ^[object] | —     |
-| true-value ^(2.6.0)            | 选中时的值                                                                                                                                       | ^[string] / ^[number]                          | —     |
-| false-value ^(2.6.0)           | 没有选中时的值                                                                                                                                     | ^[string] / ^[number]                          | —     |
-| disabled                       | 是否禁用                                                                                                                                        | ^[boolean]                                     | false |
-| border                         | 是否显示边框                                                                                                                                      | ^[boolean]                                     | false |
-| size                           | Checkbox 的尺寸                                                                                                                                | ^[enum]`'large' \| 'default' \| 'small'`     | —     |
-| name                           | 原生 name 属性                                                                                                                                  | ^[string]                                      | —     |
-| checked                        | 当前是否勾选                                                                                                                                      | ^[boolean]                                     | false |
-| indeterminate                  | 设置不确定状态，仅负责样式控制                                                                                                                             | ^[boolean]                                     | false |
-| validate-event                 | 输入时是否触发表单的校验                                                                                                                                | ^[boolean]                                     | true  |
-| tabindex                       | 输入框的 tabindex                                                                                                                               | ^[string] / ^[number]                          | —     |
-| id                             | input id                                                                                                                                    | ^[string]                                      | —     |
-| aria-controls ^(a11y) ^(2.7.2) | 与 [aria-control](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls)一致, 当 `indeterminate`为 `true`时生效  | ^[string]                                      | —     |
-| true-label ^(deprecated)       | 选中时的值                                                                                                                                       | ^[string] / ^[number]                          | —     |
-| false-label ^(deprecated)      | 没有选中时的值                                                                                                                                     | ^[string] / ^[number]                          | —     |
-| controls ^(a11y) ^(deprecated) | 和 [aria-control](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls)一致。当 `indeterminate` 为 `true` 时生效 | ^[string]                                      | —     |
+| 属性名                         | 说明                                                                                                                                                 | 类型                                           | 默认值 |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------ |
+| model-value / v-model          | 选中项绑定值                                                                                                                                         | ^[string] / ^[number] / ^[boolean]             | —      |
+| value ^(2.6.0)                 | 选中状态的值（只有在`checkbox-group`或者绑定对象类型为`array`时有效）                                                                                | ^[string] / ^[number] / ^[boolean] / ^[object] | —      |
+| label                          | 选中状态的值，只有在绑定对象类型为 `array` 时有效。 如果没有 value， `label`则作为`value`使用                                                        | ^[string] / ^[number] / ^[boolean] / ^[object] | —      |
+| true-value ^(2.6.0)            | 选中时的值                                                                                                                                           | ^[string] / ^[number]                          | —      |
+| false-value ^(2.6.0)           | 没有选中时的值                                                                                                                                       | ^[string] / ^[number]                          | —      |
+| disabled                       | 是否禁用                                                                                                                                             | ^[boolean]                                     | false  |
+| border                         | 是否显示边框                                                                                                                                         | ^[boolean]                                     | false  |
+| size                           | Checkbox 的尺寸                                                                                                                                      | ^[enum]`'large' \| 'default' \| 'small'`       | —      |
+| name                           | 原生 name 属性                                                                                                                                       | ^[string]                                      | —      |
+| checked                        | 当前是否勾选                                                                                                                                         | ^[boolean]                                     | false  |
+| indeterminate                  | 设置不确定状态，仅负责样式控制                                                                                                                       | ^[boolean]                                     | false  |
+| validate-event                 | 输入时是否触发表单的校验                                                                                                                             | ^[boolean]                                     | true   |
+| tabindex                       | 输入框的 tabindex                                                                                                                                    | ^[string] / ^[number]                          | —      |
+| id                             | input id                                                                                                                                             | ^[string]                                      | —      |
+| aria-controls ^(a11y) ^(2.7.2) | 与 [aria-control](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls)一致, 当 `indeterminate`为 `true`时生效   | ^[string]                                      | —      |
+| true-label ^(deprecated)       | 选中时的值                                                                                                                                           | ^[string] / ^[number]                          | —      |
+| false-label ^(deprecated)      | 没有选中时的值                                                                                                                                       | ^[string] / ^[number]                          | —      |
+| controls ^(a11y) ^(deprecated) | 和 [aria-control](https://developer.mozilla.org/en-US/docs/Web/Accessibility/ARIA/Attributes/aria-controls)一致。当 `indeterminate` 为 `true` 时生效 | ^[string]                                      | —      |
 
 ### Checkbox Events
 
-| 事件名    | 说明           | 类型                                                             |
-| ------ | ------------ | -------------------------------------------------------------- |
+| 事件名 | 说明                     | 类型                                                      |
+| ------ | ------------------------ | --------------------------------------------------------- |
 | change | 当绑定值变化时触发的事件 | ^[Function]`(value: string \| number \| boolean) => void` |
 
 ### Checkbox Slots
 
-| 插槽名     | 说明      |
-| ------- | ------- |
+| 插槽名  | 说明           |
+| ------- | -------------- |
 | default | 自定义默认内容 |
 
 ## CheckboxGroup API
 
 ### CheckboxGroup Attributes
 
-| 属性名                         | 说明                   | 类型                                         | 默认值     |
-| --------------------------- | -------------------- | ------------------------------------------ | ------- |
-| model-value / v-model       | 绑定值                  | ^[object]`string[] \| number[]`           | []      |
-| size                        | 多选框组尺寸               | ^[enum]`'large' \| 'default' \| 'small'` | —       |
-| disabled                    | 是否禁用                 | ^[boolean]                                 | false   |
-| min                         | 可被勾选的 checkbox 的最小数量 | ^[number]                                  | —       |
-| max                         | 可被勾选的 checkbox 的最大数量 | ^[number]                                  | —       |
-| aria-label ^(a11y) ^(2.7.2) | 原生 `aria-label`属性    | ^[string]                                  | —       |
-| text-color                  | 当按钮为活跃状态时的字体颜色       | ^[string]                                  | #ffffff |
-| fill                        | 当按钮为活跃状态时的边框和背景颜色    | ^[string]                                  | #409eff |
-| tag                         | 复选框组元素标签             | ^[string]                                  | div     |
-| validate-event              | 是否触发表单验证             | ^[boolean]                                 | true    |
-| label ^(a11y) ^(deprecated) | 原生 `aria-label`属性    | ^[string]                                  | —       |
+| 属性名                      | 说明                               | 类型                                     | 默认值  |
+| --------------------------- | ---------------------------------- | ---------------------------------------- | ------- |
+| model-value / v-model       | 绑定值                             | ^[object]`string[] \| number[]`          | []      |
+| size                        | 多选框组尺寸                       | ^[enum]`'large' \| 'default' \| 'small'` | —       |
+| disabled                    | 是否禁用                           | ^[boolean]                               | false   |
+| min                         | 可被勾选的 checkbox 的最小数量     | ^[number]                                | —       |
+| max                         | 可被勾选的 checkbox 的最大数量     | ^[number]                                | —       |
+| aria-label ^(a11y) ^(2.7.2) | 原生 `aria-label`属性              | ^[string]                                | —       |
+| text-color                  | 当按钮为活跃状态时的字体颜色       | ^[string]                                | #ffffff |
+| fill                        | 当按钮为活跃状态时的边框和背景颜色 | ^[string]                                | #409eff |
+| tag                         | 复选框组元素标签                   | ^[string]                                | div     |
+| validate-event              | 是否触发表单验证                   | ^[boolean]                               | true    |
+| label ^(a11y) ^(deprecated) | 原生 `aria-label`属性              | ^[string]                                | —       |
 
 ### CheckboxGroup Events
 
-| 事件名    | 说明           | 类型                                                     |
-| ------ | ------------ | ------------------------------------------------------ |
+| 事件名 | 说明                     | 类型                                               |
+| ------ | ------------------------ | -------------------------------------------------- |
 | change | 当绑定值变化时触发的事件 | ^[Function]`(value: string[] \| number[]) => void` |
 
 ### CheckboxGroup Slots
 
-| 插槽名     | 说明      | 子标签                        |
-| ------- | ------- | -------------------------- |
+| 插槽名  | 说明           | 子标签                     |
+| ------- | -------------- | -------------------------- |
 | default | 自定义默认内容 | Checkbox / Checkbox-button |
 
 ## CheckboxButton API
 
 ### CheckboxButton Attributes
 
-| 名称                        | 详情                                                             | 类型                                             | 默认值   |
-| ------------------------- | -------------------------------------------------------------- | ---------------------------------------------- | ----- |
-| value ^(2.6.0)            | 选中状态的值，只有在绑定对象类型为 `array` 时有效。                                 | ^[string] / ^[number] / ^[boolean] / ^[object] | —     |
-| label                     | 选中状态的值，只有在绑定对象类型为 `array` 时有效。 如果没有 value， `label`则作为`value`使用 | ^[string] / ^[number] / ^[boolean] / ^[object] | —     |
-| true-value ^(2.6.0)       | 选中时的值                                                          | ^[string] / ^[number]                          | —     |
-| false-value ^(2.6.0)      | 没有选中时的值                                                        | ^[string] / ^[number]                          | —     |
-| disabled                  | 是否禁用                                                           | ^[boolean]                                     | false |
-| name                      | 原生 name 属性                                                     | ^[string]                                      | —     |
-| checked                   | 当前是否勾选                                                         | ^[boolean]                                     | false |
-| true-label ^(deprecated)  | 选中时的值                                                          | ^[string] / ^[number]                          | —     |
-| false-label ^(deprecated) | 没有选中时的值                                                        | ^[string] / ^[number]                          | —     |
+| 名称                      | 详情                                                                                          | 类型                                           | 默认值 |
+| ------------------------- | --------------------------------------------------------------------------------------------- | ---------------------------------------------- | ------ |
+| value ^(2.6.0)            | 选中状态的值，只有在绑定对象类型为 `array` 时有效。                                           | ^[string] / ^[number] / ^[boolean] / ^[object] | —      |
+| label                     | 选中状态的值，只有在绑定对象类型为 `array` 时有效。 如果没有 value， `label`则作为`value`使用 | ^[string] / ^[number] / ^[boolean] / ^[object] | —      |
+| true-value ^(2.6.0)       | 选中时的值                                                                                    | ^[string] / ^[number]                          | —      |
+| false-value ^(2.6.0)      | 没有选中时的值                                                                                | ^[string] / ^[number]                          | —      |
+| disabled                  | 是否禁用                                                                                      | ^[boolean]                                     | false  |
+| name                      | 原生 name 属性                                                                                | ^[string]                                      | —      |
+| checked                   | 当前是否勾选                                                                                  | ^[boolean]                                     | false  |
+| true-label ^(deprecated)  | 选中时的值                                                                                    | ^[string] / ^[number]                          | —      |
+| false-label ^(deprecated) | 没有选中时的值                                                                                | ^[string] / ^[number]                          | —      |
 
 ### CheckboxButton Slots
 
-| 插槽名     | 描述      |
-| ------- | ------- |
+| 插槽名  | 描述           |
+| ------- | -------------- |
 | default | 自定义默认内容 |

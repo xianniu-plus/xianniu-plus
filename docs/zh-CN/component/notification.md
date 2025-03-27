@@ -9,7 +9,7 @@ lang: zh-CN
 
 ## 基础用法
 
-:::demo Element Plus 注册了 `$notify` 方法并且它接受一个 Object 作为其参数。 在最简单的情况下，你可以通过设置 `title` 和 `message` 属性来设置通知的标题和正文内容。 默认情况下，通知在4500毫秒后自动关闭，但你可以通过设置 `duration` 属性来自定义通知的展示时间。 如果你将它设置为 `0`，那么通知将不会自动关闭。 需要注意的是 `duration` 接收一个 `Number`，单位为毫秒。
+:::demo Xianniu Plus 注册了 `$notify` 方法并且它接受一个 Object 作为其参数。 在最简单的情况下，你可以通过设置 `title` 和 `message` 属性来设置通知的标题和正文内容。 默认情况下，通知在 4500 毫秒后自动关闭，但你可以通过设置 `duration` 属性来自定义通知的展示时间。 如果你将它设置为 `0`，那么通知将不会自动关闭。 需要注意的是 `duration` 接收一个 `Number`，单位为毫秒。
 
 notification/basic
 
@@ -17,9 +17,9 @@ notification/basic
 
 ## 不同类型的通知
 
-我们提供了四种不同类型的提醒框：success、warning、info 和error。
+我们提供了四种不同类型的提醒框：success、warning、info 和 error。
 
-:::demo Element Plus 为 Notification 组件准备了四种通知类型：`success`, `warning`, `info`, `error`。 他们可以设置 `type` 字段来修改，除上述的四个值之外的值会被忽略。 同时，我们也为 Notification 的各种 type 注册了单独的方法，可以在不传入 `type` 字段的情况下像 `open3` 和 `open4` 那样直接调用。
+:::demo Xianniu Plus 为 Notification 组件准备了四种通知类型：`success`, `warning`, `info`, `error`。 他们可以设置 `type` 字段来修改，除上述的四个值之外的值会被忽略。 同时，我们也为 Notification 的各种 type 注册了单独的方法，可以在不传入 `type` 字段的情况下像 `open3` 和 `open4` 那样直接调用。
 
 notification/different-types
 
@@ -65,7 +65,7 @@ notification/raw-html
 
 `message` 可以是 VNode。
 
-在^(2.9.0)之后， `message` 支持返回值为 VNode的函数。
+在^(2.9.0)之后， `message` 支持返回值为 VNode 的函数。
 
 :::demo
 
@@ -77,7 +77,7 @@ notification/use-vnode
 
 通知的关闭按钮可以被设置为隐藏。
 
-:::demo 将 ` showClose ` 属性设置为 `false` 即可隐藏关闭按钮。
+:::demo 将 `showClose` 属性设置为 `false` 即可隐藏关闭按钮。
 
 notification/no-close
 
@@ -85,12 +85,12 @@ notification/no-close
 
 ## 全局方法
 
-Element Plus 为 `app.config.globalProperties` 添加了全局方法 `$notify`。 因此在 Vue instance 中可以采用本页面中的方式调用 `Notification`。
+Xianniu Plus 为 `app.config.globalProperties` 添加了全局方法 `$notify`。 因此在 Vue instance 中可以采用本页面中的方式调用 `Notification`。
 
 ## 单独引用
 
 ```javascript
-import { ElNotification } from 'element-plus'
+import { ElNotification } from 'xianniu-plus'
 ```
 
 你可以在对应的处理函数内调用 `ElNotification(options)` 来呼出通知栏。 我们也提前定义了多个 type 的单独调用方法，如 `ElNotification.success(options)`。 当你需要关闭页面上所有的通知栏的时候，可以调用 `ElNotification.closeAll()` 来关闭所有的实例。
@@ -109,7 +109,7 @@ import { ElNotification } from 'element-plus'
 
 ```ts
 import { getCurrentInstance } from 'vue'
-import { ElNotification } from 'element-plus'
+import { ElNotification } from 'xianniu-plus'
 
 // 在你的 setup 方法中
 const { appContext } = getCurrentInstance()!
@@ -120,27 +120,27 @@ ElNotification({}, appContext)
 
 ### 配置项
 
-| 名称                       | 说明                                                     | 类型                                                                       | 默认        |
-| ------------------------ | ------------------------------------------------------ | ------------------------------------------------------------------------ | --------- |
-| title                    | 标题                                                     | ^[string]                                                                | ''        |
-| message                  | 通知栏正文内容                                                | ^[string] / ^[VNode] / ^[Function]`() => VNode`                       | ''        |
-| dangerouslyUseHTMLString | 是否将 message 属性作为 HTML 片段处理                             | ^[boolean]                                                               | false     |
-| type                     | 通知的类型                                                  | ^[enum]`'success' \| 'warning' \| 'info' \| 'error' \| ''`           | ''        |
-| icon                     | 自定义图标。 若设置了 `type`，则 `icon` 会被覆盖                       | ^[string] / ^[Component]                                                 | —         |
-| customClass              | 自定义类名                                                  | ^[string]                                                                | ''        |
-| duration                 | 显示时间, 单位为毫秒。 值为 0 则不会自动关闭                              | ^[number]                                                                | 4500      |
-| position                 | 自定义弹出位置                                                | ^[enum]`'top-right' \| 'top-left' \| 'bottom-right' \| 'bottom-left'` | top-right |
-| showClose                | 是否显示关闭按钮                                               | ^[boolean]                                                               | true      |
-| onClose                  | 关闭时的回调函数                                               | ^[Function]`() => void`                                               | —         |
-| onClick                  | 点击 Notification 时的回调函数                                 | ^[Function]`() => void`                                               | —         |
-| offset                   | 相对屏幕顶部的偏移量 偏移的距离，在同一时刻，所有的 Notification 实例应当具有一个相同的偏移量 | ^[number]                                                                | 0         |
-| appendTo                 | 设置 notification 的根元素，默认为 `document.body`               | ^[string] / ^[HTMLElement]                                               | —         |
-| zIndex                   | 初始 zIndex                                              | ^[number]                                                                | 0         |
+| 名称                     | 说明                                                                                          | 类型                                                                  | 默认      |
+| ------------------------ | --------------------------------------------------------------------------------------------- | --------------------------------------------------------------------- | --------- |
+| title                    | 标题                                                                                          | ^[string]                                                             | ''        |
+| message                  | 通知栏正文内容                                                                                | ^[string] / ^[VNode] / ^[Function]`() => VNode`                       | ''        |
+| dangerouslyUseHTMLString | 是否将 message 属性作为 HTML 片段处理                                                         | ^[boolean]                                                            | false     |
+| type                     | 通知的类型                                                                                    | ^[enum]`'success' \| 'warning' \| 'info' \| 'error' \| ''`            | ''        |
+| icon                     | 自定义图标。 若设置了 `type`，则 `icon` 会被覆盖                                              | ^[string] / ^[Component]                                              | —         |
+| customClass              | 自定义类名                                                                                    | ^[string]                                                             | ''        |
+| duration                 | 显示时间, 单位为毫秒。 值为 0 则不会自动关闭                                                  | ^[number]                                                             | 4500      |
+| position                 | 自定义弹出位置                                                                                | ^[enum]`'top-right' \| 'top-left' \| 'bottom-right' \| 'bottom-left'` | top-right |
+| showClose                | 是否显示关闭按钮                                                                              | ^[boolean]                                                            | true      |
+| onClose                  | 关闭时的回调函数                                                                              | ^[Function]`() => void`                                               | —         |
+| onClick                  | 点击 Notification 时的回调函数                                                                | ^[Function]`() => void`                                               | —         |
+| offset                   | 相对屏幕顶部的偏移量 偏移的距离，在同一时刻，所有的 Notification 实例应当具有一个相同的偏移量 | ^[number]                                                             | 0         |
+| appendTo                 | 设置 notification 的根元素，默认为 `document.body`                                            | ^[string] / ^[HTMLElement]                                            | —         |
+| zIndex                   | 初始 zIndex                                                                                   | ^[number]                                                             | 0         |
 
 ### 方法
 
 `Notification` 和 `this.$notify` 都返回当前的 Notification 实例。 如果需要手动关闭实例，可以调用它的 `close` 方法。
 
-| 名称    | 详情                 | 类型                         |
-| ----- | ------------------ | -------------------------- |
+| 名称  | 详情                    | 类型                    |
+| ----- | ----------------------- | ----------------------- |
 | close | 关闭当前的 Notification | ^[Function]`() => void` |

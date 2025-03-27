@@ -5,7 +5,7 @@ lang: zh-CN
 
 # Icon 图标
 
-Element Plus 提供了一套常用的图标集合。
+Xianniu Plus 提供了一套常用的图标集合。
 
 ## 使用图标
 
@@ -43,10 +43,10 @@ $ pnpm install @xianniu-plus/icons-vue
 // main.ts
 
 // 如果您正在使用CDN引入，请删除下面一行。
-import * as ElementPlusIconsVue from '@xianniu-plus/icons-vue'
+import * as XianniuPlusIconsVue from '@xianniu-plus/icons-vue'
 
 const app = createApp(App)
-for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
+for (const [key, component] of Object.entries(XianniuPlusIconsVue)) {
   app.component(key, component)
 }
 ```
@@ -55,7 +55,7 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 
 ### 浏览器直接引入
 
-直接通过浏览器的 HTML 标签导入 Element Plus，然后就可以使用全局变量 `ElementPlusIconsVue`了。
+直接通过浏览器的 HTML 标签导入 Xianniu Plus，然后就可以使用全局变量 `XianniuPlusIconsVue`了。
 
 根据不同的 CDN 提供商有不同的引入方式， 根据不同的 CDN 提供商有不同的引入方式， 我们在这里以 [unpkg](https://unpkg.com) 和 [jsDelivr](https://jsdelivr.com) 举例。 你也可以使用其它的 CDN 供应商。
 
@@ -73,7 +73,7 @@ for (const [key, component] of Object.entries(ElementPlusIconsVue)) {
 
 :::tip
 
-我们建议使用 CDN 引入 Element Plus 的用户在链接地址上锁定版本，以免将来 Element Plus 升级时受到非兼容性更新的影响。 锁定版本的方法请查看 [unpkg.com](https://unpkg.com)。
+我们建议使用 CDN 引入 Xianniu Plus 的用户在链接地址上锁定版本，以免将来 Xianniu Plus 升级时受到非兼容性更新的影响。 锁定版本的方法请查看 [unpkg.com](https://unpkg.com)。
 
 :::
 

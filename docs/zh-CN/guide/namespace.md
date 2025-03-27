@@ -7,11 +7,11 @@ lang: zh-CN
 
 :::tip
 
-我们提供了 [element-plus-vite-starter 模版](https://github.com/element-plus/element-plus-vite-starter)。 查看代码了解使用方法。
+我们提供了 [xianniu-plus-vite-starter 模版](https://github.com/xianniu-plus/xianniu-plus-vite-starter)。 查看代码了解使用方法。
 
 :::
 
-Element Plus 提供的默认命名空间为 `el`。 在特殊情况下，我们需要自定义命名空间。
+Xianniu Plus 提供的默认命名空间为 `el`。 在特殊情况下，我们需要自定义命名空间。
 
 由于我们使用 sass 书写样式，如果您需要自定义所有命名空间， 我们假定用户使用了 sass 书写样式。
 
@@ -35,7 +35,7 @@ Element Plus 提供的默认命名空间为 `el`。 在特殊情况下，我们�
 
 ```scss [styles/element/index.scss]
 // we can add this to custom namespace, default is 'el'
-@forward 'element-plus/theme-chalk/src/mixins/config.scss' with (
+@forward 'xianniu-plus/theme-chalk/src/mixins/config.scss' with (
   $namespace: 'ep'
 );
 // ...
@@ -43,7 +43,7 @@ Element Plus 提供的默认命名空间为 `el`。 在特殊情况下，我们�
 
 在 `vite.config.ts` 中导入 `styles/element/index.scss`：
 
-> Webpack也是如此，它需要在 `preprocessorOptions` 中设置。
+> Webpack 也是如此，它需要在 `preprocessorOptions` 中设置。
 
 ```ts [vite.config.ts]
 import { defineConfig } from 'vite'
