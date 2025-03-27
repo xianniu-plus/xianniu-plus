@@ -2,11 +2,11 @@
 import { computed } from 'vue'
 import { inBrowser, useData } from 'vitepress'
 
-import VPNavbarSearch from './navbar/vp-search.vue'
+// import VPNavbarSearch from './navbar/vp-search.vue'
 import VPNavbarMenu from './navbar/vp-menu.vue'
 import VPNavbarThemeToggler from './navbar/vp-theme-toggler.vue'
 import VPNavbarTranslation from './navbar/vp-translation.vue'
-import VPNavbarSocialLinks from './navbar/vp-social-links.vue'
+// import VPNavbarSocialLinks from './navbar/vp-social-links.vue'
 import VPNavbarHamburger from './navbar/vp-hamburger.vue'
 
 defineProps<{
@@ -42,11 +42,11 @@ const currentLink = computed(() => {
         </a>
       </div>
       <div class="content">
-        <VPNavbarSearch class="search" :options="theme.agolia" multilang />
+        <!-- <VPNavbarSearch class="search" :options="theme.agolia" multilang /> -->
         <VPNavbarMenu class="menu" />
         <VPNavbarThemeToggler class="theme-toggler" />
         <VPNavbarTranslation class="translation" />
-        <VPNavbarSocialLinks class="social-links" />
+        <!-- <VPNavbarSocialLinks class="social-links" /> -->
         <VPNavbarHamburger
           :active="fullScreen"
           class="hamburger"
@@ -73,7 +73,7 @@ const currentLink = computed(() => {
 }
 .dark {
   .logo {
-    filter: drop-shadow(2px 2px 6px #409eff);
+    filter: drop-shadow(2px 2px 6px #ff745c);
   }
 }
 </style>

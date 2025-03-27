@@ -68,6 +68,6 @@ const handleChange = (val: CollapseModelValue) => {
 <style scoped>
 .icon-ele {
   margin: 0 8px 0 auto;
-  color: #409eff;
+  color: #ffc8be;
 }
 </style>

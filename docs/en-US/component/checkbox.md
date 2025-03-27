@@ -149,7 +149,7 @@ checkbox/with-border
 | max                         | maximum number of checkbox checked                | ^[number]                                | —       |
 | aria-label ^(a11y) ^(2.7.2) | native `aria-label` attribute                     | ^[string]                                | —       |
 | text-color                  | font color when button is active                  | ^[string]                                | #ffffff |
-| fill                        | border and background color when button is active | ^[string]                                | #409eff |
+| fill                        | border and background color when button is active | ^[string]                                | #ffc8be |
 | tag                         | element tag of the checkbox group                 | ^[string]                                | div     |
 | validate-event              | whether to trigger form validation                | ^[boolean]                               | true    |
 | label ^(a11y) ^(deprecated) | native `aria-label` attribute                     | ^[string]                                | —       |

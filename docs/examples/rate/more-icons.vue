@@ -3,7 +3,7 @@
     v-model="value"
     :icons="icons"
     :void-icon="ChatRound"
-    :colors="['#409eff', '#67c23a', '#FF9900']"
+    :colors="['#ffc8be', '#67c23a', '#FF9900']"
   />
 </template>
 

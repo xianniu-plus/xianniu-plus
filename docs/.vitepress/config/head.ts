@@ -41,7 +41,7 @@ export const head: HeadConfig[] = [
     'meta',
     {
       name: 'msapplication-TileColor',
-      content: '#409eff',
+      content: '#ffc8be',
     },
   ],
   [

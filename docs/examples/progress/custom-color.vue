@@ -20,7 +20,7 @@ import { ref } from 'vue'
 import { Minus, Plus } from '@xianniu-plus/icons-vue'
 
 const percentage = ref(20)
-const customColor = ref('#409eff')
+const customColor = ref('#ffc8be')
 
 const customColors = [
   { color: '#f56c6c', percentage: 20 },

@@ -34,7 +34,7 @@ const show = ref(true)
   width: 200px;
   height: 100px;
   border-radius: 4px;
-  background-color: #409eff;
+  background-color: #ffc8be;
   text-align: center;
   color: #fff;
   padding: 40px 20px;

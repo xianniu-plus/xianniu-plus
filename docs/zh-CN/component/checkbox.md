@@ -148,7 +148,7 @@ checkbox/with-border
 | max                         | 可被勾选的 checkbox 的最大数量     | ^[number]                                | —       |
 | aria-label ^(a11y) ^(2.7.2) | 原生 `aria-label`属性              | ^[string]                                | —       |
 | text-color                  | 当按钮为活跃状态时的字体颜色       | ^[string]                                | #ffffff |
-| fill                        | 当按钮为活跃状态时的边框和背景颜色 | ^[string]                                | #409eff |
+| fill                        | 当按钮为活跃状态时的边框和背景颜色 | ^[string]                                | #ffc8be |
 | tag                         | 复选框组元素标签                   | ^[string]                                | div     |
 | validate-event              | 是否触发表单验证                   | ^[boolean]                               | true    |
 | label ^(a11y) ^(deprecated) | 原生 `aria-label`属性              | ^[string]                                | —       |

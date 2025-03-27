@@ -41,7 +41,7 @@ $colors: map.deep-merge(
     'white': #ffffff,
     'black': #000000,
     'primary': (
-      'base': #409eff,
+      'base': #ffc8be,
     ),
     'success': (
       'base': #67c23a,

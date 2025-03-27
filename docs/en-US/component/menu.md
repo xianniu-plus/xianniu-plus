@@ -91,7 +91,7 @@ menu/popper-offset
 | hide-timeout ^(2.5.0)           | control timeout for all menus before hiding                                                                                                                           | ^[number]                              | 300      |
 | background-color ^(deprecated)  | background color of Menu (hex format) (use `--xn-menu-bg-color` in a style class instead)                                                                             | ^[string]                              | #ffffff  |
 | text-color ^(deprecated)        | text color of Menu (hex format) ( use `--xn-menu-text-color` in a style class instead)                                                                                | ^[string]                              | #303133  |
-| active-text-color ^(deprecated) | text color of currently active menu item (hex format) ( use `--xn-menu-active-color` in a style class instead)                                                        | ^[string]                              | #409eff  |
+| active-text-color ^(deprecated) | text color of currently active menu item (hex format) ( use `--xn-menu-active-color` in a style class instead)                                                        | ^[string]                              | #ffc8be  |
 | persistent ^(2.9.5)             | when menu inactive and `persistent` is `false` , dropdown menu will be destroyed                                                                                      | ^[boolean]                             | true     |
 
 ### Menu Events

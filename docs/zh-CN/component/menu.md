@@ -91,7 +91,7 @@ menu/popper-offset
 | hide-timeout ^(2.5.0)           | 菜单消失前的延迟                                                                                                                  | ^[number]                              | 300      |
 | background-color ^(deprecated)  | 菜单的背景颜色 (十六进制格式) (推荐在样式类中使用 `--xn-menu-bg-color`)                                                           | ^[string]                              | #ffffff  |
 | text-color ^(deprecated)        | 菜单的文字颜色 (十六进制格式) (推荐在样式类中使用 `--xn-menu-text-color`)                                                         | ^[string]                              | #303133  |
-| active-text-color ^(deprecated) | 活动菜单项的文本颜色（十六进制格式）（推荐使用 css var `--xn-menu-active-color`）                                                 | ^[string]                              | #409eff  |
+| active-text-color ^(deprecated) | 活动菜单项的文本颜色（十六进制格式）（推荐使用 css var `--xn-menu-active-color`）                                                 | ^[string]                              | #ffc8be  |
 | persistent ^(2.9.5)             | 当菜单处于非活动状态且 `persistent` 为 `false` 时，下拉菜单将被销毁                                                               | ^[boolean]                             | true     |
 
 ### Menu Events

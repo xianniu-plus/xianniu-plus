@@ -114,7 +114,7 @@ radio/with-borders
 | size                        | 单选框按钮或边框按钮的大小               | ^[string]                          | default |
 | disabled                    | 是否禁用                                 | ^[boolean]                         | false   |
 | text-color                  | 按钮形式的 Radio 激活时的文本颜色        | ^[string]                          | #ffffff |
-| fill                        | 按钮形式的 Radio 激活时的填充色和边框色  | ^[string]                          | #409eff |
+| fill                        | 按钮形式的 Radio 激活时的填充色和边框色  | ^[string]                          | #ffc8be |
 | validate-event              | 输入时是否触发表单的校验                 | ^[boolean]                         | true    |
 | aria-label ^(a11y) ^(2.7.2) | 与 RadioGroup 中的 `aria-label` 属性相同 | ^[string]                          | —       |
 | name                        | 原生 `name` 属性                         | ^[string]                          | —       |

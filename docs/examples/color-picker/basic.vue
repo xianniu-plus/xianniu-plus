@@ -12,7 +12,7 @@
 <script lang="ts" setup>
 import { ref } from 'vue'
 
-const color1 = ref('#409EFF')
+const color1 = ref('#ffc8be')
 const color2 = ref()
 </script>
 
