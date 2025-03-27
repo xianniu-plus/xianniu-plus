@@ -71,55 +71,55 @@ rate/readonly
 
 ## 自定义样式
 
-您可以为 rate 组件设定自定义样式。 使用 `css` 或 `scss` 改变全局或局部的颜色。 我们设置了一些全局颜色变量：`--el-rate-void-color`、`--el-rate-fill-color`、`--el-rate-disabled-void-color` 和 `--el-rate-text-color`。 您可以像这样使用：`:root { --el-rate-void-color: red; --el-rate-fill-color: blue; }`。
+您可以为 rate 组件设定自定义样式。 使用 `css` 或 `scss` 改变全局或局部的颜色。 我们设置了一些全局颜色变量：`--xn-rate-void-color`、`--xn-rate-fill-color`、`--xn-rate-disabled-void-color` 和 `--xn-rate-text-color`。 您可以像这样使用：`:root { --xn-rate-void-color: red; --xn-rate-fill-color: blue; }`。
 
 ### 默认变量
 
-| 变量                            | 默认颜色                          |
+| 变量                          | 默认颜色                      |
 | ----------------------------- | ----------------------------- |
-| --el-rate-void-color          | var(--el-border-color-darker) |
-| --el-rate-fill-color          | #f7ba2a                       |
-| --el-rate-disabled-void-color | var(--el-fill-color)          |
-| --el-rate-text-color          | var(--el-text-color-primary)  |
+| --xn-rate-void-color          | var(--xn-border-color-darker) |
+| --xn-rate-fill-color          | #f7ba2a                       |
+| --xn-rate-disabled-void-color | var(--xn-fill-color)          |
+| --xn-rate-text-color          | var(--xn-text-color-primary)  |
 
 ## API
 
 ### Attributes
 
-| 属性名                         | 说明                                                                      | 类型                                                                                 | 默认值                                                                |
-| --------------------------- | ----------------------------------------------------------------------- | ---------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
-| model-value / v-model       | 选中项绑定值                                                                  | ^[number]                                                                          | 0                                                                  |
-| max                         | 最大分值                                                                    | ^[number]                                                                          | 5                                                                  |
-| size                        | 尺寸                                                                      | ^[enum]`'large' \| 'default' \| 'small'`                                         | —                                                                  |
-| disabled                    | 是否为只读                                                                   | ^[boolean]                                                                         | false                                                              |
-| allow-half                  | 是否允许半选                                                                  | ^[boolean]                                                                         | false                                                              |
-| low-threshold               | 低分和中等分数的界限值， 值本身被划分在低分中                                                 | ^[number]                                                                          | 2                                                                  |
-| high-threshold              | 高分和中等分数的界限值， 值本身被划分在高分中                                                 | ^[number]                                                                          | 4                                                                  |
-| colors                      | icon 的颜色。 若传入数组，共有 3 个元素，为 3 个分段所对应的颜色；若传入对象，可自定义分段，键名为分段的界限值，键值为对应的颜色  | ^[object]`string[] \| Record<number, string>`                               | ['#f7ba2a', '#f7ba2a', '#f7ba2a']                                  |
-| void-color                  | 未选中 icon 的颜色                                                            | ^[string]                                                                          | #c6d1de                                                            |
-| disabled-void-color         | 只读时未选中 icon 的颜色                                                         | ^[string]                                                                          | #eff2f7                                                            |
+| 属性名                      | 说明                                                                                                                                    | 类型                                                                      | 默认值                                                             |
+| --------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| model-value / v-model       | 选中项绑定值                                                                                                                            | ^[number]                                                                 | 0                                                                  |
+| max                         | 最大分值                                                                                                                                | ^[number]                                                                 | 5                                                                  |
+| size                        | 尺寸                                                                                                                                    | ^[enum]`'large' \| 'default' \| 'small'`                                  | —                                                                  |
+| disabled                    | 是否为只读                                                                                                                              | ^[boolean]                                                                | false                                                              |
+| allow-half                  | 是否允许半选                                                                                                                            | ^[boolean]                                                                | false                                                              |
+| low-threshold               | 低分和中等分数的界限值， 值本身被划分在低分中                                                                                           | ^[number]                                                                 | 2                                                                  |
+| high-threshold              | 高分和中等分数的界限值， 值本身被划分在高分中                                                                                           | ^[number]                                                                 | 4                                                                  |
+| colors                      | icon 的颜色。 若传入数组，共有 3 个元素，为 3 个分段所对应的颜色；若传入对象，可自定义分段，键名为分段的界限值，键值为对应的颜色        | ^[object]`string[] \| Record<number, string>`                             | ['#f7ba2a', '#f7ba2a', '#f7ba2a']                                  |
+| void-color                  | 未选中 icon 的颜色                                                                                                                      | ^[string]                                                                 | #c6d1de                                                            |
+| disabled-void-color         | 只读时未选中 icon 的颜色                                                                                                                | ^[string]                                                                 | #eff2f7                                                            |
 | icons                       | 图标组件 若传入数组，则需要传入 3 个元素，分别为 3 个部分所对应的类名；若传入对象，则可自定义分段，键名为分段的界限值，键值为对应的类名 | ^[object]`string[] \| Component[] \| Record<number, string \| Component>` | [StarFilled, StarFilled, StarFilled]                               |
-| void-icon                   | 未被选中的图标组件                                                               | ^[string] / ^[Component]                                                           | Star                                                               |
-| disabled-void-icon          | 禁用状态的未选择图标                                                              | ^[string] / ^[Component]                                                           | StarFilled                                                         |
-| show-text                   | 是否显示辅助文字，若为真，则会从 texts 数组中选取当前分数对应的文字内容                                 | ^[boolean]                                                                         | false                                                              |
-| show-score                  | 是否显示当前分数， show-score 和 show-text 不能同时为真                                 | ^[boolean]                                                                         | false                                                              |
-| text-color                  | 辅助文字的颜色                                                                 | ^[string]                                                                          | ''                                                                 |
-| texts                       | 辅助文字数组                                                                  | ^[array]`string[]`                                                                 | ['Extremely bad', 'Disappointed', 'Fair', 'Satisfied', 'Surprise'] |
-| score-template              | 分数显示模板                                                                  | ^[string]                                                                          | {value}                                                            |
-| clearable ^(2.2.18)         | 是否可以重置值为 `0`                                                            | ^[boolean]                                                                         | false                                                              |
-| id                          | 原生 `id` 属性                                                              | ^[string]                                                                          | —                                                                  |
-| aria-label ^(a11y) ^(2.7.2) | 和 Rate 的 `aria-label` 属性保持一致                                            | ^[string]                                                                          | —                                                                  |
-| label ^(a11y) ^(deprecated) | 和 Rate 的 `aria-label` 属性保持一致                                            | ^[string]                                                                          | —                                                                  |
+| void-icon                   | 未被选中的图标组件                                                                                                                      | ^[string] / ^[Component]                                                  | Star                                                               |
+| disabled-void-icon          | 禁用状态的未选择图标                                                                                                                    | ^[string] / ^[Component]                                                  | StarFilled                                                         |
+| show-text                   | 是否显示辅助文字，若为真，则会从 texts 数组中选取当前分数对应的文字内容                                                                 | ^[boolean]                                                                | false                                                              |
+| show-score                  | 是否显示当前分数， show-score 和 show-text 不能同时为真                                                                                 | ^[boolean]                                                                | false                                                              |
+| text-color                  | 辅助文字的颜色                                                                                                                          | ^[string]                                                                 | ''                                                                 |
+| texts                       | 辅助文字数组                                                                                                                            | ^[array]`string[]`                                                        | ['Extremely bad', 'Disappointed', 'Fair', 'Satisfied', 'Surprise'] |
+| score-template              | 分数显示模板                                                                                                                            | ^[string]                                                                 | {value}                                                            |
+| clearable ^(2.2.18)         | 是否可以重置值为 `0`                                                                                                                    | ^[boolean]                                                                | false                                                              |
+| id                          | 原生 `id` 属性                                                                                                                          | ^[string]                                                                 | —                                                                  |
+| aria-label ^(a11y) ^(2.7.2) | 和 Rate 的 `aria-label` 属性保持一致                                                                                                    | ^[string]                                                                 | —                                                                  |
+| label ^(a11y) ^(deprecated) | 和 Rate 的 `aria-label` 属性保持一致                                                                                                    | ^[string]                                                                 | —                                                                  |
 
 ### Events
 
-| 事件名    | 描述说明    | 类型                                      |
-| ------ | ------- | --------------------------------------- |
+| 事件名 | 描述说明       | 类型                                 |
+| ------ | -------------- | ------------------------------------ |
 | change | 分值改变时触发 | ^[Function]`(value: number) => void` |
 
 ### Exposes
 
-| 名称                | 描述    | 类型                                      |
-| ----------------- | ----- | --------------------------------------- |
+| 名称              | 描述       | 类型                                 |
+| ----------------- | ---------- | ------------------------------------ |
 | setCurrentValue   | 设置当前值 | ^[Function]`(value: number) => void` |
 | resetCurrentValue | 重置当前值 | ^[Function]`() => void`              |

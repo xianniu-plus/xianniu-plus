@@ -186,7 +186,5 @@ declare module 'vue' {
     VpTableOfContent: typeof import('./.vitepress/vitepress/components/doc-content/vp-table-of-content.vue')['default']
     VpThemeToggler: typeof import('./.vitepress/vitepress/components/navbar/vp-theme-toggler.vue')['default']
     VpTranslation: typeof import('./.vitepress/vitepress/components/navbar/vp-translation.vue')['default']
-    XianniuPlusLogo: typeof import('./.vitepress/vitepress/components/icons/element-plus-logo.vue')['default']
-    XianniuPlusTextLogo: typeof import('./.vitepress/vitepress/components/icons/element-plus-text-logo.vue')['default']
   }
 }

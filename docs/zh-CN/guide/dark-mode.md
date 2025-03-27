@@ -44,7 +44,7 @@ import 'xianniu-plus/theme-chalk/dark/css-vars.css'
 ```css
 html.dark {
   /* 自定义深色背景颜色 */
-  --el-bg-color: #626aef;
+  --xn-bg-color: #626aef;
 }
 ```
 
