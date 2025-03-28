@@ -10,7 +10,7 @@
 // skipAutoTranslation 1
 
 // types
-$types: primary, link, success, warning, danger, error, info;
+$types: primary, minor, success, warning, danger, error, info;
 
 // Color
 $colors: () !default;
@@ -21,7 +21,7 @@ $colors: map.deep-merge(
     'primary': (
       'base': #ff745c,
     ),
-    'link': (
+    'minor': (
       'base': #5d9dfe,
     ),
     'success': (
@@ -46,7 +46,7 @@ $colors: map.deep-merge(
 $color-white: map.get($colors, 'white') !default;
 $color-black: map.get($colors, 'black') !default;
 $color-primary: map.get($colors, 'primary', 'base') !default;
-$color-link: map.get($colors, 'link', 'base') !default;
+$color-minor: map.get($colors, 'minor', 'base') !default;
 $color-success: map.get($colors, 'success', 'base') !default;
 $color-warning: map.get($colors, 'warning', 'base') !default;
 $color-danger: map.get($colors, 'danger', 'base') !default;

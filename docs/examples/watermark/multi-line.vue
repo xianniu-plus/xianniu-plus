@@ -20,7 +20,7 @@ watch(
 </script>
 
 <template>
-  <el-watermark :font="font" :content="['Element+', 'Xianniu Plus']">
+  <el-watermark :font="font" :content="['Xianniu+', 'Xianniu Plus']">
     <div style="height: 500px" />
   </el-watermark>
 </template>
