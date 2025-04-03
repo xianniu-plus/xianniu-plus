@@ -2,8 +2,8 @@ import path from 'path'
 import { defineConfig, loadEnv } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import vueJsx from '@vitejs/plugin-vue-jsx'
-import Components from 'unplugin-vue-components/vite'
-import { ElementPlusResolver } from 'unplugin-vue-components/resolvers'
+import Components from 'xianniu-plus-unplugin-vue-components/vite'
+import { XianniuPlusResolver } from 'xianniu-plus-unplugin-vue-components/resolvers'
 import Inspect from 'vite-plugin-inspect'
 import mkcert from 'vite-plugin-mkcert'
 import glob from 'fast-glob'
@@ -64,7 +64,7 @@ export default defineConfig(async ({ mode }) => {
       }),
       Components({
         include: `${__dirname}/**`,
-        resolvers: ElementPlusResolver({
+        resolvers: XianniuPlusResolver({
           version: '2.0.0-dev.1',
           importStyle: 'sass',
         }),

@@ -80,6 +80,16 @@ export type Column<T = any> = {
   sortable?: boolean
   width: number
   /**
+   * Filter
+   */
+  filterable?: boolean
+  filters?: FilterOption[]
+  filterMethod?: (
+    value: string | number | boolean,
+    row: any,
+    column: Column<T>
+  ) => boolean
+  /**
    * Renderers
    */
   cellRenderer?: CellRenderer<T>
@@ -100,6 +110,15 @@ export type SortBy = {
 
 export type SortState = {
   [key: KeyType]: SortOrder
+}
+
+export type FilterOption = {
+  text: string
+  value: string | number | boolean
+}
+
+export type FilterState = {
+  [key: KeyType]: string[] | number[] | boolean[]
 }
 
 export type CustomizedCellsType = VNode<
