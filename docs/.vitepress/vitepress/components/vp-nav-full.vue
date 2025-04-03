@@ -14,7 +14,7 @@ const fullscreen = ref()
 </script>
 
 <template>
-  <Transition name="el-fade-in" @enter="lock" @after-leave="cleanup">
+  <Transition name="xn-fade-in" @enter="lock" @after-leave="cleanup">
     <div v-if="fullScreen" ref="fullscreen">
       <div class="full-screen-container">
         <VPFullScreenMenu @close="$emit('close')" />

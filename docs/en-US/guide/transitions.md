@@ -10,7 +10,7 @@ Before that, please read the [transition docs](https://vuejs.org/guide/built-ins
 
 ## Fade
 
-:::demo We have two fading effects: `el-fade-in-linear` and `el-fade-in`.
+:::demo We have two fading effects: `xn-fade-in-linear` and `xn-fade-in`.
 
 transitions/fade
 
@@ -18,7 +18,7 @@ transitions/fade
 
 ## Zoom
 
-:::demo `el-zoom-in-left`, `el-zoom-in-center`, `el-zoom-in-top` and `el-zoom-in-bottom` are provided.
+:::demo `xn-zoom-in-left`, `xn-zoom-in-center`, `xn-zoom-in-top` and `xn-zoom-in-bottom` are provided.
 
 transitions/zoom
 

@@ -160,7 +160,7 @@ const copyCode = async () => {
       <SourceCode :visible="sourceVisible" :source="source" />
     </ElCollapseTransition>
 
-    <Transition name="el-fade-in-linear">
+    <Transition name="xn-fade-in-linear">
       <div
         v-show="sourceVisible"
         class="example-float-control"

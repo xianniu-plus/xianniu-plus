@@ -13,6 +13,6 @@
 import { Plus } from '@xianniu-plus/icons-vue'
 
 const transitionProps = {
-  name: 'el-fade-in-linear',
+  name: 'xn-fade-in-linear',
 }
 </script>

@@ -3,19 +3,19 @@
     <el-button @click="show = !show">Click Me</el-button>
 
     <div style="display: flex; margin-top: 20px; height: 100px">
-      <transition name="el-zoom-in-left">
+      <transition name="xn-zoom-in-left">
         <div v-show="show" class="transition-box">.xn-zoom-in-left</div>
       </transition>
 
-      <transition name="el-zoom-in-center">
+      <transition name="xn-zoom-in-center">
         <div v-show="show" class="transition-box">.xn-zoom-in-center</div>
       </transition>
 
-      <transition name="el-zoom-in-top">
+      <transition name="xn-zoom-in-top">
         <div v-show="show" class="transition-box">.xn-zoom-in-top</div>
       </transition>
 
-      <transition name="el-zoom-in-bottom">
+      <transition name="xn-zoom-in-bottom">
         <div v-show="show" class="transition-box">.xn-zoom-in-bottom</div>
       </transition>
     </div>

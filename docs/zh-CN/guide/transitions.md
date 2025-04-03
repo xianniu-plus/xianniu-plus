@@ -9,7 +9,7 @@ Xianniu Plus 内应用在部分组件的过渡动画，你也可以直接使用�
 
 ## Fade 淡入淡出
 
-:::demo 提供 `el-fade-in-linear` 和 `el-fade-in` 两种效果。
+:::demo 提供 `xn-fade-in-linear` 和 `xn-fade-in` 两种效果。
 
 transitions/fade
 
@@ -17,7 +17,7 @@ transitions/fade
 
 ## Zoom 缩放
 
-:::demo `el-zoom-in-left`, `el-zoom-in-center`, `el-zoom-in-top` and `el-zoom-in-bottom` are provided.
+:::demo `xn-zoom-in-left`, `xn-zoom-in-center`, `xn-zoom-in-top` and `xn-zoom-in-bottom` are provided.
 
 transitions/zoom
 
