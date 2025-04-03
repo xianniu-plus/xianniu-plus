@@ -48,10 +48,6 @@
       {
         "text": "内置过渡动画",
         "link": "/guide/transitions"
-      },
-      {
-        "text": "更新日志",
-        "link": "/guide/changelog"
       }
     ]
   },
@@ -65,14 +61,6 @@
       {
         "text": "开发常见问题",
         "link": "/guide/dev-faq"
-      },
-      {
-        "text": "提交示例",
-        "link": "/guide/commit-examples"
-      },
-      {
-        "text": "翻译",
-        "link": "/guide/translation"
       }
     ]
   }

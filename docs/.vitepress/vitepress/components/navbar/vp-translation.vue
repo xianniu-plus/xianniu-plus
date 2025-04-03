@@ -1,13 +1,13 @@
 <script setup lang="ts">
-import { useRouter } from 'vitepress'
+// import { useRouter } from 'vitepress'
 import { useTranslation } from '../../composables/translation'
 
-const router = useRouter()
+// const router = useRouter()
 const { switchLang, languageMap, langs, lang, locale } = useTranslation()
 
-const toTranslation = () => {
-  router.go(`/${lang.value}/guide/translation`)
-}
+// const toTranslation = () => {
+//   router.go(`/${lang.value}/guide/translation`)
+// }
 </script>
 
 <template>
@@ -27,9 +27,9 @@ const toTranslation = () => {
             >
               {{ languageMap[l] }}
             </ElDropdownItem>
-            <ElDropdownItem class="language selected" @click="toTranslation">
+            <!-- <ElDropdownItem class="language selected" @click="toTranslation">
               {{ locale.help }}
-            </ElDropdownItem>
+            </ElDropdownItem> -->
           </ElDropdownMenu>
         </template>
       </ElDropdown>

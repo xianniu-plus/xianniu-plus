@@ -52,10 +52,6 @@
       {
         "text": "Built-in Transitions",
         "link": "/guide/transitions"
-      },
-      {
-        "text": "Changelog",
-        "link": "/guide/changelog"
       }
     ]
   },
@@ -69,14 +65,6 @@
       {
         "text": "Development FAQ",
         "link": "/guide/dev-faq"
-      },
-      {
-        "text": "Commit Examples",
-        "link": "/guide/commit-examples"
-      },
-      {
-        "text": "Translation",
-        "link": "/guide/translation"
       }
     ]
   }
