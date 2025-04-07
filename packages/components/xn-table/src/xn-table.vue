@@ -1,6 +1,6 @@
 <template>
   <div :class="[ns.b()]">
-    <div ref="toolbar" :class="[ns.e('toolbar')]">
+    <div :class="[ns.e('toolbar')]">
       <div :class="[ns.em('toolbar', 'left')]">
         <slot name="toolbar-left" />
       </div>
@@ -26,8 +26,8 @@
               >
                 <el-checkbox
                   v-for="col in props.columns"
-                  :key="col[props.keyField]"
-                  :value="col[props.keyField]"
+                  :key="col[props.keyField.toString()]"
+                  :value="col[props.keyField.toString()]"
                 >
                   {{ col[props.titleField] }}
                 </el-checkbox>
@@ -37,16 +37,20 @@
         </el-popover>
       </div>
     </div>
-    <div ref="body" :class="[ns.e('body')]">
-      <ElTableV2
-        :columns="visibleTableColumns"
-        :data="props.data"
-        :width="bodyWidth"
-        :height="bodyHeight"
-        fixed
-      />
+    <div :class="[ns.e('body')]">
+      <el-auto-resizer>
+        <template #default="{ height, width }">
+          <ElTableV2
+            :columns="visibleTableColumns"
+            :data="props.data"
+            :width="width"
+            :height="height"
+            fixed
+          />
+        </template>
+      </el-auto-resizer>
     </div>
-    <div ref="footer" :class="[ns.e('footer')]">
+    <div :class="[ns.e('footer')]">
       <el-pagination
         v-model:current-page="currentPage"
         v-model:page-size="pageSize"
@@ -61,9 +65,9 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, onMounted, onUnmounted, ref } from 'vue'
+import { computed, onMounted, ref } from 'vue'
 import { ElPagination } from '@xianniu-plus/components/pagination'
-import { ElTableV2 } from '@xianniu-plus/components/table-v2'
+import { ElAutoResizer, ElTableV2 } from '@xianniu-plus/components/table-v2'
 import { ElButton } from '@xianniu-plus/components/button'
 import { ElPopover } from '@xianniu-plus/components/popover'
 import { ElCheckbox, ElCheckboxGroup } from '@xianniu-plus/components/checkbox'
@@ -94,7 +98,7 @@ const visibleTableColumns = computed(() => {
   }
 
   return props.columns.filter((col) => {
-    const key = col[props.keyField]
+    const key = col[props.keyField.toString()]
     return key !== undefined && key !== null && selectedKeys.has(String(key))
   })
 })
@@ -103,10 +107,10 @@ const getAllColumnKeys = () => {
     return []
   }
   return props.columns.map((col) => {
-    const key = col[props.keyField]
+    const key = col[props.keyField.toString()]
     if (key === undefined || key === null) {
       debugWarn('XnTable', `Column is missing ${props.keyField} field:`)
-      return String(col.dataKey || col.key || '')
+      return String(col.key || '')
     }
     return String(key)
   })
@@ -127,13 +131,6 @@ const handleCheckAllChange = (val: CheckboxValueType) => {
   isIndeterminate.value = false
 }
 
-const toolbar = ref<HTMLElement>()
-const footer = ref<HTMLElement>()
-const body = ref<HTMLElement>()
-const bodyWidth = ref(0)
-const bodyHeight = ref(0)
-const ro = ref<ResizeObserver>()
-
 const currentPage = ref(props.currentPage)
 const pageSize = ref(props.pageSize)
 
@@ -150,22 +147,9 @@ const handleCurrentChange = (val: number) => {
 }
 
 onMounted(() => {
-  // 初始化表格宽高
-  ro.value = new ResizeObserver((entries) => {
-    entries.forEach((entry) => {
-      const { width, height } = entry.contentRect
-      bodyWidth.value = width
-      bodyHeight.value = height
-    })
-  })
-  if (body.value) {
-    ro.value.observe(body.value)
-  }
   // 初始化选中所有列
-  selectedColumnKeys.value = props.columns.map((col) => col[props.keyField])
-})
-
-onUnmounted(() => {
-  ro.value?.disconnect()
+  selectedColumnKeys.value = props.columns.map(
+    (col) => col[props.keyField.toString()]
+  )
 })
 </script>

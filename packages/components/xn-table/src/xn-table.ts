@@ -1,4 +1,4 @@
-import { TypeComponentsMap, buildProps, keysOf } from '@xianniu-plus/utils'
+import { buildProps } from '@xianniu-plus/utils'
 import { columns, dataType } from '../../table-v2/src/common'
 import type { ExtractPropTypes } from 'vue'
 
@@ -26,26 +26,13 @@ export const xnTableProps = buildProps({
     type: String,
     default: 'title',
   },
-  /**
-   * @description visible columns keys
-   */
-  visibleColumns: {
-    type: Array,
-    default: () => [],
-  },
-  /**
-   * @description xnTable type
-   */
-  type: {
-    type: String,
-    values: keysOf(TypeComponentsMap),
-    default: 'info',
-  },
-  effect: {
-    type: String,
-    values: xnTableEffects,
-    default: 'light',
-  },
+  // /**
+  //  * @description visible columns keys
+  //  */
+  // visibleColumns: {
+  //   type: Array,
+  //   default: () => [],
+  // },
   /**
    * @description total number of data items
    */

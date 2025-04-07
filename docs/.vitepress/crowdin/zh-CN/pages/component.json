@@ -232,6 +232,11 @@
         "promotion": "2.2.0"
       },
       {
+        "link": "/xn-table",
+        "text": "XN Biz Table 贤牛业务表格组件",
+        "promotion": "XN-UI"
+      },
+      {
         "link": "/tag",
         "text": "Tag 标签"
       },
