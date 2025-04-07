@@ -41,7 +41,11 @@
       <el-auto-resizer>
         <template #default="{ height, width }">
           <ElTableV2
-            :columns="visibleTableColumns"
+            :columns="
+              visibleTableColumns.map((col) => {
+                return { ...col, title: col[props.titleField.toString()] }
+              })
+            "
             :data="props.data"
             :width="width"
             :height="height"
