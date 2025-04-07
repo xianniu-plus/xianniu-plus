@@ -68,7 +68,7 @@ import { ElButton } from '@xianniu-plus/components/button'
 import { ElPopover } from '@xianniu-plus/components/popover'
 import { ElCheckbox, ElCheckboxGroup } from '@xianniu-plus/components/checkbox'
 import { useNamespace } from '@xianniu-plus/hooks'
-import { XianniuComponents } from '@xianniu-plus/utils'
+import { XianniuComponents, debugWarn } from '@xianniu-plus/utils'
 import { xnTableEmits, xnTableProps } from './xn-table'
 import type { CheckboxValueType } from '@xianniu-plus/components/checkbox'
 defineOptions({
@@ -105,7 +105,7 @@ const getAllColumnKeys = () => {
   return props.columns.map((col) => {
     const key = col[props.keyField]
     if (key === undefined || key === null) {
-      console.warn(`Column is missing ${props.keyField} field:`, col)
+      debugWarn('XnTable', `Column is missing ${props.keyField} field:`)
       return String(col.dataKey || col.key || '')
     }
     return String(key)
