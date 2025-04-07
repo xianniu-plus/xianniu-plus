@@ -10,3 +10,11 @@ export const version = installer.version
 export default installer
 
 export { default as dayjs } from 'dayjs'
+;(async () => {
+  if ('ResizeObserver' in window === false) {
+    // Loads polyfill asynchronously, only if required.
+    const module = await import('@juggle/resize-observer')
+    // @ts-ignore
+    window.ResizeObserver = module.ResizeObserver
+  }
+})()

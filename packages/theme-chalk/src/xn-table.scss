@@ -1,0 +1,48 @@
+@use 'sass:map';
+
+@use 'mixins/mixins' as *;
+@use 'mixins/var' as *;
+@use 'common/var' as *;
+
+@include b(xn-table) {
+  position: relative;
+  overflow: hidden;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  max-width: 100%;
+  background-color: getCssVar('table-bg-color');
+  font-size: getCssVar('font-size', 'base');
+  color: getCssVar('table-text-color');
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @include e(toolbar) {
+    padding: 8px;
+    border-bottom: 1px solid getCssVar('border-color-lighter');
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include m(left) {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    @include m(right) {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+  }
+
+  @include e(body) {
+    height: 100%;
+  }
+  @include e(footer) {
+    display: flex;
+    justify-content: flex-end;
+  }
+}

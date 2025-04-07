@@ -1,8 +1,5 @@
 import { Component, createApp } from 'vue'
-import '@xianniu-plus/theme-chalk/src/dark/css-vars.scss'
-import '@xianniu-plus/theme-chalk/src/notification.scss'
-import '@xianniu-plus/theme-chalk/src/message-box.scss'
-import '@xianniu-plus/theme-chalk/src/message.scss'
+import '@xianniu-plus/theme-chalk/src/index.scss'
 ;(async () => {
   const apps = import.meta.glob<
     true,

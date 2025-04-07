@@ -109,6 +109,8 @@ import { ElAnchor, ElAnchorLink } from '@xianniu-plus/components/anchor'
 import { ElSegmented } from '@xianniu-plus/components/segmented'
 import { ElMention } from '@xianniu-plus/components/mention'
 
+import { XnTable } from '@xianniu-plus/components/xn-table'
+
 import type { Plugin } from 'vue'
 
 export default [
@@ -218,4 +220,6 @@ export default [
   ElAnchorLink,
   ElSegmented,
   ElMention,
+
+  XnTable,
 ] as Plugin[]

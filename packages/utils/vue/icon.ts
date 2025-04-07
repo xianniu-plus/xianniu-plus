@@ -5,6 +5,7 @@ import {
   Close,
   InfoFilled,
   Loading,
+  Menu,
   SuccessFilled,
   WarningFilled,
 } from '@xianniu-plus/icons-vue'
@@ -41,4 +42,9 @@ export const ValidateComponentsMap = {
   validating: Loading,
   success: CircleCheck,
   error: CircleClose,
+}
+
+// 贤牛业务相关的图标
+export const XianniuComponents = {
+  Menu,
 }
