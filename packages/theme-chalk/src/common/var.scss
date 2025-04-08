@@ -1588,8 +1588,8 @@ $transition: map.merge(
 $transition-duration: () !default;
 $transition-duration: map.merge(
   (
-    '': 0.3s,
-    'fast': 0.2s,
+    '': 0.1s,
+    'fast': 0.5s,
   ),
   $transition-duration
 );
