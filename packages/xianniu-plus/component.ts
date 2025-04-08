@@ -110,6 +110,7 @@ import { ElSegmented } from '@xianniu-plus/components/segmented'
 import { ElMention } from '@xianniu-plus/components/mention'
 
 import { XnTable } from '@xianniu-plus/components/xn-table'
+import { XnCascaderChinaArea } from '@xianniu-plus/components/cascader-china-area'
 
 import type { Plugin } from 'vue'
 
@@ -222,4 +223,5 @@ export default [
   ElMention,
 
   XnTable,
+  XnCascaderChinaArea,
 ] as Plugin[]

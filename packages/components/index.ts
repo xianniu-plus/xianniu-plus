@@ -86,3 +86,4 @@ export * from './popover'
 
 // xn
 export * from './xn-table'
+export * from './cascader-china-area'

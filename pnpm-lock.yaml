@@ -579,6 +579,9 @@ importers:
       '@types/lodash-es':
         specifier: ^4.17.6
         version: 4.17.12
+      '@vant/area-data':
+        specifier: ^2.0.0
+        version: 2.0.0
       '@vueuse/core':
         specifier: ^9.1.0
         version: 9.1.0(vue@3.5.12(typescript@5.5.4))
@@ -2623,6 +2626,9 @@ packages:
     resolution: {integrity: sha512-gxK3gtvYQH5S/qtuvsY4M0S+KJPZnYrOQI/Gopufx+b2qgmwZ/TSAe66gWeKYfe3DfQsmA3PPh/GXpkK+/FnHg==}
     peerDependencies:
       vite: ^2.9.0 || ^3.0.0-0 || ^4.0.0 || ^5.0.0-0
+
+  '@vant/area-data@2.0.0':
+    resolution: {integrity: sha512-zgP4AA8z09S9QTNgVCCHo9cHjcybrv22RJDYPjuCkecn4SB98T5EoPQh2TwqbQXmUhbaOGgiZGy3OUaUxnY7qg==}
 
   '@vitejs/plugin-vue-jsx@1.3.10':
     resolution: {integrity: sha512-Cf5zznh4yNMiEMBfTOztaDVDmK1XXfgxClzOSUVUc8WAmHzogrCUeM8B05ABzuGtg0D1amfng+mUmSIOFGP3Pw==}
@@ -10784,6 +10790,8 @@ snapshots:
       - rollup
       - supports-color
       - typescript
+
+  '@vant/area-data@2.0.0': {}
 
   '@vitejs/plugin-vue-jsx@1.3.10':
     dependencies:

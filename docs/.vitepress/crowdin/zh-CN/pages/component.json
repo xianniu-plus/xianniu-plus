@@ -79,6 +79,10 @@
         "text": "Cascader 级联选择器"
       },
       {
+        "link": "/cascader-china-area",
+        "text": "Cascader-China-Area 中国城市级联选择器"
+      },
+      {
         "link": "/checkbox",
         "text": "Checkbox 多选框"
       },

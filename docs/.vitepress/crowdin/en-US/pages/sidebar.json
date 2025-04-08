@@ -8,14 +8,5 @@
     "text": "Component",
     "link": "/component/overview",
     "activeMatch": "/component/"
-  },
-  {
-    "text": "Resource",
-    "link": "/resource/index",
-    "activeMatch": "/resource/"
-  },
-  {
-    "text": "Playground",
-    "link": "https://xianniu-plus.run"
   }
 ]
