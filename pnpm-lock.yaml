@@ -570,9 +570,6 @@ importers:
       '@floating-ui/dom':
         specifier: ^1.0.1
         version: 1.6.8
-      '@juggle/resize-observer':
-        specifier: ^3.4.0
-        version: 3.4.0
       '@popperjs/core':
         specifier: npm:@sxzz/popperjs-es@^2.11.7
         version: '@sxzz/popperjs-es@2.11.7'
@@ -1763,9 +1760,6 @@ packages:
 
   '@jridgewell/trace-mapping@0.3.25':
     resolution: {integrity: sha512-vNk6aEwybGtawWmy/PzwnGDOjCkLWSD2wqvjGGAgOAwCGWySYXfYoxt00IJkTF+8Lb57DwOb3Aa0o9CApepiYQ==}
-
-  '@juggle/resize-observer@3.4.0':
-    resolution: {integrity: sha512-dfLbk+PwWvFzSxwk3n5ySL0hfBog779o8h68wK/7/APo/7cgyWp5jcXockbxdk5kFRkbeXWm4Fbi9FrdN381sA==}
 
   '@mdit-vue/shared@2.1.3':
     resolution: {integrity: sha512-27YI8b0VVZsAlNwaWoaOCWbr4eL8B04HxiYk/y2ktblO/nMcOEOLt4p0RjuobvdyUyjHvGOS09RKhq7qHm1CHQ==}
@@ -9691,8 +9685,6 @@ snapshots:
     dependencies:
       '@jridgewell/resolve-uri': 3.1.2
       '@jridgewell/sourcemap-codec': 1.4.15
-
-  '@juggle/resize-observer@3.4.0': {}
 
   '@mdit-vue/shared@2.1.3':
     dependencies:
