@@ -7,7 +7,6 @@ RUN npm install -g pnpm@{pnpm_version} http-server
 
 WORKDIR /app/source
 RUN pnpm install
-RUN pnpm run build
 RUN pnpm run --filter @xianniu-plus/docs gen-locale
 RUN pnpm run --filter @xianniu-plus/docs build
 WORKDIR /app
