@@ -15,7 +15,7 @@ RUN pnpm run --filter @xianniu-plus/docs build
 WORKDIR /app
 
 # 移动构建产物到指定目录
-RUN mkdir -p /app/dist && mv /app/source/docs/dist/* /app/dist/
+RUN mkdir -p /app/dist && mv /app/source/docs/.vitepress/dist/* /app/dist/
 
 # 清理源代码目录
 RUN rm -rf /app/source
