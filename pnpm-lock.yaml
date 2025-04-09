@@ -252,8 +252,8 @@ importers:
         specifier: ^0.2.0
         version: 0.2.0
       xianniu-plus:
-        specifier: workspace:*
-        version: link:../packages/xianniu-plus
+        specifier: npm:xianniu-plus@latest
+        version: 1.1.2(vue@3.4.31(typescript@5.5.4))
     devDependencies:
       '@crowdin/cli':
         specifier: ^4.5.0
@@ -8416,6 +8416,11 @@ packages:
         optional: true
       '@nuxt/kit':
         optional: true
+
+  xianniu-plus@1.1.2:
+    resolution: {integrity: sha512-3DSqX4V1rvPWXzSoHEmKCSllibjA3UNP/wBqoaVYGlMDzM/tsONmX6HYWkCNJsAJZIaagLBW1ur4BC3QsuVF2w==}
+    peerDependencies:
+      vue: ^3.2.0
 
   xml-name-validator@3.0.0:
     resolution: {integrity: sha512-A5CUptxDsvxKJEU3yO6DuWBSJz/qizqzJKOMIfUJHETbBw/sFaDxgd6fxm1ewUaM0jZ444Fc5vC5ROYurg/4Pw==}
@@ -17430,6 +17435,28 @@ snapshots:
       '@babel/parser': 7.26.2
     transitivePeerDependencies:
       - supports-color
+
+  xianniu-plus@1.1.2(vue@3.4.31(typescript@5.5.4)):
+    dependencies:
+      '@ctrl/tinycolor': 3.6.1
+      '@floating-ui/dom': 1.6.8
+      '@popperjs/core': '@sxzz/popperjs-es@2.11.7'
+      '@types/lodash': 4.17.7
+      '@types/lodash-es': 4.17.12
+      '@vant/area-data': 2.0.0
+      '@vueuse/core': 9.1.0(vue@3.4.31(typescript@5.5.4))
+      '@xianniu-plus/icons-vue': 2.3.1(vue@3.4.31(typescript@5.5.4))
+      async-validator: 4.2.5(patch_hash=wdmp4xlpil2odxo3rasjmxbdfm)
+      dayjs: 1.11.13
+      escape-html: 1.0.3
+      lodash: 4.17.21
+      lodash-es: 4.17.21
+      lodash-unified: 1.0.3(@types/lodash-es@4.17.12)(lodash-es@4.17.21)(lodash@4.17.21)
+      memoize-one: 6.0.0
+      normalize-wheel-es: 1.2.0
+      vue: 3.4.31(typescript@5.5.4)
+    transitivePeerDependencies:
+      - '@vue/composition-api'
 
   xml-name-validator@3.0.0: {}
 

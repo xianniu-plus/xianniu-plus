@@ -1,5 +1,8 @@
 FROM {REGISTRY_URL}/docker/node:{version}-alpine AS node-build
 
+# 安装git
+RUN apk add --no-cache git
+
 WORKDIR /app
 
 COPY . ./source
