@@ -2,14 +2,21 @@ FROM {REGISTRY_URL}/docker/node:{version}-alpine AS node-build
 
 WORKDIR /app
 
-COPY . .
-RUN npm install -g pnpm@{pnpm_version}
+COPY . ./source
+RUN npm install -g pnpm@{pnpm_version} http-server
 RUN pnpm config set registry https://registry.npmmirror.com/
 RUN pnpm install
+RUN pnpm run --filter @xianniu-plus/docs build
+
+# 移动构建产物到指定目录
+RUN mkdir -p /app/dist && mv /app/source/docs/dist/* /app/dist/
+
+# 清理源代码目录
+RUN rm -rf /app/source
 
 ENV TZ=Asia/Shanghai
 #建立timezone软链接
 RUN ln -snf /usr/share/zoneinfo/$TZ /etc/localtime && echo $TZ > /etc/timezone
 
 # 添加启动命令
-CMD ["pnpm", "run", "--filter", "@xianniu-plus/docs", "dev", "--host", "0.0.0.0", "--port", "{port}"]
+CMD ["http-server", "/app/dist", "-p", "9974", "--cors", "-c-1", "-g", "-b", "-e"]
