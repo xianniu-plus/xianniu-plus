@@ -37,7 +37,7 @@ describe('Dropdown', () => {
     const wrapper = _mount(
       `
         <el-dropdown ref="b" placement="right">
-          <span class="el-dropdown-link" ref="a">
+          <span class="xn-dropdown-link" ref="a">
             dropdown<i class="el-icon-arrow-down el-icon--right"></i>
           </span>
           <template #dropdown>
@@ -75,7 +75,7 @@ describe('Dropdown', () => {
     const wrapper = _mount(
       `
       <el-dropdown ref="b" @command="commandHandler" placement="right">
-        <span class="el-dropdown-link" ref="a">
+        <span class="xn-dropdown-link" ref="a">
           dropdown<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <template #dropdown>
@@ -119,7 +119,7 @@ describe('Dropdown', () => {
     const wrapper = _mount(
       `
       <el-dropdown trigger="click" ref="b" placement="right">
-        <span class="el-dropdown-link" ref="a">
+        <span class="xn-dropdown-link" ref="a">
           dropdown<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <template #dropdown>
@@ -157,7 +157,7 @@ describe('Dropdown', () => {
     const wrapper = _mount(
       `
       <el-dropdown trigger="contextmenu" ref="b" placement="right">
-        <span class="el-dropdown-link" ref="a">
+        <span class="xn-dropdown-link" ref="a">
           dropdown<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <template #dropdown>
@@ -191,7 +191,7 @@ describe('Dropdown', () => {
     const wrapper = _mount(
       `
       <el-dropdown trigger="click" ref="refDropdown" placement="right">
-        <span class="el-dropdown-link" ref="a">
+        <span class="xn-dropdown-link" ref="a">
           dropdown<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <template #dropdown>
@@ -270,7 +270,7 @@ describe('Dropdown', () => {
     const wrapper = _mount(
       `
       <el-dropdown ref="b" placement="right" :hide-on-click="false">
-        <span class="el-dropdown-link" ref="a">
+        <span class="xn-dropdown-link" ref="a">
           dropdown<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <template #dropdown>
@@ -311,7 +311,7 @@ describe('Dropdown', () => {
     const wrapper = _mount(
       `
       <el-dropdown ref="b" placement="right" :hide-on-click="false">
-        <span class="el-dropdown-link" ref="a">
+        <span class="xn-dropdown-link" ref="a">
           dropdown<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <template #dropdown>
@@ -356,7 +356,7 @@ describe('Dropdown', () => {
     const wrapper = _mount(
       `
       <el-dropdown ref="b" placement="right" :hide-on-click="false">
-        <span class="el-dropdown-link" ref="a">
+        <span class="xn-dropdown-link" ref="a">
           dropdown<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <template #dropdown>
@@ -396,7 +396,7 @@ describe('Dropdown', () => {
     const wrapper = _mount(
       `
       <el-dropdown ref="b" max-height="60px">
-        <span class="el-dropdown-link" ref="a">
+        <span class="xn-dropdown-link" ref="a">
           dropdown<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <template #dropdown>
@@ -427,7 +427,7 @@ describe('Dropdown', () => {
     const wrapper = _mount(
       `
       <el-dropdown ref="b">
-        <span class="el-dropdown-link">
+        <span class="xn-dropdown-link">
           dropdown<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <template #dropdown>
@@ -462,7 +462,7 @@ describe('Dropdown', () => {
     const wrapper = await _mount(
       `
       <el-dropdown ref="b" max-height="60px" popper-class="custom-popper-class">
-        <span class="el-dropdown-link" ref="a">
+        <span class="xn-dropdown-link" ref="a">
           dropdown<i class="el-icon-arrow-down el-icon--right"></i>
         </span>
         <template #dropdown>
@@ -490,7 +490,7 @@ describe('Dropdown', () => {
     const wrapper = _mount(
       `
       <el-dropdown>
-        <span class="el-dropdown-link">
+        <span class="xn-dropdown-link">
           Custom Attributes
         </span>
         <template #dropdown>
@@ -516,7 +516,7 @@ describe('Dropdown', () => {
     const wrapper = _mount(
       `
       <el-dropdown disabled>
-        <span class="el-dropdown-link">
+        <span class="xn-dropdown-link">
           Dropdown List
         </span>
         <template #dropdown>
@@ -541,7 +541,7 @@ describe('Dropdown', () => {
     const wrapper = _mount(
       `
       <el-dropdown disabled split-button>
-        <span class="el-dropdown-link">
+        <span class="xn-dropdown-link">
           Dropdown List
         </span>
         <template #dropdown>
@@ -574,7 +574,7 @@ describe('Dropdown', () => {
     const wrapper = _mount(
       `
       <el-dropdown trigger="hover" :show-timeout="200" :hide-timeout="300">
-        <span class="el-dropdown-link">
+        <span class="xn-dropdown-link">
           Dropdown List
         </span>
         <template #dropdown>
@@ -597,7 +597,7 @@ describe('Dropdown', () => {
     const wrapper = _mount(
       `
       <el-dropdown trigger="click" :show-timeout="200" :hide-timeout="300">
-        <span class="el-dropdown-link">
+        <span class="xn-dropdown-link">
           Dropdown List
         </span>
         <template #dropdown>
@@ -621,7 +621,7 @@ describe('Dropdown', () => {
       const wrapper = _mount(
         `
         <el-dropdown>
-          <span class="el-dropdown-link" data-test-ref="trigger">
+          <span class="xn-dropdown-link" data-test-ref="trigger">
             Dropdown List
           </span>
           <template #dropdown>
@@ -768,7 +768,7 @@ describe('Dropdown', () => {
       _mount(
         `
         <el-dropdown ref="b" placement="right">
-          <span class="el-dropdown-link" ref="a">
+          <span class="xn-dropdown-link" ref="a">
             dropdown<i class="el-icon-arrow-down el-icon--right"></i>
           </span>
           <template #dropdown>
@@ -794,7 +794,7 @@ describe('Dropdown', () => {
       _mount(
         `
         <el-dropdown ref="b" placement="right" :teleported="false">
-          <span class="el-dropdown-link" ref="a">
+          <span class="xn-dropdown-link" ref="a">
             dropdown<i class="el-icon-arrow-down el-icon--right"></i>
           </span>
           <template #dropdown>

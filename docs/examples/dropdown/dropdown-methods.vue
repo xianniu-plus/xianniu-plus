@@ -6,7 +6,7 @@
     <el-button @click="showClick">show</el-button>
   </div>
   <el-dropdown ref="dropdown1" trigger="contextmenu" style="margin-right: 30px">
-    <span class="el-dropdown-link"> Dropdown List1 </span>
+    <span class="xn-dropdown-link"> Dropdown List1 </span>
     <template #dropdown>
       <el-dropdown-menu>
         <el-dropdown-item>Action 1</el-dropdown-item>
@@ -19,7 +19,7 @@
   </el-dropdown>
 
   <el-dropdown trigger="contextmenu" @visible-change="handleVisible2">
-    <span class="el-dropdown-link"> Dropdown List2 </span>
+    <span class="xn-dropdown-link"> Dropdown List2 </span>
     <template #dropdown>
       <el-dropdown-menu>
         <el-dropdown-item>Action 1</el-dropdown-item>

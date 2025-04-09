@@ -1,6 +1,6 @@
 <template>
   <el-dropdown :hide-on-click="false">
-    <span class="el-dropdown-link">
+    <span class="xn-dropdown-link">
       Dropdown List<el-icon class="el-icon--right"><arrow-down /></el-icon>
     </span>
     <template #dropdown>

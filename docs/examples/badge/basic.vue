@@ -15,7 +15,7 @@
     <el-button>custom background</el-button>
   </el-badge>
   <el-dropdown trigger="click">
-    <span class="el-dropdown-link">
+    <span class="xn-dropdown-link">
       Click Me
       <el-icon class="el-icon--right"><caret-bottom /></el-icon>
     </span>

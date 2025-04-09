@@ -1,7 +1,7 @@
 <template>
   <el-dropdown>
     <span
-      class="el-dropdown-link"
+      class="xn-dropdown-link"
       style="
         cursor: pointer;
         color: var(--xn-color-primary);

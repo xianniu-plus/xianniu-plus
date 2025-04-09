@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { useToggle } from '@vueuse/core'
-import VPLink from '../common/vp-link.vue'
+// import VPLink from '../common/vp-link.vue'
 import { useTranslation } from '../../composables/translation'
 import ExpandIcon from '../icons/expand.vue'
 
@@ -47,11 +47,11 @@ const onSwitchLang = (lang: string) => {
       >
         {{ languageMap[l] }}
       </p>
-      <p class="translation-item">
+      <!-- <p class="translation-item">
         <VPLink :href="`/${lang}/guide/translation`">
           {{ locale.help }}
         </VPLink>
-      </p>
+      </p> -->
     </div>
   </div>
 </template>

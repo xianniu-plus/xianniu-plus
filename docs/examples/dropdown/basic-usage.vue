@@ -1,6 +1,6 @@
 <template>
   <el-dropdown>
-    <span class="el-dropdown-link">
+    <span class="xn-dropdown-link">
       Dropdown List
       <el-icon class="el-icon--right">
         <arrow-down />

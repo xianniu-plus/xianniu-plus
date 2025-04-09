@@ -3,7 +3,7 @@
     <el-col :span="8">
       <span class="demonstration">hover to trigger</span>
       <el-dropdown>
-        <span class="el-dropdown-link">
+        <span class="xn-dropdown-link">
           Dropdown List<el-icon class="el-icon--right"><arrow-down /></el-icon>
         </span>
         <template #dropdown>
@@ -22,7 +22,7 @@
     <el-col :span="8">
       <span class="demonstration">click to trigger</span>
       <el-dropdown trigger="click">
-        <span class="el-dropdown-link">
+        <span class="xn-dropdown-link">
           Dropdown List<el-icon class="el-icon--right"><arrow-down /></el-icon>
         </span>
         <template #dropdown>
@@ -41,7 +41,7 @@
     <el-col :span="8">
       <span class="demonstration">right click to trigger</span>
       <el-dropdown trigger="contextmenu">
-        <span class="el-dropdown-link">
+        <span class="xn-dropdown-link">
           Dropdown List<el-icon class="el-icon--right"><arrow-down /></el-icon>
         </span>
         <template #dropdown>
