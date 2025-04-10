@@ -105,7 +105,7 @@ $box-shadow: map.merge(
   (
     '': (
       0px 12px 32px 4px rgba(100, 100, 100, 0.36),
-      0px 8px 20px rgba(100, 100, 100, 0.72),
+      0px 0px 20px rgba(100, 100, 100, 0.72),
     ),
     'light': (
       0px 0px 12px rgba(100, 100, 100, 0.72),
@@ -114,9 +114,9 @@ $box-shadow: map.merge(
       0px 0px 6px rgba(100, 100, 100, 0.72),
     ),
     'dark': (
-      0px 16px 48px 16px rgba(100, 100, 100, 0.72),
-      0px 12px 32px #ffffff,
-      0px 8px 16px -8px #ffffff,
+      0px 0px 10px 0px #29292978,
+      0px 0px 10px #ffffff78,
+      0px 0px 4px -2px #69696978,
     ),
   ),
   $box-shadow
