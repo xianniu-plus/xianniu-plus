@@ -10,6 +10,7 @@ import type {
   CascaderValue,
 } from '@xianniu-plus/components/cascader-panel'
 import type { Placement } from '@xianniu-plus/components/popper'
+export { useCascaderAreaData } from '@vant/area-data'
 
 export const cascaderChinaAreaProps = buildProps({
   ...CommonProps,

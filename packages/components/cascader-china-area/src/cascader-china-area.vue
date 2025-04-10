@@ -4,8 +4,9 @@
 
 <script lang="ts" setup>
 import { ref } from 'vue'
-import { useCascaderAreaData } from '@vant/area-data'
 import { ElCascader } from '@xianniu-plus/components/cascader'
+import { useCascaderAreaData } from './cascader-china-area'
+
 import type { CascaderProps } from '@xianniu-plus/components/cascader-panel/src/node'
 
 const value = ref([])
