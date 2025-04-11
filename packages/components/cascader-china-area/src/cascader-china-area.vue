@@ -9,6 +9,8 @@ import { useCascaderAreaData } from './cascader-china-area'
 
 import type { CascaderProps } from '@xianniu-plus/components/cascader-panel/src/node'
 
+defineOptions({ name: 'CascaderChinaArea' })
+
 const value = ref([])
 const cascaderAreaData = useCascaderAreaData()
 
