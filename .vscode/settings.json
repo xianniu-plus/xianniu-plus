@@ -44,5 +44,6 @@
     "tsconfig.json": "tsconfig.*.json",
     "vitest.config.mts": "vitest.setup.ts, vitest.workspace.ts"
   },
-  "svg.preview.background": "transparent"
+  "svg.preview.background": "transparent",
+  "search.followSymlinks": false
 }

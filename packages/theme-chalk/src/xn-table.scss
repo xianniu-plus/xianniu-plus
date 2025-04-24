@@ -6,7 +6,6 @@
 
 @include b(xn-table) {
   position: relative;
-  overflow: hidden;
   box-sizing: border-box;
   height: 100%;
   width: 100%;
@@ -16,11 +15,10 @@
   color: getCssVar('table-text-color');
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   @include e(toolbar) {
+    flex-shrink: 0;
     padding: 8px;
-    border-bottom: 1px solid getCssVar('border-color-lighter');
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -39,9 +37,17 @@
   }
 
   @include e(body) {
-    height: 100%;
+    flex: 1;
+    overflow: auto;
+
+    .el-table {
+      height: 100%;
+    }
   }
-  @include e(footer) {
+
+  @include e(pagination) {
+    flex-shrink: 0;
+    padding: 16px 0;
     display: flex;
     justify-content: flex-end;
   }

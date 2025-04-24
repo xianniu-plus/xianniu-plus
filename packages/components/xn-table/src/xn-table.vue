@@ -3,64 +3,83 @@
     <div :class="[ns.e('toolbar')]">
       <div :class="[ns.em('toolbar', 'left')]">
         <slot name="toolbar-left" />
+        <!-- 选择数据显示区域 -->
+        <template
+          v-if="isSelection && showSelectionCount && selectedData.length > 0"
+        >
+          <span>已选择 {{ selectedData.length }} 项</span>
+          <el-button type="primary" link @click="clearSelection">
+            取消选择
+          </el-button>
+        </template>
       </div>
       <div :class="[ns.em('toolbar', 'right')]">
         <slot name="toolbar-right" />
-        <el-popover trigger="click">
-          <template #reference>
-            <el-button type="primary" :icon="Menu" />
-          </template>
-          <div class="column-control">
-            <div class="column-list">
-              <el-checkbox
-                v-model="allColumnsSelected"
-                :indeterminate="isIndeterminate"
-                :disabled="!props.columns.length"
-                @change="handleCheckAllChange"
-              >
-                全选
-              </el-checkbox>
-              <el-checkbox-group
-                v-model="selectedColumnKeys"
-                @change="handleColumnSelectionChange"
-              >
-                <el-checkbox
-                  v-for="col in props.columns"
-                  :key="col[props.keyField.toString()]"
-                  :value="col[props.keyField.toString()]"
-                >
-                  {{ col[props.titleField] }}
-                </el-checkbox>
-              </el-checkbox-group>
-            </div>
-          </div>
-        </el-popover>
+        <el-button
+          v-if="showRefresh"
+          :icon="Refresh"
+          type="primary"
+          plain
+          @click="handleRefresh"
+        />
       </div>
     </div>
     <div :class="[ns.e('body')]">
-      <el-auto-resizer>
-        <template #default="{ height, width }">
-          <ElTableV2
-            :columns="
-              visibleTableColumns.map((col) => {
-                return { ...col, title: col[props.titleField.toString()] }
-              })
-            "
-            :data="props.data"
-            :width="width"
-            :height="height"
-            fixed
-          />
+      <!--
+    border 是表格边框和表头拖拽
+    stripe 是表格斑马线
+    highlight-current-row 是否支持单选
+  -->
+      <el-table
+        ref="tableRef"
+        :data="data"
+        :border="border"
+        :stripe="stripe"
+        :highlight-current-row="highlightCurrentRow"
+        style="width: 100%; height: 100%"
+        @selection-change="handleSelectionChange"
+      >
+        <!-- 选择框 -->
+        <el-table-column v-if="isSelection" type="selection" width="40" />
+        <!-- 序号 -->
+        <el-table-column
+          label="序号"
+          width="60"
+          type="index"
+          :index="1"
+          align="center"
+        />
+
+        <!-- 通过columns配置生成的列 -->
+        <template v-if="columns.length">
+          <el-table-column
+            v-for="(col, index) in columns"
+            :key="index"
+            v-bind="col"
+          >
+            <template #header>
+              <span>{{ col.label }}</span>
+              <el-tooltip
+                v-if="col.labelMsg"
+                :content="col.labelMsg"
+                placement="top"
+              >
+                <el-icon><QuestionFilled /></el-icon>
+              </el-tooltip>
+            </template>
+          </el-table-column>
         </template>
-      </el-auto-resizer>
+        <!-- 自定义列插槽 -->
+        <slot />
+      </el-table>
     </div>
-    <div :class="[ns.e('footer')]">
+    <!-- 分页 -->
+    <div v-if="showPagination" :class="[ns.e('pagination')]">
       <el-pagination
-        v-model:current-page="currentPage"
-        v-model:page-size="pageSize"
-        :total="props.total"
-        :page-sizes="[10, 20, 30, 50]"
-        layout="total, sizes, prev, pager, next, jumper"
+        v-model:current-page="currentPageSync"
+        v-model:page-size="pageSizeSync"
+        :total="total"
+        layout="total, prev, pager, next, jumper"
         @size-change="handleSizeChange"
         @current-change="handleCurrentChange"
       />
@@ -69,91 +88,75 @@
 </template>
 
 <script lang="ts" setup>
-import { computed, onMounted, ref } from 'vue'
+import { computed, ref } from 'vue'
+import { ElTable, ElTableColumn } from '@xianniu-plus/components/table'
 import { ElPagination } from '@xianniu-plus/components/pagination'
-import { ElAutoResizer, ElTableV2 } from '@xianniu-plus/components/table-v2'
 import { ElButton } from '@xianniu-plus/components/button'
-import { ElPopover } from '@xianniu-plus/components/popover'
-import { ElCheckbox, ElCheckboxGroup } from '@xianniu-plus/components/checkbox'
+import { ElTooltip } from '@xianniu-plus/components/tooltip'
+import { ElIcon } from '@xianniu-plus/components/icon'
 import { useNamespace } from '@xianniu-plus/hooks'
-import { XianniuComponents, debugWarn } from '@xianniu-plus/utils'
+import { XianniuComponents } from '@xianniu-plus/utils'
 import { xnTableEmits, xnTableProps } from './xn-table'
-import type { CheckboxValueType } from '@xianniu-plus/components/checkbox'
+
+const { Refresh, QuestionFilled } = XianniuComponents
+
 defineOptions({
   name: 'XnTable',
 })
-const { Menu } = XianniuComponents
+
 const props = defineProps(xnTableProps)
 const emit = defineEmits(xnTableEmits)
 
 const ns = useNamespace('xn-table')
+const tableRef = ref<InstanceType<typeof ElTable>>()
+const selectedData = ref<InstanceType<typeof props.data>>([])
 
-// 列选择相关
-const selectedColumnKeys = ref<string[]>([])
-const allColumnsSelected = ref(true)
-const isIndeterminate = ref(false)
-
-// 计算实际显示的列
-const visibleTableColumns = computed(() => {
-  const selectedKeys = new Set(selectedColumnKeys.value)
-
-  if (selectedKeys.size === 0) {
-    return []
-  }
-
-  return props.columns.filter((col) => {
-    const key = col[props.keyField.toString()]
-    return key !== undefined && key !== null && selectedKeys.has(String(key))
-  })
+// 分页相关的计算属性
+const currentPageSync = computed({
+  get: () => props.currentPage,
+  set: (val) => emit('update:currentPage', val),
 })
-const getAllColumnKeys = () => {
-  if (!props.columns || props.columns.length === 0) {
-    return []
-  }
-  return props.columns.map((col) => {
-    const key = col[props.keyField.toString()]
-    if (key === undefined || key === null) {
-      debugWarn('XnTable', `Column is missing ${props.keyField} field:`)
-      return String(col.key || '')
-    }
-    return String(key)
-  })
-}
-// 监听选中列的变化
-const handleColumnSelectionChange = (values: CheckboxValueType[]) => {
-  selectedColumnKeys.value = values as string[]
-  const checkedCount = selectedColumnKeys.value.length
-  allColumnsSelected.value = checkedCount === props.columns.length
-  isIndeterminate.value =
-    checkedCount > 0 && checkedCount < props.columns.length
-}
 
-// 处理全选/取消全选
-const handleCheckAllChange = (val: CheckboxValueType) => {
-  selectedColumnKeys.value = val ? getAllColumnKeys() : []
-  allColumnsSelected.value = !!val
-  isIndeterminate.value = false
-}
+const pageSizeSync = computed({
+  get: () => props.pageSize,
+  set: (val) => emit('update:pageSize', val),
+})
 
-const currentPage = ref(props.currentPage)
-const pageSize = ref(props.pageSize)
-
+// 分页事件处理
 const handleSizeChange = (val: number) => {
-  pageSize.value = val
-  emit('update:pageSize', val)
   emit('size-change', val)
 }
 
 const handleCurrentChange = (val: number) => {
-  currentPage.value = val
-  emit('update:currentPage', val)
   emit('current-change', val)
 }
 
-onMounted(() => {
-  // 初始化选中所有列
-  selectedColumnKeys.value = props.columns.map(
-    (col) => col[props.keyField.toString()]
-  )
+// 刷新处理
+const handleRefresh = () => {
+  // 触发当前页的刷新
+  emit('current-change', props.currentPage)
+}
+// 选择变化事件处理
+const handleSelectionChange: ((...args: any[]) => void) | undefined = (
+  selection
+) => {
+  selectedData.value = selection
+  emit('selection-change', selection)
+}
+
+// 清除选择
+const clearSelection = () => {
+  tableRef.value?.clearSelection()
+  selectedData.value = []
+}
+
+// 暴露方法
+defineExpose({
+  tableRef,
+  selectedData,
+  clearSelection,
+  toggleRowSelection: (row: any, selected: boolean) => {
+    tableRef.value?.toggleRowSelection(row, selected)
+  },
 })
 </script>

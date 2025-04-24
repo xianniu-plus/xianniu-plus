@@ -1,66 +1,149 @@
 import { buildProps } from '@xianniu-plus/utils'
-import { columns, dataType } from '../../table-v2/src/common'
-import type { ExtractPropTypes } from 'vue'
+import type { ExtractPropTypes, PropType } from 'vue'
 
-export const xnTableEffects = ['light', 'dark'] as const
+export type ColumnsType = {
+  prop?: string
+  label: string
+  width?: string | number
+  fixed?: 'left' | 'right' | boolean // 修改这里
+  sortable?: boolean
+  labelMsg?: string
+  showOverflowTooltip?: boolean // 添加这个属性
+  [key: string]: any
+}
+
+/**
+ * XnTable component props
+ */
 export const xnTableProps = buildProps({
   /**
-   * @description table data
+   * @description table的数据
    */
-  data: dataType,
-  /**
-   * @description table columns configuration
-   */
-  columns,
-  /**
-   * @description 列配置中作为唯一标识的字段名
-   */
-  keyField: {
-    type: String,
-    default: 'key',
+  data: {
+    type: Array as PropType<Record<string, any>[]>,
+    required: true,
+    default: () => [],
   },
+
   /**
-   * @description 列配置中作为显示标题的字段名
+   * @description 是否带有纵向边框
    */
-  titleField: {
-    type: String,
-    default: 'title',
+  border: {
+    type: Boolean,
+    default: false,
   },
-  // /**
-  //  * @description visible columns keys
-  //  */
-  // visibleColumns: {
-  //   type: Array,
-  //   default: () => [],
-  // },
+
   /**
-   * @description total number of data items
+   * @description 是否为斑马纹表格
+   */
+  stripe: {
+    type: Boolean,
+    default: false,
+  },
+
+  /**
+   * @description 是否要高亮当前行
+   */
+  highlightCurrentRow: {
+    type: Boolean,
+    default: false,
+  },
+
+  /**
+   * @description 是否显示分页
+   */
+  showPagination: {
+    type: Boolean,
+    default: true,
+  },
+
+  /**
+   * @description 总条目数
    */
   total: {
     type: Number,
     default: 0,
   },
+
   /**
-   * @description current page number
-   */
-  currentPage: {
-    type: Number,
-    default: 1,
-  },
-  /**
-   * @description number of items per page
+   * @description 每页显示条目个数
    */
   pageSize: {
     type: Number,
     default: 10,
   },
+
+  /**
+   * @description 当前页数
+   */
+  currentPage: {
+    type: Number,
+    default: 1,
+  },
+
+  /**
+   * @description 是否显示刷新按钮
+   */
+  showRefresh: {
+    type: Boolean,
+    default: true,
+  },
+
+  /**
+   * @description 是否显示选择列
+   */
+  isSelection: {
+    type: Boolean,
+    default: false,
+  },
+
+  /**
+   * @description 是否显示选择数量
+   */
+  showSelectionCount: {
+    type: Boolean,
+    default: true,
+  },
+
+  /**
+   * @description 表格列配置
+   */
+  columns: {
+    type: Array as PropType<Array<ColumnsType>>,
+    default: () => [],
+  },
 } as const)
+
 export type XnTableProps = ExtractPropTypes<typeof xnTableProps>
 
+/**
+ * XnTable component events
+ */
 export const xnTableEmits = {
+  /**
+   * @description 当选择项发生变化时会触发该事件
+   */
+  'selection-change': (selection: any[]) => Array.isArray(selection),
+
+  /**
+   * @description 当前页改变时触发
+   */
   'update:currentPage': (page: number) => typeof page === 'number',
+
+  /**
+   * @description 每页条数改变时触发
+   */
   'update:pageSize': (size: number) => typeof size === 'number',
-  'size-change': (size: number) => typeof size === 'number',
+
+  /**
+   * @description 当前页改变时触发
+   */
   'current-change': (page: number) => typeof page === 'number',
+
+  /**
+   * @description 每页条数改变时触发
+   */
+  'size-change': (size: number) => typeof size === 'number',
 }
+
 export type XnTableEmits = typeof xnTableEmits

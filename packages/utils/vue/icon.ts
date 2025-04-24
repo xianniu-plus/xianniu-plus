@@ -6,6 +6,8 @@ import {
   InfoFilled,
   Loading,
   Menu,
+  QuestionFilled,
+  Refresh,
   SuccessFilled,
   WarningFilled,
 } from '@xianniu-plus/icons-vue'
@@ -47,4 +49,6 @@ export const ValidateComponentsMap = {
 // 贤牛业务相关的图标
 export const XianniuComponents = {
   Menu,
+  Refresh,
+  QuestionFilled,
 }
