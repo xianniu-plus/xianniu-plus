@@ -1,25 +1,43 @@
 <template>
-  <xn-table :data="tableData" :columns="columns" border stripe />
+  <xn-table
+    :data="tableData"
+    :columns="columns"
+    border
+    stripe
+    :show-refresh="false"
+  >
+    <!-- 默认插槽示例 -->
+    <el-table-column label="操作" fixed="right">
+      <template #default="scope">
+        <el-button type="text" @click="handleEdit(scope)">编辑</el-button>
+        <el-button type="text" @click="handleDelete(scope)">删除</el-button>
+      </template>
+    </el-table-column>
+  </xn-table>
 </template>
 
-<script setup lang="ts">
+<script lang="ts" setup>
 import { ref } from 'vue'
-
 const columns = [
   {
     prop: 'date',
     label: '日期',
-    width: 150,
+    width: 120,
   },
   {
     prop: 'name',
     label: '姓名',
-    width: 120,
+    width: 100,
   },
   {
     prop: 'address',
     label: '地址',
-    showOverflowTooltip: true,
+    width: 200,
+  },
+  {
+    prop: 'status',
+    label: '状态',
+    width: 100,
   },
 ]
 
@@ -43,21 +61,20 @@ const tableData = ref([
     name: '王五',
     address: '广州市天河区珠江新城华夏路10号',
     age: 45,
-    status: '在职',
+    status: '休假',
   },
   {
     date: '2016-05-01',
     name: '赵六',
     address: '深圳市南山区科技园科苑路8号',
     age: 36,
-    status: '休假',
-  },
-  {
-    date: '2016-05-05',
-    name: '钱七',
-    address: '成都市武侯区人民南路四段3号',
-    age: 29,
     status: '在职',
   },
 ])
+const handleEdit = (row: any) => {
+  console.log(row)
+}
+const handleDelete = (row: any) => {
+  console.log(row)
+}
 </script>

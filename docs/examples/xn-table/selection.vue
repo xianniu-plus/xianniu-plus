@@ -1,9 +1,26 @@
 <template>
-  <xn-table :data="tableData" :columns="columns" border stripe />
+  <xn-table
+    ref="tableRef"
+    :data="tableData"
+    :columns="columns"
+    :is-selection="true"
+    border
+    @selection-change="handleSelectionChange"
+  >
+    <template #toolbar-left>
+      <el-button
+        type="danger"
+        :disabled="!selectedCount"
+        @click="handleBatchDelete"
+      >
+        批量删除
+      </el-button>
+    </template>
+  </xn-table>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { computed, ref } from 'vue'
 
 const columns = [
   {
@@ -14,12 +31,6 @@ const columns = [
   {
     prop: 'name',
     label: '姓名',
-    width: 120,
-  },
-  {
-    prop: 'address',
-    label: '地址',
-    showOverflowTooltip: true,
   },
 ]
 
@@ -60,4 +71,16 @@ const tableData = ref([
     status: '在职',
   },
 ])
+
+const tableRef = ref()
+const selectedCount = computed(() => tableRef.value?.selectedData?.length || 0)
+
+const handleSelectionChange = (selection) => {
+  console.log('选中的数据:', selection)
+}
+
+const handleBatchDelete = () => {
+  // 批量删除逻辑
+  console.log('批量删除被点击')
+}
 </script>

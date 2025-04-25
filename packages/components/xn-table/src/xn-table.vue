@@ -3,7 +3,6 @@
     <div :class="[ns.e('toolbar')]">
       <div :class="[ns.em('toolbar', 'left')]">
         <slot name="toolbar-left" />
-        <!-- 选择数据显示区域 -->
         <template
           v-if="isSelection && showSelectionCount && selectedData.length > 0"
         >
@@ -64,7 +63,9 @@
                 :content="col.labelMsg"
                 placement="top"
               >
-                <el-icon><QuestionFilled /></el-icon>
+                <div class="caret-wrapper">
+                  <el-icon><QuestionFilled /></el-icon>
+                </div>
               </el-tooltip>
             </template>
           </el-table-column>
