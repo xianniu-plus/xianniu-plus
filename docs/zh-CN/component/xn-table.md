@@ -7,7 +7,7 @@ lang: zh-CN
 
 这是一个对 table 组件 二次封装。
 
-其中[table-column](http://localhost:5173/zh-CN/component/table.html#table-column-api) 的 API 与 table 组件一致。
+其中`table-column` 的 API 与 table 组件一致。
 
 ## 基础用法
 
@@ -54,6 +54,34 @@ xn-table/toolbar-left
 
 :::demo
 xn-table/toolbar-right
+:::
+
+## 自定义列渲染
+
+表格列支持多种自定义渲染方式：
+
+### 1. 使用 formatter 格式化
+
+简单的值格式化，返回字符串。
+
+:::demo
+xn-table/formatter
+:::
+
+### 2. 使用 renderCell 渲染组件
+
+复杂的组件渲染，返回 VNode。
+
+:::demo
+xn-table/render-cell
+:::
+
+### 3. 组合使用 slot 和 render
+
+优先使用 slot，未提供 slot 时使用 render。
+
+:::demo
+xn-table/combined-render
 :::
 
 ## 属性

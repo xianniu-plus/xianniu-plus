@@ -7,7 +7,7 @@ lang: en-US
 
 This is a secondary encapsulation of the table component.
 
-The API of [table-column](http://localhost:5173/zh-CN/component/table.html#table-column-api) is consistent with the table component.
+The API of `table-column` is consistent with the table component.
 
 ## Basic Usage
 
@@ -54,6 +54,34 @@ Toolbar right area, can be used to add custom buttons or operations.
 
 :::demo
 xn-table/toolbar-right
+:::
+
+## Custom Column Rendering
+
+Table columns support multiple custom rendering methods:
+
+### 1. Using formatter
+
+Simple value formatting that returns a string.
+
+:::demo
+xn-table/formatter
+:::
+
+### 2. Using renderCell
+
+Complex component rendering that returns a VNode.
+
+:::demo
+xn-table/render-cell
+:::
+
+### 3. Combining slot and render
+
+Priority to use slot, fallback to render when no slot is provided.
+
+:::demo
+xn-table/combined-render
 :::
 
 ## Properties

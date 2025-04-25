@@ -68,6 +68,28 @@
                 </div>
               </el-tooltip>
             </template>
+            <template #default="scope">
+              <template v-if="col.renderCell">
+                <component
+                  :is="
+                    col.renderCell({
+                      value: scope.row[col.prop],
+                      row: scope.row,
+                      column: col,
+                      index: scope.$index,
+                    })
+                  "
+                />
+              </template>
+              <template v-else-if="col.formatter">
+                {{ col.formatter(scope.row[col.prop], scope.row) }}
+              </template>
+              <template v-else>
+                <slot :name="`column-${col.prop}`" v-bind="scope">
+                  {{ scope.row[col.prop] }}
+                </slot>
+              </template>
+            </template>
           </el-table-column>
         </template>
         <!-- 自定义列插槽 -->

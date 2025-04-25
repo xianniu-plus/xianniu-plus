@@ -5,10 +5,23 @@ export type ColumnsType = {
   prop?: string
   label: string
   width?: string | number
-  fixed?: 'left' | 'right' | boolean // 修改这里
+  fixed?: 'left' | 'right' | boolean
   sortable?: boolean
   labelMsg?: string
-  showOverflowTooltip?: boolean // 添加这个属性
+  showOverflowTooltip?: boolean
+  /**
+   * @description 格式化单元格内容
+   */
+  formatter?: (value: any, row: Record<string, any>) => string | VNode
+  /**
+   * @description 自定义渲染单元格内容
+   */
+  renderCell?: (data: {
+    value: any
+    row: Record<string, any>
+    column: ColumnsType
+    index: number
+  }) => VNode | string
   [key: string]: any
 }
 
