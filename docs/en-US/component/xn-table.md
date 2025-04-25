@@ -5,58 +5,97 @@ lang: en-US
 
 # XnTable Business Table Component ^(beta)
 
-This is a secondary encapsulation of the table-v2 virtualized table, adding column filtering and pagination functionality. It automatically manages the table's width and height.
+This is a secondary encapsulation of the table component.
 
-:::tip
-
-This component is **still in testing**, and there may be risks when used in production environments. If you find any bugs or issues, please report them to us on [GitHub](https://github.com/xianniu-plus/xianniu-plus/issues) for fixing. Additionally, some APIs are not mentioned in this documentation because they are not fully developed yet, so we do not mention them here.
-
-**Even though** virtualized tables are efficient, **network** and **memory capacity** can still become bottlenecks for your application when data load is too large. Therefore, please remember that virtualized tables are never the perfect solution, consider optimization solutions such as data pagination, filters, etc.
-
-:::
+The API of [table-column](http://localhost:5173/zh-CN/component/table.html#table-column-api) is consistent with the table component.
 
 ## Basic Usage
 
-Let's demonstrate the performance of the virtualized table by rendering a basic example with 10 columns and 1,000 rows.
-
+Configure table columns through `columns`, supporting fixed columns, sorting, and header tooltips.
 :::demo
-
 xn-table/basic
-
 :::
 
-## Customizing Key and Title Field Names
+## Table with Pagination
 
-When you don't want to use 'key' and 'title' as the column's unique identifier and display title, you can customize these field names.
+Display data with pagination functionality.
+:::demo
+xn-table/pagination
+:::
+
+## Table with Selection
+
+Support row selection and batch operations.
+:::demo
+xn-table/selection
+:::
+
+## Slots
+
+### Default Slot
+
+Used to customize table column content, supports using `#default="{ row, column }"` scoped slot. You can customize column content through named slots or directly using the default slot.
 
 :::demo
-
-xn-table/field
-
+xn-table/default-slot
 :::
 
-## TableV2 Attributes
+### toolbar-left
 
-| Name                               | Description                                                  | Type                          | Default |
-| ---------------------------------- | ------------------------------------------------------------ | ----------------------------- | ------- |
-| model-value / v-model:current-page | Current page number                                          | number                        | 1       |
-| model-value / v-model:page-size    | Number of items per page                                     | number                        | 10      |
-| total                              | Total number of items for pagination                         | number                        | 0       |
-| keyField                           | Field name used as unique identifier in column configuration | string                        | 'key'   |
-| titleField                         | Field name used as display title in column configuration     | string                        | 'title' |
-| columns                            | Configuration array for table columns                        | [Column[]](#column-attribute) | —       |
-| data                               | Array of data to be rendered in table                        | [Data[]](#typings)            | []      |
+Toolbar left area, can be used to add custom buttons or operations.
 
-## TableV2 Slots
+:::demo
+xn-table/toolbar-left
+:::
 
-| Name          | Parameters |
-| ------------- | ---------- |
-| toolbar-left  | —          |
-| toolbar-right | —          |
+### toolbar-right
 
-## TableV2 Events
+Toolbar right area, can be used to add custom buttons or operations.
 
-| Event Name     | Description                            | Parameters     |
-| -------------- | -------------------------------------- | -------------- |
-| size-change    | Triggered when page size is changed    | (size: number) |
-| current-change | Triggered when current page is changed | (page: number) |
+:::demo
+xn-table/toolbar-right
+:::
+
+## Properties
+
+| Property              | Description                      | Type                 | Default |
+| --------------------- | -------------------------------- | -------------------- | ------- |
+| data                  | Table data                       | Array                | []      |
+| columns               | Column configuration             | Array\<ColumnsType\> | []      |
+| border                | Whether to show border           | boolean              | false   |
+| stripe                | Whether to show stripe           | boolean              | false   |
+| highlight-current-row | Whether to highlight current row | boolean              | false   |
+| is-selection          | Whether to show selection column | boolean              | false   |
+| show-selection-count  | Whether to show selection count  | boolean              | true    |
+| show-refresh          | Whether to show refresh button   | boolean              | true    |
+| show-pagination       | Whether to show pagination       | boolean              | true    |
+| total                 | Total number of items            | number               | 0       |
+| page-size             | Items per page                   | number               | 10      |
+| current-page          | Current page number              | number               | 1       |
+
+## ColumnsType Configuration
+
+| Property            | Description                      | Type                         | Default |
+| ------------------- | -------------------------------- | ---------------------------- | ------- |
+| prop                | Field name                       | string                       | -       |
+| label               | Column title                     | string                       | -       |
+| width               | Column width                     | string \| number             | -       |
+| fixed               | Fixed column                     | 'left' \| 'right' \| boolean | -       |
+| sortable            | Whether sortable                 | boolean                      | false   |
+| labelMsg            | Header tooltip message           | string                       | -       |
+| showOverflowTooltip | Whether to show overflow tooltip | boolean                      | false   |
+
+## Events
+
+| Event Name       | Description                         | Parameters                     |
+| ---------------- | ----------------------------------- | ------------------------------ |
+| selection-change | Triggered when selection changes    | selection: selected data array |
+| current-change   | Triggered when current page changes | page: new page number          |
+| size-change      | Triggered when page size changes    | size: new page size            |
+
+## Methods
+
+| Method Name        | Description                 | Parameters                       |
+| ------------------ | --------------------------- | -------------------------------- |
+| clearSelection     | Clear selection             | -                                |
+| toggleRowSelection | Toggle row selection status | row: row data, selected: boolean |
