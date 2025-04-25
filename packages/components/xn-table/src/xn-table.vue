@@ -68,7 +68,7 @@
                 </div>
               </el-tooltip>
             </template>
-            <template #default="scope">
+            <template v-if="col.prop" #default="scope">
               <template v-if="col.renderCell">
                 <component
                   :is="
