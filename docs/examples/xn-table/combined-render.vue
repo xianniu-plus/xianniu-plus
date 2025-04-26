@@ -32,7 +32,7 @@ const columns = [
           size: 'small',
           onClick: () => handleAction(row),
         },
-        '编辑'
+        { default: () => '编辑' }
       ),
   },
 ]

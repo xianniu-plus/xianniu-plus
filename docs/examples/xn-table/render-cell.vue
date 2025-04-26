@@ -21,7 +21,7 @@ const columns = [
         {
           type: value === 'active' ? 'success' : 'danger',
         },
-        value === 'active' ? '活跃' : '禁用'
+        { default: () => (value === 'active' ? '活跃' : '禁用') }
       ),
   },
   {
@@ -34,7 +34,7 @@ const columns = [
           size: 'small',
           onClick: () => handleAction(row),
         },
-        '编辑'
+        { default: () => '编辑' }
       ),
   },
 ]

@@ -9,8 +9,12 @@
     <!-- 默认插槽示例 -->
     <el-table-column label="操作" fixed="right">
       <template #default="scope">
-        <el-button type="text" @click="handleEdit(scope)">编辑</el-button>
-        <el-button type="text" @click="handleDelete(scope)">删除</el-button>
+        <el-button link type="primary" @click="handleEdit(scope)"
+          >编辑</el-button
+        >
+        <el-button link type="primary" @click="handleDelete(scope)"
+          >删除</el-button
+        >
       </template>
     </el-table-column>
   </xn-table>
